@@ -14,6 +14,8 @@
     </style>
 </head>
 <body>
+    <div id="title">test</div>
+    <div id="desc">test</div>
     <!-- Eingabefeld für den Namen -->
     <div class="name-input">
         <label for="username">Bitte gib hier deinen Namen ein:</label>
@@ -37,6 +39,8 @@
         const topic = getQueryParameter('topic');
 	const dataset = db[topic];
 	const questions = dataset.questions;
+	document.getElementById('title').innerHTML = dataset.title;
+	document.getElementById('desc').innerHTML = dataset.desc;
 
 
 	let score = 0;
