@@ -18,8 +18,8 @@
     <div id="desc">test</div>
     <!-- Eingabefeld für den Namen -->
     <div class="name-input">
-        <label for="username">Bitte gib hier deinen Namen ein:</label>
-        <input type="text" id="username" placeholder="Vor- und Nachname">
+        <label for="username">Bitte gib hier deinen vollständigen Namen (Vorname und Nachname) ein:</label>
+        <input type="text" id="username" placeholder="Vorname und Nachname">
     </div>
     <div id="quiz"></div>
     <button onclick="checkAnswers()">Quiz abschließen</button>
@@ -44,6 +44,7 @@
 
 
 	let score = 0;
+        let attempts = 0;
 
 	// Funktion zum Mischen eines Arrays
         function shuffleArray(array) {
@@ -52,7 +53,7 @@
 
         function renderQuiz() {
             const quizDiv = document.getElementById('quiz');
-	    const shuffledQuestions = shuffleArray(questions);
+	    const shuffledQuestions = attempts > 0 ? questions : shuffleArray(questions);
             quizDiv.innerHTML = shuffledQuestions.map((q, index) => {
                 // Optionen mischen
                 const shuffledOptions = shuffleArray(q.options);
@@ -114,6 +115,9 @@
 
 	    // Score zurücksetzen
 	    score = 0;
+            
+            // Counter erhöhen
+            attempts++;
 
             // Das Quiz neu rendern (optional)
             renderQuiz();
@@ -122,7 +126,7 @@
         async function generateCertificate() {
 	    const username = document.getElementById('username').value.trim();
             if (!username) {
-                alert("Bitte gib deinen Namen ein, bevor du das Quiz abschließt.");
+                alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
                 return;
             }
 
@@ -161,7 +165,18 @@
             // Bild in das PDF einfügen
             doc.addImage(imgData, "PNG", x, y, imageWidth, imageHeight); // x=10, y=10, Breite=50mm, Höhe=50mm
 
-            doc.save("zertifikat.pdf");
+            doc.save(filename(username, score, questions.length, attempts));
+        }
+        
+        function filename(username, score, qcount, attempts) {
+            // Helper function to convert a number to the alphabet index (0 = A, 1 = B, ...)
+            function toAlphabet(num) {
+                return String.fromCharCode(65 + (num % 26));
+            }
+            const names = username.split(" ");
+            const remaining = toAlphabet(qcount - score);
+         
+            return `cert_${names[0].charAt(0)}${names[1].charAt(0)}${remaining}${attempts}.pdf`;
         }
 
         renderQuiz();
