@@ -8,7 +8,7 @@ const db = {
                 "options": [
                     {"text": "Prozessor", "correct": true},
                     {"text": "Grafikkarte"},
-                    {"text": "Arbeitsspeicher", "correct": true},
+                    {"text": "Arbeitsspeicher"},
                     {"text": "Mainboard"}
                 ]
             },
@@ -26,12 +26,12 @@ const db = {
                 "options": [
                     {"text": "Hard Disk Drive", "correct": true},
                     {"text": "Festplatte", "correct": true},
-                    {"text": "Solid State Disk"},
+                    {"text": "Solid State Drive"},
                     {"text": "Arbeitsspeicher"}
                 ]
             },
             {
-                "text": "Was bedeutet SSD?",
+                "text": "Was ist ein SSD?",
                 "options": [
                     {"text": "Solid State Drive", "correct": true},
                     {"text": "Festplatte", "correct": true},
@@ -121,16 +121,16 @@ const db = {
                 ]
             },
             {
-                "text": "Das Mainboard hat?",
+                "text": "Das Mainboard?",
                 "options": [
-                    {"text": "Steckplätze für Computerkomponenten", "correct": true},
-                    {"text": "Steckplätzer für externe Peripheriegeräte", "correct": true},
+                    {"text": "Hat Steckplätze für Computerkomponenten", "correct": true},
+                    {"text": "Hat Steckplätzer für externe Peripheriegeräte", "correct": true},
                     {"text": "Berechnet die Grafik"},
                     {"text": "Speichert Daten"}
                 ]
             },
             {
-                "text": "Netzwerkkarte machen was?",
+                "text": "Netzwerkkarte ermöglicht was?",
                 "options": [
                     {"text": "Zugriff auf das Netzwerk", "correct": true},
                     {"text": "Berechnet Daten"},

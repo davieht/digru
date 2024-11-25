@@ -1,185 +1,203 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple-Choice-Quiz</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <script src="questions.js"></script>
-    <script src="approvedImgBase64.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .question { margin-bottom: 20px; }
-        .result { font-weight: bold; color: green; line-height: 64px; }
-    </style>
-</head>
-<body>
-    <div id="title">test</div>
-    <div id="desc">test</div>
-    <!-- Eingabefeld für den Namen -->
-    <div class="name-input">
-        <label for="username">Bitte gib hier deinen vollständigen Namen (Vorname und Nachname) ein:</label>
-        <input type="text" id="username" placeholder="Vorname und Nachname">
-    </div>
-    <div id="quiz"></div>
-    <button onclick="checkAnswers()">Quiz abschließen</button>
-    <button onclick="resetQuiz()">Quiz zurücksetzen</button> <!-- Button zum Zurücksetzen -->
-    <div id="result" class="result"></div>
-    <button onclick="generateCertificate()" id="certBtn" style="display:none;">Zertifikat herunterladen</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiple-Choice-Quiz</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="questions.js"></script>
+        <script src="approvedImgBase64.js"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .question {
+                margin-bottom: 20px;
+                background-color: #fafafa;
+            }
+            .result {
+                font-weight: bold;
+                color: green;
+                line-height: 64px;
+            }
+            .w3-content {
+                max-width: 640px;
+            }
+            .answer, input {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-content w3-padding" style="margin-bottom: 64px;">
+            <h1 id="title">test</h1>
+            <p id="desc">test</p>
+            <!-- Eingabefeld für den Namen -->
+            <p class="name-input">
+                <label for="username">Bitte gib hier deinen vollständigen Namen (Vorname und Nachname) ein:</label><br/>
+                <input type="text" id="username" placeholder="Vorname und Nachname">
+            </p>
+            <div id="quiz"></div>
+            <button onclick="checkAnswers()">Quiz abschließen</button>
+            <button onclick="resetQuiz()">Quiz zurücksetzen</button> <!-- Button zum Zurücksetzen -->
+            <div id="result" class="result"></div>
+            <button onclick="generateCertificate()" id="certBtn" style="display:none;">Zertifikat herunterladen</button>
+        </div>
 
 
-    <script>
-	// URL-Parameter abrufen
-        function getQueryParameter(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
-        }
+        <script>
+            // URL-Parameter abrufen
+            function getQueryParameter(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
 
-	// Den Fragensatz basierend auf dem URL-Parameter auswählen
-        const topic = getQueryParameter('topic');
-	const dataset = db[topic];
-	const questions = dataset.questions;
-	document.getElementById('title').innerHTML = dataset.title;
-	document.getElementById('desc').innerHTML = dataset.desc;
+            // Den Fragensatz basierend auf dem URL-Parameter auswählen
+            const topic = getQueryParameter('topic');
+            const dataset = db[topic];
+            const questions = dataset.questions;
+            document.getElementById('title').innerHTML = dataset.title;
+            document.getElementById('desc').innerHTML = dataset.desc;
 
 
-	let score = 0;
-        let attempts = 0;
+            let score = 0;
+            let attempts = 0;
 
-	// Funktion zum Mischen eines Arrays
-        function shuffleArray(array) {
-            return array.sort(() => Math.random() - 0.5);
-        }
+            // Funktion zum Mischen eines Arrays
+            function shuffleArray(array) {
+                return array.sort(() => Math.random() - 0.5);
+            }
 
-        function renderQuiz() {
-            const quizDiv = document.getElementById('quiz');
-	    const shuffledQuestions = attempts > 0 ? questions : shuffleArray(questions);
-            quizDiv.innerHTML = shuffledQuestions.map((q, index) => {
-                // Optionen mischen
-                const shuffledOptions = shuffleArray(q.options);
+            function renderQuiz() {
+                const quizDiv = document.getElementById('quiz');
+                const shuffledQuestions = attempts > 0 ? shuffleArray(questions) : questions;
+                quizDiv.innerHTML = shuffledQuestions.map((q, index) => {
+                    // Optionen mischen
+                    const shuffledOptions = shuffleArray(q.options);
 
-                return `
-                    <div class="question">
-                        <p>${q.text}</p>
-                        ${shuffledOptions.map((option, i) => `
-                            <label>
-                                <input type="checkbox" name="q${index}" value="${i}"> ${option.text}
-                            </label><br>
-                        `).join('')}
-                    </div>
-                `;
-            }).join('');
-        }
+                    return `
+                        <div class="question w3-border w3-round w3-padding">
+                            <p class="w3-large">${q.text}</p>
+                            ${shuffledOptions.map((option, i) => `
+                                <label class="answer">
+                                    <input type="checkbox" name="q${index}" value="${i}"> ${option.text}
+                                </label><br>
+                            `).join('')}
+                        </div>
+                    `;
+                }).join('');
+            }
 
-        function checkAnswers() {
-	    score = 0;
-            questions.forEach((q, index) => {
-                // Sammle alle ausgewählten Optionen
-                const selected = Array.from(document.querySelectorAll(`input[name="q${index}"]:checked`))
-                                      .map(input => parseInt(input.value)); // Array mit gewählten Indizes
+            function checkAnswers() {
+                score = 0;
+                questions.forEach((q, index) => {
+                    // Sammle alle ausgewählten Optionen
+                    const selected = Array.from(document.querySelectorAll(`input[name="q${index}"]:checked`))
+                            .map(input => parseInt(input.value)); // Array mit gewählten Indizes
 
-                // Überprüfe die Richtigkeit
-                const isCorrect = 
-                    q.options.every((option, i) => 
-                        ((option.correct || false) && selected.includes(i)) || // Korrekte Antwort ist gewählt
-                        (!(option.correct || false) && !selected.includes(i))  // Falsche Antwort ist nicht gewählt
-                    );
+                    // Überprüfe die Richtigkeit
+                    const isCorrect =
+                            q.options.every((option, i) =>
+                                ((option.correct || false) && selected.includes(i)) || // Korrekte Antwort ist gewählt
+                                        (!(option.correct || false) && !selected.includes(i))  // Falsche Antwort ist nicht gewählt
+                            );
 
-                if (isCorrect) {
-                    score++;
+                    if (isCorrect) {
+                        score++;
+                    }
+                });
+
+                let scoreText = "Zu wenige Fragen richtig. Probiere es noch einmal.";
+                let scoreColor = "red";
+                // Zeige Zertifikat-Button nur bei ausreichender Punktzahl
+                if (score > questions.length * .7) {
+                    document.getElementById('certBtn').style.display = 'block';
+                    scoreText = "Bravo! Du hast dich qualifiziert."
+                    scoreColor = "green";
                 }
-            });
 
-	    let scoreText = "Zu wenige Fragen richtig. Probiere es noch einmal.";
-	    let scoreColor = "red";
-            // Zeige Zertifikat-Button nur bei ausreichender Punktzahl
-            if (score > questions.length * .7) {
-                document.getElementById('certBtn').style.display = 'block';
-		scoreText = "Bravo! Du hast dich qualifiziert."
-		scoreColor = "green";
+                // Ergebnis anzeigen
+                document.getElementById('result').innerText = `Ergebnis: ${score} / ${questions.length} - ${scoreText}`;
+                document.getElementById('result').style.color = scoreColor;
             }
 
-	    // Ergebnis anzeigen
-            document.getElementById('result').innerText = `Ergebnis: ${score} / ${questions.length} - ${scoreText}`;
-	    document.getElementById('result').style.color = scoreColor;
-        }
+            // Funktion zum Zurücksetzen des Quiz
+            function resetQuiz() {
+                // Alle Checkboxen zurücksetzen
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                checkboxes.forEach(checkbox => checkbox.checked = false);
 
-	// Funktion zum Zurücksetzen des Quiz
-        function resetQuiz() {
-            // Alle Checkboxen zurücksetzen
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            checkboxes.forEach(checkbox => checkbox.checked = false);
+                // Das Ergebnis zurücksetzen
+                document.getElementById('result').innerText = '';
 
-            // Das Ergebnis zurücksetzen
-            document.getElementById('result').innerText = '';
+                // Score zurücksetzen
+                score = 0;
 
-	    // Score zurücksetzen
-	    score = 0;
-            
-            // Counter erhöhen
-            attempts++;
+                // Counter erhöhen
+                attempts++;
 
-            // Das Quiz neu rendern (optional)
+                // Das Quiz neu rendern (optional)
+                renderQuiz();
+            }
+
+            async function generateCertificate() {
+                const username = document.getElementById('username').value.trim();
+                if (!username) {
+                    alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
+                    return;
+                }
+
+                const {jsPDF} = window.jspdf;
+                const doc = new jsPDF();
+
+                doc.setFont("helvetica", "bold");
+                doc.setFontSize(30);
+                doc.text("Zertifikat", 105, 40, {align: "center"});
+
+                doc.setFontSize(12);
+                doc.text(`Herzlichen Glückwunsch!`, 105, 60, {align: "center"});
+                doc.setFontSize(20);
+                doc.text(`${username}`, 105, 80, {align: "center"});
+                doc.setFontSize(12);
+                doc.text(`Du hast das Quiz "${dataset.title}" erfolgreich abgeschlossen.`, 105, 100, {align: "center"});
+                doc.text(`Ergebnis: ${score} von ${questions.length} Punkten`, 105, 110, {align: "center"});
+
+                // Optional: Hinzufügen von Name/Datum
+                const date = new Date().toLocaleDateString();
+                doc.text(`Datum: ${date}`, 105, 120, {align: "center"});
+
+                // Dimensionen des PDF-Dokuments
+                const pdfWidth = doc.internal.pageSize.getWidth();
+                const pdfHeight = doc.internal.pageSize.getHeight();
+
+                // Ziel-Bilddimensionen (z. B. Breite = 100 mm)
+                const imageWidth = 25; // Breite des Bildes im PDF (in mm)
+                const aspectRatio = 1;
+                const imageHeight = imageWidth * aspectRatio; // Höhe basierend auf dem Seitenverhältnis
+
+                // Zentrierte Position berechnen
+                const x = (pdfWidth - imageWidth) / 2;
+                const y = (pdfHeight - imageHeight) / 2;
+
+                // Bild in das PDF einfügen
+                doc.addImage(imgData, "PNG", x, y, imageWidth, imageHeight); // x=10, y=10, Breite=50mm, Höhe=50mm
+
+                doc.save(filename(username, score, questions.length, attempts));
+            }
+
+            function filename(username, score, qcount, attempts) {
+                // Helper function to convert a number to the alphabet index (0 = A, 1 = B, ...)
+                function toAlphabet(num) {
+                    return String.fromCharCode(65 + (num % 26));
+                }
+                const names = username.split(" ");
+                const remaining = toAlphabet(qcount - score);
+
+                return `cert_${names[0].charAt(0)}${names[1].charAt(0)}${remaining}${attempts}.pdf`;
+            }
+
             renderQuiz();
-        }
-
-        async function generateCertificate() {
-	    const username = document.getElementById('username').value.trim();
-            if (!username) {
-                alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
-                return;
-            }
-
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
-
-            doc.setFont("helvetica", "bold");
-            doc.setFontSize(30);
-            doc.text("Zertifikat", 105, 40, { align: "center" });
-
-            doc.setFontSize(12);
-            doc.text(`Herzlichen Glückwunsch!`, 105, 60, { align: "center" });
-	    doc.setFontSize(20);
-	    doc.text(`${username}`, 105, 80, { align: "center" });
-            doc.setFontSize(12);
-	    doc.text(`Du hast das Quiz "${dataset.title}" erfolgreich abgeschlossen.`, 105, 100, { align: "center" });
-            doc.text(`Ergebnis: ${score} von ${questions.length} Punkten`, 105, 110, { align: "center" });
-
-            // Optional: Hinzufügen von Name/Datum
-            const date = new Date().toLocaleDateString();
-            doc.text(`Datum: ${date}`, 105, 120, { align: "center" });
-
-	    // Dimensionen des PDF-Dokuments
-            const pdfWidth = doc.internal.pageSize.getWidth();
-            const pdfHeight = doc.internal.pageSize.getHeight();
-
-            // Ziel-Bilddimensionen (z. B. Breite = 100 mm)
-            const imageWidth = 25; // Breite des Bildes im PDF (in mm)
-            const aspectRatio = 1;
-            const imageHeight = imageWidth * aspectRatio; // Höhe basierend auf dem Seitenverhältnis
-
-            // Zentrierte Position berechnen
-            const x = (pdfWidth - imageWidth) / 2;
-            const y = (pdfHeight - imageHeight) / 2;
-
-            // Bild in das PDF einfügen
-            doc.addImage(imgData, "PNG", x, y, imageWidth, imageHeight); // x=10, y=10, Breite=50mm, Höhe=50mm
-
-            doc.save(filename(username, score, questions.length, attempts));
-        }
-        
-        function filename(username, score, qcount, attempts) {
-            // Helper function to convert a number to the alphabet index (0 = A, 1 = B, ...)
-            function toAlphabet(num) {
-                return String.fromCharCode(65 + (num % 26));
-            }
-            const names = username.split(" ");
-            const remaining = toAlphabet(qcount - score);
-         
-            return `cert_${names[0].charAt(0)}${names[1].charAt(0)}${remaining}${attempts}.pdf`;
-        }
-
-        renderQuiz();
-    </script>
-</body>
+        </script>
+    </body>
 </html>
