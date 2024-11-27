@@ -167,21 +167,23 @@
                 const date = new Date().toLocaleDateString();
                 doc.text(`Datum: ${date}`, 105, 120, {align: "center"});
 
-                // Dimensionen des PDF-Dokuments
-                const pdfWidth = doc.internal.pageSize.getWidth();
-                const pdfHeight = doc.internal.pageSize.getHeight();
-
-                // Ziel-Bilddimensionen (z. B. Breite = 100 mm)
-                const imageWidth = 25; // Breite des Bildes im PDF (in mm)
-                const aspectRatio = 1;
-                const imageHeight = imageWidth * aspectRatio; // Höhe basierend auf dem Seitenverhältnis
-
-                // Zentrierte Position berechnen
-                const x = (pdfWidth - imageWidth) / 2;
-                const y = (pdfHeight - imageHeight) / 2;
-
-                // Bild in das PDF einfügen
-                doc.addImage(imgData, "PNG", x, y, imageWidth, imageHeight); // x=10, y=10, Breite=50mm, Höhe=50mm
+                if (score > questions.length * .7) {
+                    // Dimensionen des PDF-Dokuments
+                    const pdfWidth = doc.internal.pageSize.getWidth();
+                    const pdfHeight = doc.internal.pageSize.getHeight();
+    
+                    // Ziel-Bilddimensionen (z. B. Breite = 100 mm)
+                    const imageWidth = 25; // Breite des Bildes im PDF (in mm)
+                    const aspectRatio = 1;
+                    const imageHeight = imageWidth * aspectRatio; // Höhe basierend auf dem Seitenverhältnis
+    
+                    // Zentrierte Position berechnen
+                    const x = (pdfWidth - imageWidth) / 2;
+                    const y = (pdfHeight - imageHeight) / 2;
+    
+                    // Bild in das PDF einfügen
+                    doc.addImage(imgData, "PNG", x, y, imageWidth, imageHeight); // x=10, y=10, Breite=50mm, Höhe=50mm
+                }
 
                 doc.save(filename(username, score, questions.length, attempts));
             }
