@@ -44,7 +44,7 @@
             </p>
             <div id="quiz"></div>
             <button onclick="checkAnswers()">Quiz abschließen</button>
-            <button onclick="resetQuiz()">Quiz zurücksetzen</button> <!-- Button zum Zurücksetzen -->
+            <!--<button onclick="resetQuiz()">Quiz zurücksetzen</button>  Button zum Zurücksetzen -->
             <div id="result" class="result"></div>
             <button onclick="generateCertificate()" id="certBtn" style="display:none;">Zertifikat herunterladen</button>
             <div id="code" style="display:none;"></div>
@@ -203,14 +203,15 @@
                     doc.addImage(imgData, "PNG", x, y, imageWidth, imageHeight); // x=10, y=10, Breite=50mm, Höhe=50mm
                 }
 
-                doc.save(filename(genCode(username, score, questions.length, attempts)));
+                doc.save(filename(username, score, questions.length, attempts));
+            }
+            
+            // Helper function to convert a number to the alphabet index (0 = A, 1 = B, ...)
+            function toAlphabet(num) {
+                return String.fromCharCode(65 + (num % 26));
             }
             
             function genCode(username, score, qcount, attempts) {
-                // Helper function to convert a number to the alphabet index (0 = A, 1 = B, ...)
-                function toAlphabet(num) {
-                    return String.fromCharCode(65 + (num % 26));
-                }
                 const names = username.split(" ");
                 const remaining = toAlphabet(qcount - score);
                 const code = `cert${names[0].substring(0, 3)}${names[1].substring(0, 3)}${remaining}${attempts}`;
@@ -220,8 +221,10 @@
                 return encrypted;
             }
 
-            function filename(fileName) {
-                return `${fileName}.pdf`;
+            function filename(username, score, qcount, attempts) {
+                const names = username.split(" ");
+                const remaining = toAlphabet(qcount - score);
+                return`cert${names[0].substring(0, 3)}${names[1].substring(0, 3)}${remaining}${attempts}.pdf`;
             }
 
             renderQuiz();
