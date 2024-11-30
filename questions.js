@@ -1247,6 +1247,189 @@ const db = {
         }
         ]
     },
+    "history": {
+        "title": "Computergeschichte",
+        "desc": "Beantworte die Fragen zu Computergeschichte",
+        "questions": [
+            {
+                "text": "Der erste Heimcomputer wurde in welcher Dekade produziert?",
+                "options": [
+                    {"text": "1970er", "correct": true},
+                    {"text": "1930er"},
+                    {"text": "1920er"},
+                    {"text": "2000er"}
+                ]
+            },
+            {
+                "text": "Die ersten Rechner hatten welche Größe?",
+                "options": [
+                    {"text": "Checkkarten Größe"},
+                    {"text": "Groß wie ein Laptop"},
+                    {"text": "So groß wie ein PC"},
+                    {"text": "Raumgroß", "correct": true}
+                ]
+            },
+            {
+                "text": "Was ermöglichte Herstellung von Mikroprozessoren",
+                "options": [
+                    {"text": "Die Fertigung von Transistoren", "correct": true},
+                    {"text": "Die Fertigung von Relais"},
+                    {"text": "Der zweite Weltkrieg"},
+                    {"text": "Die Mondlandung"}
+                ]
+            },
+            {
+                "text": "In welcher Dekade wurde der erste transistorgesteuerte Computer gefertigt?",
+                "options": [
+                    {"text": "1960er", "correct": true},
+                    {"text": "1940er"},
+                    {"text": "1990er"},
+                    {"text": "2020er"}
+                ]
+            },
+            {
+                "text": "Was sagt das Moor'sche Gesetz aus?",
+                "options": [
+                    {"text": "Alle 2 Jahre verdoppelt sich die Anzahl der Transistoren pro Fläche auf einem Computerchip", "correct": true},
+                    {"text": "Alle 2 Jahre verringert sich die Anzahl der Transistoren pro Fläche auf einem Computerchip"},
+                    {"text": "Alle 2 Jahre kommen neue Prozessoren auf den Markt"},
+                    {"text": "Alle 5 Jahre wird das Internet neu gestartet"}
+                ]
+            },
+            {
+                "text": "Der Vorläufer des Betriebssystems Windows hatte welchen Namen?",
+                "options": [
+                    {"text": "MS-DOS", "correct": true},
+                    {"text": "MS-DOC"},
+                    {"text": "MC-DOS"},
+                    {"text": "BOB-ROSS"}
+                ]
+            },
+            {
+                "text": "In welcher Dekade wurde die erste E-Mail verschickt?",
+                "options": [
+                    {"text": "1990er", "correct": true},
+                    {"text": "1980er"},
+                    {"text": "1970er"},
+                    {"text": "2000er"}
+                ]
+            },
+            {
+                "text": "In welcher Dekade wurde das Internet geboren?",
+                "options": [
+                    {"text": "1990er", "correct": true},
+                    {"text": "1970er"},
+                    {"text": "2000er"},
+                    {"text": "2010er"}
+                ]
+            },
+            {
+                "text": "In welcher Dekade kamen Smartphones auf den Markt?",
+                "options": [
+                    {"text": "2000er", "correct": true},
+                    {"text": "2010er"},
+                    {"text": "1990er"},
+                    {"text": "2020er"}
+                ]
+            },
+            {
+                "text": "Künstliche Intelligenzen gibt es schon länger, aber wann wurden sprachbasierte KI bekannt?",
+                "options": [
+                    {"text": "2020er", "correct": true},
+                    {"text": "2010er"},
+                    {"text": "2000er"},
+                    {"text": "1990er"}
+                ]
+            }
+        ]
+    },
+    "maintenance": {
+        "title": "Wartung und Performance",
+        "desc": "Beantworte die Fragen zu Wartung und Performance",
+        "questions": [
+            {
+                "text": "Warum sollten Updates regelmäßig gemacht werden?",
+                "options": [
+                    {"text": "Updates schlißen Sicherheitslücken", "correct": true},
+                    {"text": "Updates bringen neue Features", "correct": true},
+                    {"text": "Updates bringen mehr Geld"},
+                    {"text": "Updates beheben Systemfehler", "correct": true}
+                ]
+            },
+            {
+                "text": "Ein Programm ist?",
+                "options": [
+                    {"text": "Eine Software", "correct": true},
+                    {"text": "Eine App", "correct": true},
+                    {"text": "Eine Applikation", "correct": true},
+                    {"text": "Ein Prozess"}
+                ]
+            },
+                        {
+                "text": "Ein Prozessor ist?",
+                "options": [
+                    {"text": "Eine Hardwarekomponente", "correct": true},
+                    {"text": "Ein Programm"},
+                    {"text": "Ein Prozess"},
+                    {"text": "Eine App"}
+                ]
+            },
+                        {
+                "text": "Ein Prozess ist?",
+                "options": [
+                    {"text": "Ein Programm, das im Arbeitsspeicher liegt und ausgeführt wird", "correct": true},
+                    {"text": "Ein Prozessor, der gestartet wurde"},
+                    {"text": "Ein Prozessor, der mit dem Arbeitsspeicher kommuniziert"},
+                    {"text": "Eine Software, die installiert wurde"}
+                ]
+            },
+                        {
+                "text": "Der Taskmanager?",
+                "options": [
+                    {"text": "Zeigt alle laufenden Prozesse an", "correct": true},
+                    {"text": "Ist ein Programm in Windows", "correct": true},
+                    {"text": "Zeigt die Speicherauslastung an", "correct": true},
+                    {"text": "Listet alle Dateien auf"}
+                ]
+            },
+                        {
+                "text": "Strg + Alt + Esc",
+                "options": [
+                    {"text": "Ruft den Taskmanager auf", "correct": true},
+                    {"text": "Ruft den Windows Explorer auf"},
+                    {"text": "Fährt Windows herunter"},
+                    {"text": "Startet Windows Updates"}
+                ]
+            },
+                        {
+                "text": "Software wird?",
+                "options": [
+                    {"text": "Instruiert"},
+                    {"text": "Deinstalliert", "correct": true},
+                    {"text": "Installiert", "correct": true},
+                    {"text": "Demoliert"}
+                ]
+            },
+                        {
+                "text": "Programme können von wo aus installiert werden?",
+                "options": [
+                    {"text": "Überall im Internet", "correct": true},
+                    {"text": "Vom Marketplace", "correct": true},
+                    {"text": "Von einem USB-Stick", "correct": true},
+                    {"text": "Von einer SD-Karte", "correct": true}
+                ]
+            },
+                        {
+                "text": "Wie bekomme ich eine Übersicht über alle installierte Programme?",
+                "options": [
+                    {"text": "Apps und Programme", "correct": true},
+                    {"text": "Im Windows Startmenü"},
+                    {"text": "Im Windows Explorer"},
+                    {"text": "Textedtitor"}
+                ]
+            }
+        ]
+    },
     "test": {
         "title": "Test",
         "desc": "Testset",
