@@ -126,7 +126,7 @@
                 // Zeige Zertifikat-Button nur bei ausreichender Punktzahl
                 if (score > questions.length * .7) {
                     const username = document.getElementById('username').value.trim();
-                    if (!username) {
+                    if (!username || username.split(' ').length < 2) {
                         alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
                         return;
                     }
@@ -214,7 +214,7 @@
             function genCode(username, score, qcount, attempts) {
                 const names = username.split(" ");
                 const remaining = toAlphabet(qcount - score);
-                const code = `cert${names[0].substring(0, 3)}${names[1].substring(0, 3)}${remaining}${attempts}`;
+                const code = `${getFormattedDate()}${names[0].replace(/\W/g, '').substring(0, 3)}${names[1].replace(/\W/g, '').substring(0, 3)}${remaining}${attempts}`;
                 const key = 'sd89o2jfojwofcopu390';
                 const encrypted = extendedVigenereCipher(code, key);
 
@@ -224,7 +224,19 @@
             function filename(username, score, qcount, attempts) {
                 const names = username.split(" ");
                 const remaining = toAlphabet(qcount - score);
-                return`cert${names[0].substring(0, 3)}${names[1].substring(0, 3)}${remaining}${attempts}.pdf`;
+                return`${getFormattedDate()}${names[0].replace(/\W/g, '').substring(0, 3)}${names[1].replace(/\W/g, '').substring(0, 3)}${remaining}${attempts}.pdf`;
+            }
+            
+            function getFormattedDate() {
+                const now = new Date();
+
+                const day = String(now.getDate()).padStart(2, '0'); // Day (dd)
+                const month = String(now.getMonth() + 1).padStart(2, '0'); // Month (MM, months are 0-based)
+                const year = now.getYear(); // Year (yyyy)
+                const hours = String(now.getHours()).padStart(2, '0'); // Hours (hh)
+                const minutes = String(now.getMinutes()).padStart(2, '0'); // Minutes (mm)
+
+                return `${day}${month}${year}${hours}${minutes}`;
             }
 
             renderQuiz();
