@@ -17,10 +17,13 @@
                 margin-bottom: 20px;
                 background-color: #fafafa;
             }
-            .result {
+            #result-text {
                 font-weight: bold;
                 color: green;
-                line-height: 64px;
+                margin-top: 16px;
+            }
+            #result-text-info {
+                color: red;
             }
             .w3-content {
                 max-width: 640px;
@@ -29,7 +32,19 @@
                 cursor: pointer;
             }
             .selected {
-                background-color: #e5fce8;
+                background-color: #d5ffc6;
+            }
+            .selected > .checkmark {
+                display: inline;
+            }
+            .checkmark {
+                float: right;
+                font-size: 24px;
+                color: green;
+                display: none;
+            }
+            .game-locked {
+                pointer-events: none;
             }
         </style>
     </head>
@@ -37,15 +52,28 @@
         <div class="w3-content w3-padding" style="margin-bottom: 64px;">
             <h1 id="title">test</h1>
             <p id="desc">test</p>
+            <ul>
+                <li>Es gibt folgende Abgabemöglichkeiten
+                    <ul>
+                        <li>Nicht Abgegeben: Du hast dein Zerifikat nicht abgegeben</li>
+                        <li>Abgegeben: Du hast dein Zertifikat abgegeben, aber die volle Punktzahl nicht erreicht</li>
+                        <li>Approved Abgegeben: Du hast dein Zertifikat mit vollständiger Punktzahl abgegeben und den Stempel "Approved" erlangt.</li>
+                    </ul>
+                </li>
+                <li>Um dein Zertifikat zu bekommen musst du mindestens 70% der Fragen richtig beantworten.</li>
+                <li>Hast du nicht 70% erreicht, dann probiere es nochmal. Klicke dazu auf den Button "Nochmal versuchen".</li>
+                <li>Hast du mehr als 70% der erreichbaren Punkte erreicht, kannst du dein Zertifikat herunterladen. Klicke dazu auf den Button "Zertifikat herunterladen". Lade im Anschluss dein Zertifikat auf Eduvidual hoch. Achtung! Ändere nichts am Namen der Datei, sonst wird dein Zertifikat nicht gewertet.</li>
+            </ul>
             <!-- Eingabefeld für den Namen -->
             <p class="name-input">
                 <label for="username">Bitte gib hier deinen vollständigen Namen (Vorname und Nachname) ein:</label><br/>
                 <input type="text" id="username" placeholder="Vorname und Nachname">
             </p>
             <div id="quiz"></div>
-            <button onclick="checkAnswers()">Quiz abschließen</button>
-            <!--<button onclick="resetQuiz()">Quiz zurücksetzen</button>  Button zum Zurücksetzen -->
-            <div id="result" class="result"></div>
+            <button id="checkBtn" onclick="checkAnswers()">Quiz abschließen</button>
+            <button id="resetBtn" onclick="resetQuiz()">Nochmal versuchen</button>
+            <div id="result-text"></div>
+            <div id="result-text-info" style="display:none">Um dein Zertifikat zu bekommen, musst du mindestens 70% der Fragen richtig beantworten.</div>
             <button onclick="generateCertificate()" id="certBtn" style="display:none;">Zertifikat herunterladen</button>
             <div id="code" style="display:none;"></div>
             <img src="approved.jpg" id="stamp" style="display:block;opacity: 0; width:150px; " alt=""/>
@@ -66,9 +94,9 @@
             document.getElementById('title').innerHTML = dataset.title;
             document.getElementById('desc').innerHTML = dataset.desc;
 
-
             let score = 0;
             let attempts = 0;
+            const passPercentage = .7;
 
             // Funktion zum Mischen eines Arrays
             function shuffleArray(array) {
@@ -84,6 +112,7 @@
 
                     return `
                         <div id="q${index}" class="question w3-border w3-round w3-padding">
+                            <span class="checkmark">&#x2713;</span>
                             <p class="w3-large">${q.text}</p>
                             ${shuffledOptions.map((option, i) => `
                                 <label class="answer">
@@ -96,6 +125,12 @@
             }
 
             function checkAnswers() {
+                const username = document.getElementById('username').value.trim();
+                if (!username) {
+                    alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
+                    return;
+                }
+                
                 score = 0;
                 questions.forEach((q, index) => {
                     // Sammle alle ausgewählten Optionen
@@ -113,18 +148,15 @@
                         score++;
                         document.getElementById(`q${index}`).classList.add('selected');
                     } else {
-                        document.getElementById(`q${index}`).classList.remove('selected');   
+                        document.getElementById(`q${index}`).classList.remove('selected');
                     }
                 });
 
                 let scoreText = "Zu wenige Fragen richtig. Probiere es noch einmal.";
                 let scoreColor = "red";
                 
-                // Counter erhöhen
-                attempts++;
-                
                 // Zeige Zertifikat-Button nur bei ausreichender Punktzahl
-                if (score > questions.length * .7) {
+                if (score > questions.length * passPercentage) {
                     const username = document.getElementById('username').value.trim();
                     if (!username || username.split(' ').length < 2) {
                         alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
@@ -134,28 +166,50 @@
                     scoreText = "Bravo! Du hast dich qualifiziert.";
                     scoreColor = "green";
                     document.getElementById('code').style.display = 'block';
-                    document.getElementById('code').textContent = genCode(username, score, score, attempts);
-                    document.getElementById('stamp').style.opacity = 1;
+                    document.getElementById('code').textContent = genCode(username, score, questions.length, attempts, topic);
+                    if (score === questions.length) {
+                        scoreText = "Perfekt! Du hast die volle Punktzahl erreicht!";
+                        document.getElementById('stamp').style.opacity = 1;
+                    }
+                    document.getElementById('result-text-info').style.display = 'none';
                 }
 
-                // Ergebnis anzeigen
-                document.getElementById('result').innerText = `Ergebnis: ${score} / ${questions.length} - ${scoreText}`;
-                document.getElementById('result').style.color = scoreColor;
+                // show result
+                document.getElementById('result-text').innerText = `Ergebnis: ${score} / ${questions.length} - ${scoreText}`;
+                document.getElementById('result-text').style.color = scoreColor;
+                
+                // lock quiz
+                document.getElementById('quiz').classList.add('game-locked');
             }
 
-            // Funktion zum Zurücksetzen des Quiz
+            // function to result the quiz
             function resetQuiz() {
                 // Alle Checkboxen zurücksetzen
                 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
                 checkboxes.forEach(checkbox => checkbox.checked = false);
 
-                // Das Ergebnis zurücksetzen
-                document.getElementById('result').innerText = '';
+                // reset result
+                document.getElementById('result-text').innerText = '';
 
-                // Score zurücksetzen
+                // reset score
                 score = 0;
+                
+                // Counter erhöhen
+                attempts++;
+                
+                // unlock quiz
+                document.getElementById('quiz').classList.remove('game-locked');
+                
+                // hide stamp
+                document.getElementById('stamp').style.opacity = 0;
+                
+                // hide certBtn 
+                document.getElementById('certBtn').style.display = 'none';
+                
+                // hide codeBtn
+                document.getElementById('code').style.display = 'none';
 
-                // Das Quiz neu rendern (optional)
+                // rerender the quiz (optional)
                 renderQuiz();
             }
 
@@ -211,14 +265,13 @@
                 return String.fromCharCode(65 + (num % 26));
             }
             
-            function genCode(username, score, qcount, attempts) {
+            function genCode(username, score, qcount, attempts, topic) {
                 const names = username.split(" ");
-                const remaining = toAlphabet(qcount - score);
-                const code = `${getFormattedDate()}${names[0].replace(/\W/g, '').substring(0, 3)}${names[1].replace(/\W/g, '').substring(0, 3)}${remaining}${attempts}`;
-                const key = 'sd89o2jfojwofcopu390';
-                const encrypted = extendedVigenereCipher(code, key);
+                const remaining = qcount - score;
+                const code = `${getFormattedDate()};${names[0].replace(/\W/g, '').substring(0, 3)};${names[1].replace(/\W/g, '').substring(0, 3)};${remaining};${attempts};${topic}`;
+                const encrypted = extendedVigenereCipher(code);
 
-                return encrypted;
+                return `${encrypted}`;
             }
 
             function filename(username, score, qcount, attempts) {
@@ -232,7 +285,7 @@
 
                 const day = String(now.getDate()).padStart(2, '0'); // Day (dd)
                 const month = String(now.getMonth() + 1).padStart(2, '0'); // Month (MM, months are 0-based)
-                const year = now.getYear(); // Year (yyyy)
+                const year = String(now.getFullYear()).substring(2, 4); // Year (yyyy)
                 const hours = String(now.getHours()).padStart(2, '0'); // Hours (hh)
                 const minutes = String(now.getMinutes()).padStart(2, '0'); // Minutes (mm)
 

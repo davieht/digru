@@ -1,14 +1,15 @@
-function extendedVigenereCipher(plainText, key) {
-    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+function extendedVigenereCipher(plainText) {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789;';
     const alphabetLength = alphabet.length; // 62 characters
     const textLength = plainText.length;
-    const keyLength = key.length;
+    const salt = 'sd89o2jfojwofcopu390';
+    const keyLength = salt.length;
 
     let cipherText = '';
 
     for (let i = 0; i < textLength; i++) {
         const textChar = plainText[i];
-        const keyChar = key[i % keyLength]; // Repeat key as needed
+        const keyChar = salt[i % keyLength]; // Repeat key as needed
 
         const textPos = alphabet.indexOf(textChar);
         const keyPos = alphabet.indexOf(keyChar);
@@ -26,7 +27,7 @@ function extendedVigenereCipher(plainText, key) {
 }
 
 function extendedVigenereDecipher(cipherText, key) {
-    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789;';
     const alphabetLength = alphabet.length; // 62 characters
     const textLength = cipherText.length;
     const keyLength = key.length;
