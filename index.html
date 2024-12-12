@@ -151,12 +151,15 @@
                         document.getElementById(`q${index}`).classList.remove('selected');
                     }
                 });
-
-                let scoreText = "Zu wenige Fragen richtig. Probiere es noch einmal.";
-                let scoreColor = "red";
+                
+                const threshold = Math.ceil(questions.length * passPercentage);
+                let scoreText = `Du benötigst mindestens ${threshold} Fragen richtig. Probiere es noch einmal.`;
                 
                 // Zeige Zertifikat-Button nur bei ausreichender Punktzahl
-                if (score > questions.length * passPercentage) {
+                if (score > threshold) {
+
+                    const scoreColor = "red";
+                
                     const username = document.getElementById('username').value.trim();
                     if (!username || username.split(' ').length < 2) {
                         alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
