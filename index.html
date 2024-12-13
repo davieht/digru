@@ -152,11 +152,12 @@
                     }
                 });
                 
-                let scoreText = `Du benötigst mindestens ${Math.ceil(questions.length * passPercentage)} Fragen richtig. Probiere es noch einmal.`;
+                const threshold = Math.ceil(questions.length * passPercentage);
+                let scoreText = `Du benötigst mindestens ${threshold} Fragen richtig. Probiere es noch einmal.`;
                 let scoreColor = "red";
                 
                 // Zeige Zertifikat-Button nur bei ausreichender Punktzahl
-                if (score >= questions.length * passPercentage) {
+                if (score >= threshold) {
                 
                     const username = document.getElementById('username').value.trim();
                     if (!username || username.split(' ').length < 2) {
@@ -240,7 +241,7 @@
                 const date = new Date().toLocaleDateString();
                 doc.text(`Datum: ${date}`, 105, 120, {align: "center"});
 
-                if (score > questions.length * .7) {
+                if (score === questions.length) {
                     // Dimensionen des PDF-Dokuments
                     const pdfWidth = doc.internal.pageSize.getWidth();
                     const pdfHeight = doc.internal.pageSize.getHeight();
