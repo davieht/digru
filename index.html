@@ -152,13 +152,11 @@
                     }
                 });
                 
-                const threshold = Math.ceil(questions.length * passPercentage);
-                let scoreText = `Du benötigst mindestens ${threshold} Fragen richtig. Probiere es noch einmal.`;
+                let scoreText = `Du benötigst mindestens ${Math.ceil(questions.length * passPercentage)} Fragen richtig. Probiere es noch einmal.`;
+                let scoreColor = "red";
                 
                 // Zeige Zertifikat-Button nur bei ausreichender Punktzahl
-                if (score > threshold) {
-
-                    const scoreColor = "red";
+                if (score >= questions.length * passPercentage) {
                 
                     const username = document.getElementById('username').value.trim();
                     if (!username || username.split(' ').length < 2) {
