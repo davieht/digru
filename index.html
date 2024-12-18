@@ -259,7 +259,7 @@
                     doc.addImage(imgData, "PNG", x, y, imageWidth, imageHeight); // x=10, y=10, Breite=50mm, Höhe=50mm
                 }
 
-                doc.save(filename(username, score, questions.length, attempts));
+                doc.save(filename(username, score, questions.length, attempts, topic));
             }
             
             // Helper function to convert a number to the alphabet index (0 = A, 1 = B, ...)
@@ -276,10 +276,10 @@
                 return `${encrypted}`;
             }
 
-            function filename(username, score, qcount, attempts) {
+            function filename(username, score, qcount, attempts, topic) {
                 const names = username.split(" ");
                 const remaining = toAlphabet(qcount - score);
-                return`${getFormattedDate()}${names[0].replace(/\W/g, '').substring(0, 3)}${names[1].replace(/\W/g, '').substring(0, 3)}${remaining}${attempts}.pdf`;
+                return`${getFormattedDate()}${names[0].replace(/\W/g, '').substring(0, 3)}${names[1].replace(/\W/g, '').substring(0, 3)}${remaining}${attempts}${topic}.pdf`;
             }
             
             function getFormattedDate() {
