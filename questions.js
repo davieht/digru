@@ -288,7 +288,7 @@ const db = {
             {
                 "text": "Arbeitsspeicher macht was?",
                 "options": [
-                    {"text": "Speichert Daten kurzweilig", "correct": true},
+                    {"text": "Speichert Daten kurzzeitig", "correct": true},
                     {"text": "Speichert Daten permanent"},
                     {"text": "Berechnet die Grafik"},
                     {"text": "Misst den Strom"}
@@ -1434,6 +1434,24 @@ const db = {
         "title": "Test",
         "desc": "Testset",
         "questions": [
+            {
+                "text": "test?",
+                "options": [
+                    {"text": "Ja", "correct": true},
+                    {"text": "Nein"},
+                    {"text": "Nein"},
+                    {"text": "Nein"}
+                ]
+            },
+            {
+                "text": "test?",
+                "options": [
+                    {"text": "Ja", "correct": true},
+                    {"text": "Nein"},
+                    {"text": "Nein"},
+                    {"text": "Nein"}
+                ]
+            },
             {
                 "text": "test?",
                 "options": [

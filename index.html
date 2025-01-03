@@ -31,10 +31,10 @@
             .answer, input {
                 cursor: pointer;
             }
-            .selected {
+            .correct {
                 background-color: #d5ffc6;
             }
-            .selected > .checkmark {
+            .correct > .checkmark {
                 display: inline;
             }
             .checkmark {
@@ -45,6 +45,12 @@
             }
             .game-locked {
                 pointer-events: none;
+            }
+            #cert-btn, #code, #stamp {
+                margin-top: 16px;
+            }
+            #username {
+                margin: 16px 0px;
             }
         </style>
     </head>
@@ -74,7 +80,7 @@
             <button id="resetBtn" onclick="resetQuiz()">Nochmal versuchen</button>
             <div id="result-text"></div>
             <div id="result-text-info" style="display:none">Um dein Zertifikat zu bekommen, musst du mindestens 70% der Fragen richtig beantworten.</div>
-            <button onclick="generateCertificate()" id="certBtn" style="display:none;">Zertifikat herunterladen</button>
+            <button onclick="generateCertificate()" id="cert-btn" style="display:none;">Zertifikat herunterladen</button>
             <div id="code" style="display:none;"></div>
             <img src="approved.jpg" id="stamp" style="display:block;opacity: 0; width:150px; " alt=""/>
         </div>
@@ -90,7 +96,8 @@
             // Den Fragensatz basierend auf dem URL-Parameter auswählen
             const topic = getQueryParameter('topic');
             const dataset = db[topic];
-            const questions = dataset.questions;
+            const questionLength = 12;
+            const questions = dataset.questions.slice(0, questionLength);
             document.getElementById('title').innerHTML = dataset.title;
             document.getElementById('desc').innerHTML = dataset.desc;
 
@@ -146,9 +153,9 @@
 
                     if (isCorrect) {
                         score++;
-                        document.getElementById(`q${index}`).classList.add('selected');
+                        document.getElementById(`q${index}`).classList.add('correct');
                     } else {
-                        document.getElementById(`q${index}`).classList.remove('selected');
+                        document.getElementById(`q${index}`).classList.remove('correct');
                     }
                 });
                 
@@ -164,7 +171,7 @@
                         alert("Bitte gib deinen vollständigen Namen ein, bevor du das Quiz abschließt.");
                         return;
                     }
-                    document.getElementById('certBtn').style.display = 'block';
+                    document.getElementById('cert-btn').style.display = 'block';
                     scoreText = "Bravo! Du hast dich qualifiziert.";
                     scoreColor = "green";
                     document.getElementById('code').style.display = 'block';
@@ -205,8 +212,8 @@
                 // hide stamp
                 document.getElementById('stamp').style.opacity = 0;
                 
-                // hide certBtn 
-                document.getElementById('certBtn').style.display = 'none';
+                // hide cert-btn 
+                document.getElementById('cert-btn').style.display = 'none';
                 
                 // hide codeBtn
                 document.getElementById('code').style.display = 'none';
@@ -279,7 +286,7 @@
             function filename(username, score, qcount, attempts, topic) {
                 const names = username.split(" ");
                 const remaining = toAlphabet(qcount - score);
-                return`${getFormattedDate()}${names[0].replace(/\W/g, '').substring(0, 3)}${names[1].replace(/\W/g, '').substring(0, 3)}${remaining}${attempts}${topic}.pdf`;
+                return`${getFormattedDate()}${names[0].replace(/\W/g, '').substring(0, 3)}${names[1].replace(/\W/g, '').substring(0, 3)}${remaining}${attempts}${topic.substring(0, 5)}.pdf`;
             }
             
             function getFormattedDate() {
