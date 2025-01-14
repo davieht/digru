@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <style>
+            .mdl-card__title {
+              background-size: cover;
+              background-position: center;
+              color: white;
+              padding: 16px;
+            }
+            .mdl-grid {
+                display: flex;
+                justify-content: center;  /* Center the cards horizontally */
+                padding: 0;               /* Remove padding from the grid */
+                margin: 0;                /* Remove margin from the grid */
+                flex-wrap: wrap;          /* Ensure wrapping when there are too many cards */
+              }
+
+              .mdl-cell {
+                width: auto;             /* Allow cells to adjust width based on content */
+              }
+              i.material-icons.mdl-list__item-icon {
+                  width: 42px;
+                  height: 42px;
+                  font-size: 42px;
+              }
+              .mdl-card__title.mdl-card--expand {
+                  opacity: .7;
+              }
+              .mdl-card__title.mdl-card--expand:hover {
+                  opacity: 1;
+              }
+              .mdl-list__item.mdl-list__item--three-line:hover {
+                  background-color: #f5f5f5;
+              }
+              .mdl-cell.mdl-cell--4-col, .mdl-list__item.mdl-list__item--three-line {
+                  cursor: pointer;
+              }
+        </style>
+    </head>
+    <body>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">Title</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation. We hide it in small screens. -->
+              <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">Profil</a>
+                <a class="mdl-navigation__link" href="">Punktestand</a>
+                <a class="mdl-navigation__link" href="">Note</a>
+                <a class="mdl-navigation__link" href="">Logout</a>
+              </nav>
+            </div>
+          </header>
+          <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Profil</a>
+              <a class="mdl-navigation__link" href="">Punktestand</a>
+              <a class="mdl-navigation__link" href="">Note</a>
+              <a class="mdl-navigation__link" href="">Logout</a>
+            </nav>
+          </div>
+          <main class="mdl-layout__content">
+              <div id="info-container" class="mdl-grid">
+                  <div class="mdl-cell--8-col">
+                      <p>Achte bei der Arbeit am Computer auf folgende Dinge</p>
+                      <p>🚑 Gesundheit</p>
+                      <ul>
+                        <li>Nimm eine aufrechte Sitzposition ein</li>
+                        <li>Mache Pausen (jede Stunde mind. 10 Minuten)</li>
+                        <li>Sorge für ausreichend Licht</li>
+                        <li>Vergiss nicht zu trinken und zu essen</li>
+                      </ul>
+                      <p>🛡️ Datenschutz</p>
+                      <ul>
+                        <li>Verwende sichere Passwörter</li>
+                        <li>Verwende wenn möglich eine Zwei-Faktor Authentisierung</li>
+                        <li>Gib deine persönliche Daten nicht weiter (z.B.: Name, Alter, Geburtsdatum,
+                          Wohnort)</li>
+                        <li>Mache von Zeit zu Zeit ein Backup von deinen Dateien</li>
+                      </ul>
+                      <p>💻 Dein Laptop</p>
+                      <ul>
+                        <li>Achte auf dein Gerät! Es soll nicht nass werden, dir nicht herunterfallen,
+                          nicht kaputt werden</li>
+                        <li>Ist dein Gerät defekt, melde es deinem Lehrer umgehend (vor dem
+                          Unterricht) und schicke es in die Reparatur</li>
+                        <li>Nimm dein Arbeitsgerät jeden Unterricht mit!</li>
+                        <li>Dein Arbeitsgerät muss im Unterricht aufgeladen sein!</li>
+                      </ul>
+                    </div>
+                  </div>
+                <div id="container" class="mdl-grid"></div>
+            </main>
+        </div>
+        <script>
+            const user = {
+                schoolId: 0,
+                classId: 0,
+                id: 0
+            };
+            let chapters = null;
+            
+            onpopstate = (event) => {addCards(chapters);};
+            
+            const iconmap = {
+                video: "live_tv",
+                interactive: "extension",
+                pdf: "picture_as_pdf",
+                link: "link",
+                quiz: "checklist"
+              };
+            
+            function addLinks(chapter) {
+                history.pushState({ page: 1 }, "title 1", "?page=1");
+                const container = document.getElementById('container');
+                
+                let newHtml = `<ul id="link-container" class="demo-list-three mdl-list mdl-cell--8-col">`;
+                
+                newHtml += chapters[chapter].links.map((entry, index) => {
+                    return `
+                        <li class="mdl-list__item mdl-list__item--three-line" onclick="window.open('${entry.link}', '_blank');">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-icon">${iconmap[entry.type] || "question_mark"}</i>
+                              <span>${entry.name}</span>
+                              <span class="mdl-list__item-text-body">${entry.description}</span>
+                            </span>
+                        </li>
+                    `;
+                }).join("");
+                
+                newHtml += `</ul>`;
+                
+                container.innerHTML = newHtml;
+            }
+            
+            function addCards(chapters) {
+                const container = document.getElementById('container');
+                
+                container.innerHTML = Object.entries(chapters).map(([chapterId, chapter]) => {
+                    const image = chapter.image !== null ? ` style="background-image: url('${chapter.image}');"` : "";
+                    return `
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp" onclick="addLinks('${chapterId}')">
+                            <div class="mdl-card__title mdl-card--expand"${image}>
+                                <h2 class="mdl-card__title-text">${chapter.name}</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                              ${chapter.description}
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }).join('');
+            }
+            const baseUrl = 'https://script.google.com/macros/s/AKfycby8il1TZFhPqQPZWnEZ7w_XkgUiSppU8RM9ezsuEzHoClA6Rt1WkrVVcKqwr3Z5NcE/exec';
+            const params = {
+                userId: 0,
+                classId: 0
+            };
+
+            // Build the query string
+            const queryString = new URLSearchParams(params).toString();
+            const url = `${baseUrl}?${queryString}`;
+            const method = {
+                method: "GET",
+                contentType: "application/json"
+            };
+            
+            fetch(url, method)
+                    .then(response => {
+                        return response.json();
+            })
+                    .then(data => {
+                        const profile = {
+                            firstname: "Ali",
+                            lastname: "Mohammad",
+                            points: 34,
+                            currency: 21,
+                            grade: 2,
+                            avatar: {
+                                gender: "m"
+                            }
+                        };                        
+            })
+                    .catch(error => {
+                        console.error(error);
+            });
+
+            
+            fetch('chapters.json')
+                    .then(response => {
+                        return response.json();
+            })
+                    .then(data => {
+                        console.log(data);
+                        addCards(data);
+                        chapters = data;
+            })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+            });
+        </script>
+    </body>
+</html>
