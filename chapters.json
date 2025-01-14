@@ -1,0 +1,421 @@
+{
+    "draft" : {
+        "name" : "Draft",
+        "description" : "Thisisadraft.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Draft",
+                "type" : "pdf",
+                "link" : "",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "introduction" : {
+        "name" : "Einleitung und Begrüßung",
+        "description" : "Willkommen zu Digi.",
+        "image" : "https://t3.ftcdn.net/jpg/09/98/50/16/360_F_998501661_Wd3w65mucUePlMvDCVSPQ6bUSq7YLFF8.jpg",
+        "links" : [
+            {
+                "name" : "Einleitung und Begrüßung",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Begr%C3%BC%C3%9Fung%20Digi.pdf",
+                "description" : "In diesem Kaptiel erfährst du mehr über deinen Lehrer und den Digitalen Unterricht."
+            }
+        ]
+    },
+    "firststeps" : {
+        "name" : "Erste Schritte - Dein Laptop",
+        "description" : "In diesem Kapitel lernst du, wie du deinen Laptop bedienst",
+        "image" : "https://cdn.pixabay.com/photo/2017/02/15/16/15/hands-2069206_1280.jpg",
+        "links" : [
+            {
+                "name" : "Erste Schritte",
+                "type" : "interactive",
+                "link" : "https://www.internet-abc.de/lm/computer-abc/pc-bestandteile/1",
+                "description" : "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung deines Laptops."
+            },
+            {
+                "name" : "Dein Laptop",
+                "type" : "quiz",
+                "link" : "",
+                "description" : "Das Abschlussquiz zu Bits und Bytes.",
+                "draft" : true
+            }
+        ]
+    },
+    "keyboard" : {
+        "name" : "Maus und Tastatur",
+        "description" : "In diesem Kapitel lernst du wie du mit Maus und Tastatur arbeitest.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Maus und Tastatur",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Maus%20und%20Tastatur.pdf",
+                "description" : "Die Unterlagen zu Maus und Tastatur."
+            },
+            {
+                "name" : "Die Computermaus",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=a65Mt-mneqM",
+                "description" : "In diesem Video erfährst du mehr über die Computermaus und wie du sie optimal für dich konfigurieren kannst."
+            },
+            {
+                "name" : "Die Tastatur",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=awo3iplJNEw",
+                "description" : "In diesem Video werden die Tasten auf der Tastatur erklärt."
+            },
+            {
+                "name" : "Maus und Tastatur",
+                "type" : "interactive",
+                "link" : "https://www.internet-abc.de/lm/computer-abc/maus-und-touchpad/1",
+                "description" : "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Computermaus und dem Touchpad."
+            },
+            {
+                "name" : "Die Tastatur",
+                "type" : "interactive",
+                "link" : "https://www.internet-abc.de/lm/computer-abc/pc-tastatur/1",
+                "description" : "In diesem interaktiven Lernmodul erfährst du die Grundlagen der Tastatur."
+            },
+            {
+                "name" : "Die Tastatur",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=keyboard",
+                "description" : "Das Abschlussquiz."
+            }
+        ]
+    },
+    "specialchars" : {
+        "name" : "Sonderzeichen",
+        "description" : "In diesem Kapitel lernst du was Sonderzeichen sind und wie du sie schreiben kannst.",
+        "image" : "https://i2.pickpik.com/photos/713/802/342/enter-keyboard-computer-keys-preview.jpg",
+        "links" : [
+            {
+                "name" : "Sonderzeichen",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Sonderzeichen.pdf",
+                "description" : "Die Unterlagen zu Sonderzeichen."
+            },
+            {
+                "name" : "Dialog",
+                "type" : "text",
+                "link" : "",
+                "description" : "",
+                "draft" : true
+            },
+            {
+                "name" : "Emoticons mit Sonderzeichen",
+                "type" : "text",
+                "link" : "",
+                "description" : "",
+                "draft" : true
+            }
+        ]
+    },
+    "login" : {
+        "name" : "Login und Registrieren",
+        "description" : "Thisisadraft.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Login und Registrieren",
+                "type" : "pdf",
+                "link" : "",
+                "description" : "Draftdescription."
+            },
+            {
+                "name" : "Login und Registrieren",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=registration",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "typewriting" : {
+        "name" : "Das Zehnfingersystem",
+        "description" : "In diesem Kapitel lernst du wie du effizient mit der Tastatur schreiben kannst.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Das Zehnfingersystem",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Zehnfingersystem.pdf",
+                "description" : "Draftdescription."
+            },
+            {
+                "name" : "typista.de",
+                "type" : "interactive",
+                "link" : "https://typista.de/",
+                "description" : "Mit diesem Lernprogramm lernst du das Zehnfingersystem."
+            },
+            {
+                "name" : "Das Zehnfingersystem",
+                "type" : "quiz",
+                "link" : "",
+                "description" : "Draftdescription.",
+                "draft" : true
+            }
+        ]
+    },
+    "shortcuts" : {
+        "name" : "Tastenkombindationen",
+        "description" : "Thisisadraft.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Tastenkombinationen",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Tastenk%C3%BCrzel.pdf",
+                "description" : "Draftdescription."
+            },
+            {
+                "name" : "Schreibaufgabe",
+                "type" : "text",
+                "link" : "",
+                "description" : "Draftdescription.",
+                "draft" : true
+            },
+            {
+                "name" : "Tastenkombinationen",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=shortcuts",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "computer-history" : {
+        "name" : "Computergeschichte",
+        "description" : "In diesem Kapitel lernst du wie der Computer entstanden ist.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Computergeschichte",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Computergeschichte.pdf",
+                "description" : "Draftdescription."
+            },
+            {
+                "name" : "Draft",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=07zsT8lBSjQ",
+                "description" : "In diesem Video erfährst du mehr über die Geschichte des Computers."
+            },
+            {
+                "name" : "Computergeschichte",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=history",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "hardware1" : {
+        "name" : "Hardware 1",
+        "description" : "In diesem Kapitel lernst du was Hardware ist",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "CPU, RAM und Motherboard",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Hardware1.pdf",
+                "description" : "Draftdescription.",
+                "draft" : true
+            },
+            {
+                "name" : "Der Prozessor (CPU)",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=oG69WH5nea0",
+                "description" : "In diesem Video erfährst du wie ein Prozessor funktioniert."
+            },{
+                "name" : "Der Arbeitsspeicher (RAM)",
+                "type" : "pdf",
+                "link" : "https://www.youtube.com/watch?v=7Cw2MvuTqkM",
+                "description" : "In diesem Video erfährst du wie der Arbeitsspeicher (RAM) funktioniert."
+            },
+            {
+                "name" : "Hardware 1",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=hardware1",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "hardware2" : {
+        "name" : "Hardware 2",
+        "description" : "In diesem Kapitel lernst du was Hardware ist",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Festplatten, Mainboard und GPU",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Hardware2.pdf",
+                "description" : "Draftdescription.",
+                "draft" : true
+            },
+            {
+                "name" : "Festplatten (HDD und SSD)",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=JTNWaFbJPw0",
+                "description" : "In diesem Video erfährst du was Festplatten sind und wie sie funktionieren."
+            },{
+                "name" : "Die Grafikkarte (GPU)",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=7Cw2MvuTqkM",
+                "description" : "In diesem Video erfährst du was eine Grafikkarte ist."
+            },
+            {
+                "name" : "Hardware 2",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=hardware2",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "hardware3" : {
+        "name" : "Hardware 3",
+        "description" : "In diesem Kapitel lernst du was Hardware ist",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Festplatten, Mainboard und GPU",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Hardware3.pdf",
+                "description" : "Draftdescription.",
+                "draft" : true
+            },
+            {
+                "name" : "Interne Anschlüsse",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=HTs-Ek4dbhA",
+                "description" : "In diesem Video erfährst du welche internen Anschlüsse es gibt."
+            },{
+                "name" : "Computer zerlegen und zusammenbauen",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=5R7EQ2Iilww",
+                "description" : "In diesem Video erfährst du was eine Grafikkarte ist."
+            },
+            {
+                "name" : "Hardware 3",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=hardware3",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "periphery" : {
+        "name" : "Peripheriegeräte",
+        "description" : "In diesem Kapitel lernst du was Peripheriegeräte sind und was das EVA-Prinzip ist.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Peripheriegeräte",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Peripherieger%C3%A4te.pdf",
+                "description" : "Draftdescription."
+            },
+            {
+                "name" : "Ein- und Ausgabegeräte",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=Z6nqZaZhPeU",
+                "description" : "In diesem Video erfährst du mehr über die Ein- und Ausgabegeräte und wie diese mit dem Computer interagieren."
+            },
+            {
+                "name" : "Peripheriegeräte",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=periphery",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "interfaces" : {
+        "name" : "Schnittstellen und Anschlüsse",
+        "description" : "In diesem Kapitel lernst du welche Schnittstellen und Anschlüsse es gibt.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Schnittstellen und Anschlüsse",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Schnittstellen%20und%20Anschl%C3%BCsse.pdf",
+                "description" : "Draftdescription."
+            },
+            {
+                "name" : "Schnittstellen und Anschlüsse",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=w8B6Yta-lUc",
+                "description" : "In diesem Video erfährst du mehr über die Anschlüsse eines Mainboards. Im Video wird erklärt welche Peripheriegeräte du an welchen Steckplatz anstecken kannst."
+            },
+            {
+                "name" : "Schnittstellen und Anschlüsse",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=connectors",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "bitsnbytes" : {
+        "name" : "Bits und Bytes",
+        "description" : "In diesem Kapitel lernst du wie der Computer rechnet.",
+        "image" : "https://static.vecteezy.com/system/resources/previews/012/255/937/non_2x/binary-code-seamless-pattern-digital-binary-code-zero-and-one-background-cyber-security-network-hacker-internet-illustration-vector.jpg",
+        "links" : [
+            {
+                "name" : "Bits und Bytes",
+                "type" : "pdf",
+                "link" : "https://davieht.github.io/schulunterlagen/Bits%20%26%20Bytes.pdf",
+                "description" : "Die Unterlagen zu Bits und Bytes."
+            },
+            {
+                "name" : "Bits und Bytes",
+                "type" : "video",
+                "link" : "https://www.youtube.com/watch?v=0Exik_Q3kDk",
+                "description" : "In diesem Video erfährst du, was Bits und Bytes sind und wie sie in Relation stehen."
+            },
+            {
+                "name" : "Bits und Bytes",
+                "type" : "quiz",
+                "link" : "https://davieht.github.io/schulquiz/index.html?topic=bitsnbytes",
+                "description" : "Das Abschlussquiz zu Bits und Bytes."
+            }
+        ]
+    },
+    "draft" : {
+        "name" : "Draft",
+        "description" : "Thisisadraft.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Draft",
+                "type" : "pdf",
+                "link" : "",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "draft" : {
+        "name" : "Draft",
+        "description" : "Thisisadraft.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Draft",
+                "type" : "pdf",
+                "link" : "",
+                "description" : "Draftdescription."
+            }
+        ]
+    },
+    "draft" : {
+        "name" : "Draft",
+        "description" : "Thisisadraft.",
+        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "links" : [
+            {
+                "name" : "Draft",
+                "type" : "pdf",
+                "link" : "",
+                "description" : "Draftdescription."
+            }
+        ]
+    }    
+}
