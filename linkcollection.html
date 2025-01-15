@@ -30,16 +30,21 @@
                   height: 42px;
                   font-size: 42px;
               }
-              .mdl-card__title.mdl-card--expand {
+              .mdl-card {
+                  filter: saturate(0);
                   opacity: .7;
               }
-              .mdl-card__title.mdl-card--expand:hover {
+              .mdl-card.active {
+                  filter: saturate(1);
+              }
+              .mdl-card.active:hover {
                   opacity: 1;
+                  cursor: pointer;                  
               }
               .mdl-list__item.mdl-list__item--three-line:hover {
                   background-color: #f5f5f5;
               }
-              .mdl-cell.mdl-cell--4-col, .mdl-list__item.mdl-list__item--three-line {
+              .mdl-list__item.mdl-list__item--three-line {
                   cursor: pointer;
               }
         </style>
@@ -150,9 +155,11 @@
                 
                 container.innerHTML = Object.entries(chapters).map(([chapterId, chapter]) => {
                     const image = chapter.image !== null ? ` style="background-image: url('${chapter.image}');"` : "";
+                    const isActiveOnClick = chapter.isActive ? ` onclick=addLinks('${chapterId}')` : "";
+                    const isActiveClass = chapter.isActive ? ` active` : "";
                     return `
                     <div class="mdl-cell mdl-cell--4-col">
-                        <div class="mdl-card mdl-shadow--2dp" onclick="addLinks('${chapterId}')">
+                        <div class="mdl-card mdl-shadow--2dp${isActiveClass}" ${isActiveOnClick}>
                             <div class="mdl-card__title mdl-card--expand"${image}>
                                 <h2 class="mdl-card__title-text">${chapter.name}</h2>
                             </div>
@@ -173,12 +180,12 @@
             // Build the query string
             const queryString = new URLSearchParams(params).toString();
             const url = `${baseUrl}?${queryString}`;
-            const method = {
+            const getMethod = {
                 method: "GET",
                 contentType: "application/json"
             };
             
-            fetch(url, method)
+            fetch(url, getMethod)
                     .then(response => {
                         return response.json();
             })
@@ -199,7 +206,7 @@
             });
 
             
-            fetch('chapters.json')
+            fetch('chapters.json', getMethod)
                     .then(response => {
                         return response.json();
             })
@@ -207,10 +214,29 @@
                         console.log(data);
                         addCards(data);
                         chapters = data;
+                        getActiveChapters("1A");
             })
                     .catch(error => {
                         console.error('There was a problem with the fetch operation:', error);
             });
+            
+            function getActiveChapters(className) {
+                fetch(`https://script.google.com/macros/s/AKfycby8il1TZFhPqQPZWnEZ7w_XkgUiSppU8RM9ezsuEzHoClA6Rt1WkrVVcKqwr3Z5NcE/exec?className=${className}`, getMethod)
+                        .then(response => {
+                            return response.json();
+                })
+                        .then(data => {
+                            //const data = { "introduction": true, "firststeps": false, "keyboard": false };
+                            console.log(data);
+                            Object.entries(data).forEach(([chapterName, isActive]) => {
+                                chapters[chapterName].isActive = isActive;
+                            });               
+                            addCards(chapters);
+                })
+                        .catch(error => {
+                            console.error('There was a problem with the fetch operation:', error);
+                });
+            }
         </script>
     </body>
 </html>

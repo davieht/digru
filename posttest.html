@@ -8,9 +8,28 @@
 <body>
   <h1>Send POST Request to Google Spreadsheet</h1>
   <input type="text" id="csvString" placeholder="Enter CSV string">
-  <button onclick="sendPostRequest()">Send POST Request</button>
+  <button onclick="sendGetRequest()">Send POST Request</button>
 
   <script>
+    // Google Apps Script Web App URL (Replace with your own URL)
+     const url = "https://script.google.com/macros/s/AKfycby8il1TZFhPqQPZWnEZ7w_XkgUiSppU8RM9ezsuEzHoClA6Rt1WkrVVcKqwr3Z5NcE/exec";
+     
+    function sendGetRequest() {
+        const data = {
+          method: "GET",
+          contentType: "application/json"  // Make sure we are sending JSON data
+        };
+
+        fetch(`${url}?className=1A`)
+          .then(response => response.text())
+          .then(responseText => {
+            alert(JSON.parse(responseText));  // Show the response from the Apps Script
+          })
+          .catch(error => {
+            alert("Error: " + error);
+          });
+    }  
+      
     function sendPostRequest() {
         const csvString = document.getElementById("csvString").value;
 
@@ -18,9 +37,6 @@
           alert("Please enter a valid CSV string.");
           return;
         }
-
-        // Google Apps Script Web App URL (Replace with your own URL)
-        const url = "https://script.google.com/macros/s/AKfycby8il1TZFhPqQPZWnEZ7w_XkgUiSppU8RM9ezsuEzHoClA6Rt1WkrVVcKqwr3Z5NcE/exec";
 
         const data = {
           method: "POST",

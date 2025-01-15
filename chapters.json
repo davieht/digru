@@ -3,6 +3,7 @@
         "name" : "Draft",
         "description" : "Thisisadraft.",
         "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Draft",
@@ -16,6 +17,7 @@
         "name" : "Einleitung und Begrüßung",
         "description" : "Willkommen zu Digi.",
         "image" : "https://t3.ftcdn.net/jpg/09/98/50/16/360_F_998501661_Wd3w65mucUePlMvDCVSPQ6bUSq7YLFF8.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Einleitung und Begrüßung",
@@ -28,7 +30,8 @@
     "firststeps" : {
         "name" : "Erste Schritte - Dein Laptop",
         "description" : "In diesem Kapitel lernst du, wie du deinen Laptop bedienst",
-        "image" : "https://cdn.pixabay.com/photo/2017/02/15/16/15/hands-2069206_1280.jpg",
+        "image" : "https://media.istockphoto.com/id/1425235236/photo/side-view-of-youthful-african-american-schoolboy-working-in-front-of-laptop.jpg?s=612x612&w=0&k=20&c=-mIYq_YHruqvNr5DZ4GMf7BrwKNug3M3U_JwLnIxvLU=",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Erste Schritte",
@@ -49,6 +52,7 @@
         "name" : "Maus und Tastatur",
         "description" : "In diesem Kapitel lernst du wie du mit Maus und Tastatur arbeitest.",
         "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Maus und Tastatur",
@@ -92,6 +96,7 @@
         "name" : "Sonderzeichen",
         "description" : "In diesem Kapitel lernst du was Sonderzeichen sind und wie du sie schreiben kannst.",
         "image" : "https://i2.pickpik.com/photos/713/802/342/enter-keyboard-computer-keys-preview.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Sonderzeichen",
@@ -118,7 +123,8 @@
     "login" : {
         "name" : "Login und Registrieren",
         "description" : "Thisisadraft.",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://www.seedprod.com/wp-content/uploads/2021/09/welcome-login-page-template.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Login und Registrieren",
@@ -137,7 +143,8 @@
     "typewriting" : {
         "name" : "Das Zehnfingersystem",
         "description" : "In diesem Kapitel lernst du wie du effizient mit der Tastatur schreiben kannst.",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://cdn.mos.cms.futurecdn.net/3kQCtpnfHoUq5cBsLqKTFk.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Das Zehnfingersystem",
@@ -164,6 +171,7 @@
         "name" : "Tastenkombindationen",
         "description" : "Thisisadraft.",
         "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Tastenkombinationen",
@@ -189,7 +197,8 @@
     "computer-history" : {
         "name" : "Computergeschichte",
         "description" : "In diesem Kapitel lernst du wie der Computer entstanden ist.",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://www.primeitconsulting.ch/public/uploads/2024/02/ENIAC.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Computergeschichte",
@@ -214,7 +223,8 @@
     "hardware1" : {
         "name" : "Hardware 1",
         "description" : "In diesem Kapitel lernst du was Hardware ist",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://res.cloudinary.com/dbi5dzmhz/images/f_auto,q_auto/v1729382683/Safemode/hardware-3509898_1920-min/hardware-3509898_1920-min.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "CPU, RAM und Motherboard",
@@ -245,7 +255,8 @@
     "hardware2" : {
         "name" : "Hardware 2",
         "description" : "In diesem Kapitel lernst du was Hardware ist",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://res.cloudinary.com/dbi5dzmhz/images/f_auto,q_auto/v1729382683/Safemode/hardware-3509898_1920-min/hardware-3509898_1920-min.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Festplatten, Mainboard und GPU",
@@ -276,7 +287,8 @@
     "hardware3" : {
         "name" : "Hardware 3",
         "description" : "In diesem Kapitel lernst du was Hardware ist",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://res.cloudinary.com/dbi5dzmhz/images/f_auto,q_auto/v1729382683/Safemode/hardware-3509898_1920-min/hardware-3509898_1920-min.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Festplatten, Mainboard und GPU",
@@ -307,7 +319,8 @@
     "periphery" : {
         "name" : "Peripheriegeräte",
         "description" : "In diesem Kapitel lernst du was Peripheriegeräte sind und was das EVA-Prinzip ist.",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://cdn.thewirecutter.com/wp-content/media/2024/08/laserprinters-2048px-02603-3x2-1.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Peripheriegeräte",
@@ -332,7 +345,8 @@
     "interfaces" : {
         "name" : "Schnittstellen und Anschlüsse",
         "description" : "In diesem Kapitel lernst du welche Schnittstellen und Anschlüsse es gibt.",
-        "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "image" : "https://it1102navaja.wordpress.com/wp-content/uploads/2017/07/connectors-for-integrated-peripherals.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Schnittstellen und Anschlüsse",
@@ -358,6 +372,7 @@
         "name" : "Bits und Bytes",
         "description" : "In diesem Kapitel lernst du wie der Computer rechnet.",
         "image" : "https://static.vecteezy.com/system/resources/previews/012/255/937/non_2x/binary-code-seamless-pattern-digital-binary-code-zero-and-one-background-cyber-security-network-hacker-internet-illustration-vector.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Bits und Bytes",
@@ -383,6 +398,7 @@
         "name" : "Draft",
         "description" : "Thisisadraft.",
         "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Draft",
@@ -396,6 +412,7 @@
         "name" : "Draft",
         "description" : "Thisisadraft.",
         "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Draft",
@@ -409,6 +426,7 @@
         "name" : "Draft",
         "description" : "Thisisadraft.",
         "image" : "https://live.staticflickr.com/7251/13312586263_f6d0204d5b_b.jpg",
+        "isActive" : false,
         "links" : [
             {
                 "name" : "Draft",
