@@ -1,0 +1,877 @@
+{
+    "draft": {
+        "name": "Draft",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "introduction": {
+        "name": "Einleitung und Begrüßung",
+        "description": "Willkommen zu Digi.",
+        "image": "../src/introduction.jpg",
+        "links": [
+            {
+                "name": "Einleitung und Begrüßung",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/17ruy3nx3YOfPht4sRnKKi_6_rdnTsep4hs8qg7kXTZA/",
+                "description": ""
+            },
+            {
+                "name": "Einleitung und Begrüßung",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Begr%C3%BC%C3%9Fung%20Digi.pdf",
+                "description": "In diesem Kaptiel erfährst du mehr über deinen Lehrer und den Digitalen Unterricht."
+            }
+        ]
+    },
+    "digi": {
+        "name": "Digitale Grundbildung",
+        "description": "Erste Grundlagen in Digitaler Grundbildung.",
+        "image": "",
+        "links": [
+            {
+                "name": "Digitale Grundbildung",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1slryLxW0MA-xmU_LG-AbyFHYZjyRK606xVXVkU4TbuI",
+                "description": ""
+            },
+            {
+                "name": "Digitale Grundbildung",
+                "type": "pdf",
+                "link": "",
+                "description": "In diesem Kaptiel erfährst du mehr über deinen Lehrer und den Digitalen Unterricht."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "https://davieht.github.io/schulquiz/index.html?id=digitalanalog",
+                "description": "Dein erstes Quiz."
+            }
+        ]
+    },
+    "firststeps": {
+        "name": "Erste Schritte - Dein Laptop",
+        "description": "Erste Grundlagen über deinen Laptop",
+        "image": "../src/firststeps.jpg",
+        "links": [
+            {
+                "name": "Erste Schritte",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/computer-abc/pc-bestandteile/1",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung deines Laptops."
+            }
+        ]
+    },
+    "keyboard1": {
+        "name": "Die Tastatur - Grundlagen",
+        "description": "Arbeiten mit Maus und Tastatur",
+        "image": "../src/keyboard.jpg",
+        "links": [
+            {
+                "name": "Maus und Tastatur",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1NT1sarzBk_949MUzJYQJ8693l3auoL_EGg3GCH5mN_I/",
+                "description": ""
+            },
+            {
+                "name": "Maus und Tastatur",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Maus%20und%20Tastatur.pdf",
+                "description": "Die Unterlagen zu Maus und Tastatur."
+            },
+            {
+                "name": "Der Texteditor - Schreiben lernen",
+                "type": "exercise",
+                "link": "",
+                "description": "• Ich bin [dein Name]\n• Meine Lieblingsfarbe ist [deine Lieblingsfarbe]\n• Mein Lieblingsessen ist [dein Lieblingsessen]\n• Mein Lieblingstier ist [dein Lieblingstier]"
+            }
+        ]
+    },
+    "login": {
+        "name": "Login und Registrieren",
+        "description": "Was ist ein Login und wozu muss man sich Registrieren?",
+        "image": "../src/login.jpg",
+        "links": [
+            {
+                "name": "Login und Registrieren",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/17jcALiIxgrjocPZwGJ4pBXbzzaCZKGaljH9TT016k9U/",
+                "description": ""
+            },
+            {
+                "name": "Login und Registrieren",
+                "type": "pdf",
+                "link": "Hier erfährst du wie du dich auf einer Website registrieren und einloggen kannst. Du kannst hier nachlesen wie du dich bei Webuntis oder Typista anmeldest.",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "https://davieht.github.io/schulquiz/index.html?id=registration",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "keyboard2": {
+        "name": "Die Tastatur - Das Zehnfingersystem",
+        "description": "In diesem Kapitel lernst du wie du effizient mit der Tastatur schreiben kannst.",
+        "image": "../src/keyboard.jpg",
+        "links": [
+            {
+                "name": "Das Zehnfingersystem",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1_vI1berNL8axAKQ_oafFXuw5tJWauB54QuquXy6fELI/",
+                "description": ""
+            },
+            {
+                "name": "Das Zehnfingersystem",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Zehnfingersystem.pdf",
+                "description": "Hier lernst du wie du effizient mit dem Zehnfingersystem schreiben lernst."
+            },
+            {
+                "name": "typista.de",
+                "type": "interactive",
+                "link": "https://typista.de/",
+                "description": "Mit diesem Lernprogramm lernst du das Zehnfingersystem."
+            }
+        ]
+    },
+    "keyboard3": {
+        "name": "Die Tastatur - Sonderzeichen",
+        "description": "In diesem Kapitel lernst du was Sonderzeichen sind und wie du sie schreiben kannst.",
+        "image": "../src/keyboard.jpg",
+        "links": [
+            {
+                "name": "Sonderzeichen",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/14erRuSNrM_Afc-dyNuJ649_tGjDLfO9k8DXdCd__5I8/",
+                "description": ""
+            },
+            {
+                "name": "Sonderzeichen",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Sonderzeichen.pdf",
+                "description": "Alles über Sonderzeichen."
+            },
+            {
+                "name": "Dialog",
+                "type": "exercise",
+                "link": "",
+                "description": "Schreibe einen Dialog zwischen zwei Schüler, die sich kennen lernen. Achte dabei genau auf Satz- und Sonderzeichen:\n\nSchüler: \"Hallo?\"\nIch: \"Hallo! Wie geht’s?\"\nSchüler: \"Danke, gut! Und dir?\"\nIch: \"Sehr gut. Wie viel Geld hast du?\"\nSchüler: \"€5. Und du?\"\nIch: \"Alles Geld der Welt. :)\""
+            },
+            {
+                "name": "Emoticons mit Sonderzeichen",
+                "type": "exercise",
+                "link": "",
+                "description": "Wusstest du, dass man Smilies auch mit Sonderzeichen schreiben kann? Schreibe so viele Emoticons wie möglich auf, sei kreativ! Hier ein paar Beispiele, die du auch selbst ausprobieren kannst:\n\n:-)      Normales Smiley\n8-)      Smiley mit Sonnenbrille\n:-]      Duckface Smiley\n:-/      Unsicheres Smiley\nx-D      Lachendes Smiley"
+            }
+        ]
+    },
+    "keyboard4": {
+        "name": "Die Tastatur - Ergänzendes",
+        "description": "Maus und Tastatur und das Abschlussquiz",
+        "image": "../src/keyboard.jpg",
+        "links": [
+            {
+                "name": "Maus und Tastatur",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1NT1sarzBk_949MUzJYQJ8693l3auoL_EGg3GCH5mN_I/",
+                "description": ""
+            },
+            {
+                "name": "Maus und Tastatur",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Maus%20und%20Tastatur.pdf",
+                "description": "Die Unterlagen zu Maus und Tastatur."
+            },
+            {
+                "name": "Die Computermaus",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=a65Mt-mneqM",
+                "description": "In diesem Video erfährst du mehr über die Computermaus und wie du sie optimal für dich konfigurieren kannst."
+            },
+            {
+                "name": "Die Tastatur",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=awo3iplJNEw",
+                "description": "In diesem Video werden die Tasten auf der Tastatur erklärt."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=keyboard",
+                "description": "Das Abschlussquiz zu Maus und Tastatur."
+            }
+        ]
+    },
+    "shortcuts": {
+        "name": "Tastenkombindationen",
+        "description": "In diesem Kapitel lernst du was Tastenkürzel sind",
+        "image": "../src/keyboard.jpg",
+        "links": [
+            {
+                "name": "Tastenkombinationen",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/10k7misOyb3VmwFb8uZBAqioS50WpK9_2526Jce0bKQA",
+                "description": ""
+            },
+            {
+                "name": "Tastenkombinationen",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Tastenk%C3%BCrzel.pdf",
+                "description": "Die wichtigsten Tastenkombinationen oder Tastenkürzel, wie Kopieren, Ausschneiden und Einfügen."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=shortcuts",
+                "description": "Das Quiz zu Tastenkürzel."
+            }
+        ]
+    },
+    "computer-history": {
+        "name": "Computergeschichte",
+        "description": "Eine kurze Geschichte über die Computergeschichte",
+        "image": "../src/history.jpg",
+        "links": [
+            {
+                "name": "Computergeschichte",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1mbrzW0Bwwey2RGYsP8nGi19dTN1DkYf20PJRtIaNfJ4",
+                "description": ""
+            },
+            {
+                "name": "Computergeschichte",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Computergeschichte.pdf",
+                "description": "Eine kurze Geschichte über die Computergeschichte."
+            },
+            {
+                "name": "Computergeschichte",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=07zsT8lBSjQ",
+                "description": "In diesem Video erfährst du mehr über die Geschichte des Computers."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=history",
+                "description": "Das Quiz zu Computergeschichte."
+            }
+        ]
+    },
+    "hardware1": {
+        "name": "Hardware 1",
+        "description": "Computerhardware, der Prozessor und Arbeitsspeicher",
+        "image": "../src/hardware.jpg",
+        "links": [
+            {
+                "name": "Hardware",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1DRBPvXa-1cOuSRBkiwfMvnq4K_jp9cGJMD0cTze3Lts",
+                "description": ""
+            },
+            {
+                "name": "Computer, CPU, RAM",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Hardware1.pdf",
+                "description": "Hier erfährst du alles zu Computerhardware."
+            },
+            {
+                "name": "Der Prozessor (CPU)",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=oG69WH5nea0",
+                "description": "In diesem Video erfährst du wie ein Prozessor funktioniert."
+            }, {
+                "name": "Der Arbeitsspeicher (RAM)",
+                "type": "pdf",
+                "link": "https://www.youtube.com/watch?v=7Cw2MvuTqkM",
+                "description": "In diesem Video erfährst du wie der Arbeitsspeicher (RAM) funktioniert."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=hardware1",
+                "description": "Das Quiz zu Computerhardware, Prozessor und Arbeitsspeicher."
+            }
+        ]
+    },
+    "hardware2": {
+        "name": "Hardware 2",
+        "description": "Über Festplatten, das Mainboard und die Grafikkarte",
+        "image": "../src/hardware.jpg",
+        "links": [
+            {
+                "name": "Hardware",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1DRBPvXa-1cOuSRBkiwfMvnq4K_jp9cGJMD0cTze3Lts",
+                "description": ""
+            },
+            {
+                "name": "Festplatten, Mainboard und GPU",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Hardware2.pdf",
+                "description": "Hier erfährst du alles zu Computerhardware.",
+                "draft": true
+            },
+            {
+                "name": "Festplatten (HDD und SSD)",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=JTNWaFbJPw0",
+                "description": "In diesem Video erfährst du was Festplatten sind und wie sie funktionieren."
+            }, {
+                "name": "Die Grafikkarte (GPU)",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=7Cw2MvuTqkM",
+                "description": "In diesem Video erfährst du was eine Grafikkarte ist."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=hardware2",
+                "description": "Das Quiz zu Festplatten, Mainboard und Grafikkarte."
+            }
+        ]
+    },
+    "hardware3": {
+        "name": "Hardware 3",
+        "description": "PCI-Karten, das Netzteil und weitere Komponenten",
+        "image": "../src/hardware.jpg",
+        "links": [
+            {
+                "name": "hardware",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1DRBPvXa-1cOuSRBkiwfMvnq4K_jp9cGJMD0cTze3Lts",
+                "description": ""
+            },
+            {
+                "name": "PCI-Karten, Netzteil",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Hardware3.pdf",
+                "description": "Hier erfährst du alles zu Computerhardware.",
+                "draft": true
+            },
+            {
+                "name": "Interne Anschlüsse",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=HTs-Ek4dbhA",
+                "description": "In diesem Video erfährst du welche internen Anschlüsse es gibt."
+            }, {
+                "name": "Computer zerlegen und zusammenbauen",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=5R7EQ2Iilww",
+                "description": "In diesem Video erfährst du was eine Grafikkarte ist."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=hardware3",
+                "description": "Das Quiz zu Hardware."
+            }
+        ]
+    },
+    "periphery1": {
+        "name": "Peripheriegeräte",
+        "description": "In diesem Kapitel lernst du was Peripheriegeräte sind.",
+        "image": "",
+        "links": [
+            {
+                "name": "Peripheriegeräte",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1mMEEj6k_Kc_T4U33b3y04BuyjXGXIu5ZbO2jFPYiBck",
+                "description": ""
+            },
+            {
+                "name": "Peripheriegeräte",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Peripherieger%C3%A4te.pdf",
+                "description": "Die Unterlagen zu Peripheriegeräte."
+            },
+            {
+                "name": "Ein- und Ausgabegeräte",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=Z6nqZaZhPeU",
+                "description": "In diesem Video erfährst du mehr über die Ein- und Ausgabegeräte und wie diese mit dem Computer interagieren."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=periphery",
+                "description": "Das Quiz zu Peripheriegeräte."
+            }
+        ]
+    },
+    "periphery2": {
+        "name": "Schnittstellen und Anschlüsse",
+        "description": "In diesem Kapitel lernst du welche Schnittstellen und Anschlüsse es gibt.",
+        "image": "../src/interfaces.jpg",
+        "links": [
+            {
+                "name": "Schnittstellen und Anschlüsse",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1mMEEj6k_Kc_T4U33b3y04BuyjXGXIu5ZbO2jFPYiBck",
+                "description": ""
+            },
+            {
+                "name": "Schnittstellen und Anschlüsse",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Schnittstellen%20und%20Anschl%C3%BCsse.pdf",
+                "description": "Die Unterlagen zu den Computeranschlüssen."
+            },
+            {
+                "name": "Schnittstellen und Anschlüsse",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=w8B6Yta-lUc",
+                "description": "In diesem Video erfährst du mehr über die Anschlüsse eines Mainboards. Im Video wird erklärt welche Peripheriegeräte du an welchen Steckplatz anstecken kannst."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=interfaces",
+                "description": "Das Quiz zu Schnittstellen und Anschlüsse."
+            }
+        ]
+    },
+    "bitsnbytes": {
+        "name": "Bits und Bytes",
+        "description": "In diesem Kapitel lernst du wie der Computer arbeitet.",
+        "image": "../src/bitsnbytes.jpg",
+        "links": [
+            {
+                "name": "Bits und Bytes",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1MI1C8jXHOL5-ckUyooGl2shuL7MyDBVqP53xYsor2zA/",
+                "description": ""
+            },
+            {
+                "name": "Bits und Bytes",
+                "type": "pdf",
+                "link": "https://davieht.github.io/schulunterlagen/Bits%20%26%20Bytes.pdf",
+                "description": "Die Unterlagen zu Bits und Bytes und wie ein Computer funktioniert"
+            },
+            {
+                "name": "Bits und Bytes",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=0Exik_Q3kDk",
+                "description": "In diesem Video erfährst du, was Bits und Bytes sind und wie sie in Relation stehen."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=bitsnbytes",
+                "description": "Das Abschlussquiz zu Bits und Bytes."
+            }
+        ]
+    },
+    "windowsui": {
+        "name": "Windows - Die Benutzeroberfläche",
+        "description": "In diesem Kapitel lernst du über die Windows Benutzeroberfläche.",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Windows",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1MRhRvBMpR2O1aimib31fQlsb19SdttPxbOBQ6Japw9w",
+                "description": ""
+            },
+            {
+                "name": "Windows",
+                "type": "pdf",
+                "link": "",
+                "description": "Die Unterlagen zur Windows Benutzeroberfläche."
+            },
+            {
+                "name": "Betriebssysteme",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=oFlk_m-7sfQ",
+                "description": "In diesem Video erfährst du was Betriebssysteme sind."
+            },
+            {
+                "name": "Die Benutzeroberfläche",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=z6qjH4YCZQ",
+                "description": "In diesem Video wird dir erklärt, wie du mit Windows arbeitest."
+            },
+            {
+                "name": "Übung",
+                "type": "exercise",
+                "link": "",
+                "description": "Desktop, Taskleiste, Startmenü, Kontextmenü - Hintergrundbild ändern, Taskleiste pinnen, Programm ausführen, Datei und Ordner anlegen"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=windowsui",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "explorer": {
+        "name": "Windows - Der Windowsexplorer",
+        "description": "Der Windowsexplorer",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Der Windowsexplorer",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1InNRrklL3i8Qf0q6g5QPM0W2N4kDFj9tB5gm-ZuPCLo",
+                "description": ""
+            },
+            {
+                "name": "Der Windowsexplorer",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Windows",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=pEaCloPuN5k",
+                "description": "In diesem Video erfährst du, was der Datei-Explorer ist und wie du mit diesem arbeitest.."
+            },
+            {
+                "name": "Übung - Dateien und Ordner erstellen",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Übung - Ordnerstruktur anlegen",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Übung - Verknüpfung des Homeverzeichnis anlegen",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            }
+        ]
+    },
+    "filemanagement": {
+        "name": "Windows - Dateimanagement",
+        "description": "Dateien, Ordner, Datenträger und Programme",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Der Windowsexplorer",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1InNRrklL3i8Qf0q6g5QPM0W2N4kDFj9tB5gm-ZuPCLo",
+                "description": ""
+            },
+            {
+                "name": "Der Windowsexplorer",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=explorer",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Übung - Zip Datei Herunterladen, entpacken und in das Homeverzeichnis verschieben",
+                "type": "exercise",
+                "link": "",
+                "description": "Lade die Zip-Datei herunter, entpacke diese und kopiere den Inhalt in den Dokumentenordner in deinem Home-Verzeichnis. Öffne den Inhalt und lies dir das Geheimnis durch."
+            },
+            {
+                "name": "Geheim.zip",
+                "type": "download",
+                "link": "../assets/Geheim.zip",
+                "description": ""
+            }
+        ]
+    },
+    "maintenance": {
+        "name": "Windows - Einstellungen und Taskmanager",
+        "description": "Hier lernst du mehr über die Einstellungen in Windows",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Einstellungen",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1-Mv3bpjQ3TCfvZX4qVoM7nLW2lYBX6XIJAoj1xexwQY",
+                "description": ""
+            },
+            {
+                "name": "Einstellungen und Taskmanager",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Der Taskmanager",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=C4X2BHBLJ3E",
+                "description": "In diesem Video erfährst du, wie du was der Taskmanager ist und wie du diesen bedienst."
+            },
+            {
+                "name": "Einstellungen",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=z6qjH4YCZQc",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=maintenance",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Computereigenschaften",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            }
+        ]
+    },
+    "windowsoptional": {
+        "name": "Windows - Tipps und Tricks (optional)",
+        "description": "Weiterführende Funktionen in Windows.",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Fenstermanagement",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1quE744r-lBdG7ZOhG6QXSIehzGp_W_fF0WB5MK1YghU/",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    } ,
+    "browser": {
+        "name": "Internet ABC",
+        "description": "Hier lernst du was ein Browser ist und wie du diesen bedienst",
+        "image": "../src/browsers.jpeg",
+        "links": [
+            {
+                "name": "Internet ABC",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/unterwegs-im-internet-so-gehts",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung eines Browsers"
+            },
+            {
+                "name": "Der Browser",
+                "type": "exercise",
+                "link": "",
+                "description": "Suche auf Wikipedia nach Hund, Katze\nSuche auf Wikipedia nach deinem Namen\nSuche auf Wikipedia nach deinem Geburtsort oder Wohnort\nSpeichere dir die Seite Wikipedia als \"Bookmark\" ab"
+            }
+        ]
+    },
+    "searchengines": {
+        "name": "Suchmaschinen",
+        "description": "Hier lernst du was Suchmaschinen sind und wie du diese bedienst",
+        "image": "../src/searchengine.jpg",
+        "links": [
+            {
+                "name": "Suchen und Finden im Internet",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/suchen-und-finden",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung einer Suchmaschine."
+            },
+            {
+                "name": "Das Internet",
+                "type": "exercise",
+                "link": "",
+                "description": "Öffne ein Tab\nSuche auf Google nach Katzenbildern (oder Hundebilder, für die Hundefreunde)\nDu kannst Bilder auch auf deinem PC abspeichern (bitte in einem geeigneten Ordner! Ordnung halten ;)\nDu kannst auch Tabs gruppieren."
+            }
+        ]
+    },
+    "internet1": {
+        "name": "Browser und Suchmaschinen",
+        "description": "Das abschließende Kapitel über Suchmaschinen und Browser",
+        "image": "../src/internet.jpg",
+        "links": [
+            {
+                "name": "Browser und Suchmaschinen",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1uzULkvtxvo1ap05cC8YAyLNmUoGudQTUNUXxAvAjOu8",
+                "description": ""
+            },
+            {
+                "name": "Browser und Suchmaschinen",
+                "type": "pdf",
+                "link": "",
+                "description": "Die Unterlagen zu Browser und Suchmaschinen."
+            },
+            {
+                "name": "Suchen und Finden im Internet",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=m2bktLTzpWs",
+                "description": "In diesem Video erfährst du, wie du im Internet suchen kannst."
+            },
+            {
+                "name": "Wie funktioniert eine Suchmaschine?",
+                "type": "pdf",
+                "link": "https://www.youtube.com/watch?v=Rr-uWTO_HAw",
+                "description": "Dieses Video erklärt dir wie eine Suchmaschine funktioniert."
+            },
+            {
+                "name": "Personalisierte Suche",
+                "type": "pdf",
+                "link": "https://www.youtube.com/watch?v=3mdoyI2xHB8",
+                "description": "Dieses Video erklärt warum du überall mit Werbung konfrontiert bist."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=browser",
+                "description": "Das Quiz zu Browser und Suchmaschinen."
+            }
+        ]
+    },
+    "email": {
+        "name": "Das E-Mail",
+        "description": "In diesem Kapitel lernst du wie du elektronische Post sendest und empfängst",
+        "image": "../src/email.jpg",
+        "links": [
+            {
+                "name": "Das E-Mail",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1QsLVuWVm9GOtrrEAoBdSqgU3dJOIkihw1ahXMZIpf_s/",
+                "description": ""
+            },
+            {
+                "name": "Das E-Mail",
+                "type": "pdf",
+                "link": "Die Unterlagen zu E-Mail",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das E-Mail",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/e-mail-post-fuer-dich",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "internet2": {
+        "name": "Das Internet - Grundlagen1",
+        "description": "Hier lernst du was das Internet ist",
+        "image": "../src/internet.jpg",
+        "links": [
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/so-funktioniert-das-internet-die-technik",
+                "description": "In diesem interaktiven Lernmodul erfährst du, wie das Internet funktioniert."
+            }
+        ]
+    },
+    "internet3": {
+        "name": "Das Internet - Grundlagen2",
+        "description": "Hier lernst du wie das Internet funktioniert",
+        "image": "../src/internet.jpg",
+        "links": [
+            {
+                "name": "Das Internet",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1tQoufcvYEEvYtKx8AVk__6KHJnfn5koJziR-lDFAaxw",
+                "description": ""
+            },
+            {
+                "name": "Das Internet",
+                "type": "pdf",
+                "link": "",
+                "description": "Die Unterlagen erklären, wie das Internet funktioniert."
+            },
+            {
+                "name": "Datentransfer",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=ccspDEMDJTo",
+                "description": "Dieses Video erklärt, wie der Datentransfer über das Internet funktioniert."
+            },
+            {
+                "name": "Cookies",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=4y5pKc66CAk",
+                "description": "Dieses Video erklärt dir, was Cookies sind."
+            },
+            {
+                "name": "Quiz",
+                "type": "Quiz",
+                "link": "../quiz/quiz.html?id=internet",
+                "description": "Das Quiz zum Thema Internet."
+            },
+            {
+                "name": "Clickclickclickclick",
+                "type": "interactive",
+                "link": "https://clickclickclick.click/",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "powerpoint": {
+        "name": "Präsentieren mit Powerpoint",
+        "description": "In diesem Kapitel lernst du, wie du eine Präsentation mit Powerpoint erstellen kannst.",
+        "image": "",
+        "links": [
+            {
+                "name": "Einleitung und Begrüßung",
+                "type": "slide",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Powerpoint",
+                "type": "pdf",
+                "link": "",
+                "description": "Die Unterlagen zu Powerpoint."
+            },
+            {
+                "name": "Erste Schritte mit Powerpoint",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=kbpkdxL-Ubg",
+                "description": "Dieses Video erklärt, wie du mit Powerpoint Präsentationsfolien erstellen kannst."
+            },
+            {
+                "name": "Geburtstagseinladung",
+                "type": "exercise",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "blockly": {
+        "name": "Programmieren mit Blockly",
+        "description": "Eine Einführung in das Programmieren. Mit Blockly",
+        "image": "../src/blockly.jpg",
+        "links": [
+            {
+                "name": "Programmieren",
+                "type": "slide",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Programmieren",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Blockly",
+                "type": "exercise",
+                "link": "https://blockly.games/",
+                "description": "Draftdescription."
+            }
+        ]
+    }
+}

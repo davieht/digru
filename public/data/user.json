@@ -1,0 +1,13 @@
+{
+    "name": "David",
+    "class": "2B",
+    "chapters": {
+        "introducion": null,
+        "firststeps": "1",
+        "keyboard": "2"
+    },
+    "points": 250,
+    "credits": 100,
+    "grade": 2,
+    "avatar": {}
+}

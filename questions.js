@@ -188,6 +188,8 @@ const db = {
         "questions": [
             {
                 "text": "Was ist eine CPU?",
+                "img": "https://spectra-austria.at/media/8f/46/b0/1617177543/Intel-Core-i3-CPU.jpg",
+                "answer": "",
                 "options": [
                     {"text": "Prozessor", "correct": true},
                     {"text": "Grafikkarte"},
@@ -197,6 +199,8 @@ const db = {
             },
             {
                 "text": "Was ist RAM?",
+                "img": "https://img.freepik.com/premium-photo/random-access-memory-ram-isolated-white-background_1111504-21975.jpg",
+                "answer": "",
                 "options": [
                     {"text": "Random Access Memory", "correct": true},
                     {"text": "Arbeitsspeicher", "correct": true},
@@ -206,6 +210,8 @@ const db = {
             },
             {
                 "text": "Was ist ein HDD?",
+                "img": "https://shop.compuritas.at/4623-large_default/10x-stueck-35-interne-festplatte-500-gb-hdd-sata.jpg",
+                "answer": "",
                 "options": [
                     {"text": "Hard Disk Drive", "correct": true},
                     {"text": "Festplatte", "correct": true},

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login with REST API</title>
+        <!-- MDL CSS -->
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <!-- MDL Icon Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            #login-main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60vh;
+            }
+
+            #input-box {
+                padding: 16px;
+            }
+            #loading-box {
+                padding: 16px;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> 
+            <main id="login-main" class="mdl-layout__content">
+                <div id="input-box" class="mdl-card mdl-shadow--2dp">
+                    <h4 class="mdl-typography--headline">Login</h4>
+                    <form id="login-form">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="email" id="email" name="email" required>
+                            <label class="mdl-textfield__label" for="email">Name</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" id="password" name="password" required>
+                            <label class="mdl-textfield__label" for="password">Password</label>
+                        </div>
+                        <div style="text-align: center; margin-top: 16px;">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="button" id="login-btn">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="loading-box" class="mdl-card mdl-shadow--2dp" hidden>
+                    <div id="spinner" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+                    <p>Lade App ...</p>                                
+                </div>
+            </main>
+        </div>
+        <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+        </div>
+
+        <!-- MDL JS -->
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
+
+        <script src="../lib.js"></script>
+        <!-- JavaScript -->
+        <script>
+            const BASE_URL = "http://localhost:3000";
+
+            document.getElementById("login-btn").addEventListener("click", async function () {
+                // Get form values
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+
+                // Basic validation
+                if (!email || !password) {
+                    showSnackbar("Please fill in both fields.");
+                    return;
+                }
+
+                showLoading(true);
+
+                try {
+//                    const pwdHash = MD5.generate(password);
+//                    const apiUrl = 'https://script.google.com/macros/s/AKfycby8il1TZFhPqQPZWnEZ7w_XkgUiSppU8RM9ezsuEzHoClA6Rt1WkrVVcKqwr3Z5NcE/exec';
+                    const apiUrl = `${BASE_URL}/api/login/`;
+                    // Send the login request to the server
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            route: "login",
+                            schoolId: password.substring(0, 4),
+                            className: password.substring(4, 6),
+                            token: password.substring(6, 12)
+                        })
+                    });
+
+                    // TODO: replace this with code above
+                    // const response = await fetch('../data/token.json');
+
+                    // Check if the response is successful
+                    if (response.ok) {
+                        const data = await response.json();
+
+                        // Store the hash in a cookie with a 365-day expiration
+                        document.cookie = `login_token=${data.schoolId}|${data.className}|${data.hash}; path=/; max-age=${365 * 24 * 60 * 60}`;
+
+                        // Redirect to index.html
+                        //window.location.href = "../index.html";
+
+                        // Replace the current history entry (login page)
+                        window.history.replaceState(null, '', '../index.html');
+
+                        // Redirect to the dashboard page
+                        window.location.replace('index.html');
+                    } else {
+                        const error = await response.json();
+                        throw new Error(`${error.details}`);
+                    }
+                } catch (error) {
+                    console.error("Error during login:", error);
+                    showSnackbar(error.message);
+                } finally {
+                    showLoading(false);
+                }
+            });
+
+            function showLoading(show) {
+                const inputBox = document.getElementById("input-box");
+                const loadingBox = document.getElementById("loading-box");
+                if (show) {
+                    inputBox.hidden = true;
+                    loadingBox.hidden = false;
+                } else {
+                    inputBox.hidden = false;
+                    loadingBox.hidden = true;
+                }
+            }
+        </script>
+    </body>
+</html>

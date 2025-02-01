@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <style>
+            #card {
+                margin: 16px;
+                padding: 16px;
+                width: auto;
+                position: relative;
+                background-color: white;
+            }
+            
+            #card-icon {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                margin: 16px;
+                font-size: 42px;
+            }
+            
+            .img-container {
+                background-color: #123456;
+                width: 200px;
+                height: 200px;
+                margin-right: 16px;
+            }
+            
+            .img-container>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .center-screen {
+                display: flex;
+                justify-content: center;
+                /*                align-items: center;*/
+                height: 100vh;
+            }
+            
+            .progress-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .progress-bar {
+                flex-grow: 1;
+            }
+            
+            .progress-number {
+                min-width: 50px; /* Adjust this value for desired spacing */
+                text-align: right;
+                margin: 0px;
+            }
+            
+            #score-screen-txt > span {
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            #score-screen-txt > span.points {
+                color: #ffc107;
+            }
+            
+            #score-screen-txt > span.credits {
+                color: #00a7cc;
+            }
+            
+            #score-screen {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="mdl-layout__content" style="background-color: #f0f0f0;">
+            <div class="mdl-grid center-screen">
+                <div class="mdl-cell mdl-cell--8-col">
+                    <h4 id="username">TODO username</h4>
+                    <h3 id="quiz-title"></h3>
+                    <div class="progress-container">
+                        <div class="mdl-progress mdl-js-progress progress-bar" id="progress"></div>
+                        <h4 class="progress-number" id="progress-number"><span id="answered-questions">5</span> (<span id="correct-answers">0</span>) / <span id="total-questions">12</span> (<span id="required-questions">9</span>)</h4>
+                    </div>                   
+                    <div id="card" class="mdl-shadow--2dp">
+                        <div id="question-container" class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--4-col img-container">
+                                <img id="question-img" src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg"/>
+                            </div>
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <h4 id="tquestion-text"></h4>
+                                <i id="card-icon" class="material-icons">check</i>
+                                <div id="answers-container"></div>
+                            </div>
+                        </div>
+
+                        <div id="score-screen">
+                            <h2 id="score-screen-title"></h2><p id="score-screen-txt">Du hast nur 2 von 4 Fragen richtig beantwortet. Du musst mindestens 3 Fragen richtig beantworten um Punkte zu bekommen. Bitte versuche es nocheinmal.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 16px;">
+                        <button id="button-check" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Überprüfen</button>
+                        <button id="button-next" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Nächste Frage</button>
+                        <button id="button-reset" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Zurücksetzen</button>
+                        <button id="button-end" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Ergebnis Abschicken</button>
+                        <div id="spinner" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <template id="answer-template"> 
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect answer-label" for="answer">
+                <input type="checkbox" id="answer" name="answer" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Checkbox</span>
+            </label>
+        </template>
+        <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+        </div>
+        <script src="../lib.js"></script>
+        <script src="questions.js"></script>        
+        <script src="quiz.js"></script>
+    </body>    
+</html>
