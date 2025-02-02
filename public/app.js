@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const content = document.getElementById("main-content");
     const isTeacher = true;
+    
+    const schools = {
+        "oedi": ["1A", "1B", "1E", "1F", "2B", "2D", "2G", "3F", "4E", "4H"],
+        "21er": ["1B", "1E", "1F", "3B", "3D", "4E", "4H"]
+    };
 
     let _chapters = null;
     let _user = null;
@@ -140,7 +145,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     throw new Error(`Chapter '${chapterName}' not available`);
                 }
                 chapters[chapterName].isActive = isActive;
-                chapters[chapterName].star = _user.chapters[chapterName] == null ? 0 : (_user.chapters[chapterName] > 100 ? 2 : 1);
+
+                if (!isTeacher) {
+                    chapters[chapterName].star = _user.chapters[chapterName] == null ? 0 : (_user.chapters[chapterName] > 100 ? 2 : 1);
+            }
             });
 
             _chapters = chapters;
@@ -244,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
             _user.schoolId = schoolId;
         } catch (error) {
             console.error("Error fetching user data:", error);
-            window.location.href = "routes/login.html";
+            //window.location.href = "routes/login.html";
             return;
         } finally {
             showSpinner(false);

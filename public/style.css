@@ -39,10 +39,11 @@ i.material-icons.mdl-list__item-icon {
 }
 .card {
     filter: saturate(0);
-    opacity: .7;
+    opacity: .3;
 }
 .card.active {
     filter: saturate(1);
+    opacity: .8;
 }
 .card.active:hover {
     opacity: 1;

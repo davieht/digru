@@ -4,143 +4,75 @@ const db = {
         "desc": "Bestimme welche Geräte digital oder analog sind",
         "questions": [
             {
-                "text": "Uhr mit Zeiger",
+                "text": "Welche Dinge sind digital?",
                 "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
+                    {"text": "Schallplatte", "correct": true},
+                    {"text": "Uhr mit Zeiger", "correct": true},
+                    {"text": "Laptop"},
+                    {"text": "Beamer"}
                 ]
             },
             {
-                "text": "Zeitung",
+                "text": "Welche Dinge sind analog?",
                 "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
+                    {"text": "Kassette", "correct": true},
+                    {"text": "Zeitung", "correct": true},
+                    {"text": "Brief", "correct": true},
+                    {"text": "Smartphone"}
                 ]
             },
             {
-                "text": "E-Mail",
+                "text": "Welche Dinge sind digital?",
                 "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
+                    {"text": "Tablet", "correct": true},
+                    {"text": "Postkarte"},                    
+                    {"text": "Thermometer mit Quecksilbersäule"},
+                    {"text": "Brettspiele"}
                 ]
             },
             {
-                "text": "Smartphone",
+                "text": "Welche Dinge sind analog? ",
                 "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
+                    {"text": "Mechanische Schreibmaschine", "correct": true},
+                    {"text": "Netflix"},
+                    {"text": "Smartwatch"},
+                    {"text": "Videospiele"}
                 ]
             },
             {
-                "text": "Schallplatte",
+                "text": "Welche Dinge sind analog? ",
                 "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
+                    {"text": "Mechanische Schreibmaschine", "correct": true},
+                    {"text": "Netflix"},
+                    {"text": "Smartwatch"},
+                    {"text": "Videospiele"}
                 ]
             },
             {
-                "text": "Laptop",
+                "text": "Welche Dinge sind analog? ",
                 "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
+                    {"text": "Sanduhr", "correct": true},
+                    {"text": "Gitarre", "correct": true},
+                    {"text": "Papier", "correct": true},
+                    {"text": "Flachbildschirm"}
                 ]
             },
             {
-                "text": "Tablet",
+                "text": "Wozu dient ein Computer? ",
                 "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
+                    {"text": "Ein Computer vereinfacht die tägliche Arbeit?", "correct": true},
+                    {"text": "Man kann damit Videospiele spielen", "correct": true},
+                    {"text": "Ein Computer führt schnelle Berechnungen durch", "correct": true},
+                    {"text": "Ein Computer kann Simulationen durchfürhen", "correct": true}
                 ]
             },
             {
-                "text": "Kassette",
+                "text": "Was besagt das EVA-Prinzip? ",
                 "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Brief",
-                "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Postkarte",
-                "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Netflix",
-                "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
-                ]
-            },
-            {
-                "text": "Thermometer mit Quecksilbersäule",
-                "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Smartwatch",
-                "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
-                ]
-            },
-            {
-                "text": "Beamer",
-                "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
-                ]
-            },
-            {
-                "text": "Videospiele",
-                "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
-                ]
-            },
-            {
-                "text": "Brettspiele",
-                "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Sanduhr",
-                "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Mechanische Schreibmaschine",
-                "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Gitarre",
-                "options": [
-                    {"text": "Digital"},
-                    {"text": "Analog", "correct": true}
-                ]
-            },
-            {
-                "text": "Flachbildschirm",
-                "options": [
-                    {"text": "Digital", "correct": true},
-                    {"text": "Analog"}
+                    {"text": "Eingabe, Verarbeitung, Ausgabe", "correct": true},
+                    {"text": "Es beschreibt grundlegende Schritte der Datenverarbeitung", "correct": true},
+                    {"text": "Einfügen, Verwalten, Anzeigen"},
+                    {"text": "Es beschreibt kreative Prozesse"}
                 ]
             }
         ]
