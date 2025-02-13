@@ -144,15 +144,17 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // Set chapters isActive and star
-            Object.entries(activeChapters).forEach(([chapterName, isActive]) => {
+            Object.entries(activeChapters).forEach(([chapterName, chapter]) => {
                 if (!chapters[chapterName]) {
                     throw new Error(`Chapter '${chapterName}' not available`);
                 }
-                chapters[chapterName].isActive = isActive;
+                chapters[chapterName].isActive = chapter.isActive;
 
                 if (!_user.isTeacher) {
-                    chapters[chapterName].star = _user.chapters[chapterName] == null ? 0 : (_user.chapters[chapterName] > 100 ? 2 : 1);
-            }
+                    if (chapter.hasQuiz === true) {
+                        chapters[chapterName].star = !_user.chapters[chapterName] ? 0 : (_user.chapters[chapterName] >= 100 ? 2 : 1);
+                    }
+                }
             });
 
             _chapters = chapters;
@@ -197,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chapter.links.forEach((entry) => {
             if (entry.type === 'slide' && !_user.isTeacher)
                 return;
-            
+
             // Clone the template content
             const clone = template.content.cloneNode(true);
             const icon = iconmap[entry.type];
@@ -312,10 +314,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         const ul = document.createElement("ul");
                         ul.className = "menu-class-list";
                         const li = document.createElement("li");
-                            li.className = "mdl-menu__item";
-                            li.style.fontWeight = "bold";
-                            li.textContent = `${schoolId}`; // Display the value in the list
-                            ul.appendChild(li);
+                        li.className = "mdl-menu__item";
+                        li.style.fontWeight = "bold";
+                        li.textContent = `${schoolId}`; // Display the value in the list
+                        ul.appendChild(li);
                         schoolObj.forEach(className => {
                             const li = document.createElement("li");
                             li.className = "mdl-menu__item";
