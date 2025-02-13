@@ -26,7 +26,7 @@
             {
                 "name": "Einleitung und Begrüßung",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Begr%C3%BC%C3%9Fung%20Digi.pdf",
+                "link": "../assets/pdfs/intro.pdf",
                 "description": "In diesem Kaptiel erfährst du mehr über deinen Lehrer und den Digitalen Unterricht."
             }
         ]
@@ -45,13 +45,13 @@
             {
                 "name": "Digitale Grundbildung",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/digiintro.pdf",
                 "description": "In diesem Kaptiel erfährst du mehr über deinen Lehrer und den Digitalen Unterricht."
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "https://davieht.github.io/schulquiz/index.html?id=digitalanalog",
+                "link": "../quiz/quiz.html?id=digitalanalog",
                 "description": "Dein erstes Quiz."
             }
         ]
@@ -69,7 +69,7 @@
             }
         ]
     },
-    "keyboard1": {
+    "keyboardbasic": {
         "name": "Die Tastatur - Grundlagen",
         "description": "Arbeiten mit Maus und Tastatur",
         "image": "../src/keyboard.jpg",
@@ -83,7 +83,7 @@
             {
                 "name": "Maus und Tastatur",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Maus%20und%20Tastatur.pdf",
+                "link": "../assets/pdfs/keyboard.pdf",
                 "description": "Die Unterlagen zu Maus und Tastatur."
             },
             {
@@ -108,18 +108,18 @@
             {
                 "name": "Login und Registrieren",
                 "type": "pdf",
-                "link": "Hier erfährst du wie du dich auf einer Website registrieren und einloggen kannst. Du kannst hier nachlesen wie du dich bei Webuntis oder Typista anmeldest.",
-                "description": "Draftdescription."
+                "link": "../assets/pdfs/login.pdf",
+                "description": "Hier erfährst du wie du dich auf einer Website registrieren und einloggen kannst. Du kannst hier nachlesen wie du dich bei Webuntis oder Typista anmeldest."
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "https://davieht.github.io/schulquiz/index.html?id=registration",
-                "description": "Draftdescription."
+                "link": "../quiz/quiz.html?id=registration",
+                "description": "Das Quiz zu Login und Registrieren"
             }
         ]
     },
-    "keyboard2": {
+    "typewrite": {
         "name": "Die Tastatur - Das Zehnfingersystem",
         "description": "In diesem Kapitel lernst du wie du effizient mit der Tastatur schreiben kannst.",
         "image": "../src/keyboard.jpg",
@@ -133,7 +133,7 @@
             {
                 "name": "Das Zehnfingersystem",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Zehnfingersystem.pdf",
+                "link": "../assets/pdfs/typewriting.pdf",
                 "description": "Hier lernst du wie du effizient mit dem Zehnfingersystem schreiben lernst."
             },
             {
@@ -144,7 +144,7 @@
             }
         ]
     },
-    "keyboard3": {
+    "specialchar": {
         "name": "Die Tastatur - Sonderzeichen",
         "description": "In diesem Kapitel lernst du was Sonderzeichen sind und wie du sie schreiben kannst.",
         "image": "../src/keyboard.jpg",
@@ -158,7 +158,7 @@
             {
                 "name": "Sonderzeichen",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Sonderzeichen.pdf",
+                "link": "../assets/pdfs/specialchars.pdf",
                 "description": "Alles über Sonderzeichen."
             },
             {
@@ -175,7 +175,7 @@
             }
         ]
     },
-    "keyboard4": {
+    "keyboard": {
         "name": "Die Tastatur - Ergänzendes",
         "description": "Maus und Tastatur und das Abschlussquiz",
         "image": "../src/keyboard.jpg",
@@ -189,7 +189,7 @@
             {
                 "name": "Maus und Tastatur",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Maus%20und%20Tastatur.pdf",
+                "link": "../assets/pdfs/keyboard.pdf",
                 "description": "Die Unterlagen zu Maus und Tastatur."
             },
             {
@@ -226,7 +226,7 @@
             {
                 "name": "Tastenkombinationen",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Tastenk%C3%BCrzel.pdf",
+                "link": "../assets/pdfs/shortcuts.pdf",
                 "description": "Die wichtigsten Tastenkombinationen oder Tastenkürzel, wie Kopieren, Ausschneiden und Einfügen."
             },
             {
@@ -251,7 +251,7 @@
             {
                 "name": "Computergeschichte",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Computergeschichte.pdf",
+                "link": "../assets/pdfs/history.pdf",
                 "description": "Eine kurze Geschichte über die Computergeschichte."
             },
             {
@@ -282,7 +282,7 @@
             {
                 "name": "Computer, CPU, RAM",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Hardware1.pdf",
+                "link": "../assets/pdfs/hardware.pdf",
                 "description": "Hier erfährst du alles zu Computerhardware."
             },
             {
@@ -318,7 +318,7 @@
             {
                 "name": "Festplatten, Mainboard und GPU",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Hardware2.pdf",
+                "link": "../assets/pdfs/hardware.pdf",
                 "description": "Hier erfährst du alles zu Computerhardware.",
                 "draft": true
             },
@@ -355,7 +355,7 @@
             {
                 "name": "PCI-Karten, Netzteil",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Hardware3.pdf",
+                "link": "../assets/pdfs/hardware.pdf",
                 "description": "Hier erfährst du alles zu Computerhardware.",
                 "draft": true
             },
@@ -392,7 +392,7 @@
             {
                 "name": "Peripheriegeräte",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Peripherieger%C3%A4te.pdf",
+                "link": "../assets/pdfs/periphery.pdf",
                 "description": "Die Unterlagen zu Peripheriegeräte."
             },
             {
@@ -423,7 +423,7 @@
             {
                 "name": "Schnittstellen und Anschlüsse",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Schnittstellen%20und%20Anschl%C3%BCsse.pdf",
+                "link": "../assets/pdfs/periphery.pdf",
                 "description": "Die Unterlagen zu den Computeranschlüssen."
             },
             {
@@ -454,7 +454,7 @@
             {
                 "name": "Bits und Bytes",
                 "type": "pdf",
-                "link": "https://davieht.github.io/schulunterlagen/Bits%20%26%20Bytes.pdf",
+                "link": "../assets/pdfs/bitsnbytes.pdf",
                 "description": "Die Unterlagen zu Bits und Bytes und wie ein Computer funktioniert"
             },
             {
@@ -485,7 +485,7 @@
             {
                 "name": "Windows",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/windows.pdf",
                 "description": "Die Unterlagen zur Windows Benutzeroberfläche."
             },
             {
@@ -528,7 +528,7 @@
             {
                 "name": "Der Windowsexplorer",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/explorer.pdf",
                 "description": "Draftdescription."
             },
             {
@@ -571,7 +571,7 @@
             {
                 "name": "Der Windowsexplorer",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/explorer.pdf",
                 "description": "Draftdescription."
             },
             {
@@ -608,7 +608,7 @@
             {
                 "name": "Einstellungen und Taskmanager",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/maintenance.pdf",
                 "description": "Draftdescription."
             },
             {
@@ -694,7 +694,7 @@
             }
         ]
     },
-    "internet1": {
+    "browsersearch": {
         "name": "Browser und Suchmaschinen",
         "description": "Das abschließende Kapitel über Suchmaschinen und Browser",
         "image": "../src/internet.jpg",
@@ -708,7 +708,7 @@
             {
                 "name": "Browser und Suchmaschinen",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/browser.pdf",
                 "description": "Die Unterlagen zu Browser und Suchmaschinen."
             },
             {
@@ -732,7 +732,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=browser",
+                "link": "../quiz/quiz.html?id=browsersearch",
                 "description": "Das Quiz zu Browser und Suchmaschinen."
             }
         ]
@@ -751,8 +751,8 @@
             {
                 "name": "Das E-Mail",
                 "type": "pdf",
-                "link": "Die Unterlagen zu E-Mail",
-                "description": "Draftdescription."
+                "link": "../assets/pdfs/email.pdf",
+                "description": "Die Unterlagen zu E-Mail."
             },
             {
                 "name": "Das E-Mail",
@@ -762,7 +762,7 @@
             }
         ]
     },
-    "internet2": {
+    "internetbasic": {
         "name": "Das Internet - Grundlagen1",
         "description": "Hier lernst du was das Internet ist",
         "image": "../src/internet.jpg",
@@ -775,7 +775,7 @@
             }
         ]
     },
-    "internet3": {
+    "internettech": {
         "name": "Das Internet - Grundlagen2",
         "description": "Hier lernst du wie das Internet funktioniert",
         "image": "../src/internet.jpg",
@@ -789,7 +789,7 @@
             {
                 "name": "Das Internet",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/internet1.pdf",
                 "description": "Die Unterlagen erklären, wie das Internet funktioniert."
             },
             {
@@ -806,8 +806,8 @@
             },
             {
                 "name": "Quiz",
-                "type": "Quiz",
-                "link": "../quiz/quiz.html?id=internet",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=internettech",
                 "description": "Das Quiz zum Thema Internet."
             },
             {
@@ -870,6 +870,25 @@
                 "name": "Blockly",
                 "type": "exercise",
                 "link": "https://blockly.games/",
+                "description": "Löse die Aufgaben mit Blockly."
+            }
+        ]
+    },
+    "project": {
+        "name": "Projekt",
+        "description": "Das Abschlussprojekt",
+        "image": "../src/project.jpg",
+        "links": [
+            {
+                "name": "Das Abschlussprojekt",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1NG_fqqLBR_epIEQrPD6vIu-Io81TWV6OvhkeQDFJgnc",
+                "description": ""
+            },
+            {
+                "name": "Das Abschlussprojekt",
+                "type": "pdf",
+                "link": "../assets/pdfs/project.pdf",
                 "description": "Draftdescription."
             }
         ]

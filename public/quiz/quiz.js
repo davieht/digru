@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
+    const params = new URLSearchParams(location.href.split("?")[1]);
+    const quizId = params.get("id");
+    const className = params.get("className");
+    const firstName = params.get("firstName");
+    const lastName = params.get("lastName");
+    
     let questionCounter = 0;
     const totalQuizPoints = 100;
     const bonusQuizPoints = 25;
 
     const requiredTheshold = .75;
-    const quizData = db['hardware'];
-    const questionLength = 1;
+    const quizData = db[quizId];
+    const questionLength = 12;
     let questions = quizData.questions.slice(0, questionLength);
 
     const answersContainer = document.getElementById("answers-container");
@@ -34,11 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let correctAnswerCnt = 0;
     let requiredQuestionCnt = Math.ceil(questions.length * requiredTheshold);
 
-    const params = new URLSearchParams(location.href.split("?")[1]);
-    const quizId = params.get("id");
-    const className = params.get("className");
-    const firstName = params.get("firstName");
-    const lastName = params.get("lastName");
+    
 
     quizTitle.textContent = quizData.title;
     userName.textContent = `${firstName} ${lastName} - ${className}`;
@@ -106,9 +109,9 @@ document.addEventListener("DOMContentLoaded", () => {
             scoreScreenTitle.textContent = 'Perfekt!!! 😃';
             scoreScreenTxt.innerHTML = `Du hast <b>alle Fragen</b> richtig beantwortet. Du hast somit <span class="points">${totalQuizPoints + bonusQuizPoints} Punkte</span> und <span class="credits">💎 ${totalQuizPoints + bonusQuizPoints} </span> verdient.`;
             buttonEnd.hidden = false;
-        } else if (correctAnswerCnt > requiredQuestionCnt) {
+        } else if (correctAnswerCnt >= requiredQuestionCnt) {
             scoreScreenTitle.textContent = 'Suuuper! 🙂';
-            scoreScreenTxt.innerHTML = `Du hast <b>${correctAnswerCnt}</b> von <b>${questions.length} Fragen</b> richtig beantwortet. Du hast somit <span class="points">${totalQuizPoints * (correctAnswerCnt / questions.length)} Punkte</span> und <span class="credits">💎 ${totalQuizPoints + bonusQuizPoints} </span> verdient. Wenn du die volle Punktzahl erreichst bekommst du 25 Punkte zusaetzlich.`;
+            scoreScreenTxt.innerHTML = `Du hast <b>${correctAnswerCnt}</b> von <b>${questions.length} Fragen</b> richtig beantwortet. Du hast somit <span class="points">${Math.round(totalQuizPoints * (correctAnswerCnt / questions.length))} Punkte</span> und <span class="credits">💎 ${Math.round(totalQuizPoints * (correctAnswerCnt / questions.length))}} </span> verdient. Wenn du die volle Punktzahl erreichst bekommst du 25 Punkte zusaetzlich.`;
             buttonEnd.hidden = false;
             buttonReset.hidden = false;
         } else {
@@ -138,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         questionText.textContent = question.text;
-        questionImg.setAttribute('src', question.img ? question.img : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png");
+        questionImg.setAttribute('src', question.img ? question.img : "../src/placeholder.jpg");
 
         componentHandler.upgradeDom();
     }
@@ -193,8 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const [schoolId, className, hash] = _login_token.split('|');
 
-        const BASE_URL = "http://localhost:3000";
-
         //const apiUrl = "https://script.google.com/macros/s/AKfycby8il1TZFhPqQPZWnEZ7w_XkgUiSppU8RM9ezsuEzHoClA6Rt1WkrVVcKqwr3Z5NcE/exec";
         const apiUrl = `${BASE_URL}/api/quiz/`;
 
@@ -207,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Content-Type": "application/json", // Specify JSON format
             },
             body: JSON.stringify({
-                shoolId: schoolId,
+                schoolId: schoolId,
                 className: className,
                 hash: hash,
                 quizId: quizId,

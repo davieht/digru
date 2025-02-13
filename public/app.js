@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const content = document.getElementById("main-content");
-    const isTeacher = true;
-    
-    const schools = {
+    const scrollBox = document.getElementById("scroll-box");
+
+    const _schools = {
         "oedi": ["1A", "1B", "1E", "1F", "2B", "2D", "2G", "3F", "4E", "4H"],
         "21er": ["1B", "1E", "1F", "3B", "3D", "4E", "4H"]
     };
@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let _user = null;
     let _login_token = null;
     let _loadingCnt = 0;
+    let _scrollPosition = 0;
 
     // Routes and their corresponding content
     const routes = {
@@ -18,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         chapter: "routes/chapter.html",
         profile: "routes/profile.html",
     };
-
-    const BASE_URL = "http://localhost:3000";
 
     // Function to load a route
     async function loadRoute(route) {
@@ -39,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         if (!_chapters) {
                             await loadUser();
                             await loadChapters();
+                            populateMenu();
                         }
                         populateChapters();
                     }());
@@ -88,12 +88,14 @@ document.addEventListener("DOMContentLoaded", () => {
             if (chapter.isActive) {
                 clone.querySelector('.card').classList.add('active');
                 clone.querySelector('.card').addEventListener("click", () => {
+                    _scrollPosition = scrollBox.scrollTop;
                     navigate('chapter', chapterId);
                 });
             }
-            if (isTeacher) {
+            if (_user.isTeacher) {
                 clone.querySelector('.card').style.cursor = 'pointer';
                 clone.querySelector('.card').addEventListener("click", () => {
+                    _scrollPosition = scrollBox.scrollTop;
                     navigate('chapter', chapterId);
                 });
             }
@@ -105,6 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // Append the populated clone to the container
             listContainer.appendChild(clone);
         });
+
+        scrollBox.scrollTo(0, _scrollPosition);
     }
 
     // Function to fetch data from a REST API and populate the list
@@ -133,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             // Filter out chapters whose id is not in activeChapters
-            if (!isTeacher) {
+            if (!_user.isTeacher) {
                 chapters = Object.fromEntries(Object.entries(chapters).filter(([key, chapter]) =>
                     activeChapters[key] !== undefined)
                         );
@@ -146,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 chapters[chapterName].isActive = isActive;
 
-                if (!isTeacher) {
+                if (!_user.isTeacher) {
                     chapters[chapterName].star = _user.chapters[chapterName] == null ? 0 : (_user.chapters[chapterName] > 100 ? 2 : 1);
             }
             });
@@ -191,6 +195,9 @@ document.addEventListener("DOMContentLoaded", () => {
         listContainer.className = "demo-list-three mdl-list";
 
         chapter.links.forEach((entry) => {
+            if (entry.type === 'slide' && !_user.isTeacher)
+                return;
+            
             // Clone the template content
             const clone = template.content.cloneNode(true);
             const icon = iconmap[entry.type];
@@ -219,6 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("grade").textContent = `${_user.grade}`;
         document.getElementById("points").textContent = `${parseFloat(_user.points.toFixed(0))}`;
         document.getElementById("credits").textContent = `💎 ${_user.credits}`;
+        document.getElementById("avatarImg").src = `img/avatar_${_user.avatar.g || 'f'}.png`;
     }
 
     function navigate(destination, id) {
@@ -252,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
             _user.schoolId = schoolId;
         } catch (error) {
             console.error("Error fetching user data:", error);
-            //window.location.href = "routes/login.html";
+            window.location.href = "routes/login.html";
             return;
         } finally {
             showSpinner(false);
@@ -274,6 +282,78 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function populateMenu() {
+        const classMenuBtn = document.getElementById("classMenuBtn");
+        classMenuBtn.hidden = !_user.isTeacher;
+        document.getElementById("profileMenuBtn").hidden = _user.isTeacher;
+
+        if (!_user.isTeacher)
+            return;
+
+        const menu = document.getElementById("classmenu");
+
+        _login_token = getCookie('login_token');
+
+        if (!_login_token) {
+            throw new Error("No login token.");
+        }
+
+        const [schoolId, className, hash] = _login_token.split('|');
+        classMenuBtn.textContent = `Class - ${schoolId} ${className}`;
+
+        // Fetch JSON data asynchronously
+        fetch('data/classMenu.json')
+                .then(response => {
+                    return response.json();
+                })
+                .then(jsonData => {
+                    menu.innerHTML = "";
+                    Object.entries(jsonData).forEach(([schoolId, schoolObj]) => {
+                        const ul = document.createElement("ul");
+                        ul.className = "menu-class-list";
+                        const li = document.createElement("li");
+                            li.className = "mdl-menu__item";
+                            li.style.fontWeight = "bold";
+                            li.textContent = `${schoolId}`; // Display the value in the list
+                            ul.appendChild(li);
+                        schoolObj.forEach(className => {
+                            const li = document.createElement("li");
+                            li.className = "mdl-menu__item";
+                            li.textContent = `${className}`; // Display the value in the list
+
+                            // On click, store only the key in a cookie
+                            li.addEventListener("click", () => {
+                                const cookie = `${schoolId}|${className}|${hash}`;
+                                document.cookie = `login_token=${cookie}; path=/; max-age=86400`; // 1 day
+                                location.reload();
+                            });
+
+                            ul.appendChild(li);
+                        });
+                        menu.appendChild(ul);
+                    });
+
+//                    jsonData.forEach(item => {
+//                        const [schoolId, className] = item.split('|');
+//                        const li = document.createElement("li");
+//                        li.className = "mdl-menu__item";
+//                        li.textContent = `${schoolId} ${className}`; // Display the value in the list
+//
+//                        // On click, store only the key in a cookie
+//                        li.addEventListener("click", () => {
+//                            const cookie = `${schoolId}|${className}|${hash}`;
+//                            document.cookie = `login_token=${cookie}; path=/; max-age=86400`; // 1 day
+//                            location.reload();
+//                        });
+//
+//                        menu.appendChild(li);
+//                    });
+                })
+                .catch(error => {
+                    console.error("Failed to load JSON data:", error);
+                });
+    }
+
     // Event listener for hash changes
     window.addEventListener("hashchange", () => {
         const route = location.hash.slice(1) || "home"; // Get route from hash
@@ -283,4 +363,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial render
     const initialRoute = location.hash.slice(1) || "home";
     loadRoute(initialRoute);
+});
+
+// Save scroll position before navigating away
+window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+});
+
+// Restore scroll position when the page loads
+window.addEventListener('load', () => {
+    const scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        window.scrollTo(0, parseInt(scrollPosition, 10));
+    }
 });

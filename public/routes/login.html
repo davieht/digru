@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
         <title>Login with REST API</title>
         <!-- MDL CSS -->
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -61,12 +62,10 @@
         <!-- MDL JS -->
         <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js"></script>
-
+        <script src="../constants.js"
         <script src="../lib.js"></script>
         <!-- JavaScript -->
         <script>
-            const BASE_URL = "http://localhost:3000";
-
             document.getElementById("login-btn").addEventListener("click", async function () {
                 // Get form values
                 const email = document.getElementById("email").value;

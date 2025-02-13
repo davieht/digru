@@ -170,24 +170,6 @@ const db = {
                     {"text": "Synchronisation über mehrere Geräte hinweg", "correct": true},
                     {"text": "Keine Registrierung erforderlich"}
                 ]
-            },
-            {
-                "text": "Was bedeutet 'Account'?",
-                "options": [
-                    {"text": "Ein persönliches Benutzerkonto", "correct": true},
-                    {"text": "Eine Registrierungsmail"},
-                    {"text": "Ein Passwort"},
-                    {"text": "Ein Verifizierungslink"}
-                ]
-            },
-            {
-                "text": "Welche Daten sind typischerweise in Zugangsdaten enthalten?",
-                "options": [
-                    {"text": "E-Mail-Adresse und Passwort", "correct": true},
-                    {"text": "Benutzername und Passwort", "correct": true},
-                    {"text": "Registrierungslink"},
-                    {"text": "Telefonnummer"}
-                ]
             }
         ]
     },
@@ -196,7 +178,7 @@ const db = {
         "desc": "Beantworte die Fragen zur Tastatur",
         "questions": [
             {
-                "text": "Standardmäßig werden Buchstaben?",
+                "text": "Normalerweise werden Buchstaben?",
                 "options": [
                     {"text": "Klein geschrieben", "correct": true},
                     {"text": "Groß geschrieben"},
@@ -205,7 +187,7 @@ const db = {
                 ]
             },
             {
-                "text": "Sonderzeichen werden mit welchen Tasten geschrieben?",
+                "text": "Um Sonderzeichen zu schreiben muss man welche Taste zusätzlich drücken?",
                 "options": [
                     {"text": "Shift", "correct": true},
                     {"text": "Alt Gr", "correct": true},
@@ -259,29 +241,11 @@ const db = {
                 ]
             },
             {
-                "text": "Der Editor ist?",
+                "text": "Wozu dient die Enter-Taste?",
                 "options": [
-                    {"text": "Ein einfaches Textprogramm", "correct": true},
-                    {"text": "Ein Malprogramm"},
-                    {"text": "Ein Spiel"},
-                    {"text": "Eine Präsentationssoftware"}
-                ]
-            },
-            {
-                "text": "Wie rufe ich den Editor auf?",
-                "options": [
-                    {"text": "Windowstaste drücken und dann 'Editor' in die Suche eingeben.", "correct": true},
-                    {"text": "Strg und dann 'Editor' in die Suche eingeben"},
-                    {"text": "Strg und dann 'Word' eingeben"},
-                    {"text": "Windowstaste und dann 'Strg' eingeben"}
-                ]
-            },
-            {
-                "text": "Die Enter-Taste macht was?",
-                "options": [
-                    {"text": "Einen Absatz", "correct": true},
-                    {"text": "Springt in die nächste Zeile", "correct": true},
-                    {"text": "Bestätigt eine Eingabe", "correct": true},
+                    {"text": "Um in die nächste Zeile zu springen", "correct": true},
+                    {"text": "Um eine Eingabe zu bestätigen", "correct": true},
+                    {"text": "Um Text zu löschen"},
                     {"text": "Kopiert Text"}
                 ]
             },
@@ -319,24 +283,6 @@ const db = {
                     {"text": "Springt an den Anfang einer Zeile"},
                     {"text": "Überspringt ein Wort"},
                     {"text": "Überspringt einen Buchstaben"}
-                ]
-            },
-            {
-                "text": "Wie markiere ich einen Text?",
-                "options": [
-                    {"text": "Shift + Pfeiltasten", "correct": true},
-                    {"text": "Strg + Pfeiltasten"},
-                    {"text": "Space + Pfeiltasten"},
-                    {"text": "Entf + Pfeiltasten"}
-                ]
-            },
-            {
-                "text": "Ein Wort markiere ich mit?",
-                "options": [
-                    {"text": "Strg + Shift + Pfeiltasten", "correct": true},
-                    {"text": "Alt + Shift + Pfeiltasten"},
-                    {"text": "Strg + Alt + Pfeiltasten"},
-                    {"text": "Space + Shift + Pfeiltasten"}
                 ]
             }
         ]
@@ -460,7 +406,7 @@ const db = {
                 ]
             },
             {
-                "text": "Was ermöglichte Herstellung von Mikroprozessoren",
+                "text": "Was ermöglichte die Herstellung von Mikroprozessoren",
                 "options": [
                     {"text": "Die Fertigung von Transistoren", "correct": true},
                     {"text": "Die Fertigung von Relais"},
@@ -469,7 +415,7 @@ const db = {
                 ]
             },
             {
-                "text": "In welcher Dekade wurde der erste transistorgesteuerte Computer gefertigt?",
+                "text": "In welchem Jahrzehnt wurde der erste transistorgesteuerte Computer gefertigt?",
                 "options": [
                     {"text": "1960er", "correct": true},
                     {"text": "1940er"},
@@ -496,7 +442,7 @@ const db = {
                 ]
             },
             {
-                "text": "In welcher Dekade wurde die erste E-Mail verschickt?",
+                "text": "In welchem Jahrzehnt wurde die erste E-Mail verschickt?",
                 "options": [
                     {"text": "1990er", "correct": true},
                     {"text": "1980er"},
@@ -505,7 +451,7 @@ const db = {
                 ]
             },
             {
-                "text": "In welcher Dekade wurde das Internet geboren?",
+                "text": "In welchem Jahrzehnt wurde das Internet geboren?",
                 "options": [
                     {"text": "1990er", "correct": true},
                     {"text": "1970er"},
@@ -514,7 +460,7 @@ const db = {
                 ]
             },
             {
-                "text": "In welcher Dekade kamen Smartphones auf den Markt?",
+                "text": "In welchem Jahrzehnt kamen Smartphones auf den Markt?",
                 "options": [
                     {"text": "2000er", "correct": true},
                     {"text": "2010er"},
@@ -1118,7 +1064,7 @@ const db = {
                 ]
             },
             {
-                "text": "Bei Klick auf die rechte Maustaste passiert was?",
+                "text": "Was passiert bei Klick auf die rechte Maustaste?",
                 "options": [
                     {"text": "Das Kontextmenü öffnet sich", "correct": true},
                     {"text": "Das Programm wird beendet"},
@@ -1145,7 +1091,7 @@ const db = {
                 ]
             },
             {
-                "text": "Die Windows Einstellungen finde ich wie?",
+                "text": "Wie findet man die Windows Einstellungen?",
                 "options": [
                     {"text": "Über das Startmenü", "correct": true},
                     {"text": "Mit der Tastenkombination Win + I", "correct": true},
@@ -1163,7 +1109,7 @@ const db = {
                 ]
             },
             {
-                "text": "Die Benutzeroberfläche ist was?",
+                "text": "Was versteht man unter einer Benutzeroberfläche (UI)?",
                 "options": [
                     {"text": "Das sichtbare und bedienbare Element des Systems", "correct": true},
                     {"text": "Die Hardware des Computers"},
@@ -1172,7 +1118,7 @@ const db = {
                 ]
             },
             {
-                "text": "Das Windowsmenü ist was?",
+                "text": "Was ist das Windows Startmenü?",
                 "options": [
                     {"text": "Ein Ort, an dem Programme und Dateien gestartet werden können", "correct": true},
                     {"text": "Das gleiche wie der Desktop"},
@@ -1392,7 +1338,7 @@ const db = {
             }
         ]
     },
-    "browser": {
+    "browsersearch": {
         "title": "",
         "desc": "",
         "questions": [
