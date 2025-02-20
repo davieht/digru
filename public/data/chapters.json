@@ -404,7 +404,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=periphery",
+                "link": "../quiz/quiz.html?id=periphery1",
                 "description": "Das Quiz zu Peripheriegeräte."
             }
         ]
@@ -435,7 +435,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=interfaces",
+                "link": "../quiz/quiz.html?id=periphery2",
                 "description": "Das Quiz zu Schnittstellen und Anschlüsse."
             }
         ]
@@ -497,7 +497,7 @@
             {
                 "name": "Die Benutzeroberfläche",
                 "type": "video",
-                "link": "https://www.youtube.com/watch?v=z6qjH4YCZQ",
+                "link": "https://www.youtube.com/watch?v=z6qjH4YCZQc",
                 "description": "In diesem Video wird dir erklärt, wie du mit Windows arbeitest."
             },
             {

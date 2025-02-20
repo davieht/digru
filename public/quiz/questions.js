@@ -779,7 +779,7 @@ const db = {
             }
         ]
     },
-    "periphery": {
+    "periphery1": {
         "title": "Peripheriegeräte",
         "desc": "Beantworte die Fragen zu Peripheriegeräten",
         "questions": [
@@ -874,7 +874,7 @@ const db = {
                 ]
             }
         ]},
-    "connectors": {
+    "periphery2": {
         "title": "Anschlüsse",
         "desc": "Beantworte die Fragen zu den Peripherieanschlüssen",
         "questions": [
