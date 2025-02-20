@@ -157,16 +157,16 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-const options = {
-  key: fs.readFileSync("/etc/letsencrypt/live/digru.at/privkey.pem"),
-  cert: fs.readFileSync("/etc/letsencrypt/live/digru.at/fullchain.pem"),
-};
-
 // Start the server
-//app.listen(PORT, () => {
-//    console.log(`Server running on http://localhost:${PORT}`);
-//});
-
-https.createServer(options, app).listen(443, () => {
-  console.log("HTTPS Server running on port 443");
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 });
+
+//const options = {
+//  key: fs.readFileSync("/etc/letsencrypt/live/digru.at/privkey.pem"),
+//  cert: fs.readFileSync("/etc/letsencrypt/live/digru.at/fullchain.pem"),
+//};
+
+//https.createServer(options, app).listen(443, () => {
+//  console.log("HTTPS Server running on port 443");
+//});

@@ -682,6 +682,7 @@ const db = {
         "questions": [
             {
                 "text": "Welche Computerkomponente ist hier abgebildet?",
+                "img": "src/cpu.jpg",
                 "options": [
                     {"text": "Prozessor", "correct": true},
                     {"text": "CPU", "correct": true},
@@ -691,6 +692,7 @@ const db = {
             },
             {
                 "text": "Welche Computerkomponente ist hier abgebildet?",
+                "img": "src/ram.jpg",
                 "options": [
                     {"text": "Arbeitsspeicher", "correct": true},
                     {"text": "GPU"},
@@ -700,6 +702,7 @@ const db = {
             },
             {
                 "text": "Welche Computerkomponente ist hier abgebildet?",
+                "img": "src/hdd.jpg",
                 "options": [
                     {"text": "HDD", "correct": true},
                     {"text": "Festplatte", "correct": true},
@@ -709,6 +712,7 @@ const db = {
             },
             {
                 "text": "Welche Computerkomponente ist hier abgebildet?",
+                "img": "src/ssd.jpg",
                 "options": [
                     {"text": "SSD", "correct": true},
                     {"text": "HDD"},
@@ -718,6 +722,7 @@ const db = {
             },
             {
                 "text": "Welche Computerkomponente ist hier abgebildet?",
+                "img": "src/motherboard.jpg",
                 "options": [
                     {"text": "Mainboard", "correct": true},
                     {"text": "Motherboard", "correct": true},
@@ -727,6 +732,7 @@ const db = {
             },
             {
                 "text": "Welche Computerkomponente ist hier abgebildet?",
+                "img": "src/gpu.jpg",
                 "options": [
                     {"text": "Grafikkarte", "correct": true},
                     {"text": "GPU", "correct": true},
@@ -736,6 +742,7 @@ const db = {
             },
             {
                 "text": "Welche Computerkomponente ist hier abgebildet?",
+                "img": "src/dvd.jpg",
                 "options": [
                     {"text": "CD/DVD-Laufwerk", "correct": true},
                     {"text": "Festplatte"},

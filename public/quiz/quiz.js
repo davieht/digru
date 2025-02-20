@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalQuizPoints = 100;
     const bonusQuizPoints = 25;
 
-    const requiredTheshold = .75;
+    const requiredTheshold = .70;
     const quizData = db[quizId];
     const questionLength = 12;
     let questions = quizData.questions.slice(0, questionLength);
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         questionText.textContent = question.text;
-        questionImg.setAttribute('src', question.img ? question.img : "../src/placeholder.jpg");
+        questionImg.setAttribute('src', question.img ? question.img : "src/placeholder.jpg");
 
         componentHandler.upgradeDom();
     }
