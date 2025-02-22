@@ -72,12 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function populateChapters() {
-        const listContainer = document.getElementById("main-content");
+        const chapterContent = document.getElementById("chapter-content");
         const template = document.getElementById("chapter-item-template");
         const starMap = ["star_border", "star_half", "star"];
 
         // Clear the placeholder content
-        listContainer.innerHTML = "";
+        chapterContent.innerHTML = "";
 
         // Populate the list dynamically
         Object.entries(_chapters).forEach(([chapterId, chapter]) => {
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
             clone.querySelector('.card-star').textContent = starMap[chapter.star];
 
             // Append the populated clone to the container
-            listContainer.appendChild(clone);
+            chapterContent.appendChild(clone);
         });
 
         scrollBox.scrollTo(0, _scrollPosition);
