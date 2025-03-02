@@ -485,7 +485,7 @@
             {
                 "name": "Windows",
                 "type": "pdf",
-                "link": "../assets/pdfs/windows.pdf",
+                "link": "../assets/pdfs/windowsui.pdf",
                 "description": "Die Unterlagen zur Windows Benutzeroberfläche."
             },
             {
@@ -495,21 +495,40 @@
                 "description": "In diesem Video erfährst du was Betriebssysteme sind."
             },
             {
-                "name": "Die Benutzeroberfläche",
+                "name": "Die Benutzeroberfläche (optional)",
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=z6qjH4YCZQc",
                 "description": "In diesem Video wird dir erklärt, wie du mit Windows arbeitest."
             },
             {
-                "name": "Übung",
-                "type": "exercise",
-                "link": "",
-                "description": "Desktop, Taskleiste, Startmenü, Kontextmenü - Hintergrundbild ändern, Taskleiste pinnen, Programm ausführen, Datei und Ordner anlegen"
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=windowsui",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "filesystem": {
+        "name": "Dateien, Ordner und Programme",
+        "description": "In diesem Kapitel lernst du was Dateien, Ordner und Programme sind.",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Dateisysteme",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1qBlFG0Tmy6MBxQuEYOGXNoe7hpNTPoGmWyTxlubpT34",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Dateisysteme",
+                "type": "pdf",
+                "link": "../assets/pdfs/filesystem.pdf",
+                "description": "Draftdescription."
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=windowsui",
+                "link": "../quiz/quiz.html?id=filesystem",
                 "description": "Draftdescription."
             }
         ]
@@ -522,7 +541,7 @@
             {
                 "name": "Der Windowsexplorer",
                 "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1InNRrklL3i8Qf0q6g5QPM0W2N4kDFj9tB5gm-ZuPCLo",
+                "link": "https://docs.google.com/presentation/d/1p7zsd512s0VBsn17vpbd9skMHf4aM2fGnDsYfAtJgwg",
                 "description": ""
             },
             {
@@ -538,22 +557,10 @@
                 "description": "In diesem Video erfährst du, was der Datei-Explorer ist und wie du mit diesem arbeitest.."
             },
             {
-                "name": "Übung - Dateien und Ordner erstellen",
-                "type": "exercise",
-                "link": "",
-                "description": ""
-            },
-            {
-                "name": "Übung - Ordnerstruktur anlegen",
-                "type": "exercise",
-                "link": "",
-                "description": ""
-            },
-            {
-                "name": "Übung - Verknüpfung des Homeverzeichnis anlegen",
-                "type": "exercise",
-                "link": "",
-                "description": ""
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=explorer",
+                "description": "Draftdescription."
             }
         ]
     },
@@ -563,33 +570,21 @@
         "image": "../src/windows.png",
         "links": [
             {
-                "name": "Der Windowsexplorer",
+                "name": "Dateimanagement",
                 "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1InNRrklL3i8Qf0q6g5QPM0W2N4kDFj9tB5gm-ZuPCLo",
+                "link": "https://docs.google.com/presentation/d/17iohqEmJ-7q2_XRCycQLLY00qXK4a_tXnctkMnOHP5g",
                 "description": ""
             },
             {
-                "name": "Der Windowsexplorer",
+                "name": "Dateimanagement",
                 "type": "pdf",
-                "link": "../assets/pdfs/explorer.pdf",
+                "link": "../assets/pdfs/filemanagement.pdf",
                 "description": "Draftdescription."
             },
             {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=explorer",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Übung - Zip Datei Herunterladen, entpacken und in das Homeverzeichnis verschieben",
+                "name": "Übung - Anlegen einer Ordnerstruktur für die Schule",
                 "type": "exercise",
                 "link": "",
-                "description": "Lade die Zip-Datei herunter, entpacke diese und kopiere den Inhalt in den Dokumentenordner in deinem Home-Verzeichnis. Öffne den Inhalt und lies dir das Geheimnis durch."
-            },
-            {
-                "name": "Geheim.zip",
-                "type": "download",
-                "link": "../assets/Geheim.zip",
                 "description": ""
             }
         ]
@@ -600,27 +595,15 @@
         "image": "../src/windows.png",
         "links": [
             {
-                "name": "Einstellungen",
+                "name": "Updates und Installation",
                 "type": "slide",
                 "link": "https://docs.google.com/presentation/d/1-Mv3bpjQ3TCfvZX4qVoM7nLW2lYBX6XIJAoj1xexwQY",
                 "description": ""
             },
             {
-                "name": "Einstellungen und Taskmanager",
+                "name": "Updates und Installation",
                 "type": "pdf",
                 "link": "../assets/pdfs/maintenance.pdf",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Der Taskmanager",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=C4X2BHBLJ3E",
-                "description": "In diesem Video erfährst du, wie du was der Taskmanager ist und wie du diesen bedienst."
-            },
-            {
-                "name": "Einstellungen",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=z6qjH4YCZQc",
                 "description": "Draftdescription."
             },
             {
@@ -628,31 +611,31 @@
                 "type": "quiz",
                 "link": "../quiz/quiz.html?id=maintenance",
                 "description": "Draftdescription."
-            },
-            {
-                "name": "Computereigenschaften",
-                "type": "exercise",
-                "link": "",
-                "description": ""
             }
         ]
     },
-    "windowsoptional": {
-        "name": "Windows - Tipps und Tricks (optional)",
+    "windowsmisc": {
+        "name": "Windows - Ergänzendes und Taskmanager",
         "description": "Weiterführende Funktionen in Windows.",
         "image": "../src/windows.png",
         "links": [
             {
-                "name": "Fenstermanagement",
+                "name": "Windows Ergänzendes",
                 "type": "slide",
                 "link": "https://docs.google.com/presentation/d/1quE744r-lBdG7ZOhG6QXSIehzGp_W_fF0WB5MK1YghU/",
                 "description": "Draftdescription."
             },
             {
-                "name": "Draft",
+                "name": "Windows Ergänzendes",
                 "type": "pdf",
-                "link": "",
+                "link": "../assets/pdfs/windowsmisc.pdf",
                 "description": "Draftdescription."
+            },
+            {
+                "name": "Der Taskmanager",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=C4X2BHBLJ3E",
+                "description": "In diesem Video erfährst du, wie du was der Taskmanager ist und wie du diesen bedienst."
             }
         ]
     } ,

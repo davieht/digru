@@ -1062,12 +1062,75 @@ const db = {
         "desc": "",
         "questions": [
             {
+                "text": "Was ist ein Betriebssystem?",
+                "options": [
+                    {"text": "Eine Software, welche die Kommunikation von Hardware ermöglicht", "correct": true},
+                    {"text": "Eine Schnittstelle zwischen Mensch und Computer", "correct": true},
+                    {"text": "Ist eine Hardware"},
+                    {"text": "Ist eine Computerkomponente"}
+                ]
+            },
+            {
+                "text": "Aufgaben eines Betriebssystems?",
+                "options": [
+                    {"text": "Speicherverwaltung", "correct": true},
+                    {"text": "Programmverwaltung", "correct": true},
+                    {"text": "Dateiverwaltung", "correct": true},
+                    {"text": "Geräteverwaltung", "correct": true}
+                ]
+            },
+            {
+                "text": "Welche Betriebssysteme gibt es?",
+                "options": [
+                    {"text": "Windows", "correct": true},
+                    {"text": "Linux", "correct": true},
+                    {"text": "MacOS", "correct": true},
+                    {"text": "Excel"}
+                ]
+            },
+            {
+                "text": "Was ist der Desktop?",
+                "options": [
+                    {"text": "Der Hauptbildschirm, auf dem Symbole abgelegt werden können", "correct": true},
+                    {"text": "Ein Bereich in den Windows-Einstellungen"},
+                    {"text": "Ein Ordner für Systemdateien"},
+                    {"text": "Dein virtueller Schreibtisch", "correct": true}
+                ]
+            },
+            {
                 "text": "Die Taskleiste",
                 "options": [
                     {"text": "Zeigt geöffnete Programme an", "correct": true},
                     {"text": "Zeigt die Uhrzeit an", "correct": true},
                     {"text": "Hat den Button für das Startmenü", "correct": true},
-                    {"text": "Zeigt Optionen für die Energieverwaltung"}
+                    {"text": "Ist der Datei-Explorer"}
+                ]
+            },
+            {
+                "text": "Wo kann ich mein Wlan auswählen?",
+                "options": [
+                    {"text": "In der Taskleiste", "correct": true},
+                    {"text": "In den Einstellungen"},
+                    {"text": "Im Windows Startmenü"},
+                    {"text": "Im Windows Explorer"}
+                ]
+            },
+            {
+                "text": "Was ist das Windows Startmenü?",
+                "options": [
+                    {"text": "Ein Ort, an dem Programme und Dateien gestartet werden können", "correct": true},
+                    {"text": "Das gleiche wie der Desktop"},
+                    {"text": "Ein Ui-Element, wo du den Computer herunterfahren kannst", "correct": true},
+                    {"text": "Ein Bedienelement, in dem du suchen kannst", "correct": true}
+                ]
+            },
+            {
+                "text": "Wie kann man ein Programm finden?",
+                "options": [
+                    {"text": "Im Windows Startmenü", "correct": true},
+                    {"text": "In den Einstellungen"},
+                    {"text": "Im Browser"},
+                    {"text": "In der Taskleiste"}
                 ]
             },
             {
@@ -1084,104 +1147,59 @@ const db = {
                 "options": [
                     {"text": "Bietet Aktionen basierend auf dem ausgewählten Objekt", "correct": true},
                     {"text": "Ist eine Liste von Optionen", "correct": true},
-                    {"text": "Ist immer in der Taskleiste"},
-                    {"text": "Erscheint nur in den Einstellungen"}
-                ]
-            },
-            {
-                "text": "Der Windows Explorer",
-                "options": [
-                    {"text": "Zeigt Dateien und Ordner an", "correct": true},
-                    {"text": "Ist das gleiche wie der Desktop"},
-                    {"text": "Ermöglicht das Verschieben von Dateien", "correct": true},
-                    {"text": "Ist ein Programm zur Textbearbeitung"}
-                ]
-            },
-            {
-                "text": "Wie findet man die Windows Einstellungen?",
-                "options": [
-                    {"text": "Über das Startmenü", "correct": true},
-                    {"text": "Mit der Tastenkombination Win + I", "correct": true},
-                    {"text": "Nur über die Taskleiste"},
-                    {"text": "Im Kontextmenü des Desktops"}
-                ]
-            },
-            {
-                "text": "In den Einstellungen kann ich was machen?",
-                "options": [
-                    {"text": "Die Bildschirmauflösung ändern", "correct": true},
-                    {"text": "Neue Programme installieren"},
-                    {"text": "Die Sprache der Benutzeroberfläche ändern", "correct": true},
-                    {"text": "Benutzerkonten verwalten", "correct": true}
-                ]
-            },
-            {
-                "text": "Was versteht man unter einer Benutzeroberfläche (UI)?",
-                "options": [
-                    {"text": "Das sichtbare und bedienbare Element des Systems", "correct": true},
-                    {"text": "Die Hardware des Computers"},
-                    {"text": "Die grafische Oberfläche eines Betriebssystems", "correct": true},
-                    {"text": "Ein Teil der Taskleiste"}
-                ]
-            },
-            {
-                "text": "Was ist das Windows Startmenü?",
-                "options": [
-                    {"text": "Ein Ort, an dem Programme und Dateien gestartet werden können", "correct": true},
-                    {"text": "Das gleiche wie der Desktop"},
-                    {"text": "Ein Bestandteil der Taskleiste", "correct": true},
-                    {"text": "Ein spezielles Fenster für Spiele"}
-                ]
-            },
-            {
-                "text": "Was ist der Desktop?",
-                "options": [
-                    {"text": "Der Hauptbildschirm, auf dem Symbole abgelegt werden können", "correct": true},
-                    {"text": "Ein Bereich in den Windows-Einstellungen"},
-                    {"text": "Ein Ordner für Systemdateien"},
-                    {"text": "Der Bereich, der erscheint, wenn keine Fenster geöffnet sind", "correct": true}
+                    {"text": "Ist das Startmenü"},
+                    {"text": "Startet Windows"}
                 ]
             }
         ]
     },
-    "explorer": {
-        "title": "Dateien, Ordner und Programme",
+    "filesystem": {
+        "title": "Dateien, Ordner, Programme und Laufwerke",
         "desc": "",
         "questions": [
             {
+                "text": "Wie werden Daten im Computer gespeichert?",
+                "options": [
+                    {"text": "Im Binärcode", "correct": true},
+                    {"text": "In Bits", "correct": true},
+                    {"text": "In Bytes", "correct": true},
+                    {"text": "In Dateien", "correct": true}
+                ]
+            },
+            {
                 "text": "Was ist eine Datei?",
                 "options": [
-                    {"text": "Eine Einheit zur Speicherung von Daten", "correct": true},
-                    {"text": "Ein Ordner, der andere Daten enthält"},
-                    {"text": "Ein Dokument, das immer ausführbar ist"},
-                    {"text": "Ein Datenblock ohne Namen"}
+                    {"text": "Ein Konstrukt, das Daten Speichert", "correct": true},
+                    {"text": "Ein anderes Wort für Ordner"},
+                    {"text": "Eine Festplatte"},
+                    {"text": "Ein Konstrukt, das digitale Information speichert", "correct": true}
                 ]
             },
             {
                 "text": "Was ist ein Ordner?",
                 "options": [
-                    {"text": "Eine Sammlung von Dateien und Unterordnern", "correct": true},
-                    {"text": "Ein ausführbares Programm"},
-                    {"text": "Ein Fenster, das Informationen anzeigt"},
-                    {"text": "Ein Speicherort für temporäre Daten"}
+                    {"text": "Ein anderes Wort für Verzeichnis", "correct": true},
+                    {"text": "Ein Konstrukt in welchem man Dateien speichern kann", "correct": true},
+                    {"text": "Ein Konstrukt in welchem man Ordner speichern kann", "correct": true},
+                    {"text": "Eine Datei"}
                 ]
             },
             {
-                "text": "Was ist ein Programm?",
+                "text": "Was ist ein Laufwerk?",
                 "options": [
-                    {"text": "Eine ausführbare Datei", "correct": true},
-                    {"text": "Ein System, das Dateien organisiert"},
-                    {"text": "Ein Ordner mit Dokumenten"},
-                    {"text": "Eine Verknüpfung zum Papierkorb"}
+                    {"text": "Die oberste Ebene eines Dateisystems", "correct": true},
+                    {"text": "Eine Festplatte", "correct": true},
+                    {"text": "Ein USB-Stick", "correct": true},                    
+                    {"text": "Eine CD oder DVD", "correct": true}
                 ]
             },
             {
-                "text": "Was ist ein Prozess?",
+                "text": "Wie erkennt man in Windows eine Datei?",
                 "options": [
-                    {"text": "Ein laufendes Programm im Arbeitsspeicher", "correct": true},
-                    {"text": "Ein Ordner, der sich automatisch öffnet"},
-                    {"text": "Ein Dokument, das bearbeitet wird"},
-                    {"text": "Ein Fenster auf dem Desktop"}
+                    {"text": "An der Dateiendung", "correct": true},
+                    {"text": "Am Dateisymbol"},
+                    {"text": "Am Ordnernamen"},
+                    {"text": "An der Farbe"}
                 ]
             },
             {
@@ -1194,66 +1212,117 @@ const db = {
                 ]
             },
             {
+                "text": "Was wäre eine Typische Dateiendung?",
+                "options": [
+                    {"text": ".txt", "correct": true},
+                    {"text": ".exe", "correct": true},
+                    {"text": ".jpg", "correct": true},
+                    {"text": ".mp3", "correct": true}
+                ]
+            },
+            {
                 "text": "Was ist eine ausführbare Datei?",
                 "options": [
-                    {"text": "Eine Datei, die ein Programm starten kann", "correct": true},
-                    {"text": "Eine Datei mit der Endung .exe", "correct": true},
-                    {"text": "Ein Ordner, der Programme enthält"},
-                    {"text": "Ein Dokument, das nur gelesen werden kann"}
+                    {"text": "Ein Programm", "correct": true},
+                    {"text": "Eine Datei mit der Dateiendung .exe", "correct": true},
+                    {"text": "Eine Datei, welche ausgeführt werden kann", "correct": true},
+                    {"text": "Eine Bilddatei"}
                 ]
             },
             {
                 "text": "Was ist eine Verknüpfung?",
                 "options": [
-                    {"text": "Ein Link zu einer Datei oder einem Ordner", "correct": true},
-                    {"text": "Eine Kopie eines Programms"},
-                    {"text": "Ein Fenster, das automatisch geöffnet wird"},
-                    {"text": "Ein Symbol, das Speicherplatz beansprucht"}
+                    {"text": "Ein Link, der auf eine Datei zeigt", "correct": true},
+                    {"text": "Eine Bilddatei"},
+                    {"text": "Eine ausführbare Datei"},
+                    {"text": "Ein Verzeichnis"}
                 ]
             },
             {
-                "text": "Was ist ein Dateipfad?",
+                "text": "Was wäre eine typische Dateiendung für eine ausführbare Datei?",
                 "options": [
-                    {"text": "Die genaue Adresse einer Datei oder eines Ordners", "correct": true},
-                    {"text": "Der Name einer Datei"},
-                    {"text": "Ein Protokoll für das Internet"},
-                    {"text": "Eine Verknüpfung zu einer Webseite"}
+                    {"text": ".exe", "correct": true},
+                    {"text": ".bat", "correct": true},
+                    {"text": ".txt"},
+                    {"text": ".mp3"}
+                ]
+            }
+        ]
+    },
+    "explorer": {
+        "title": "Der Windows Datei-Explorer",
+        "desc": "",
+        "questions": [,
+            {
+                "text": "Der Windows Datei Explorer",
+                "options": [
+                    {"text": "Zeigt Dateien und Ordner an", "correct": true},
+                    {"text": "Ist das gleiche wie der Desktop"},
+                    {"text": "Ermöglicht das Verschieben von Dateien", "correct": true},
+                    {"text": "Ist ein Programm zur Textbearbeitung"}
                 ]
             },
             {
-                "text": "Was ist ein Laufwerk?",
+                "text": "Funktionen des Datei Explorers",
                 "options": [
-                    {"text": "Ein Speicherort wie Festplatte oder USB-Stick", "correct": true},
-                    {"text": "Ein spezieller Ordner im Explorer"},
-                    {"text": "Ein Dokumenttyp in Windows"},
-                    {"text": "Eine Datei mit der Endung .drv"}
+                    {"text": "Navigieren im Dateisystem", "correct": true},
+                    {"text": "Dateien und Ordner anlegen", "correct": true},
+                    {"text": "Sortieren und Ansichten ändern", "correct": true},
+                    {"text": "Verschieben von Dateien", "correct": true}
                 ]
             },
             {
-                "text": "Was ist das Kontextmenü?",
+                "text": "Was zeigt der Dateipfad an?",
                 "options": [
-                    {"text": "Ein Menü, das bei einem Rechtsklick erscheint", "correct": true},
-                    {"text": "Ein Fenster mit allen geöffneten Dateien"},
-                    {"text": "Eine Liste von Verknüpfungen auf dem Desktop"},
-                    {"text": "Ein Ordner für Systemprogramme"}
+                    {"text": "Den Speicherort der Datei in Dateisystem", "correct": true},
+                    {"text": "Den freien Speicherplatz"},
+                    {"text": "Das Startmenü"},
+                    {"text": "Alle Festplatten im System"}
                 ]
             },
             {
-                "text": "Was ist der Papierkorb?",
+                "text": "Ein zulässiger Dateipfad",
                 "options": [
-                    {"text": "Ein Speicherort für gelöschte Dateien", "correct": true},
-                    {"text": "Ein Ordner, der Dateien automatisch löscht"},
-                    {"text": "Ein Programm zur Dateiverwaltung"},
-                    {"text": "Ein Bereich für Sicherungskopien"}
+                    {"text": "C:/Benutzer/Olivia/Downloads/hund.jpg", "correct": true},
+                    {"text": "C:Benutzer Olivia Downloads.jpg"},
+                    {"text": "D:/Backup/hund.jpg", "correct": true},
+                    {"text": "Benutzer.Olivia.hund jpg"}
                 ]
             },
             {
-                "text": "Was ist der Dateiexplorer?",
+                "text": "Eine neue Datei kann mit",
                 "options": [
-                    {"text": "Ein Programm, das Dateien und Ordner anzeigt", "correct": true},
-                    {"text": "Ein Ordner für Programme"},
-                    {"text": "Eine Datei mit Informationen über den PC"},
-                    {"text": "Eine App für Systemupdates"}
+                    {"text": "Dem Kontextmenü angelegt werden", "correct": true},
+                    {"text": "Dem Windows Startmenü angelegt werden"},
+                    {"text": "Der Taskleiste angelegt werden"},
+                    {"text": "Durch halten von Strg angelegt werden"}
+                ]
+            },
+            {
+                "text": "Metadaten sind",
+                "options": [
+                    {"text": "Daten über die jeweilige Datei", "correct": true},
+                    {"text": "Dateigröße, Dateityp, Speicherort", "correct": true},
+                    {"text": "Inhalt einer Datei"},
+                    {"text": "Dateien im Ordner"}
+                ]
+            },
+            {
+                "text": "Wie kann eine Datei ausgeführt werden?",
+                "options": [
+                    {"text": "Doppelklick auf die Datei", "correct": true},
+                    {"text": "Wenn eine Datei ausgewählt ist, Enter drücken", "correct": true},
+                    {"text": "Strg drücken und dann Enter"},
+                    {"text": "Rechtsklick auf eine Datei"}
+                ]
+            },
+            {
+                "text": "Was ist drag and drop?",
+                "options": [
+                    {"text": "Das ziehen und loslassen von markierten Elementen", "correct": true},
+                    {"text": "Starten einer ausführbaren Datei", "correct": true},
+                    {"text": "Doppelklick auf eine Datei"},
+                    {"text": "Rechtsklick auf eine Datei"}
                 ]
             }
         ]
@@ -1265,7 +1334,7 @@ const db = {
             {
                 "text": "Warum sollten Updates regelmäßig gemacht werden?",
                 "options": [
-                    {"text": "Updates schlißen Sicherheitslücken", "correct": true},
+                    {"text": "Updates schließen Sicherheitslücken", "correct": true},
                     {"text": "Updates bringen neue Features", "correct": true},
                     {"text": "Updates bringen mehr Geld"},
                     {"text": "Updates beheben Systemfehler", "correct": true}
