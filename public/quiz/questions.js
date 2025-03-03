@@ -605,7 +605,7 @@ const db = {
             {
                 "text": "Welche Eigenschaften hat eine SSD?",
                 "options": [
-                    {"text": "Schneller als SSD", "correct": true},
+                    {"text": "Schneller als HDD", "correct": true},
                     {"text": "Elektronisch", "correct": true},
                     {"text": "Mechanisch"},
                     {"text": "Schneller als RAM"}
