@@ -1328,7 +1328,7 @@ const db = {
         ]
     },
     "maintenance": {
-        "title": "Wartung und Performance",
+        "title": "Updates und Installation",
         "desc": "Beantworte die Fragen zu Wartung und Performance",
         "questions": [
             {
