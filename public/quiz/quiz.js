@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function postResult() {
+    function postResult() {        
         _login_token = getCookie('login_token');
 
         if (!_login_token) {

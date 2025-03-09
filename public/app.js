@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         home: "routes/home.html",
         chapter: "routes/chapter.html",
         profile: "routes/profile.html",
+        faq: "routes/faq.html",
     };
 
     // Function to load a route
