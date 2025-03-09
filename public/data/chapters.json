@@ -590,7 +590,7 @@
         ]
     },
     "maintenance": {
-        "name": "Windows - Einstellungen und Taskmanager",
+        "name": "Windows - Updates und Installation",
         "description": "Hier lernst du mehr über die Einstellungen in Windows",
         "image": "../src/windows.png",
         "links": [

@@ -1252,7 +1252,7 @@ const db = {
     "explorer": {
         "title": "Der Windows Datei-Explorer",
         "desc": "",
-        "questions": [,
+        "questions": [
             {
                 "text": "Der Windows Datei Explorer",
                 "options": [
@@ -1319,8 +1319,8 @@ const db = {
             {
                 "text": "Was ist drag and drop?",
                 "options": [
-                    {"text": "Das ziehen und loslassen von markierten Elementen", "correct": true},
-                    {"text": "Starten einer ausführbaren Datei", "correct": true},
+                    {"text": "Das Ziehen und Loslassen von markierten Elementen", "correct": true},
+                    {"text": "Starten einer ausführbaren Datei"},
                     {"text": "Doppelklick auf eine Datei"},
                     {"text": "Rechtsklick auf eine Datei"}
                 ]
@@ -1328,7 +1328,7 @@ const db = {
         ]
     },
     "maintenance": {
-        "title": "Wartung und Performance",
+        "title": "Updates und Installation",
         "desc": "Beantworte die Fragen zu Wartung und Performance",
         "questions": [
             {
