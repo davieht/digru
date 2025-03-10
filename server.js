@@ -52,7 +52,7 @@ app.get("/api/user/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className, hash} = req.query; // Access the route parameter
-        if (hash === "jasfdoiasd8f8asdf8a9s7df8a7sd8f7a9sd7f9a7sdf9afjhef8af") {
+        if (hash === "4pfel$trudelM1tV4nille$osse") {
             res.json({schoolId: schoolId, className: className, hash: hash, isTeacher: true});
             return;
         }

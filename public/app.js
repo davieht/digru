@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("username").textContent = `${_user.firstName} ${_user.lastName} - ${_user.className}`;
         document.getElementById("grade").textContent = `${_user.grade}`;
         document.getElementById("points").textContent = `${parseFloat(_user.points.toFixed(0))}`;
-        document.getElementById("credits").textContent = `💎 ${_user.credits}`;
+        document.getElementById("credits").textContent = `💎 ${_user.credits.toFixed(0)}`;
         document.getElementById("avatarImg").src = `img/avatar_${_user.avatar.g || 'f'}.png`;
         document.getElementById("stars").textContent = `★ ${Object.values(_user.chapters).filter(value => value > 100).length}`;
     }
