@@ -640,50 +640,12 @@
         ]
     } ,
     "browser": {
-        "name": "Internet ABC",
+        "name": "Der Browser (2UE)",
         "description": "Hier lernst du was ein Browser ist und wie du diesen bedienst",
         "image": "../src/browsers.jpeg",
         "links": [
             {
-                "name": "Internet ABC",
-                "type": "interactive",
-                "link": "https://www.internet-abc.de/lm/unterwegs-im-internet-so-gehts",
-                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung eines Browsers"
-            },
-            {
-                "name": "Der Browser",
-                "type": "exercise",
-                "link": "",
-                "description": "Suche auf Wikipedia nach Hund, Katze\nSuche auf Wikipedia nach deinem Namen\nSuche auf Wikipedia nach deinem Geburtsort oder Wohnort\nSpeichere dir die Seite Wikipedia als \"Bookmark\" ab"
-            }
-        ]
-    },
-    "searchengines": {
-        "name": "Suchmaschinen",
-        "description": "Hier lernst du was Suchmaschinen sind und wie du diese bedienst",
-        "image": "../src/searchengine.jpg",
-        "links": [
-            {
-                "name": "Suchen und Finden im Internet",
-                "type": "interactive",
-                "link": "https://www.internet-abc.de/lm/suchen-und-finden",
-                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung einer Suchmaschine."
-            },
-            {
-                "name": "Das Internet",
-                "type": "exercise",
-                "link": "",
-                "description": "Öffne ein Tab\nSuche auf Google nach Katzenbildern (oder Hundebilder, für die Hundefreunde)\nDu kannst Bilder auch auf deinem PC abspeichern (bitte in einem geeigneten Ordner! Ordnung halten ;)\nDu kannst auch Tabs gruppieren."
-            }
-        ]
-    },
-    "browsersearch": {
-        "name": "Browser und Suchmaschinen",
-        "description": "Das abschließende Kapitel über Suchmaschinen und Browser",
-        "image": "../src/internet.jpg",
-        "links": [
-            {
-                "name": "Browser und Suchmaschinen",
+                "name": "Browser",
                 "type": "slide",
                 "link": "https://docs.google.com/presentation/d/1uzULkvtxvo1ap05cC8YAyLNmUoGudQTUNUXxAvAjOu8",
                 "description": ""
@@ -695,33 +657,70 @@
                 "description": "Die Unterlagen zu Browser und Suchmaschinen."
             },
             {
+                "name": "Internet ABC",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/unterwegs-im-internet-so-gehts",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung eines Browsers"
+            },
+            {
                 "name": "Suchen und Finden im Internet",
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=m2bktLTzpWs",
                 "description": "In diesem Video erfährst du, wie du im Internet suchen kannst."
             },
             {
-                "name": "Wie funktioniert eine Suchmaschine?",
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=browser",
+                "description": "Das Quiz zu Browser."
+            }
+        ]
+    },
+    "searchengines": {
+        "name": "Suchmaschinen (2UE)",
+        "description": "Hier lernst du was Suchmaschinen sind und wie du diese bedienst",
+        "image": "../src/searchengine.jpg",
+        "links": [
+            {
+                "name": "Suchmaschinen",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1irnWj2HjYz3R-DAA2DjgRd10x9XP0d2r5gR8E6NWLO8",
+                "description": ""
+            },
+            {
+                "name": "Suchmaschinen",
                 "type": "pdf",
+                "link": "../assets/pdfs/searchengines.pdf",
+                "description": "Die Unterlagen zu Browser und Suchmaschinen."
+            },
+            {
+                "name": "Suchen und Finden im Internet",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/suchen-und-finden",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung einer Suchmaschine."
+            },
+            {
+                "name": "Wie funktioniert eine Suchmaschine?",
+                "type": "video",
                 "link": "https://www.youtube.com/watch?v=Rr-uWTO_HAw",
                 "description": "Dieses Video erklärt dir wie eine Suchmaschine funktioniert."
             },
             {
                 "name": "Personalisierte Suche",
-                "type": "pdf",
+                "type": "video",
                 "link": "https://www.youtube.com/watch?v=3mdoyI2xHB8",
                 "description": "Dieses Video erklärt warum du überall mit Werbung konfrontiert bist."
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=browsersearch",
-                "description": "Das Quiz zu Browser und Suchmaschinen."
+                "link": "../quiz/quiz.html?id=searchengines",
+                "description": "Das Quiz zu Suchmaschinen."
             }
         ]
     },
     "email": {
-        "name": "Das E-Mail",
+        "name": "Das E-Mail (2UE)",
         "description": "In diesem Kapitel lernst du wie du elektronische Post sendest und empfängst",
         "image": "../src/email.jpg",
         "links": [
@@ -742,6 +741,12 @@
                 "type": "interactive",
                 "link": "https://www.internet-abc.de/lm/e-mail-post-fuer-dich",
                 "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=email",
+                "description": "Das Quiz zu E-Mail."
             }
         ]
     },
@@ -750,6 +755,18 @@
         "description": "Hier lernst du was das Internet ist",
         "image": "../src/internet.jpg",
         "links": [
+            {
+                "name": "Das Internet",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1tQoufcvYEEvYtKx8AVk__6KHJnfn5koJziR-lDFAaxw",
+                "description": ""
+            },
+            {
+                "name": "Das Internet",
+                "type": "pdf",
+                "link": "../assets/pdfs/internet1.pdf",
+                "description": "Die Unterlagen erklären, wie das Internet funktioniert."
+            },
             {
                 "name": "Das Internet",
                 "type": "interactive",

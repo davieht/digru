@@ -214,7 +214,7 @@ const db = {
                 ]
             },
             {
-                "text": "Die Shift-Taste nenne man auch?",
+                "text": "Die Shift-Taste nennt man auch?",
                 "options": [
                     {"text": "Umschalttaste", "correct": true},
                     {"text": "Steuerungstaste"},
@@ -1414,7 +1414,7 @@ const db = {
             }
         ]
     },
-    "browsersearch": {
+    "browser": {
         "title": "",
         "desc": "",
         "questions": [
@@ -1437,39 +1437,12 @@ const db = {
                 ]
             },
             {
-                "text": "Wozu dient eine Suchmaschine?",
-                "options": [
-                    {"text": "Um Informationen im Internet zu finden.", "correct": true},
-                    {"text": "Um Webseiten zu durchsuchen.", "correct": true},
-                    {"text": "Um Spiele zu spielen"},
-                    {"text": "Um das WLAN einzuschalten"}
-                ]
-            },
-            {
-                "text": "Welche dieser Optionen ist eine Suchmaschine?",
-                "options": [
-                    {"text": "Google", "correct": true},
-                    {"text": "Bing", "correct": true},
-                    {"text": "YouTube"},
-                    {"text": "DuckDuckGo", "correct": true}
-                ]
-            },
-            {
                 "text": "Was gibt man in die Adresszeile des Browsers ein?",
                 "options": [
                     {"text": "Eine Internetadresse (URL)", "correct": true},
                     {"text": "Suchbegriffe für Webseiten"},
                     {"text": "IP-Adressen", "correct": true},
                     {"text": "Ein Bild"}
-                ]
-            },
-            {
-                "text": "Was passiert, wenn du auf einen Link klickst?",
-                "options": [
-                    {"text": "Du wirst zu einer anderen Webseite weitergeleitet.", "correct": true},
-                    {"text": "Ein neues Fenster oder Tab kann sich öffnen.", "correct": true},
-                    {"text": "Der Computer schaltet sich aus"},
-                    {"text": "Das Internet wird beendet"}
                 ]
             },
             {
@@ -1490,6 +1463,49 @@ const db = {
                     {"text": "Kalender"}
                 ]
             },
+            {
+                "text": "Was passiert, wenn du die 'Aktualisieren'-Taste im Browser klickst?",
+                "options": [
+                    {"text": "Die Webseite wird neu geladen.", "correct": true},
+                    {"text": "Aktuelle Änderungen werden angezeigt.", "correct": true},
+                    {"text": "Der Computer wird ausgeschaltet"},
+                    {"text": "Die Webseite wird gelöscht"}
+                ]
+            }
+        ]
+    },
+    "searchngines": {
+        "title": "",
+        "desc": "",
+        "questions": [
+            {
+                "text": "Wozu dient eine Suchmaschine?",
+                "options": [
+                    {"text": "Um Informationen im Internet zu finden.", "correct": true},
+                    {"text": "Um Webseiten zu durchsuchen.", "correct": true},
+                    {"text": "Um Spiele zu spielen"},
+                    {"text": "Um das WLAN einzuschalten"}
+                ]
+            },
+            {
+                "text": "Welche dieser Optionen ist eine Suchmaschine?",
+                "options": [
+                    {"text": "Google", "correct": true},
+                    {"text": "Bing", "correct": true},
+                    {"text": "YouTube"},
+                    {"text": "DuckDuckGo", "correct": true}
+                ]
+            },
+            {
+                "text": "Was passiert, wenn du auf einen Link klickst?",
+                "options": [
+                    {"text": "Du wirst zu einer anderen Webseite weitergeleitet.", "correct": true},
+                    {"text": "Ein neues Fenster oder Tab kann sich öffnen.", "correct": true},
+                    {"text": "Der Computer schaltet sich aus"},
+                    {"text": "Das Internet wird beendet"}
+                ]
+            },
+            
             {
                 "text": "Welche dieser Suchmaschinen gibt es?",
                 "options": [
@@ -1517,15 +1533,6 @@ const db = {
                     {"text": "Indem du den Bildschirm heller machst"}
                 ]
             },
-            {
-                "text": "Was passiert, wenn du die 'Aktualisieren'-Taste im Browser klickst?",
-                "options": [
-                    {"text": "Die Webseite wird neu geladen.", "correct": true},
-                    {"text": "Aktuelle Änderungen werden angezeigt.", "correct": true},
-                    {"text": "Der Computer wird ausgeschaltet"},
-                    {"text": "Die Webseite wird gelöscht"}
-                ]
-            }
         ]
     },
     "internet": {
@@ -1620,6 +1627,102 @@ const db = {
                     {"text": "Die richtige Speicherung von Passwörtern", "correct": true},
                     {"text": "Das Löschen aller Daten"},
                     {"text": "Schutz vor Hackern und Viren", "correct": true}
+                ]
+            }
+        ]
+    },
+    "email": {
+        "title": "E-Mail",
+        "desc": "Das Quiz zu E-Mail",
+        "questions": [
+            {
+                "text": "Wofür steht E-Mail?",
+                "options": [
+                    {"text": "Elektronische Post", "correct": true},
+                    {"text": "SMS"},
+                    {"text": "Elektronische Werbung"},
+                    {"text": "Elektronischer Test"}
+                ]
+            },
+            {
+                "text": "Wie viele E-Mails können mit einer Nachricht verschicht werden?",
+                "options": [
+                    {"text": "Eine", "correct": true},
+                    {"text": "Zwei", "correct": true},
+                    {"text": "Beliebig viele", "correct": true},
+                    {"text": "Drei", "correct": true}
+                ]
+            },
+            {
+                "text": "Was sind Anhänge?",
+                "options": [
+                    {"text": "An die E-Mail angefügte Dateien", "correct": true},
+                    {"text": "Zusätzliche Empfänger"},
+                    {"text": "Zusätzliche verborgene Empfänger"},
+                    {"text": "Zusätzliche Überschriften"}
+                ]
+            },
+            {
+                "text": "Was ist CC in einer E-Mail?",
+                "options": [
+                    {"text": "Eine Kopie an andere Empfänger", "correct": true},
+                    {"text": "Copy Right"},
+                    {"text": "Eine Blindkopie"},
+                    {"text": "Ein Dateianhang"}
+                ]
+            },
+            {
+                "text": "Wie setzt sich eine E-Mail Adresse zusammen?",
+                "options": [
+                    {"text": "Username, @, Domain", "correct": true},
+                    {"text": "Domain, @, Username"},
+                    {"text": "Username, Domain"},
+                    {"text": "@, Domain"}
+                ]
+            },
+            {
+                "text": "Was ist ein E-Mail Programm?",
+                "options": [
+                    {"text": "Ein Programm, mit dem man E-Mails abrufen kann", "correct": true},
+                    {"text": "Ein Programm, mit dem man E-Mails senden kann", "correct": true},
+                    {"text": "Ein Programm, mit dem man Viren erkennen kann"},
+                    {"text": "Ein Programm, mit dem man andere Programme installieren kann"}
+                ]
+            },
+            {
+                "text": "Was ist ein E-Mail Anbieter?",
+                "options": [
+                    {"text": "Eine Plattform, auf der man sich eine E-Mail Adresse registrieren kann", "correct": true},
+                    {"text": "Eine Plattform, auf der man seine E-Mails abrufen kann", "correct": true},
+                    {"text": "Eine Plattform, auf der man seine E-Mails senden kann", "correct": true},
+                    {"text": "Eine Plattform, auf der man seine Spiele registrieren kann"}
+                ]
+            },
+            {
+                "text": "Welche Aktionen stehen mir bei jedem E-Mail Programm zur Verfügung?",
+                "options": [
+                    {"text": "Antworten", "correct": true},
+                    {"text": "Allen antworten", "correct": true},
+                    {"text": "Weiterleiten", "correct": true},
+                    {"text": "Zurückrufen"}
+                ]
+            },
+            {
+                "text": "Was ist Spam?",
+                "options": [
+                    {"text": "Ja", "correct": true},
+                    {"text": "Nein"},
+                    {"text": "Nein"},
+                    {"text": "Nein"}
+                ]
+            },
+            {
+                "text": "Wo sind Spam E-Mails zu finden?",
+                "options": [
+                    {"text": "Im Spam- oder Junkordner", "correct": true},
+                    {"text": "Im Posteingang"},
+                    {"text": "Im Archivordner"},
+                    {"text": "Unter Gesendete E-Mail"}
                 ]
             }
         ]
