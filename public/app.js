@@ -147,7 +147,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // Set chapters isActive and star
             Object.entries(activeChapters).forEach(([chapterName, chapter]) => {
                 if (!chapters[chapterName]) {
-                    throw new Error(`Chapter '${chapterName}' not available`);
+                    const errorMsg = `Chapter ${chapterName} not found. Please fix in sheet!`;
+                    console.error("Error fetching dynamic list data:", errorMsg);
+                    showSnackbar(errorMsg);
+                    return;
                 }
                 chapters[chapterName].isActive = chapter.isActive;
 

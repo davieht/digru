@@ -307,3 +307,5 @@
 [2025-03-04T15:48:47.418Z] POST /api/quiz/ from ::1
 [2025-03-04T16:01:45.446Z] GET /api/user/ from ::1
 [2025-03-04T16:01:51.498Z] GET /api/chapters/ from ::1
+[2025-03-09T17:50:12.338Z] GET /api/user/ from ::1
+[2025-03-09T17:50:14.245Z] GET /api/chapters/ from ::1

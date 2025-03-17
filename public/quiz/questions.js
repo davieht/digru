@@ -481,7 +481,7 @@ const db = {
     },
     "hardware1": {
         "title": "Hardware",
-        "desc": "Beantworte die Fragen zu Hardware",
+        "desc": "Beantworte die Fragen zu Hardware.",
         "questions": [
             {
                 "text": "Hardwarekomponenten sind?",
