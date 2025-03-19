@@ -1710,10 +1710,10 @@ const db = {
             {
                 "text": "Was ist Spam?",
                 "options": [
-                    {"text": "Ja", "correct": true},
-                    {"text": "Nein"},
-                    {"text": "Nein"},
-                    {"text": "Nein"}
+                    {"text": "Werbung", "correct": true},
+                    {"text": "Ein Dateianhang"},
+                    {"text": "Der Absender"},
+                    {"text": "Der Empfänger"}
                 ]
             },
             {

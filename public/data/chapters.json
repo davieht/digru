@@ -114,7 +114,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=registration",
+                "link": "../quiz/quiz.html?id=login",
                 "description": "Das Quiz zu Login und Registrieren"
             }
         ]
@@ -690,7 +690,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=browser",
+                "link": "../quiz/quiz.html?id=browser2",
                 "description": "Das Quiz zu Browser."
             }
         ]
@@ -752,7 +752,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=searchengines",
+                "link": "../quiz/quiz.html?id=searchengines2",
                 "description": "Das Quiz zu Suchmaschinen."
             }
         ]
@@ -802,7 +802,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=email",
+                "link": "../quiz/quiz.html?id=email2",
                 "description": "Das Quiz zu E-Mail."
             }
         ]
