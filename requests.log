@@ -309,3 +309,12 @@
 [2025-03-04T16:01:51.498Z] GET /api/chapters/ from ::1
 [2025-03-09T17:50:12.338Z] GET /api/user/ from ::1
 [2025-03-09T17:50:14.245Z] GET /api/chapters/ from ::1
+[2025-03-24T13:26:35.272Z] GET /api/user/ from ::1
+[2025-03-24T13:30:32.527Z] GET /api/user/ from ::1
+[2025-03-24T13:30:34.811Z] GET /api/chapters/ from ::1
+[2025-03-24T13:30:43.429Z] GET /api/user/ from ::1
+[2025-03-24T13:30:45.443Z] GET /api/chapters/ from ::1
+[2025-03-24T13:31:23.793Z] GET /api/user/ from ::1
+[2025-03-24T13:31:47.066Z] GET /api/chapters/ from ::1
+[2025-03-24T13:32:01.997Z] GET /api/user/ from ::1
+[2025-03-24T13:32:02.071Z] GET /api/chapters/ from ::1
