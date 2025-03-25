@@ -6,10 +6,10 @@ const db = {
             {
                 "text": "Welche Dinge sind digital?",
                 "options": [
-                    {"text": "Schallplatte", "correct": true},
-                    {"text": "Uhr mit Zeiger", "correct": true},
-                    {"text": "Laptop"},
-                    {"text": "Beamer"}
+                    {"text": "Schallplatte"},
+                    {"text": "Uhr mit Zeiger"},
+                    {"text": "Laptop", "correct": true},
+                    {"text": "Beamer", "correct": true}
                 ]
             },
             {
