@@ -487,17 +487,17 @@ const db = {
                 "text": "Hardwarekomponenten sind?",
                 "options": [
                     {"text": "CPU", "correct": true},
-                    {"text": "GPU", "correct": true},
-                    {"text": "RAM", "correct": true},
-                    {"text": "Mainboard", "correct": true}
+                    {"text": "Arbeitsspeicher", "correct": true},
+                    {"text": "Prozessor", "correct": true},
+                    {"text": "RAM", "correct": true}
                 ]
             },
             {
                 "text": "Hardware ist?",
                 "options": [
-                    {"text": "PC", "correct": true},
-                    {"text": "Grafikkarte", "correct": true},
-                    {"text": "Motherboard", "correct": true},
+                    {"text": "Arbeitsspeicher", "correct": true},
+                    {"text": "Ein Programm"},
+                    {"text": "Computerkomponente", "correct": true},
                     {"text": "Windows"}
                 ]
             },
