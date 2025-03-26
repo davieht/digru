@@ -802,7 +802,7 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=email",
+                "link": "../quiz/quiz.html?id=email2",
                 "description": "Das Quiz zu E-Mail."
             }
         ]

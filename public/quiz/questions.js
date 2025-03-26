@@ -879,16 +879,16 @@ const db = {
         "desc": "Beantworte die Fragen zu den Peripherieanschlüssen",
         "questions": [
             {
-                "text": "VGA (Video Graphics Adapter)",
+                "text": "Welche Signale übermittelt ein VGA-Anschluss(Video Graphics Array)?",
                 "options": [
                     {"text": "Analog Video", "correct": true},
-                    {"text": "Video und Audio"},
+                    {"text": "Audio"},
                     {"text": "Netzwerk"},
-                    {"text": "Maus,Tastatur"}
+                    {"text": "Maus/Tastatur"}
                 ]
             },
             {
-                "text": "DVI (Digital Video Interface)",
+                "text": "Welche Signale übermittelt ein DVI-Anschluss (Digital Video Interface)?",
                 "options": [
                     {"text": "Digital Video", "correct": true},
                     {"text": "Video und Audio"},
@@ -897,7 +897,7 @@ const db = {
                 ]
             },
             {
-                "text": "HDMI (High Definition Multimedia Interface",
+                "text": "Selche Signale übermittelt ein HDMI-Anschluss (High Definition Multimedia Interface)?",
                 "options": [
                     {"text": "Video", "correct": true},
                     {"text": "Audio", "correct": true},
@@ -906,7 +906,7 @@ const db = {
                 ]
             },
             {
-                "text": "Displayport",
+                "text": "Welche Signale übermittelt ein Displayport?",
                 "options": [
                     {"text": "Video", "correct": true},
                     {"text": "Audio", "correct": true},
@@ -915,7 +915,7 @@ const db = {
                 ]
             },
             {
-                "text": "PS/2",
+                "text": "Welche Signale übermittelt ein PS/2-Anschluss?",
                 "options": [
                     {"text": "Video"},
                     {"text": "Audio"},
@@ -924,7 +924,7 @@ const db = {
                 ]
             },
             {
-                "text": "Video",
+                "text": "Welche Schnittstellen ermöglichen eine Videoübertragung",
                 "options": [
                     {"text": "HDMI", "correct": true},
                     {"text": "DisplayPort", "correct": true},
@@ -933,7 +933,7 @@ const db = {
                 ]
             },
             {
-                "text": "Audio",
+                "text": "Welche Schnittstellen ermöglichen eine Audioübertragung?",
                 "options": [
                     {"text": "HDMI", "correct": true},
                     {"text": "Klinke", "correct": true},
@@ -942,7 +942,7 @@ const db = {
                 ]
             },
             {
-                "text": "Tastatur/Maus",
+                "text": "Tastatur/Maus können an welche Anschlüsse angeschlossen werden?",
                 "options": [
                     {"text": "PS/2", "correct": true},
                     {"text": "USB", "correct": true},
@@ -957,7 +957,7 @@ const db = {
         "desc": "Beantworte die Fragen zu Bits und Bytes",
         "questions": [
             {
-                "text": "Alte Speichermedien",
+                "text": "Was sind alte Speichermedien?",
                 "options": [
                     {"text": "Diskette", "correct": true},
                     {"text": "CD", "correct": true},
@@ -966,7 +966,7 @@ const db = {
                 ]
             },
             {
-                "text": "Neue Speichermedien",
+                "text": "Was sind neue Speichermedien?",
                 "options": [
                     {"text": "USB-Stick", "correct": true},
                     {"text": "SD-Karte", "correct": true},
@@ -975,7 +975,7 @@ const db = {
                 ]
             },
             {
-                "text": "1 Bit",
+                "text": "Was ist 1 Bit?",
                 "options": [
                     {"text": "0 oder 1", "correct": true},
                     {"text": "1 oder 0", "correct": true},
@@ -984,7 +984,7 @@ const db = {
                 ]
             },
             {
-                "text": "1 Byte",
+                "text": "Was ist 1 Byte?",
                 "options": [
                     {"text": "8 Bit", "correct": true},
                     {"text": "1024 Kilobyte"},
@@ -993,7 +993,7 @@ const db = {
                 ]
             },
             {
-                "text": "1 Kilobyte",
+                "text": "as ist 1 Kilobyte?",
                 "options": [
                     {"text": "1024 Byte", "correct": true},
                     {"text": "1024 Bit"},
@@ -1002,7 +1002,7 @@ const db = {
                 ]
             },
             {
-                "text": "1 Megabyte",
+                "text": "Was ist 1 Megabyte?",
                 "options": [
                     {"text": "1024 Kilobyte", "correct": true},
                     {"text": "1000 Kilobyte"},
@@ -1011,7 +1011,7 @@ const db = {
                 ]
             },
             {
-                "text": "1 Gigabyte",
+                "text": "Was ist 1 Gigabyte?",
                 "options": [
                     {"text": "1024 Megabyte", "correct": true},
                     {"text": "8 Megabyte"},
@@ -1020,7 +1020,7 @@ const db = {
                 ]
             },
             {
-                "text": "1 Terabyte",
+                "text": "as ist 1 Terabyte?",
                 "options": [
                     {"text": "1024 Gigabyte", "correct": true},
                     {"text": "2^10 Gigabyte", "correct": true},
@@ -1029,7 +1029,7 @@ const db = {
                 ]
             },
             {
-                "text": "16 Bit",
+                "text": "Was sind 16 Bit?",
                 "options": [
                     {"text": "2 Byte", "correct": true},
                     {"text": "1024 Kilobyte"},
@@ -1038,7 +1038,7 @@ const db = {
                 ]
             },
             {
-                "text": "2 Kilobyte",
+                "text": "Was sind 2 Kilobyte?",
                 "options": [
                     {"text": "2 * 1024 Byte", "correct": true},
                     {"text": "8 Bit"},
@@ -1047,7 +1047,7 @@ const db = {
                 ]
             },
             {
-                "text": "8 Byte",
+                "text": "as sind 8 Byte?",
                 "options": [
                     {"text": "64 Bit", "correct": true},
                     {"text": "128 Byte"},
@@ -1059,7 +1059,7 @@ const db = {
     },
     "windowsui": {
         "title": "Die Windows Benutzeroberfläche",
-        "desc": "",
+        "desc": "Beantworte die Fragen zu Windows",
         "questions": [
             {
                 "text": "Was ist ein Betriebssystem?",
@@ -1155,7 +1155,7 @@ const db = {
     },
     "filesystem": {
         "title": "Dateien, Ordner, Programme und Laufwerke",
-        "desc": "",
+        "desc": "Beantworte die Fragen Dateien, Ordner, Programme und Laufwerke",
         "questions": [
             {
                 "text": "Wie werden Daten im Computer gespeichert?",
@@ -1251,7 +1251,7 @@ const db = {
     },
     "explorer": {
         "title": "Der Windows Datei-Explorer",
-        "desc": "",
+        "desc": "Beantworte die Fragen zum Datei-Explorer",
         "questions": [
             {
                 "text": "Der Windows Datei Explorer",
@@ -1415,8 +1415,8 @@ const db = {
         ]
     },
     "browser": {
-        "title": "",
-        "desc": "",
+        "title": "Der Browser",
+        "desc": "Beantworte die Fragen über den Browser",
         "questions": [
             {
                 "text": "Was ist ein Browser?",
@@ -1475,8 +1475,8 @@ const db = {
         ]
     },
     "searchngines": {
-        "title": "",
-        "desc": "",
+        "title": "Suchemaschinen",
+        "desc": "Beantworte die Fragen zu Suchmaschinen",
         "questions": [
             {
                 "text": "Wozu dient eine Suchmaschine?",
@@ -1536,8 +1536,8 @@ const db = {
         ]
     },
     "internet": {
-        "title": "",
-        "desc": "",
+        "title": "Das Internet",
+        "desc": "Beantworte die Fragen über das Internet",
         "questions": [
             {
                 "text": "Was ist das Internet?",
@@ -1631,7 +1631,7 @@ const db = {
             }
         ]
     },
-    "email": {
+    "email2": {
         "title": "E-Mail",
         "desc": "Das Quiz zu E-Mail",
         "questions": [
