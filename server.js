@@ -1,12 +1,11 @@
-const https = require("https");
 const express = require("express");
+const fs = require('fs');
 const axios = require("axios");
 const bodyParser = require("body-parser");
 const path = require('path');
-const fs = require('fs');
+const serverOptions = require('./serveroptions');
 
 const app = express();
-const PORT = 3000;
 
 // Replace with your Google Apps Script Web App URL
 const GOOGLE_SCRIPT_URLs = {
@@ -157,17 +156,18 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Start the server on localhost
+serverOptions.startServer(app);
+
 //app.listen(PORT, () => {
 //    console.log(`Server running on http://localhost:${PORT}`);
 //});
 
-const options = {
-  key: fs.readFileSync("/etc/letsencrypt/live/digru.at/privkey.pem"),
-  cert: fs.readFileSync("/etc/letsencrypt/live/digru.at/fullchain.pem"),
-};
-
-// Start the server
-https.createServer(options, app).listen(443, () => {
-  console.log("HTTPS Server running on port 443");
-});
+//    const options = {
+//        key: fs.readFileSync("/etc/letsencrypt/live/digru.at/privkey.pem"),
+//        cert: fs.readFileSync("/etc/letsencrypt/live/digru.at/fullchain.pem"),
+//    };
+//    
+//    // Start the server
+//    https.createServer(options, app).listen(443, () => {
+//      console.log("HTTPS Server running on port 443");
+//    });

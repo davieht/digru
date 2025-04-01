@@ -6,10 +6,10 @@ const db = {
             {
                 "text": "Welche Dinge sind digital?",
                 "options": [
-                    {"text": "Schallplatte"},
-                    {"text": "Uhr mit Zeiger"},
-                    {"text": "Laptop", "correct": true},
-                    {"text": "Beamer", "correct": true}
+                    {"text": "Schallplatte", "correct": true},
+                    {"text": "Uhr mit Zeiger", "correct": true},
+                    {"text": "Laptop"},
+                    {"text": "Beamer"}
                 ]
             },
             {
@@ -993,7 +993,7 @@ const db = {
                 ]
             },
             {
-                "text": "as ist 1 Kilobyte?",
+                "text": "Was ist 13 Kilobyte?",
                 "options": [
                     {"text": "1024 Byte", "correct": true},
                     {"text": "1024 Bit"},
@@ -1020,7 +1020,7 @@ const db = {
                 ]
             },
             {
-                "text": "as ist 1 Terabyte?",
+                "text": "Was ist 1 Terabyte?",
                 "options": [
                     {"text": "1024 Gigabyte", "correct": true},
                     {"text": "2^10 Gigabyte", "correct": true},
