@@ -993,7 +993,7 @@ const db = {
                 ]
             },
             {
-                "text": "Was ist 13 Kilobyte?",
+                "text": "Was ist 1 Kilobyte?",
                 "options": [
                     {"text": "1024 Byte", "correct": true},
                     {"text": "1024 Bit"},
@@ -1047,7 +1047,7 @@ const db = {
                 ]
             },
             {
-                "text": "as sind 8 Byte?",
+                "text": "Was sind 8 Byte?",
                 "options": [
                     {"text": "64 Bit", "correct": true},
                     {"text": "128 Byte"},
