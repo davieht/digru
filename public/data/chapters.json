@@ -533,8 +533,64 @@
             }
         ]
     },
+    "filemanagement1": {
+        "name": "Dateimanagement",
+        "description": "Dateien  und Ordner anlegen, kopieren und verschieben",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Dateimanagement",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/17iohqEmJ-7q2_XRCycQLLY00qXK4a_tXnctkMnOHP5g",
+                "description": ""
+            },
+            {
+                "name": "Dateimanagement",
+                "type": "pdf",
+                "link": "../assets/pdfs/filemanagement1.pdf",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Übung - Verschieben von Dateien",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            }
+        ]
+    },
+    "filemanagement2": {
+        "name": "Dateimanagement - Auswählen von Dateien",
+        "description": "Dateien, Ordner, Datenträger und Programme",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Dateimanagement - Auswählen von Dateien",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1f3kXtHi0nwz7mKbd2RFFOaBGOdTgBWGJA2lEu_x7hnA/",
+                "description": ""
+            },
+            {
+                "name": "Dateimanagement - Auswählen von Dateien",
+                "type": "pdf",
+                "link": "../assets/pdfs/filemanagement2.pdf",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Übung - Anlegen einer Ordnerstruktur für die Schule",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=filemanagement2",
+                "description": "Draftdescription."
+            }
+        ]
+    },
     "explorer": {
-        "name": "Windows - Der Windowsexplorer",
+        "name": "Der Windowsexplorer",
         "description": "Der Windowsexplorer",
         "image": "../src/windows.png",
         "links": [
@@ -564,52 +620,64 @@
             }
         ]
     },
-    "filemanagement": {
-        "name": "Windows - Dateimanagement",
-        "description": "Dateien, Ordner, Datenträger und Programme",
+    "software": {
+        "name": "Software installieren",
+        "description": "Software installieren und deinstallieren",
         "image": "../src/windows.png",
         "links": [
             {
-                "name": "Dateimanagement",
+                "name": "Software installieren",
                 "type": "slide",
-                "link": "https://docs.google.com/presentation/d/17iohqEmJ-7q2_XRCycQLLY00qXK4a_tXnctkMnOHP5g",
+                "link": "https://docs.google.com/presentation/d/1-Mv3bpjQ3TCfvZX4qVoM7nLW2lYBX6XIJAoj1xexwQY/",
                 "description": ""
             },
             {
-                "name": "Dateimanagement",
+                "name": "Software installieren",
                 "type": "pdf",
-                "link": "../assets/pdfs/filemanagement.pdf",
+                "link": "../assets/pdfs/software.pdf",
                 "description": "Draftdescription."
             },
             {
-                "name": "Übung - Anlegen einer Ordnerstruktur für die Schule",
+                "name": "Übung - Installieren und Deinstallieren eines Programms",
                 "type": "exercise",
                 "link": "",
                 "description": ""
             }
         ]
     },
-    "maintenance": {
-        "name": "Windows - Updates und Installation",
-        "description": "Hier lernst du mehr über die Einstellungen in Windows",
+    "taskmanager": {
+        "name": "Der Taskmanager",
+        "description": "Prozesse und der Taskmanager",
         "image": "../src/windows.png",
         "links": [
             {
-                "name": "Updates und Installation",
+                "name": "Der Taskmanager",
                 "type": "slide",
                 "link": "https://docs.google.com/presentation/d/1-Mv3bpjQ3TCfvZX4qVoM7nLW2lYBX6XIJAoj1xexwQY",
                 "description": ""
             },
             {
-                "name": "Updates und Installation",
+                "name": "Der Taskmanager",
                 "type": "pdf",
-                "link": "../assets/pdfs/maintenance.pdf",
+                "link": "../assets/pdfs/taskmanager.pdf",
                 "description": "Draftdescription."
+            },
+            {
+                "name": "Der Taskmanager",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=C4X2BHBLJ3E",
+                "description": "In diesem Video erfährst du, wie du was der Taskmanager ist und wie du diesen bedienst."
+            },
+            {
+                "name": "Übung - Taskmanager",
+                "type": "exercise",
+                "link": "",
+                "description": ""
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=maintenance",
+                "link": "../quiz/quiz.html?id=taskmanager",
                 "description": "Draftdescription."
             }
         ]
@@ -632,10 +700,10 @@
                 "description": "Draftdescription."
             },
             {
-                "name": "Der Taskmanager",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=C4X2BHBLJ3E",
-                "description": "In diesem Video erfährst du, wie du was der Taskmanager ist und wie du diesen bedienst."
+                "name": "Übung - Computereigenschaften",
+                "type": "exercise",
+                "link": "",
+                "description": ""
             }
         ]
     } ,
