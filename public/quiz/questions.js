@@ -1473,7 +1473,7 @@ const db = {
                 ]
             },
             {
-                "text": "Strg + Alt + Esc",
+                "text": "Strg + Shift + Esc",
                 "options": [
                     {"text": "Ruft den Taskmanager auf", "correct": true},
                     {"text": "Ruft den Windows Explorer auf"},
@@ -1494,7 +1494,7 @@ const db = {
                 "text": "Programme können von wo aus installiert werden?",
                 "options": [
                     {"text": "Überall im Internet", "correct": true},
-                    {"text": "Vom Marketplace", "correct": true},
+                    {"text": "Vom Microsoft Store", "correct": true},
                     {"text": "Von einem USB-Stick", "correct": true},
                     {"text": "Von einer SD-Karte", "correct": true}
                 ]
