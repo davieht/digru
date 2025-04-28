@@ -897,7 +897,7 @@ const db = {
                 ]
             },
             {
-                "text": "Selche Signale übermittelt ein HDMI-Anschluss (High Definition Multimedia Interface)?",
+                "text": "Welche Signale übermittelt ein HDMI-Anschluss (High Definition Multimedia Interface)?",
                 "options": [
                     {"text": "Video", "correct": true},
                     {"text": "Audio", "correct": true},
@@ -1474,7 +1474,7 @@ const db = {
             }
         ]
     },
-    "searchngines": {
+    "searchengines": {
         "title": "Suchemaschinen",
         "desc": "Beantworte die Fragen zu Suchmaschinen",
         "questions": [
