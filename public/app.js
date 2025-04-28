@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Check if additional logic is needed for the route
             switch (baseRoute) {
                 case "home":
+                    showLoadingChapters();
                     (async function () {
                         if (!_chapters) {
                             await loadUser();
@@ -70,6 +71,26 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error loading route:", error);
             showSnackbar(error.message);
         }
+    }
+    
+    async function showLoadingChapters() {
+        const chapterContent = document.getElementById("chapter-content");
+        const template = document.getElementById("chapter-item-template");
+
+        // Clear the placeholder content
+        chapterContent.innerHTML = "";
+        
+        for (let i = 0; i < 9; i++) {
+            // Clone the template content
+            const clone = template.content.cloneNode(true);
+
+            clone.querySelector('.card-image').style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url("../src/placeholder.jpg")`;
+            clone.querySelector('.card-title').textContent = `loading`;
+            clone.querySelector('.card-description').textContent = `loading...`;
+
+            // Append the populated clone to the container
+            chapterContent.appendChild(clone);
+        };
     }
 
     async function populateChapters() {
@@ -139,7 +160,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Filter out chapters whose id is not in activeChapters
             if (!_user.isTeacher) {
-                chapters = Object.fromEntries(Object.entries(chapters).filter(([key, chapter]) =>
+                chapters = Object.fromEntries(
+                        Object.entries(chapters).filter(([key, chapter]) =>
                     activeChapters[key] !== undefined)
                         );
             }
@@ -158,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (chapter.hasQuiz === true) {
                         chapters[chapterName].star = !_user.chapters[chapterName] ? 0 : (_user.chapters[chapterName] >= 100 ? 2 : 1);
                     }
-                }
+            }
             });
 
             _chapters = chapters;

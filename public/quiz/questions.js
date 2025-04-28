@@ -1249,6 +1249,102 @@ const db = {
             }
         ]
     },
+    "filemanagement2": {
+        "title": "Dateimanagement",
+        "desc": "Beantworte die Fragen zum Dateimanagement",
+        "questions": [
+            {
+                "text": "Wie kann eine Datei ausgeführt werden?",
+                "options": [
+                    {"text": "Doppelklick auf die Datei", "correct": true},
+                    {"text": "Wenn eine Datei ausgewählt ist, Enter drücken", "correct": true},
+                    {"text": "Strg drücken und dann Enter"},
+                    {"text": "Rechtsklick auf eine Datei"}
+                ]
+            },
+            {
+                "text": "Was ist drag and drop?",
+                "options": [
+                    {"text": "Das Ziehen und Loslassen von markierten Elementen", "correct": true},
+                    {"text": "Starten einer ausführbaren Datei"},
+                    {"text": "Doppelklick auf eine Datei"},
+                    {"text": "Rechtsklick auf eine Datei"}
+                ]
+            },
+            {
+                "text": "Wie kann ein Ordner angelegt werden?",
+                "options": [
+                    {"text": "Durch eine Option im Kontextmenü", "correct": true},
+                    {"text": "Durch eine Option im Windows-Explorer", "correct": true},
+                    {"text": "Durch einen Linksklick"},
+                    {"text": "Durch eine Option im Windows Startmenü"}
+                ]
+            },
+            {
+                "text": "Was ist das Kontextmenü?",
+                "options": [
+                    {"text": "Ein Meü das mir Optionen für mein angewähltes Objekt bietet", "correct": true},
+                    {"text": "Ein anderes Wort für Ordner"},
+                    {"text": "Eine Festplatte"},
+                    {"text": "Ein Konstrukt, das digitale Information speichert"}
+                ]
+            },
+            {
+                "text": "Wie kann ein Ordner verschoben werden?",
+                "options": [
+                    {"text": "Durch Drag and Drop", "correct": true},
+                    {"text": "Durch drücken von Strg und Klicken"},
+                    {"text": "Durch einen Doppelklick"},
+                    {"text": "Durch markieren und Enter"}
+                ]
+            },
+            {
+                "text": "Was passiert beim verschieben eines Ordners?",
+                "options": [
+                    {"text": "Der Ordner und alle Dateien und Unterordner werden mit verschoben", "correct": true},
+                    {"text": "Der Ordner und seine Unterordner werden verschoben"},
+                    {"text": "Der ausgewählte Ordner und nur die beinhaltenden Dateien werden verschoben"},                    
+                    {"text": "Der Ordner wird verschoben und alle Dateien und Unterordner werden kopiert"}
+                ]
+            },
+            {
+                "text": "Wie kann eine Datei kopiert werden?",
+                "options": [
+                    {"text": "Strg + C und Strg + V", "correct": true},
+                    {"text": "Strg + V"},
+                    {"text": "Strg + C"},
+                    {"text": "Srrg + X und Strg + V"}
+                ]
+            },
+            {
+                "text": "Wie kann eine Datei oder ein Ordner umbenannt werden?",
+                "options": [
+                    {"text": "Durch Auswahl und einen weiteren Klick auf das Element", "correct": true},
+                    {"text": "Durch eine Option im Kontextmenü", "correct": true},
+                    {"text": "Durch einen Doppelklick"},
+                    {"text": "Durch Verschieben"}
+                ]
+            },
+            {
+                "text": "Wie können mehrere Dateien ausgewählt werden?",
+                "options": [
+                    {"text": "Durch das Klicken und Ziehen der Maus", "correct": true},
+                    {"text": "Durch halten von Shift und den Pfeiltasten", "correct": true},
+                    {"text": "Durch Strg + C und Strg + V"},
+                    {"text": "Durch das Windows Startmenü"}
+                ]
+            },
+            {
+                "text": "Wie kann eine einzelne Datei zu meiner Auswahl hinzugefügt werden?",
+                "options": [
+                    {"text": "Durch halten von Strg und Auswahl des Elements", "correct": true},
+                    {"text": "Durch halten von Esc und Auswahl des Elements"},
+                    {"text": "Durch eine Option im Kontextmenü"},
+                    {"text": "Durch eine Option im Browser"}
+                ]
+            }
+        ]
+    },
     "explorer": {
         "title": "Der Windows Datei-Explorer",
         "desc": "Beantworte die Fragen zum Datei-Explorer",
@@ -1327,17 +1423,17 @@ const db = {
             }
         ]
     },
-    "maintenance": {
+    "taskmanager": {
         "title": "Updates und Installation",
         "desc": "Beantworte die Fragen zu Wartung und Performance",
         "questions": [
             {
-                "text": "Warum sollten Updates regelmäßig gemacht werden?",
+                "text": "Was ist Software?",
                 "options": [
-                    {"text": "Updates schließen Sicherheitslücken", "correct": true},
-                    {"text": "Updates bringen neue Features", "correct": true},
-                    {"text": "Updates bringen mehr Geld"},
-                    {"text": "Updates beheben Systemfehler", "correct": true}
+                    {"text": "Ein Computerspiel", "correct": true},
+                    {"text": "Eine App", "correct": true},
+                    {"text": "Ein Internetdienst", "correct": true},
+                    {"text": "Eine Festplatte"}
                 ]
             },
             {
@@ -1404,12 +1500,21 @@ const db = {
                 ]
             },
             {
-                "text": "Wie bekomme ich eine Übersicht über alle installierte Programme?",
+                "text": "Wie bekomme ich eine Übersicht über alle installierten Programme?",
                 "options": [
                     {"text": "Apps und Programme", "correct": true},
                     {"text": "Im Windows Startmenü"},
                     {"text": "Im Windows Explorer"},
                     {"text": "Textedtitor"}
+                ]
+            },
+            {
+                "text": "Worauf sollte ich bei der Installation von Software achten?",
+                "options": [
+                    {"text": "Darauf keine Malware zu installieren", "correct": true},
+                    {"text": "Eine kurze Recherche im Internet kann nicht schaden", "correct": true},
+                    {"text": "Die Software nur beim Hersteller herunterzuladen", "correct": true},
+                    {"text": "Auf meine Grafikkarte"}
                 ]
             }
         ]
