@@ -1283,7 +1283,7 @@ const db = {
             {
                 "text": "Was ist das Kontextmenü?",
                 "options": [
-                    {"text": "Ein Meü das mir Optionen für mein angewähltes Objekt bietet", "correct": true},
+                    {"text": "Ein Menü das mir Optionen für mein angewähltes Objekt bietet", "correct": true},
                     {"text": "Ein anderes Wort für Ordner"},
                     {"text": "Eine Festplatte"},
                     {"text": "Ein Konstrukt, das digitale Information speichert"}
