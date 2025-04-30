@@ -1519,7 +1519,7 @@ const db = {
             }
         ]
     },
-    "browser": {
+    "browser2": {
         "title": "Der Browser",
         "desc": "Beantworte die Fragen über den Browser",
         "questions": [
