@@ -1110,7 +1110,7 @@ const db = {
                 "text": "Wo kann ich mein Wlan auswählen?",
                 "options": [
                     {"text": "In der Taskleiste", "correct": true},
-                    {"text": "In den Einstellungen"},
+                    {"text": "In den Einstellungen", "correct": true},
                     {"text": "Im Windows Startmenü"},
                     {"text": "Im Windows Explorer"}
                 ]

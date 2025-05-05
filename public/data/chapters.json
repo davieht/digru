@@ -719,10 +719,10 @@
                 "description": ""
             },
             {
-                "name": "Browser und Suchmaschinen",
+                "name": "Browser",
                 "type": "pdf",
                 "link": "../assets/pdfs/browser.pdf",
-                "description": "Die Unterlagen zu Browser und Suchmaschinen."
+                "description": "Die Unterlagen zu Browser."
             },
             {
                 "name": "Internet ABC",
