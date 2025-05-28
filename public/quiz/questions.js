@@ -1313,7 +1313,7 @@ const db = {
                     {"text": "Strg + C und Strg + V", "correct": true},
                     {"text": "Strg + V"},
                     {"text": "Strg + C"},
-                    {"text": "Srrg + X und Strg + V"}
+                    {"text": "Strg + X und Strg + V"}
                 ]
             },
             {
@@ -1579,7 +1579,7 @@ const db = {
             }
         ]
     },
-    "searchengines": {
+    "searchengines2": {
         "title": "Suchemaschinen",
         "desc": "Beantworte die Fragen zu Suchmaschinen",
         "questions": [
