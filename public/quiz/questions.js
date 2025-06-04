@@ -1626,7 +1626,7 @@ const db = {
                     {"text": "World Wide Web", "correct": true},
                     {"text": "Weit Weit Weg"},
                     {"text": "Wunder Welt Wissen"},
-                    {"text": "Globales Netzwerk", "correct": true}
+                    {"text": "Wienerwasserwelt"}
                 ]
             },
             {
