@@ -1750,7 +1750,7 @@ const db = {
                 ]
             },
             {
-                "text": "Wie viele E-Mails können mit einer Nachricht verschicht werden?",
+                "text": "Wie viele E-Mails können mit einer Nachricht verschickt werden?",
                 "options": [
                     {"text": "Eine", "correct": true},
                     {"text": "Zwei", "correct": true},
