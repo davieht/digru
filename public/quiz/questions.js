@@ -1032,7 +1032,7 @@ const db = {
                 "text": "Wo kann ich mein Wlan auswählen?",
                 "options": [
                     {"text": "In der Taskleiste", "correct": true},
-                    {"text": "In den Einstellungen"},
+                    {"text": "In den Einstellungen", "correct": true},
                     {"text": "Im Windows Startmenü"},
                     {"text": "Im Windows Explorer"}
                 ]
@@ -1205,7 +1205,7 @@ const db = {
             {
                 "text": "Was ist das Kontextmenü?",
                 "options": [
-                    {"text": "Ein Meü das mir Optionen für mein angewähltes Objekt bietet", "correct": true},
+                    {"text": "Ein Menü das mir Optionen für mein angewähltes Objekt bietet", "correct": true},
                     {"text": "Ein anderes Wort für Ordner"},
                     {"text": "Eine Festplatte"},
                     {"text": "Ein Konstrukt, das digitale Information speichert"}
@@ -1235,7 +1235,7 @@ const db = {
                     {"text": "Strg + C und Strg + V", "correct": true},
                     {"text": "Strg + V"},
                     {"text": "Strg + C"},
-                    {"text": "Srrg + X und Strg + V"}
+                    {"text": "Strg + X und Strg + V"}
                 ]
             },
             {
