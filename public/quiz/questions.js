@@ -1,5 +1,5 @@
 const db = {
-    "digitalanalog": {
+    "digital": {
         "title": "Digital oder Analog",
         "desc": "Bestimme welche Geräte digital oder analog sind",
         "questions": [
@@ -77,7 +77,7 @@ const db = {
             }
         ]
     },
-    "registration": {
+    "login": {
         "title": "Registrierung und Login",
         "desc": "Beantworte die Fragen zu Registrierung und login",
         "questions": [
@@ -779,7 +779,7 @@ const db = {
             }
         ]
     },
-    "periphery1": {
+    "periphery": {
         "title": "Peripheriegeräte",
         "desc": "Beantworte die Fragen zu Peripheriegeräten",
         "questions": [
@@ -811,15 +811,6 @@ const db = {
                 ]
             },
             {
-                "text": "Welche Geräte werden typischerweise für Videokonferenzen benötigt?",
-                "options": [
-                    {"text": "Webcam", "correct": true},
-                    {"text": "Monitor", "correct": true},
-                    {"text": "Scanner"},
-                    {"text": "Kopfhörer", "correct": true}
-                ]
-            },
-            {
                 "text": "Welche Geräte zählen zu den Audioausgabegeräten?",
                 "options": [
                     {"text": "Lautsprecher", "correct": true},
@@ -829,30 +820,12 @@ const db = {
                 ]
             },
             {
-                "text": "Welche Geräte werden für die Eingabe von Text verwendet?",
+                "text": "Welches Gerät dient zur Eingabe von Text?",
                 "options": [
                     {"text": "Tastatur", "correct": true},
                     {"text": "Scanner"},
                     {"text": "Maus"},
                     {"text": "Webcam"}
-                ]
-            },
-            {
-                "text": "Welche Geräte verwenden Tinte oder Toner, um Dokumente zu drucken?",
-                "options": [
-                    {"text": "Drucker", "correct": true},
-                    {"text": "Scanner"},
-                    {"text": "Webcam"},
-                    {"text": "Monitor"}
-                ]
-            },
-            {
-                "text": "Welche Geräte ermöglichen die Navigation auf einem Computerbildschirm?",
-                "options": [
-                    {"text": "Maus", "correct": true},
-                    {"text": "Tastatur", "correct": true},
-                    {"text": "Monitor"},
-                    {"text": "Drucker"}
                 ]
             },
             {
@@ -872,86 +845,35 @@ const db = {
                     {"text": "Monitor"},
                     {"text": "Webcam"}
                 ]
-            }
-        ]},
-    "periphery2": {
-        "title": "Anschlüsse",
-        "desc": "Beantworte die Fragen zu den Peripherieanschlüssen",
-        "questions": [
-            {
-                "text": "Welche Signale übermittelt ein VGA-Anschluss(Video Graphics Array)?",
-                "options": [
-                    {"text": "Analog Video", "correct": true},
-                    {"text": "Audio"},
-                    {"text": "Netzwerk"},
-                    {"text": "Maus/Tastatur"}
-                ]
             },
             {
-                "text": "Welche Signale übermittelt ein DVI-Anschluss (Digital Video Interface)?",
-                "options": [
-                    {"text": "Digital Video", "correct": true},
-                    {"text": "Video und Audio"},
-                    {"text": "Netzwerk"},
-                    {"text": "Maus/Tastatur"}
-                ]
-            },
-            {
-                "text": "Selche Signale übermittelt ein HDMI-Anschluss (High Definition Multimedia Interface)?",
-                "options": [
-                    {"text": "Video", "correct": true},
-                    {"text": "Audio", "correct": true},
-                    {"text": "Netzwerk"},
-                    {"text": "Maus/Tastatur"}
-                ]
-            },
-            {
-                "text": "Welche Signale übermittelt ein Displayport?",
-                "options": [
-                    {"text": "Video", "correct": true},
-                    {"text": "Audio", "correct": true},
-                    {"text": "Netzwerk"},
-                    {"text": "Maus/Tastatur"}
-                ]
-            },
-            {
-                "text": "Welche Signale übermittelt ein PS/2-Anschluss?",
-                "options": [
-                    {"text": "Video"},
-                    {"text": "Audio"},
-                    {"text": "Netzwerk"},
-                    {"text": "Maus/Tastatur", "correct": true}
-                ]
-            },
-            {
-                "text": "Welche Schnittstellen ermöglichen eine Videoübertragung",
+                "text": "Welche Anschlüsse sind Videoanschlüsse?",
                 "options": [
                     {"text": "HDMI", "correct": true},
-                    {"text": "DisplayPort", "correct": true},
-                    {"text": "DVI", "correct": true},
-                    {"text": "VGA", "correct": true}
+                    {"text": "VGA", "correct": true},
+                    {"text": "Display Port", "correct": true},
+                    {"text": "Klinke"}
                 ]
             },
             {
-                "text": "Welche Schnittstellen ermöglichen eine Audioübertragung?",
+                "text": "Welcher Anschluss überträgt Audio?",
                 "options": [
                     {"text": "HDMI", "correct": true},
                     {"text": "Klinke", "correct": true},
-                    {"text": "VGA"},
-                    {"text": "DVI"}
+                    {"text": "Netzwerkanschluss"},
+                    {"text": "VGA"}
                 ]
             },
             {
-                "text": "Tastatur/Maus können an welche Anschlüsse angeschlossen werden?",
+                "text": "Wozu dient ein USB-Anschluss?",
                 "options": [
-                    {"text": "PS/2", "correct": true},
-                    {"text": "USB", "correct": true},
-                    {"text": "DVI"},
-                    {"text": "Klinke"}
+                    {"text": "Datenübertragung", "correct": true},
+                    {"text": "Audioübertragung"},
+                    {"text": "Videoübertragung"},
+                    {"text": "Anschluss für Maus und Tastatur", "correct": true}
                 ]
-            }
-        ]
-    },
+            } 
+        ]},
     "bitsnbytes": {
         "title": "Bits & Bytes",
         "desc": "Beantworte die Fragen zu Bits und Bytes",
@@ -1057,7 +979,7 @@ const db = {
             }
         ]
     },
-    "windowsui": {
+    "winui": {
         "title": "Die Windows Benutzeroberfläche",
         "desc": "Beantworte die Fragen zu Windows",
         "questions": [
@@ -1153,7 +1075,7 @@ const db = {
             }
         ]
     },
-    "filesystem": {
+    "files": {
         "title": "Dateien, Ordner, Programme und Laufwerke",
         "desc": "Beantworte die Fragen Dateien, Ordner, Programme und Laufwerke",
         "questions": [
@@ -1249,7 +1171,7 @@ const db = {
             }
         ]
     },
-    "filemanagement2": {
+    "wincopy": {
         "title": "Dateimanagement",
         "desc": "Beantworte die Fragen zum Dateimanagement",
         "questions": [
@@ -1345,180 +1267,6 @@ const db = {
             }
         ]
     },
-    "explorer": {
-        "title": "Der Windows Datei-Explorer",
-        "desc": "Beantworte die Fragen zum Datei-Explorer",
-        "questions": [
-            {
-                "text": "Der Windows Datei Explorer",
-                "options": [
-                    {"text": "Zeigt Dateien und Ordner an", "correct": true},
-                    {"text": "Ist das gleiche wie der Desktop"},
-                    {"text": "Ermöglicht das Verschieben von Dateien", "correct": true},
-                    {"text": "Ist ein Programm zur Textbearbeitung"}
-                ]
-            },
-            {
-                "text": "Funktionen des Datei Explorers",
-                "options": [
-                    {"text": "Navigieren im Dateisystem", "correct": true},
-                    {"text": "Dateien und Ordner anlegen", "correct": true},
-                    {"text": "Sortieren und Ansichten ändern", "correct": true},
-                    {"text": "Verschieben von Dateien", "correct": true}
-                ]
-            },
-            {
-                "text": "Was zeigt der Dateipfad an?",
-                "options": [
-                    {"text": "Den Speicherort der Datei in Dateisystem", "correct": true},
-                    {"text": "Den freien Speicherplatz"},
-                    {"text": "Das Startmenü"},
-                    {"text": "Alle Festplatten im System"}
-                ]
-            },
-            {
-                "text": "Ein zulässiger Dateipfad",
-                "options": [
-                    {"text": "C:/Benutzer/Olivia/Downloads/hund.jpg", "correct": true},
-                    {"text": "C:Benutzer Olivia Downloads.jpg"},
-                    {"text": "D:/Backup/hund.jpg", "correct": true},
-                    {"text": "Benutzer.Olivia.hund jpg"}
-                ]
-            },
-            {
-                "text": "Eine neue Datei kann mit",
-                "options": [
-                    {"text": "Dem Kontextmenü angelegt werden", "correct": true},
-                    {"text": "Dem Windows Startmenü angelegt werden"},
-                    {"text": "Der Taskleiste angelegt werden"},
-                    {"text": "Durch halten von Strg angelegt werden"}
-                ]
-            },
-            {
-                "text": "Metadaten sind",
-                "options": [
-                    {"text": "Daten über die jeweilige Datei", "correct": true},
-                    {"text": "Dateigröße, Dateityp, Speicherort", "correct": true},
-                    {"text": "Inhalt einer Datei"},
-                    {"text": "Dateien im Ordner"}
-                ]
-            },
-            {
-                "text": "Wie kann eine Datei ausgeführt werden?",
-                "options": [
-                    {"text": "Doppelklick auf die Datei", "correct": true},
-                    {"text": "Wenn eine Datei ausgewählt ist, Enter drücken", "correct": true},
-                    {"text": "Strg drücken und dann Enter"},
-                    {"text": "Rechtsklick auf eine Datei"}
-                ]
-            },
-            {
-                "text": "Was ist drag and drop?",
-                "options": [
-                    {"text": "Das Ziehen und Loslassen von markierten Elementen", "correct": true},
-                    {"text": "Starten einer ausführbaren Datei"},
-                    {"text": "Doppelklick auf eine Datei"},
-                    {"text": "Rechtsklick auf eine Datei"}
-                ]
-            }
-        ]
-    },
-    "taskmanager": {
-        "title": "Updates und Installation",
-        "desc": "Beantworte die Fragen zu Wartung und Performance",
-        "questions": [
-            {
-                "text": "Was ist Software?",
-                "options": [
-                    {"text": "Ein Computerspiel", "correct": true},
-                    {"text": "Eine App", "correct": true},
-                    {"text": "Ein Internetdienst", "correct": true},
-                    {"text": "Eine Festplatte"}
-                ]
-            },
-            {
-                "text": "Ein Programm ist?",
-                "options": [
-                    {"text": "Eine Software", "correct": true},
-                    {"text": "Eine App", "correct": true},
-                    {"text": "Eine Applikation", "correct": true},
-                    {"text": "Ein Prozess"}
-                ]
-            },
-            {
-                "text": "Ein Prozessor ist?",
-                "options": [
-                    {"text": "Eine Hardwarekomponente", "correct": true},
-                    {"text": "Ein Programm"},
-                    {"text": "Ein Prozess"},
-                    {"text": "Eine App"}
-                ]
-            },
-            {
-                "text": "Ein Prozess ist?",
-                "options": [
-                    {"text": "Ein Programm, das im Arbeitsspeicher liegt und ausgeführt wird", "correct": true},
-                    {"text": "Ein Prozessor, der gestartet wurde"},
-                    {"text": "Ein Prozessor, der mit dem Arbeitsspeicher kommuniziert"},
-                    {"text": "Eine Software, die installiert wurde"}
-                ]
-            },
-            {
-                "text": "Der Taskmanager?",
-                "options": [
-                    {"text": "Zeigt alle laufenden Prozesse an", "correct": true},
-                    {"text": "Ist ein Programm in Windows", "correct": true},
-                    {"text": "Zeigt die Speicherauslastung an", "correct": true},
-                    {"text": "Listet alle Dateien auf"}
-                ]
-            },
-            {
-                "text": "Strg + Shift + Esc",
-                "options": [
-                    {"text": "Ruft den Taskmanager auf", "correct": true},
-                    {"text": "Ruft den Windows Explorer auf"},
-                    {"text": "Fährt Windows herunter"},
-                    {"text": "Startet Windows Updates"}
-                ]
-            },
-            {
-                "text": "Software wird?",
-                "options": [
-                    {"text": "Instruiert"},
-                    {"text": "Deinstalliert", "correct": true},
-                    {"text": "Installiert", "correct": true},
-                    {"text": "Demoliert"}
-                ]
-            },
-            {
-                "text": "Programme können von wo aus installiert werden?",
-                "options": [
-                    {"text": "Überall im Internet", "correct": true},
-                    {"text": "Vom Microsoft Store", "correct": true},
-                    {"text": "Von einem USB-Stick", "correct": true},
-                    {"text": "Von einer SD-Karte", "correct": true}
-                ]
-            },
-            {
-                "text": "Wie bekomme ich eine Übersicht über alle installierten Programme?",
-                "options": [
-                    {"text": "Apps und Programme", "correct": true},
-                    {"text": "Im Windows Startmenü"},
-                    {"text": "Im Windows Explorer"},
-                    {"text": "Textedtitor"}
-                ]
-            },
-            {
-                "text": "Worauf sollte ich bei der Installation von Software achten?",
-                "options": [
-                    {"text": "Darauf keine Malware zu installieren", "correct": true},
-                    {"text": "Eine kurze Recherche im Internet kann nicht schaden", "correct": true},
-                    {"text": "Die Software nur beim Hersteller herunterzuladen", "correct": true},
-                    {"text": "Auf meine Grafikkarte"}
-                ]
-            }
-        ]
-    },
     "browser": {
         "title": "Der Browser",
         "desc": "Beantworte die Fragen über den Browser",
@@ -1579,7 +1327,7 @@ const db = {
             }
         ]
     },
-    "searchngines": {
+    "search": {
         "title": "Suchemaschinen",
         "desc": "Beantworte die Fragen zu Suchmaschinen",
         "questions": [
@@ -1637,7 +1385,7 @@ const db = {
                     {"text": "Indem du den Computer neu startest"},
                     {"text": "Indem du den Bildschirm heller machst"}
                 ]
-            },
+            }
         ]
     },
     "internet": {
@@ -1736,7 +1484,7 @@ const db = {
             }
         ]
     },
-    "email2": {
+    "email": {
         "title": "E-Mail",
         "desc": "Das Quiz zu E-Mail",
         "questions": [
@@ -1872,6 +1620,642 @@ const db = {
                     {"text": "Nein"}
                 ]
             }
+        ]
+    },
+    "taskmanager": {
+        "title": "Updates und Installation",
+        "desc": "Beantworte die Fragen zu Wartung und Performance",
+        "questions": [
+            {
+                "text": "Was ist Software?",
+                "options": [
+                    {"text": "Ein Computerspiel", "correct": true},
+                    {"text": "Eine App", "correct": true},
+                    {"text": "Ein Internetdienst", "correct": true},
+                    {"text": "Eine Festplatte"}
+                ]
+            },
+            {
+                "text": "Ein Programm ist?",
+                "options": [
+                    {"text": "Eine Software", "correct": true},
+                    {"text": "Eine App", "correct": true},
+                    {"text": "Eine Applikation", "correct": true},
+                    {"text": "Ein Prozess"}
+                ]
+            },
+            {
+                "text": "Ein Prozessor ist?",
+                "options": [
+                    {"text": "Eine Hardwarekomponente", "correct": true},
+                    {"text": "Ein Programm"},
+                    {"text": "Ein Prozess"},
+                    {"text": "Eine App"}
+                ]
+            },
+            {
+                "text": "Ein Prozess ist?",
+                "options": [
+                    {"text": "Ein Programm, das im Arbeitsspeicher liegt und ausgeführt wird", "correct": true},
+                    {"text": "Ein Prozessor, der gestartet wurde"},
+                    {"text": "Ein Prozessor, der mit dem Arbeitsspeicher kommuniziert"},
+                    {"text": "Eine Software, die installiert wurde"}
+                ]
+            },
+            {
+                "text": "Der Taskmanager?",
+                "options": [
+                    {"text": "Zeigt alle laufenden Prozesse an", "correct": true},
+                    {"text": "Ist ein Programm in Windows", "correct": true},
+                    {"text": "Zeigt die Speicherauslastung an", "correct": true},
+                    {"text": "Listet alle Dateien auf"}
+                ]
+            },
+            {
+                "text": "Strg + Shift + Esc",
+                "options": [
+                    {"text": "Ruft den Taskmanager auf", "correct": true},
+                    {"text": "Ruft den Windows Explorer auf"},
+                    {"text": "Fährt Windows herunter"},
+                    {"text": "Startet Windows Updates"}
+                ]
+            },
+            {
+                "text": "Software wird?",
+                "options": [
+                    {"text": "Instruiert"},
+                    {"text": "Deinstalliert", "correct": true},
+                    {"text": "Installiert", "correct": true},
+                    {"text": "Demoliert"}
+                ]
+            },
+            {
+                "text": "Programme können von wo aus installiert werden?",
+                "options": [
+                    {"text": "Überall im Internet", "correct": true},
+                    {"text": "Vom Microsoft Store", "correct": true},
+                    {"text": "Von einem USB-Stick", "correct": true},
+                    {"text": "Von einer SD-Karte", "correct": true}
+                ]
+            },
+            {
+                "text": "Wie bekomme ich eine Übersicht über alle installierten Programme?",
+                "options": [
+                    {"text": "Apps und Programme", "correct": true},
+                    {"text": "Im Windows Startmenü"},
+                    {"text": "Im Windows Explorer"},
+                    {"text": "Textedtitor"}
+                ]
+            },
+            {
+                "text": "Worauf sollte ich bei der Installation von Software achten?",
+                "options": [
+                    {"text": "Darauf keine Malware zu installieren", "correct": true},
+                    {"text": "Eine kurze Recherche im Internet kann nicht schaden", "correct": true},
+                    {"text": "Die Software nur beim Hersteller herunterzuladen", "correct": true},
+                    {"text": "Auf meine Grafikkarte"}
+                ]
+            }
+        ]
+    },
+    "socialmedia": {
+        "title": "Soziale Netzwerke",
+        "desc": "",
+        "questions": [
+            {
+                "text": "Was sind Soziale Netzwerke?",
+                "options": [
+                    {"text": "Eine Internetplattform", "correct": true},
+                    {"text": "Eine Zeitung"},
+                    {"text": "Ein Speichermedium"},
+                    {"text": "Eine App", "correct": true}
+                ]
+            },
+            {
+                "text": "Wie verdienen Soziale Netzwerke ihr Geld?",
+                "options": [
+                    {"text": "Durch Daten ihrer Nutzer", "correct": true},
+                    {"text": "Durch Werbung", "correct": true},
+                    {"text": "Durch den Verkauf von Daten", "correct": true},
+                    {"text": "Durch Follower"}
+                ]
+            },
+            {
+                "text": "Welche sind bekannte Soziale Netzwerke?",
+                "options": [
+                    {"text": "Facebook", "correct": true},
+                    {"text": "Google"},
+                    {"text": "Windows"},
+                    {"text": "TikTok", "correct": true}
+                ]
+            },
+            {
+                "text": "Was sind die Funktionen Sozialer Netzwerke?",
+                "options": [
+                    {"text": "Hochladen von Fotos", "correct": true},
+                    {"text": "Hochladen von Videos", "correct": true},
+                    {"text": "Gruppenchat", "correct": true},
+                    {"text": "Freundeslisten", "correct": true}
+                ]
+            },
+            {
+                "text": "Was sind Privatsphäreeinstellungen?",
+                "options": [
+                    {"text": "Einstellungen in welchen ich einstellen kann, wer welche Fotos sehen kann", "correct": true},
+                    {"text": "Einstellungen in welchen ich die Helligkeit einstellen kann"},
+                    {"text": "Einstellungen in welchen ich meine Beiträge verbergen kann", "correct": true},
+                    {"text": "Einstellungen in welchen ich einstellen kann, wer mich adden kann.", "correct": true}
+                ]
+            },
+            {
+                "text": "Was ist der Digitale Fingerabdruck?",
+                "options": [
+                    {"text": "Alle Daten die ich im Internet hinterlasse", "correct": true},
+                    {"text": "Ein eingescannter Fingerabdruck"},
+                    {"text": "Privatspäreeinstellungen"},
+                    {"text": "Eine Textnachricht in Whatsapp"}
+                ]
+            },
+            {
+                "text": "Was ist schlecht an Sozialen Netzwerken?",
+                "options": [
+                    {"text": "Kann zur Sucht werden", "correct": true},
+                    {"text": "Vieles ist nicht echt", "correct": true},
+                    {"text": "Kann zu mobbing führen", "correct": true},
+                    {"text": "Daten werden an andere Unternehmen verkauft", "correct": true}
+                ]
+            },
+            {
+                "text": "Was zählt zu Sozialen Netzwerken?",
+                "options": [
+                    {"text": "Eine App", "correct": true},
+                    {"text": "Eine Website", "correct": true},
+                    {"text": "Eine Streamingplattform", "correct": true},
+                    {"text": "Gruppenchats", "correct": true}
+                ]
+            },
+            {
+                "text": "Welche meiner Daten sind auf Sozialen Netzwerken?",
+                "options": [
+                    {"text": "Alter", "correct": true},
+                    {"text": "Geschlecht", "correct": true},
+                    {"text": "Interessen", "correct": true},
+                    {"text": "Bilder", "correct": true}
+                ]
+            },
+            {
+                "text": "Worauf sollte ich achten, wenn ich Fotos online stelle?",
+                "options": [
+                    {"text": "Peinlichkeiten im Foto", "correct": true},
+                    {"text": "Ob deine Freunde auf dem Foto zugestimmt haben", "correct": true},
+                    {"text": "Filter"},
+                    {"text": "Die Belichtung"}
+                ]
+            }
+        ]
+    },
+    "influmercial": {
+        "title": "Werbung und Influencer",
+        "desc": "",
+        "questions": [
+            {
+                "text": "Was ist Werbung?",
+                "options": [
+                    {"text": "Ein Video im Fernsehen, welches ein Produkt zeigt", "correct": true},
+                    {"text": "Ein Video im Internet, welches ein Produkt zeigt", "correct": true},
+                    {"text": "Ein Plakat am Straßenrand", "correct": true},
+                    {"text": "Eine Anzeige auf einer Website, welches ein Produkt zeigt", "correct": true}
+                ]
+            },
+            {
+                "text": "Warum gibt es Werbung?",
+                "options": [
+                    {"text": "Damit wir Dinge kaufen und Firmen so Geld verdienen", "correct": true},
+                    {"text": "Damit wir die Wahrheit über alle Produkte erfahren"},
+                    {"text": "Damit wir erfahren, was man nicht kaufen sollte"},
+                    {"text": "Damit wir schöner und besser werden"}
+                ]
+            },
+            {
+                "text": "Was ist Schleichwerbung?",
+                "options": [
+                    {"text": "Wenn Werbung versteckt und nicht klar gekennzeichnet ist", "correct": true},
+                    {"text": "Wenn Menschen oder Tiere in der Werbung schleichen"},
+                    {"text": "Nicht genannte Produkte in Videos von Influencern", "correct": true},
+                    {"text": "Wenn es sich um Werbung für Schleichschuhe handelt"}
+                ]
+            },
+            {
+                "text": "Wie kommen Firmen an deine Daten?",
+                "options": [
+                    {"text": "Über Gewinnspiele", "correct": true},
+                    {"text": "Über Formulare", "correct": true},
+                    {"text": "Wenn sie Daten einkaufen", "correct": true},
+                    {"text": "Durch nachfragen bei einer Behörde"}
+                ]
+            },
+            {
+                "text": "Was sind Eigenschaften von Werbung?",
+                "options": [
+                    {"text": "Sie möchte hauptsächlich informieren"},
+                    {"text": "Sie ist immer wahr"},
+                    {"text": "Sie soll dich davon überzeugen, für ein Produkt Geld auszugeben", "correct": true},
+                    {"text": "Sie soll dir ein gutes Gefühl vermitteln", "correct": true}
+                ]
+            },
+            {
+                "text": "Warum sollte man bei Influencer-Empfehlungen vorsichtig sein?",
+                "options": [
+                    {"text": "Weil Influencer mit Werbung Geld verdienen", "correct": true},
+                    {"text": "Weil Influencer nie die Wahrheit sagen"},
+                    {"text": "Weil alle YouTube-Videos falsch sind"},
+                    {"text": "Weil Influencer böse sind"}
+                ]
+            },
+            {
+                "text": "Was ist ein Influencer?",
+                "options": [
+                    {"text": "Eine Person, die durch Werbung auf Sozialen Netzwerken Geld verdient", "correct": true},
+                    {"text": "Ein Unternehmen"},
+                    {"text": "Eine Marke"},
+                    {"text": "Eine Person, die Nachrichten im Fernsehen präsentiert"}
+                ]
+            },
+            {
+                "text": "Was ist ein Produkt?",
+                "options": [
+                    {"text": "Eine Sache die gekauft werden kann", "correct": true},
+                    {"text": "Eine Sache die von einem Unternehmen beworben wird", "correct": true},
+                    {"text": "Eine Marke"},
+                    {"text": "Eine Firma"}
+                ]
+            },
+            {
+                "text": "Was ist ein Unternehmen?",
+                "options": [
+                    {"text": "Eine Firma", "correct": true},
+                    {"text": "Ein Produkt"},
+                    {"text": "Eine Website"},
+                    {"text": "Ein Werbevideo"}
+                ]
+            },
+            {
+                "text": "Was ist eine Dienstleistung?",
+                "options": [
+                    {"text": "Ein Lieferservice", "correct": true},
+                    {"text": "Ein Service, der von einem Unternehmen angeboten wird", "correct": true},
+                    {"text": "Ein Produkt, das verkauft wird"},
+                    {"text": "Ein Gegenstand der gekauft werden kann"}
+                ]
+            }
+        ]
+    },
+    "digitalwell": {
+        "title": "Digitale Gesundheit",
+        "desc": "",
+        "questions": [
+            {
+                "text": "Was ist die Filterblase?",
+                "options": [
+                    {"text": "Man sieht sich immer nur dasselbe an", "correct": true},
+                    {"text": "Man bekommt Vorschläge, die immer nur seinen Interessen entsprechen", "correct": true},
+                    {"text": "Ein Luftballon"},
+                    {"text": "Eine Funktion zum Filtern von Inhalten"}
+                ]
+            },
+            {
+                "text": "Was sind Anzeichen einer Sucht?",
+                "options": [
+                    {"text": "Man kann nicht mehr aufhören", "correct": true},
+                    {"text": "Man ist nervös und die Leistung lässt nach", "correct": true},
+                    {"text": "Man ist Hungrig"},
+                    {"text": "Man sieht blau"}
+                ]
+            },
+            {
+                "text": "Was sind Auswirkungen einer Sucht?",
+                "options": [
+                    {"text": "Man kann schwer einschlafen", "correct": true},
+                    {"text": "Lernen fällt einem schwer", "correct": true},
+                    {"text": "Man fühlt sich schlecht", "correct": true},
+                    {"text": "Man lügt über seine Suchtgewohnheiten", "correct": true}
+                ]
+            },
+            {
+                "text": "Warum wollen Apps und Scial Media, dass wir liken?",
+                "options": [
+                    {"text": "Dadurch werden Daten unserer Interessen generiert", "correct": true},
+                    {"text": "Weil wir dadurch Geld verdienen"},
+                    {"text": "Weil das Unternehmen dadurch Geld verdient", "correct": true},
+                    {"text": "Weil wir dadurch die Wahrheit finden", "correct": true}
+                ]
+            },
+            {
+                "text": "Was sind Algorithmen?",
+                "options": [
+                    {"text": "Programme die uns Vorschläge anhand unserer Interessen liefern", "correct": true},
+                    {"text": "Viren"},
+                    {"text": "Tiere"},
+                    {"text": "Streaming Apps"}
+                ]
+            },
+            {
+                "text": "Was ist die Bildschirmzeit?",
+                "options": [
+                    {"text": "Die komplette Zeit, in der mein Smartphone Bildschirm angeschaltet war", "correct": true},
+                    {"text": "Die tägliche Zeit vor Bildschirmen aller Art", "correct": true},
+                    {"text": "Ein Uhr, die auf einem Bildschirm angezeigt wird"},
+                    {"text": "Die Zeit, die der Bildschirm beim Einschalten benötigt"}
+                ]
+            },
+            {
+                "text": "Was kann man gegen eine Sucht tun?",
+                "options": [
+                    {"text": "Bildschirmzeiten festlegen und einhalten", "correct": true},
+                    {"text": "Einem Hobby nachgehen", "correct": true},
+                    {"text": "Sport machen", "correct": true},
+                    {"text": "Eine andere Sucht entwickeln"}
+                ]
+            },
+            {
+                "text": "Was solltest du vermeiden?",
+                "options": [
+                    {"text": "Zocken oder Handy vor dem Einschlafen", "correct": true},
+                    {"text": "Handy oder Zocken neben den Hausaufgaben", "correct": true},
+                    {"text": "Mehr als 2,5 Stunden am Tag Bildschirmzeit", "correct": true},
+                    {"text": "Immer aufs Handy schauen"}
+                ]
+            },
+            {
+                "text": "Worauf solltest du bei der Bildschirmarbeit achten?",
+                "options": [
+                    {"text": "Aufrechte Sitzposition", "correct": true},
+                    {"text": "Jede Stunde eine Pause machen", "correct": true},
+                    {"text": "Ausreichend Bewegung machen", "correct": true},
+                    {"text": "Nicht auf Sport verzichten", "correct": true}
+                ]
+            }
+        ]
+    },
+    "copyright": {
+        "title": "Das Urheberrecht",
+        "desc": "",
+        "questions": [
+            {
+                "text": "Was ist digitales Eigentum?",
+                "options": [
+                    {"text": "Alles was du digital selbst erstellt hast", "correct": true},
+                    {"text": "Meine Hausaufgaben"},
+                    {"text": "Selbst gemachte Fotos", "correct": true},
+                    {"text": "Selbst erstellte Videos", "correct": true}
+                ]
+            },
+            {
+                "text": "Welche digitalen Medien unterliegen dem Urhebergesetz?",
+                "options": [
+                    {"text": "Bild", "correct": true},
+                    {"text": "Film", "correct": true},
+                    {"text": "Musik", "correct": true},
+                    {"text": "Textdokument", "correct": true}
+                ]
+            },
+            {
+                "text": "Worauf muss ich beim Herunterladen von Digitalen Medien achten?",
+                "options": [
+                    {"text": "Ob diese frei verfügbar sind", "correct": true},
+                    {"text": "Ob ich diese für die Schule verwende", "correct": true},
+                    {"text": "Ob diese Kopiergeschützt sind"},
+                    {"text": "Ob diese etwas kosten"}
+                ]
+            },
+            {
+                "text": "Was darf man nicht?",
+                "options": [
+                    {"text": "Ein Bild aus dem Internet kopieren und als eigenes ausgeben", "correct": true},
+                    {"text": "Ein Bild eines Freundes/Freundin kopieren und als eigenes ausgeben", "correct": true},
+                    {"text": "Einen Text abschreiben und veröffentlichen", "correct": true},
+                    {"text": "Ein Video illegal herunterladen", "correct": true}
+                ]
+            },
+            {
+                "text": "Wer ist der Urheber?",
+                "options": [
+                    {"text": "Jener der ein Werk selbst erstellt hat.", "correct": true},
+                    {"text": "Jemand der Uhren hebt"},
+                    {"text": "Jemand der Urahnen hat"},
+                    {"text": "Jener der ein Werk veröffentlicht hat"}
+                ]
+            },
+            {
+                "text": "Was sind die Rechte eines Urhebers?",
+                "options": [
+                    {"text": "Der Urheber darf entscheiden wer das Werk verwenden darf", "correct": true},
+                    {"text": "Der Urheber darf damit Geld verdienen", "correct": true},
+                    {"text": "Der Urheber darf bestimmen, ob es verändert werden darf", "correct": true},
+                    {"text": "Der Urheber darf auch andere Werke weiterverwenden"}
+                ]
+            },
+            {
+                "text": "Was sind die Pflichten eines Urhebers?",
+                "options": [
+                    {"text": "Der Urheber muss die Privatsphäre anderer wahren", "correct": true},
+                    {"text": "Der Urheber darf Fotos mit anderen Personen ungefragt veröffentlichen"},
+                    {"text": "Der Urheber darf Fotos veröffentlichen auf denen Personen unkenntlich gemacht wurden", "correct": true},
+                    {"text": "Der Urheber darf Fotos anderer veröffentlichen"}
+                ]
+            },
+            {
+                "text": "Worauf muss ich achten, bevor man andere Personen fotografiert?",
+                "options": [
+                    {"text": "Man muss die Person vorher um Erlaubnis fragen", "correct": true},
+                    {"text": "Man muss nur um Erlaubnis fragen, wenn man selbst nicht auf dem Foto ist"},
+                    {"text": "Man muss nichts beachten"},
+                    {"text": "Man muss darauf achten, nur eine Person auf dem Foto abzubilden"}
+                ]
+            }           
+        ]
+    },
+    "gdpr": {
+        "title": "Datenschutz und Cookies",
+        "desc": "",
+        "questions": [
+            {
+                "text": "Was musst du beim online stellen von Fotos beachten?",
+                "options": [
+                    {"text": "Ich darf die Datenschutzrechte anderer Personen nicht verletzen", "correct": true},
+                    {"text": "Ich sollte darauf achten, keine peinlichen Fotos von mir online zu stellen", "correct": true},
+                    {"text": "Ich sollte bedenken, dass Fotos möglicherweise nicht mehr gelöscht werden können", "correct": true},
+                    {"text": "Ich muss nichts beachten"}
+                ]
+            },
+            {
+                "text": "Was sind personenbezogene Daten?",
+                "options": [
+                    {"text": "Name", "correct": true},
+                    {"text": "Geburtsdatum", "correct": true},
+                    {"text": "Geschlecht", "correct": true},
+                    {"text": "Meine Interessen"}
+                ]
+            },
+            {
+                "text": "Was ist die DSGVO?",
+                "options": [
+                    {"text": "Ein Gesetz, welche dich vor unerlaubter Datenverarbeitung schützt", "correct": true},
+                    {"text": "Ein Gesetz für die Straßenregeln"},
+                    {"text": "Das Urhebergesetz"},
+                    {"text": "Eine Abkürung für Cookies"}
+                ]
+            },
+            {
+                "text": "Was ist Datenschutz?",
+                "options": [
+                    {"text": "Datenschutz schützt dich und andere Personen vor unerlaubter Datenverarbeitung", "correct": true},
+                    {"text": "Durch den Datenschutz kann eine Datei nicht kopiert werden"},
+                    {"text": "Durch den Datenschutz kann nicht von einem Datenträger gelsen werden"},
+                    {"text": "Der Datenschutz verhindert das unerlaubte Herunterladen von Spielen"}
+                ]
+            },
+            {
+                "text": "Was sind anonymisierte Daten?",
+                "options": [
+                    {"text": "Anonyme Daten dürfen nicht auf eine Person zurückverfolgt werden können", "correct": true},
+                    {"text": "Anonyme Daten dürfen von Firmen verarbeitet werden", "correct": true},
+                    {"text": "Anonyme Daten dürfen Namen beinhalten"},
+                    {"text": "Anonyme Daten sind Daten die unkenntlich gemacht werden", "correct": true}
+                ]
+            },
+            {
+                "text": "Warum ist Datenschutz wichtig?",
+                "options": [
+                    {"text": "Datenschutz ist Privatsphäre", "correct": true},
+                    {"text": "Datenschutz ist ein Grundrecht", "correct": true},
+                    {"text": "Damit du nicht ausspioniert werden kann", "correct": true},
+                    {"text": "Damit keiner deine Daten weitergeben kann", "correct": true}
+                ]
+            },
+            {
+                "text": "Was sind Cookies?",
+                "options": [
+                    {"text": "Kleine Datenpakete", "correct": true},
+                    {"text": "Datenpakete die Speicherstände beinhalten können", "correct": true},
+                    {"text": "Datenpakete die im Browser gespeichert werden", "correct": true},
+                    {"text": "Seitenelemente zur Navigation auf einer Website"}
+                ]
+            },
+            {
+                "text": "Wozu dienen Cookies?",
+                "options": [
+                    {"text": "Sie verbessern die User Experience", "correct": true},
+                    {"text": "Dadurch kann sich die Seite deine Einstellungen merken", "correct": true},
+                    {"text": "Cookies schießen auf deine Interessen", "correct": true},
+                    {"text": "Durch Cookies kann dir entsprechende Werbung gezeigt werden", "correct": true}
+                ]
+            },
+            {
+                "text": "Was ist ein Cookie Banner",
+                "options": [
+                    {"text": "Ein visuelles Element, mit dem man Einstellungen zur für die Cookies machen kann", "correct": true},
+                    {"text": "Werbung"},
+                    {"text": "Privatsphäre-Einstellungen für die Website", "correct": true},
+                    {"text": "Eine Seitennavigation"}
+                ]
+            },
+            {
+                "text": "Was kannst du bei Datenmissbrauch tun?",
+                "options": [
+                    {"text": "Eltern oder einer Vertrauensperson Bescheid geben", "correct": true},
+                    {"text": "Kontaktaufnahme zu der Person, die meine Daten geklaut hat und bitten diese zu löschen", "correct": true},
+                    {"text": "Sich an Datenschutzbeauftragte wenden oder zur Polizei gehen", "correct": true},
+                    {"text": "Aufgeben, wird nicht so schlimm sein"}
+                ]
+            }
+        ]
+    },
+    "password": {
+        "title": "Sicheres Passwort",
+        "desc": "",
+        "questions": [
+            {
+                "text": "Wozu werden Passwörter gebraucht?",
+                "options": [
+                    {"text": "Um seine Daten zu schützen", "correct": true},
+                    {"text": "Um sich auf einer Website einloggen zu können", "correct": true},
+                    {"text": "Damit andere keinen Zugriff auf dein Profil haben", "correct": true},
+                    {"text": "Um Werbung auszuschalten"}
+                ]
+            },
+            {
+                "text": "Was ist ein sicheres Passwort",
+                "options": [
+                    {"text": "Ein Wort mit Zahlen, Buchstaben und Sonderzeichen", "correct": true},
+                    {"text": "Ein Wort aus Kombination von bestehenden Wörtern"},
+                    {"text": "Ein Wort bestehend aus einer langen Zahl"},
+                    {"text": "Ein kurzes Wort und Ziffern"}
+                ]
+            },
+            {
+                "text": "Warum benötigt man ein starkes Passwort",
+                "options": [
+                    {"text": "Weil Computer schnell sind Passwörter zu knacken", "correct": true},
+                    {"text": "Weil Kombinationen aus Wörtern leicht zu knacken sind", "correct": true},
+                    {"text": "Weil man ansonsten sich nicht einloggen kann"},
+                    {"text": "Weil es Vorgaben auf Websiten sind"}
+                ]
+            },
+            {
+                "text": "Was ist ein Passwortmanager?",
+                "options": [
+                    {"text": "Ein Passwortmanager speichert Passwörter", "correct": true},
+                    {"text": "Ein Passwortmanager erstellt mir sichere Passwörter", "correct": true},
+                    {"text": "Ein Passwortmanager kann Passwörter widerherstellen"},
+                    {"text": "Ein Passwortmanager ist ein zweiter Faktor"}
+                ]
+            },
+            {
+                "text": "Welche sind starke Passwörter?",
+                "options": [
+                    {"text": "dsSu!iD8#d-f0§df", "correct": true},
+                    {"text": "passwort132"},
+                    {"text": "MeinAuto1"},
+                    {"text": "MAissfaaaa"}
+                ]
+            },
+            {
+                "text": "Was ist eine Zwei-Faktor-Authentifizierung?",
+                "options": [
+                    {"text": "Ein zusätzlicher Sicherheitsmechanismus zu meinem Passwort", "correct": true},
+                    {"text": "Wird mit meinem Fingerabdruck bestätigt", "correct": true},
+                    {"text": "Ein zweites Passwort"},
+                    {"text": "Ein Login ohne Passwort"}
+                ]
+            },
+            {
+                "text": "Wie sollte ich mit meinen Passwörter umgehen?",
+                "options": [
+                    {"text": "Ein starkes Passwort wählen", "correct": true},
+                    {"text": "Passwörter nicht offen herumliegen lassen", "correct": true},
+                    {"text": "Ausloggen und computer sperren, wenn ich diesen verlasse", "correct": true},
+                    {"text": "Zwei-Faktor-Authetifizierung einstellen", "correct": true}
+                ]
+            },
+            {
+                "text": "Welche Zwei-Faktor Methoden gibt es?",
+                "options": [
+                    {"text": "Code Per Post", "correct": true},
+                    {"text": "Fingerabdruck", "correct": true},
+                    {"text": "Einmalcode", "correct": true},
+                    {"text": "Code per SMS", "correct": true}
+                ]
+            },
+            {
+                "text": "Wie funktionert eine Zwei-Faktor-Authentifizierung?",
+                "options": [
+                    {"text": "Nach der Passworteingabe muss man den zweiten Faktor bestätigen", "correct": true},
+                    {"text": "Nach der Passworteingabe muss nocheinmal das Passwort eingegeben werden"},
+                    {"text": "Der Zweite Faktor muss vor der Passworteingabe bestätigt werden"},
+                    {"text": "Der Zweite Faktor muss sowohl vor als auch nach der Passworteingabe bestätigt werden"}
+                ]
+            },
         ]
     },
     "placeholder": {

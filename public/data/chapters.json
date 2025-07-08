@@ -31,10 +31,17 @@
             }
         ]
     },
-    "digiintro": {
+    "digru": {
+        "name": "Draft",
+        "description": "In diesem Kapitel melden wir uns auf der Plattform Digru an.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+        ]
+    },
+    "digital": {
         "name": "Digitale Grundbildung",
         "description": "Erste Grundlagen in Digitaler Grundbildung.",
-        "image": "",
+        "image": "../src/firststeps.jpg",
         "links": [
             {
                 "name": "Digitale Grundbildung",
@@ -46,52 +53,27 @@
                 "name": "Digitale Grundbildung",
                 "type": "pdf",
                 "link": "../assets/pdfs/digiintro.pdf",
-                "description": "In diesem Kaptiel erfährst du mehr über deinen Lehrer und den Digitalen Unterricht."
+                "description": "In diesem Kaptiel erfährst du mehr die Unterschiede zwischen digital und analog."
+            },
+            {
+                "name": "Internet ABC - Computer ABC",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/computer-abc/pc-bestandteile/1",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung deines Laptops."
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=digitalanalog",
+                "link": "../quiz/quiz.html?id=digital",
                 "description": "Dein erstes Quiz."
             }
         ]
     },
-    "firststeps": {
-        "name": "Erste Schritte - Dein Laptop",
-        "description": "Erste Grundlagen über deinen Laptop",
-        "image": "../src/firststeps.jpg",
+    "laptop": {
+        "name": "Laptopausgabe",
+        "description": "In diesem Kapitel bekommst du deinen eigenen Laptop.",
+        "image": "../src/placeholder.jpg",
         "links": [
-            {
-                "name": "Erste Schritte",
-                "type": "interactive",
-                "link": "https://www.internet-abc.de/lm/computer-abc/pc-bestandteile/1",
-                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung deines Laptops."
-            }
-        ]
-    },
-    "keyboardbasic": {
-        "name": "Die Tastatur - Grundlagen",
-        "description": "Arbeiten mit Maus und Tastatur",
-        "image": "../src/keyboard.jpg",
-        "links": [
-            {
-                "name": "Maus und Tastatur",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1NT1sarzBk_949MUzJYQJ8693l3auoL_EGg3GCH5mN_I/",
-                "description": ""
-            },
-            {
-                "name": "Maus und Tastatur",
-                "type": "pdf",
-                "link": "../assets/pdfs/keyboard.pdf",
-                "description": "Die Unterlagen zu Maus und Tastatur."
-            },
-            {
-                "name": "Der Texteditor - Schreiben lernen",
-                "type": "exercise",
-                "link": "",
-                "description": "• Ich bin [dein Name]\n• Meine Lieblingsfarbe ist [deine Lieblingsfarbe]\n• Mein Lieblingsessen ist [dein Lieblingsessen]\n• Mein Lieblingstier ist [dein Lieblingstier]"
-            }
         ]
     },
     "login": {
@@ -119,65 +101,9 @@
             }
         ]
     },
-    "typewrite": {
-        "name": "Die Tastatur - Das Zehnfingersystem",
-        "description": "In diesem Kapitel lernst du wie du effizient mit der Tastatur schreiben kannst.",
-        "image": "../src/keyboard.jpg",
-        "links": [
-            {
-                "name": "Das Zehnfingersystem",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1_vI1berNL8axAKQ_oafFXuw5tJWauB54QuquXy6fELI/",
-                "description": ""
-            },
-            {
-                "name": "Das Zehnfingersystem",
-                "type": "pdf",
-                "link": "../assets/pdfs/typewriting.pdf",
-                "description": "Hier lernst du wie du effizient mit dem Zehnfingersystem schreiben lernst."
-            },
-            {
-                "name": "typista.de",
-                "type": "interactive",
-                "link": "https://typista.de/",
-                "description": "Mit diesem Lernprogramm lernst du das Zehnfingersystem."
-            }
-        ]
-    },
-    "specialchar": {
-        "name": "Die Tastatur - Sonderzeichen",
-        "description": "In diesem Kapitel lernst du was Sonderzeichen sind und wie du sie schreiben kannst.",
-        "image": "../src/keyboard.jpg",
-        "links": [
-            {
-                "name": "Sonderzeichen",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/14erRuSNrM_Afc-dyNuJ649_tGjDLfO9k8DXdCd__5I8/",
-                "description": ""
-            },
-            {
-                "name": "Sonderzeichen",
-                "type": "pdf",
-                "link": "../assets/pdfs/specialchars.pdf",
-                "description": "Alles über Sonderzeichen."
-            },
-            {
-                "name": "Dialog",
-                "type": "exercise",
-                "link": "",
-                "description": "Schreibe einen Dialog zwischen zwei Schüler, die sich kennen lernen. Achte dabei genau auf Satz- und Sonderzeichen:\n\nSchüler: \"Hallo?\"\nIch: \"Hallo! Wie geht’s?\"\nSchüler: \"Danke, gut! Und dir?\"\nIch: \"Sehr gut. Wie viel Geld hast du?\"\nSchüler: \"€5. Und du?\"\nIch: \"Alles Geld der Welt. :)\""
-            },
-            {
-                "name": "Emoticons mit Sonderzeichen",
-                "type": "exercise",
-                "link": "",
-                "description": "Wusstest du, dass man Smilies auch mit Sonderzeichen schreiben kann? Schreibe so viele Emoticons wie möglich auf, sei kreativ! Hier ein paar Beispiele, die du auch selbst ausprobieren kannst:\n\n:-)      Normales Smiley\n8-)      Smiley mit Sonnenbrille\n:-]      Duckface Smiley\n:-/      Unsicheres Smiley\nx-D      Lachendes Smiley"
-            }
-        ]
-    },
     "keyboard": {
-        "name": "Die Tastatur - Ergänzendes",
-        "description": "Maus und Tastatur und das Abschlussquiz",
+        "name": "Die Tastatur",
+        "description": "In diesem Kapitel lernst du die Funktionen der Tastatur",
         "image": "../src/keyboard.jpg",
         "links": [
             {
@@ -205,6 +131,12 @@
                 "description": "In diesem Video werden die Tasten auf der Tastatur erklärt."
             },
             {
+                "name": "Der Texteditor - Schreiben lernen",
+                "type": "exercise",
+                "link": "",
+                "description": "• Ich bin [dein Name]\n• Meine Lieblingsfarbe ist [deine Lieblingsfarbe]\n• Mein Lieblingsessen ist [dein Lieblingsessen]\n• Mein Lieblingstier ist [dein Lieblingstier]"
+            },
+            {
                 "name": "Quiz",
                 "type": "quiz",
                 "link": "../quiz/quiz.html?id=keyboard",
@@ -212,6 +144,43 @@
             }
         ]
     },
+    "typewrite": {
+        "name": "Die Tastatur - Das Zehnfingersystem",
+        "description": "In diesem Kapitel lernst du wie du effizient mit der Tastatur schreiben kannst.",
+        "image": "../src/keyboard.jpg",
+        "links": [
+            {
+                "name": "Maus und Tastatur",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1NT1sarzBk_949MUzJYQJ8693l3auoL_EGg3GCH5mN_I/",
+                "description": ""
+            },
+            {
+                "name": "Maus und Tastatur",
+                "type": "pdf",
+                "link": "../assets/pdfs/keyboard.pdf",
+                "description": "Die Unterlagen zu Maus und Tastatur."
+            },
+            {
+                "name": "typista.de",
+                "type": "interactive",
+                "link": "https://typista.de/",
+                "description": "Mit diesem Lernprogramm lernst du das Zehnfingersystem."
+            },
+            {
+                "name": "Dialog",
+                "type": "exercise",
+                "link": "",
+                "description": "Schreibe einen Dialog zwischen zwei Schüler, die sich kennen lernen. Achte dabei genau auf Satz- und Sonderzeichen:\n\nSchüler: \"Hallo?\"\nIch: \"Hallo! Wie geht’s?\"\nSchüler: \"Danke, gut! Und dir?\"\nIch: \"Sehr gut. Wie viel Geld hast du?\"\nSchüler: \"€5. Und du?\"\nIch: \"Alles Geld der Welt. :)\""
+            },
+            {
+                "name": "Emoticons mit Sonderzeichen",
+                "type": "exercise",
+                "link": "",
+                "description": "Wusstest du, dass man Smilies auch mit Sonderzeichen schreiben kann? Schreibe so viele Emoticons wie möglich auf, sei kreativ! Hier ein paar Beispiele, die du auch selbst ausprobieren kannst:\n\n:-)      Normales Smiley\n8-)      Smiley mit Sonnenbrille\n:-]      Duckface Smiley\n:-/      Unsicheres Smiley\nx-D      Lachendes Smiley"
+            }
+        ]
+    },    
     "shortcuts": {
         "name": "Tastenkombindationen",
         "description": "In diesem Kapitel lernst du was Tastenkürzel sind",
@@ -220,7 +189,7 @@
             {
                 "name": "Tastenkombinationen",
                 "type": "slide",
-                "link": "https://docs.google.com/presentation/d/10k7misOyb3VmwFb8uZBAqioS50WpK9_2526Jce0bKQA",
+                "link": "https://docs.google.com/presentation/d/1NT1sarzBk_949MUzJYQJ8693l3auoL_EGg3GCH5mN_I/",
                 "description": ""
             },
             {
@@ -235,6 +204,602 @@
                 "link": "../quiz/quiz.html?id=shortcuts",
                 "description": "Das Quiz zu Tastenkürzel."
             }
+        ]
+    },
+    "recap1": {
+        "name": "Wiederholung",
+        "description": "Wiederholung des ersten Semesters",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=recap1",
+                "description": "Wiederholung des ersten Semesters"
+            }
+        ]
+    },
+    "winui": {
+        "name": "Windows - Die Benutzeroberfläche",
+        "description": "In diesem Kapitel lernst du über die Windows Benutzeroberfläche.",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Windows",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1MRhRvBMpR2O1aimib31fQlsb19SdttPxbOBQ6Japw9w",
+                "description": ""
+            },
+            {
+                "name": "Windows",
+                "type": "pdf",
+                "link": "../assets/pdfs/windowsui.pdf",
+                "description": "Die Unterlagen zur Windows Benutzeroberfläche."
+            },
+            {
+                "name": "Die Benutzeroberfläche (optional)",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=z6qjH4YCZQc",
+                "description": "In diesem Video wird dir erklärt, wie du mit Windows arbeitest."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=winui",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "files": {
+        "name": "Dateien, Ordner und Programme",
+        "description": "In diesem Kapitel lernst du was Dateien, Ordner und Programme sind.",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Dateisysteme",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1qBlFG0Tmy6MBxQuEYOGXNoe7hpNTPoGmWyTxlubpT34",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Dateisysteme",
+                "type": "pdf",
+                "link": "../assets/pdfs/filesystem.pdf",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Windows",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=pEaCloPuN5k",
+                "description": "In diesem Video erfährst du, was der Datei-Explorer ist und wie du mit diesem arbeitest.."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=files",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Der Windowsexplorer",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1p7zsd512s0VBsn17vpbd9skMHf4aM2fGnDsYfAtJgwg",
+                "description": ""
+            }
+        ]
+    },
+    "wincopy": {
+        "name": "Dateimanagement",
+        "description": "Dateien  und Ordner anlegen, kopieren und verschieben",
+        "image": "../src/windows.png",
+        "links": [
+            {
+                "name": "Dateimanagement",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1DJpVaV6ZCne1dl77--zgZYIm-LfXHOKnYvjHWRajRbs",
+                "description": ""
+            },
+            {
+                "name": "Dateimanagement",
+                "type": "pdf",
+                "link": "../assets/pdfs/filemanagement1.pdf",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Übung - Verschieben von Dateien",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Übung - Anlegen einer Ordnerstruktur für die Schule",
+                "type": "exercise",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=wincopy",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "browser": {
+        "name": "Der Browser 1",
+        "description": "Hier lernst du was ein Browser ist und wie du diesen bedienst",
+        "image": "../src/browsers.jpeg",
+        "links": [
+            {
+                "name": "Browser",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1uzULkvtxvo1ap05cC8YAyLNmUoGudQTUNUXxAvAjOu8",
+                "description": ""
+            },
+            {
+                "name": "Browser und Suchmaschinen",
+                "type": "pdf",
+                "link": "../assets/pdfs/browser.pdf",
+                "description": "Die Unterlagen zu Browser und Suchmaschinen."
+            },
+            {
+                "name": "Internet ABC - Unterwegs im Internet",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/unterwegs-im-internet-so-gehts",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung eines Browsers"
+            },
+            {
+                "name": "Suchen und Finden im Internet",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=m2bktLTzpWs",
+                "description": "In diesem Video erfährst du, wie du im Internet suchen kannst."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=browser",
+                "description": "Das Quiz zu Browser."
+            }
+        ]
+    },
+    "search": {
+        "name": "Suchmaschinen 1",
+        "description": "Hier lernst du was Suchmaschinen sind und wie du diese bedienst",
+        "image": "../src/searchengine.jpg",
+        "links": [
+            {
+                "name": "Suchmaschinen",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1irnWj2HjYz3R-DAA2DjgRd10x9XP0d2r5gR8E6NWLO8",
+                "description": ""
+            },
+            {
+                "name": "Suchmaschinen",
+                "type": "pdf",
+                "link": "../assets/pdfs/searchengines.pdf",
+                "description": "Die Unterlagen zu Browser und Suchmaschinen."
+            },
+            {
+                "name": "Internet ABC - Suchen und Finden im Internet",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/suchen-und-finden",
+                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung einer Suchmaschine."
+            },
+            {
+                "name": "Wie funktioniert eine Suchmaschine?",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=Rr-uWTO_HAw",
+                "description": "Dieses Video erklärt dir wie eine Suchmaschine funktioniert."
+            },
+            {
+                "name": "Personalisierte Suche",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=3mdoyI2xHB8",
+                "description": "Dieses Video erklärt warum du überall mit Werbung konfrontiert bist."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=search",
+                "description": "Das Quiz zu Suchmaschinen."
+            }
+        ]
+    },
+    "email": {
+        "name": "Das E-Mail",
+        "description": "In diesem Kapitel lernst du wie du elektronische Post sendest und empfängst",
+        "image": "../src/email.jpg",
+        "links": [
+            {
+                "name": "Das E-Mail 1",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1QsLVuWVm9GOtrrEAoBdSqgU3dJOIkihw1ahXMZIpf_s/",
+                "description": ""
+            },
+            {
+                "name": "Das E-Mail",
+                "type": "pdf",
+                "link": "../assets/pdfs/email.pdf",
+                "description": "Die Unterlagen zu E-Mail."
+            },
+            {
+                "name": "Internet ABC - E-Mail, Post für dich",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/e-mail-post-fuer-dich",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=email",
+                "description": "Das Quiz zu E-Mail."
+            }
+        ]
+    },
+    "ppt": {
+        "name": "Präsentieren mit Powerpoint",
+        "description": "In diesem Kapitel lernst du, wie du eine Präsentation mit Powerpoint erstellen kannst.",
+        "image": "",
+        "links": [
+            {
+                "name": "Einleitung und Begrüßung",
+                "type": "slide",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Powerpoint",
+                "type": "pdf",
+                "link": "",
+                "description": "Die Unterlagen zu Powerpoint."
+            },
+            {
+                "name": "Erste Schritte mit Powerpoint",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=kbpkdxL-Ubg",
+                "description": "Dieses Video erklärt, wie du mit Powerpoint Präsentationsfolien erstellen kannst."
+            },
+            {
+                "name": "Geburtstagseinladung",
+                "type": "exercise",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "blockly": {
+        "name": "Programmieren mit Blockly",
+        "description": "Eine Einführung in das Programmieren. Mit Blockly",
+        "image": "../src/blockly.jpg",
+        "links": [
+            {
+                "name": "Programmieren",
+                "type": "slide",
+                "link": "",
+                "description": ""
+            },
+            {
+                "name": "Programmieren",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Blockly",
+                "type": "exercise",
+                "link": "https://blockly.games/",
+                "description": "Löse die Aufgaben mit Blockly."
+            }
+        ]
+    },
+
+    "recap2": {
+        "name": "Draft",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "socialmedia": {
+        "name": "Soziale Netzwerke",
+        "description": "Hier lernst du mehr über Soziale Netzwerke.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Soziale Netzwerke",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1wehkaCp2B7xeHrON4dRYZOr4ouC2DnasanP6WyT9VDo",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Internet ABC - Soziale Medien",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/soziale-netzwerke",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Saferinternet - Schnitzeljagt Soziale Netzwerke",
+                "type": "interactive",
+                "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=2",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=socialmedia",
+                "description": "Das Quiz zu Soziale Medien."
+            },
+            {
+                "name": "Saferinternet - Flyer WhatsApp",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_WhatsApp.pdf",
+                "description": "Dieser Flyer erklärt dir WhatsApp."
+            },
+            {
+                "name": "Saferinternet - Flyer Youtube",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Youtube.pdf",
+                "description": "Dieser Flyer erklärt dir YouTube."
+            },
+            {
+                "name": "Saferinternet - Flyer Snapchat",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Snapchat.pdf",
+                "description": "Dieser Flyer erklärt dir Snapchat."
+            },
+            {
+                "name": "Saferinternet - Flyer TikTok",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_TikTok.pdf",
+                "description": "Dieser Flyer erklärt dir TikTok."
+            },
+            {
+                "name": "Saferinternet - Flyer Instagram",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Instagram.pdf",
+                "description": "Dieser Flyer erklärt dir Instagram."
+            }
+        ]
+    },
+    "influmercial": {
+        "name": "Draft",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Influencer und Werbung",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1F5DfVE2KgXjjmX9bSbIaZQ5w3UFZPrLO5x768FesFMw",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Internet ABC - Werbung, Influencer und Gewinnspiele",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/werbung-influencer-gewinnspiele",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Saferinternet - Schnitzeljagt Influencer",
+                "type": "pdf",
+                "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=6",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=influmercial",
+                "description": "Das Quiz zu Influencer und Werbung."
+            }
+        ]
+    },
+    "digitalwell": {
+        "name": "Digital Wellbeing",
+        "description": "In diesem Kapitel erfährst du mehr über Bildschirmzeiten und Gesundheit mit Digitalen Medien",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Digital Wellbeing",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1DAomlxqx2WpgqSDNgxLiUfFTvNNvhwmxAWNx_azSK-E",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Internet ABC - Youtube, Streaming und Bildschirmzeiten",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/youtube-streaming-bildschirmzeiten",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Saferinternet - Flyer",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Suechtig.pdf",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=digitalwell",
+                "description": "Das Quiz zu Digital Wellbeing."
+            }
+        ]
+    },
+    "mobbing": {
+        "name": "Cybermobbing",
+        "description": "In diesem Kapitel lernst du was Cybermobbing ist und wie man sich dagegen wehren kann.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Cybermobbing",
+                "type": "slide",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Internet ABC - Cybermobbing",
+                "type": "pdf",
+                "link": "https://www.internet-abc.de/lm/cybermobbing",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Saferinternet - Schnitzeljagt Cybermobbing",
+                "type": "pdf",
+                "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=1",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=email",
+                "description": "Das Quiz zu Cybermobbing."
+            }
+        ]
+    },
+    "grooming": {
+        "name": "Draft",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Saferinternet - Flyer",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Online-Grooming.pdf",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Saferinternet - Schnitzeljagt Cybergrooming",
+                "type": "pdf",
+                "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=7",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "recap3": {
+        "name": "Draft",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "copyright": {
+        "name": "Copyright",
+        "description": "In diesem Kapitel lernst du über digitales Eigentum und wie man damit umgeht.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Urheberrecht",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1XzsjT93zGcRvKXtR3-XOSkhYDS43yJjI-YZv1iAVuqo",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Saferinternet - Flyer",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Bilder_Videos.pdf",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Internet ABC - Text und Bild, kopieren und weitergeben",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/text-und-bild",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=copyright",
+                "description": "Das Quiz zu Urheberrecht."
+            }
+        ]
+    },
+    "gdpr": {
+        "name": "Datenschutz",
+        "description": "In diesem Kapitel lernst du mehr über deine Rechte über deine persönlichen Daten",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Datenschutz",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1CUFkVBcrNYTrWon7KbDUqXlyM-Ws8-eUajWRnoJ_wwI",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Internet ABC - Datenschutz, das bleibt privat",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/datenschutz-das-bleibt-privat",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Was tun bei Datenmissbrauch - Flyer",
+                "type": "link",
+                "link": "https://www.internet-abc.de/lm/module-assets/data-protection/download/erste-hilfe-bei-datenmissbrauch.pdf",
+                "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
+            },
+            {
+                "name": "Cookies",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=4y5pKc66CAk",
+                "description": "Dieses Video erklärt dir, was Cookies sind."
+            },
+            {
+                "name": "Clickclickclickclick",
+                "type": "interactive",
+                "link": "https://clickclickclick.click/",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=gdpr",
+                "description": "Das Quiz zu Datenschutz."
+            }
+        ]
+    },
+    "password": {
+        "name": "Sicheres Passwort",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Sicheres Passwort",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1QASuuNwWPNZhkUC2J073adxuaUw77pdtHTQ-Bs_b-8E",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "InternetABC - Die schlechtesten Passwörter aller Zeiten",
+                "type": "link",
+                "link": "https://www.internet-abc.de/kinder/hobby-freizeit/neues-uebers-netz/archiv/april-juni-2015/die-schlechtesten-passwoerter-aller-zeiten/",
+                "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
+            },
+            {
+                "name": "Check dein Passwort",
+                "type": "link",
+                "link": "https://checkdeinpasswort.de/",
+                "description": "Auf dieser Seite kannst du testen wie (un)sicher deine Passwörter sind"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=password",
+                "description": "Das Quiz zu Siches Passwort."
+            }            
         ]
     },
     "history": {
@@ -268,7 +833,7 @@
             }
         ]
     },
-    "hardware1": {
+    "hardware": {
         "name": "Hardware 1",
         "description": "Computerhardware, der Prozessor und Arbeitsspeicher",
         "image": "../src/hardware.jpg",
@@ -290,74 +855,24 @@
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=oG69WH5nea0",
                 "description": "In diesem Video erfährst du wie ein Prozessor funktioniert."
-            }, {
+            }, 
+            {
                 "name": "Der Arbeitsspeicher (RAM)",
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=7Cw2MvuTqkM",
                 "description": "In diesem Video erfährst du wie der Arbeitsspeicher (RAM) funktioniert."
             },
             {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=hardware1",
-                "description": "Das Quiz zu Computerhardware, Prozessor und Arbeitsspeicher."
-            }
-        ]
-    },
-    "hardware2": {
-        "name": "Hardware 2",
-        "description": "Über Festplatten, das Mainboard und die Grafikkarte",
-        "image": "../src/hardware.jpg",
-        "links": [
-            {
-                "name": "Hardware",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1DRBPvXa-1cOuSRBkiwfMvnq4K_jp9cGJMD0cTze3Lts",
-                "description": ""
-            },
-            {
-                "name": "Festplatten, Mainboard und GPU",
-                "type": "pdf",
-                "link": "../assets/pdfs/hardware.pdf",
-                "description": "Hier erfährst du alles zu Computerhardware.",
-                "draft": true
-            },
-            {
                 "name": "Festplatten (HDD und SSD)",
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=JTNWaFbJPw0",
                 "description": "In diesem Video erfährst du was Festplatten sind und wie sie funktionieren."
-            }, {
+            }, 
+            {
                 "name": "Die Grafikkarte (GPU)",
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=KRC1Mlz4rCk",
                 "description": "In diesem Video erfährst du was eine Grafikkarte ist."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=hardware2",
-                "description": "Das Quiz zu Festplatten, Mainboard und Grafikkarte."
-            }
-        ]
-    },
-    "hardware3": {
-        "name": "Hardware 3",
-        "description": "PCI-Karten, das Netzteil und weitere Komponenten",
-        "image": "../src/hardware.jpg",
-        "links": [
-            {
-                "name": "hardware",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1DRBPvXa-1cOuSRBkiwfMvnq4K_jp9cGJMD0cTze3Lts",
-                "description": ""
-            },
-            {
-                "name": "PCI-Karten, Netzteil",
-                "type": "pdf",
-                "link": "../assets/pdfs/hardware.pdf",
-                "description": "Hier erfährst du alles zu Computerhardware.",
-                "draft": true
             },
             {
                 "name": "Interne Anschlüsse",
@@ -373,12 +888,12 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=hardware3",
-                "description": "Das Quiz zu Hardware."
+                "link": "../quiz/quiz.html?id=hardware",
+                "description": "Das Quiz zu Computerhardware, Prozessor und Arbeitsspeicher."
             }
         ]
     },
-    "periphery1": {
+    "periphery": {
         "name": "Peripheriegeräte",
         "description": "In diesem Kapitel lernst du was Peripheriegeräte sind.",
         "image": "",
@@ -402,31 +917,6 @@
                 "description": "In diesem Video erfährst du mehr über die Ein- und Ausgabegeräte und wie diese mit dem Computer interagieren."
             },
             {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=periphery1",
-                "description": "Das Quiz zu Peripheriegeräte."
-            }
-        ]
-    },
-    "periphery2": {
-        "name": "Schnittstellen und Anschlüsse",
-        "description": "In diesem Kapitel lernst du welche Schnittstellen und Anschlüsse es gibt.",
-        "image": "../src/interfaces.jpg",
-        "links": [
-            {
-                "name": "Schnittstellen und Anschlüsse",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1mMEEj6k_Kc_T4U33b3y04BuyjXGXIu5ZbO2jFPYiBck",
-                "description": ""
-            },
-            {
-                "name": "Schnittstellen und Anschlüsse",
-                "type": "pdf",
-                "link": "../assets/pdfs/periphery.pdf",
-                "description": "Die Unterlagen zu den Computeranschlüssen."
-            },
-            {
                 "name": "Schnittstellen und Anschlüsse",
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=w8B6Yta-lUc",
@@ -435,8 +925,122 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=periphery2",
-                "description": "Das Quiz zu Schnittstellen und Anschlüsse."
+                "link": "../quiz/quiz.html?id=periphery",
+                "description": "Das Quiz zu Peripheriegeräte."
+            }
+        ]
+    },
+    "word": {
+        "name": "Draft",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+
+    "recap3": {
+        "name": "Draft",
+        "description": "Thisisadraft.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            }
+        ]
+    },
+    "internet": {
+        "name": "Das Internet - Grundlagen1",
+        "description": "Hier lernst du was das Internet ist",
+        "image": "../src/internet.jpg",
+        "links": [
+            {
+                "name": "Das Internet",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1tQoufcvYEEvYtKx8AVk__6KHJnfn5koJziR-lDFAaxw",
+                "description": ""
+            },
+            {
+                "name": "Das Internet",
+                "type": "pdf",
+                "link": "../assets/pdfs/internet1.pdf",
+                "description": "Die Unterlagen erklären, wie das Internet funktioniert."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/so-funktioniert-das-internet-die-technik",
+                "description": "In diesem interaktiven Lernmodul erfährst du, wie das Internet funktioniert."
+            },
+            {
+                "name": "Datentransfer",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=ccspDEMDJTo",
+                "description": "Dieses Video erklärt, wie der Datentransfer über das Internet funktioniert."
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=internet",
+                "description": "Das Quiz zum Thema Internet."
+            }
+        ]
+    },
+    "malware": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "scam": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
             }
         ]
     },
@@ -471,155 +1075,483 @@
             }
         ]
     },
-    "windowsui": {
-        "name": "Windows - Die Benutzeroberfläche",
-        "description": "In diesem Kapitel lernst du über die Windows Benutzeroberfläche.",
-        "image": "../src/windows.png",
+    "encoding": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Windows",
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "recap4": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "html": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "css": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "install": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "task": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "os": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "opensource": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "linux": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "excel": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+
+    "recap5": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "ml": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "fakenews": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "deepfakes": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "js": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "sexting": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "digiimpact": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "recap6": {
+        "name": "todo",
+        "description": "todo.",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Draft",
+                "type": "pdf",
+                "link": "",
+                "description": "Draftdescription."
+            },
+            {
+                "name": "Das Internet",
+                "type": "interactive",
+                "link": "todo",
+                "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=todo",
+                "description": ""
+            }
+        ]
+    },
+    "project": {
+        "name": "Projekt",
+        "description": "Das Abschlussprojekt",
+        "image": "../src/project.jpg",
+        "links": [
+            {
+                "name": "Das Abschlussprojekt",
                 "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1MRhRvBMpR2O1aimib31fQlsb19SdttPxbOBQ6Japw9w",
+                "link": "https://docs.google.com/presentation/d/1NG_fqqLBR_epIEQrPD6vIu-Io81TWV6OvhkeQDFJgnc",
                 "description": ""
             },
             {
-                "name": "Windows",
+                "name": "Das Abschlussprojekt",
                 "type": "pdf",
-                "link": "../assets/pdfs/windowsui.pdf",
-                "description": "Die Unterlagen zur Windows Benutzeroberfläche."
+                "link": "../assets/pdfs/project.pdf",
+                "description": "Draftdescription."
             },
             {
                 "name": "Betriebssysteme",
                 "type": "video",
                 "link": "https://www.youtube.com/watch?v=oFlk_m-7sfQ",
                 "description": "In diesem Video erfährst du was Betriebssysteme sind."
-            },
-            {
-                "name": "Die Benutzeroberfläche (optional)",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=z6qjH4YCZQc",
-                "description": "In diesem Video wird dir erklärt, wie du mit Windows arbeitest."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=windowsui",
-                "description": "Draftdescription."
             }
         ]
     },
-    "filesystem": {
-        "name": "Dateien, Ordner und Programme",
-        "description": "In diesem Kapitel lernst du was Dateien, Ordner und Programme sind.",
-        "image": "../src/windows.png",
-        "links": [
-            {
-                "name": "Dateisysteme",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1qBlFG0Tmy6MBxQuEYOGXNoe7hpNTPoGmWyTxlubpT34",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Dateisysteme",
-                "type": "pdf",
-                "link": "../assets/pdfs/filesystem.pdf",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=filesystem",
-                "description": "Draftdescription."
-            }
-        ]
-    },
-    "filemanagement1": {
-        "name": "Dateimanagement",
-        "description": "Dateien  und Ordner anlegen, kopieren und verschieben",
-        "image": "../src/windows.png",
-        "links": [
-            {
-                "name": "Dateimanagement",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/17iohqEmJ-7q2_XRCycQLLY00qXK4a_tXnctkMnOHP5g",
-                "description": ""
-            },
-            {
-                "name": "Dateimanagement",
-                "type": "pdf",
-                "link": "../assets/pdfs/filemanagement1.pdf",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Übung - Verschieben von Dateien",
-                "type": "exercise",
-                "link": "",
-                "description": ""
-            }
-        ]
-    },
-    "filemanagement2": {
-        "name": "Dateimanagement - Auswählen von Dateien",
-        "description": "Dateien, Ordner, Datenträger und Programme",
-        "image": "../src/windows.png",
-        "links": [
-            {
-                "name": "Dateimanagement - Auswählen von Dateien",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1f3kXtHi0nwz7mKbd2RFFOaBGOdTgBWGJA2lEu_x7hnA/",
-                "description": ""
-            },
-            {
-                "name": "Dateimanagement - Auswählen von Dateien",
-                "type": "pdf",
-                "link": "../assets/pdfs/filemanagement2.pdf",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Übung - Anlegen einer Ordnerstruktur für die Schule",
-                "type": "exercise",
-                "link": "",
-                "description": ""
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=filemanagement2",
-                "description": "Draftdescription."
-            }
-        ]
-    },
-    "explorer": {
-        "name": "Der Windowsexplorer",
-        "description": "Der Windowsexplorer",
-        "image": "../src/windows.png",
-        "links": [
-            {
-                "name": "Der Windowsexplorer",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1p7zsd512s0VBsn17vpbd9skMHf4aM2fGnDsYfAtJgwg",
-                "description": ""
-            },
-            {
-                "name": "Der Windowsexplorer",
-                "type": "pdf",
-                "link": "../assets/pdfs/explorer.pdf",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Windows",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=pEaCloPuN5k",
-                "description": "In diesem Video erfährst du, was der Datei-Explorer ist und wie du mit diesem arbeitest.."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=explorer",
-                "description": "Draftdescription."
-            }
-        ]
-    },
+    
     "software": {
         "name": "Software installieren",
         "description": "Software installieren und deinstallieren",
@@ -704,317 +1636,6 @@
                 "type": "exercise",
                 "link": "",
                 "description": ""
-            }
-        ]
-    } ,
-    "browser1": {
-        "name": "Der Browser 1",
-        "description": "Hier lernst du was ein Browser ist und wie du diesen bedienst",
-        "image": "../src/browsers.jpeg",
-        "links": [
-            {
-                "name": "Browser",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1uzULkvtxvo1ap05cC8YAyLNmUoGudQTUNUXxAvAjOu8",
-                "description": ""
-            },
-            {
-                "name": "Browser und Suchmaschinen",
-                "type": "pdf",
-                "link": "../assets/pdfs/browser.pdf",
-                "description": "Die Unterlagen zu Browser und Suchmaschinen."
-            },
-            {
-                "name": "Internet ABC",
-                "type": "interactive",
-                "link": "https://www.internet-abc.de/lm/unterwegs-im-internet-so-gehts",
-                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung eines Browsers"
-            }
-        ]
-    },
-    "browser2": {
-        "name": "Der Browser 2",
-        "description": "Hier lernst du was ein Browser ist und wie du diesen bedienst",
-        "image": "../src/browsers.jpeg",
-        "links": [
-            {
-                "name": "Browser",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1uzULkvtxvo1ap05cC8YAyLNmUoGudQTUNUXxAvAjOu8",
-                "description": ""
-            },
-            {
-                "name": "Browser und Suchmaschinen",
-                "type": "pdf",
-                "link": "../assets/pdfs/browser.pdf",
-                "description": "Die Unterlagen zu Browser und Suchmaschinen."
-            },
-            {
-                "name": "Suchen und Finden im Internet",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=m2bktLTzpWs",
-                "description": "In diesem Video erfährst du, wie du im Internet suchen kannst."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=browser2",
-                "description": "Das Quiz zu Browser."
-            }
-        ]
-    },
-    "searchengines1": {
-        "name": "Suchmaschinen 1",
-        "description": "Hier lernst du was Suchmaschinen sind und wie du diese bedienst",
-        "image": "../src/searchengine.jpg",
-        "links": [
-            {
-                "name": "Suchmaschinen",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1irnWj2HjYz3R-DAA2DjgRd10x9XP0d2r5gR8E6NWLO8",
-                "description": ""
-            },
-            {
-                "name": "Suchmaschinen",
-                "type": "pdf",
-                "link": "../assets/pdfs/searchengines.pdf",
-                "description": "Die Unterlagen zu Browser und Suchmaschinen."
-            },
-            {
-                "name": "Suchen und Finden im Internet",
-                "type": "interactive",
-                "link": "https://www.internet-abc.de/lm/suchen-und-finden",
-                "description": "In diesem interaktiven Lernmodul erfährst du die Grundlagen zur Bedienung einer Suchmaschine."
-            }
-        ]
-    },
-    "searchengines2": {
-        "name": "Suchmaschinen 2",
-        "description": "Hier lernst du was Suchmaschinen sind und wie du diese bedienst",
-        "image": "../src/searchengine.jpg",
-        "links": [
-            {
-                "name": "Suchmaschinen",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1irnWj2HjYz3R-DAA2DjgRd10x9XP0d2r5gR8E6NWLO8",
-                "description": ""
-            },
-            {
-                "name": "Suchmaschinen",
-                "type": "pdf",
-                "link": "../assets/pdfs/searchengines.pdf",
-                "description": "Die Unterlagen zu Browser und Suchmaschinen."
-            },
-            {
-                "name": "Wie funktioniert eine Suchmaschine?",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=Rr-uWTO_HAw",
-                "description": "Dieses Video erklärt dir wie eine Suchmaschine funktioniert."
-            },
-            {
-                "name": "Personalisierte Suche",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=3mdoyI2xHB8",
-                "description": "Dieses Video erklärt warum du überall mit Werbung konfrontiert bist."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=searchengines2",
-                "description": "Das Quiz zu Suchmaschinen."
-            }
-        ]
-    },
-    "email1": {
-        "name": "Das E-Mail",
-        "description": "In diesem Kapitel lernst du wie du elektronische Post sendest und empfängst",
-        "image": "../src/email.jpg",
-        "links": [
-            {
-                "name": "Das E-Mail 1",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1QsLVuWVm9GOtrrEAoBdSqgU3dJOIkihw1ahXMZIpf_s/",
-                "description": ""
-            },
-            {
-                "name": "Das E-Mail",
-                "type": "pdf",
-                "link": "../assets/pdfs/email.pdf",
-                "description": "Die Unterlagen zu E-Mail."
-            },
-            {
-                "name": "Das E-Mail",
-                "type": "interactive",
-                "link": "https://www.internet-abc.de/lm/e-mail-post-fuer-dich",
-                "description": "Draftdescription."
-            }
-        ]
-    },
-    "email2": {
-        "name": "Das E-Mail 2",
-        "description": "In diesem Kapitel lernst du wie du elektronische Post sendest und empfängst",
-        "image": "../src/email.jpg",
-        "links": [
-            {
-                "name": "Das E-Mail",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1QsLVuWVm9GOtrrEAoBdSqgU3dJOIkihw1ahXMZIpf_s/",
-                "description": ""
-            },
-            {
-                "name": "Das E-Mail",
-                "type": "pdf",
-                "link": "../assets/pdfs/email.pdf",
-                "description": "Die Unterlagen zu E-Mail."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=email2",
-                "description": "Das Quiz zu E-Mail."
-            }
-        ]
-    },
-    "internetbasic": {
-        "name": "Das Internet - Grundlagen1",
-        "description": "Hier lernst du was das Internet ist",
-        "image": "../src/internet.jpg",
-        "links": [
-            {
-                "name": "Das Internet",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1tQoufcvYEEvYtKx8AVk__6KHJnfn5koJziR-lDFAaxw",
-                "description": ""
-            },
-            {
-                "name": "Das Internet",
-                "type": "pdf",
-                "link": "../assets/pdfs/internet1.pdf",
-                "description": "Die Unterlagen erklären, wie das Internet funktioniert."
-            },
-            {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "https://www.internet-abc.de/lm/so-funktioniert-das-internet-die-technik",
-                "description": "In diesem interaktiven Lernmodul erfährst du, wie das Internet funktioniert."
-            }
-        ]
-    },
-    "internettech": {
-        "name": "Das Internet - Grundlagen2",
-        "description": "Hier lernst du wie das Internet funktioniert",
-        "image": "../src/internet.jpg",
-        "links": [
-            {
-                "name": "Das Internet",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1tQoufcvYEEvYtKx8AVk__6KHJnfn5koJziR-lDFAaxw",
-                "description": ""
-            },
-            {
-                "name": "Das Internet",
-                "type": "pdf",
-                "link": "../assets/pdfs/internet1.pdf",
-                "description": "Die Unterlagen erklären, wie das Internet funktioniert."
-            },
-            {
-                "name": "Datentransfer",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=ccspDEMDJTo",
-                "description": "Dieses Video erklärt, wie der Datentransfer über das Internet funktioniert."
-            },
-            {
-                "name": "Cookies",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=4y5pKc66CAk",
-                "description": "Dieses Video erklärt dir, was Cookies sind."
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=internettech",
-                "description": "Das Quiz zum Thema Internet."
-            },
-            {
-                "name": "Clickclickclickclick",
-                "type": "interactive",
-                "link": "https://clickclickclick.click/",
-                "description": "Draftdescription."
-            }
-        ]
-    },
-    "powerpoint": {
-        "name": "Präsentieren mit Powerpoint",
-        "description": "In diesem Kapitel lernst du, wie du eine Präsentation mit Powerpoint erstellen kannst.",
-        "image": "",
-        "links": [
-            {
-                "name": "Einleitung und Begrüßung",
-                "type": "slide",
-                "link": "",
-                "description": ""
-            },
-            {
-                "name": "Powerpoint",
-                "type": "pdf",
-                "link": "",
-                "description": "Die Unterlagen zu Powerpoint."
-            },
-            {
-                "name": "Erste Schritte mit Powerpoint",
-                "type": "video",
-                "link": "https://www.youtube.com/watch?v=kbpkdxL-Ubg",
-                "description": "Dieses Video erklärt, wie du mit Powerpoint Präsentationsfolien erstellen kannst."
-            },
-            {
-                "name": "Geburtstagseinladung",
-                "type": "exercise",
-                "link": "",
-                "description": "Draftdescription."
-            }
-        ]
-    },
-    "blockly": {
-        "name": "Programmieren mit Blockly",
-        "description": "Eine Einführung in das Programmieren. Mit Blockly",
-        "image": "../src/blockly.jpg",
-        "links": [
-            {
-                "name": "Programmieren",
-                "type": "slide",
-                "link": "",
-                "description": ""
-            },
-            {
-                "name": "Programmieren",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Blockly",
-                "type": "exercise",
-                "link": "https://blockly.games/",
-                "description": "Löse die Aufgaben mit Blockly."
-            }
-        ]
-    },
-    "project": {
-        "name": "Projekt",
-        "description": "Das Abschlussprojekt",
-        "image": "../src/project.jpg",
-        "links": [
-            {
-                "name": "Das Abschlussprojekt",
-                "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1NG_fqqLBR_epIEQrPD6vIu-Io81TWV6OvhkeQDFJgnc",
-                "description": ""
-            },
-            {
-                "name": "Das Abschlussprojekt",
-                "type": "pdf",
-                "link": "../assets/pdfs/project.pdf",
-                "description": "Draftdescription."
             }
         ]
     }
