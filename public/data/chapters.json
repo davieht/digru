@@ -636,8 +636,8 @@
             {
                 "name": "Cybermobbing",
                 "type": "slide",
-                "link": "",
-                "description": "Draftdescription."
+                "link": "https://docs.google.com/presentation/d/1MPScQq7qRMAMlfwQwbfd-gjDe5uDoelypvFvpG1UhIA",
+                "description": ""
             },
             {
                 "name": "Internet ABC - Cybermobbing",
@@ -654,21 +654,21 @@
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=email",
+                "link": "../quiz/quiz.html?id=mobbing",
                 "description": "Das Quiz zu Cybermobbing."
             }
         ]
     },
     "grooming": {
-        "name": "Draft",
-        "description": "Thisisadraft.",
+        "name": "Cybergrooming",
+        "description": "In diesem Kapitel lernst du was Cybergrooming ist und warum es gefährlich ist.",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
+                "name": "Cybergrooming",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1IMZA-GCx4E7UmiBk0y6DZivS9A7L5kPvfQozJ5BQQuE",
+                "description": ""
             },
             {
                 "name": "Saferinternet - Flyer",
@@ -681,6 +681,18 @@
                 "type": "pdf",
                 "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=7",
                 "description": "Draftdescription."
+            },
+            {
+                "name": "Video - Love Story",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=lT0Wao7fnyo",
+                "description": "Sieh dir das Video an um zu verstehen was Cybergrooming ist"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=grooming",
+                "description": "Das Quiz zu Urheberrecht."
             }
         ]
     },
@@ -958,14 +970,14 @@
         ]
     },
     "internet": {
-        "name": "Das Internet - Grundlagen1",
+        "name": "Das Internet",
         "description": "Hier lernst du was das Internet ist",
         "image": "../src/internet.jpg",
         "links": [
             {
                 "name": "Das Internet",
                 "type": "slide",
-                "link": "https://docs.google.com/presentation/d/1tQoufcvYEEvYtKx8AVk__6KHJnfn5koJziR-lDFAaxw",
+                "link": "https://docs.google.com/presentation/d/1mEElBCkqTHEUj0j9y2z6Acg39-X5aXRa38IsveCEa5c",
                 "description": ""
             },
             {
@@ -975,7 +987,7 @@
                 "description": "Die Unterlagen erklären, wie das Internet funktioniert."
             },
             {
-                "name": "Das Internet",
+                "name": "InternetABC - So funktioniert das Internet - Die Technik",
                 "type": "interactive",
                 "link": "https://www.internet-abc.de/lm/so-funktioniert-das-internet-die-technik",
                 "description": "In diesem interaktiven Lernmodul erfährst du, wie das Internet funktioniert."
@@ -995,51 +1007,57 @@
         ]
     },
     "malware": {
-        "name": "todo",
-        "description": "todo.",
+        "name": "Malware",
+        "description": "Hier erfährst du was Malware ist und was ihre Auswirkungen sind",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
+                "name": "Malware",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1l8egLafkbsXhZb2ICyQ7KyKMkYZYKPYYgySPYMS_P0M",
+                "description": ""
             },
             {
-                "name": "Das Internet",
+                "name": "InternetABC - Viren und andere Computerkrankheiten",
                 "type": "interactive",
+                "link": "https://www.internet-abc.de/lm/viren-und-andere-computerkrankheiten",
+                "description": "In diesem interaktiven Lernmodul erfährst du, was Malware ist."
+            },
+            {
+                "name": "Malware",
+                "type": "video",
                 "link": "todo",
-                "description": "todo"
+                "description": "Dieses Video erklärt, was Malware ist."
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
-                "description": ""
+                "link": "../quiz/quiz.html?id=malware",
+                "description": "Das Quiz zum Thema Malware"
             }
         ]
     },
     "scam": {
-        "name": "todo",
-        "description": "todo.",
+        "name": "Scam und Phishing",
+        "description": "In diesem Kapitel erfährst du was Scam ist und über die Gefahren von Phishing",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
+                "name": "Scam und Phishing",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1WN7a9aPRnY-StGW-seBpyYKdeCTB5qm69cE1m6rxjXA",
                 "description": "Draftdescription."
             },
             {
-                "name": "Das Internet",
+                "name": "InternetABC - Fiese Tricks, Lügen und Betrug im Internet",
                 "type": "interactive",
-                "link": "todo",
-                "description": "todo"
+                "link": "https://www.internet-abc.de/lm/fiese-tricks-luegen-und-betrug",
+                "description": "In diesem interaktiven Lernmodul erfährst du, welche Ticks Betrüger anwenden."
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "link": "../quiz/quiz.html?id=scam",
                 "description": ""
             }
         ]
@@ -1176,96 +1194,97 @@
         ]
     },
     "install": {
-        "name": "todo",
-        "description": "todo.",
+        "name": "Installieren von Software",
+        "description": "In diesem Kapitel lernst du, wie man Software installiert und deinstalliert",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "todo",
-                "description": "todo"
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "name": "Installieren von Software",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1-Mv3bpjQ3TCfvZX4qVoM7nLW2lYBX6XIJAoj1xexwQY",
                 "description": ""
             }
         ]
     },
-    "task": {
-        "name": "todo",
-        "description": "todo.",
+    "taskmngr": {
+        "name": "Taskmanager und Computereigenschaften",
+        "description": "In diesem Kapitel lernst du über den Taskmanager und wirst lernen wie man Computereigenschaften ausliest",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "todo",
-                "description": "todo"
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "name": "Taskmanager und Computereigenschaften",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1gPSk_7SPWQXaQxwrTnUNxqMxE8Ubfj9pJSjSPDJvkkg",
                 "description": ""
             }
         ]
     },
     "os": {
-        "name": "todo",
-        "description": "todo.",
+        "name": "Betriebssysteme",
+        "description": "In diesem Kapitel lernst du was Betriebssysteme sind und was ihre Aufgaben sind",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
+                "name": "Betriebssysteme",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1GXwNc5_4jFQLStCHBAyI1R1_iMrtJXQJHpxwyiXbToo",
+                "description": ""
             },
             {
-                "name": "Das Internet",
-                "type": "interactive",
+                "name": "Betriebssystem",
+                "type": "video",
                 "link": "todo",
                 "description": "todo"
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "link": "../quiz/quiz.html?id=os",
                 "description": ""
             }
         ]
     },
     "opensource": {
-        "name": "todo",
-        "description": "todo.",
+        "name": "Open Source",
+        "description": "In diesem Kapitel lernst du was Open Source ist",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
+                "name": "Open Source",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1DN37QwabThVnpIUA0Sxda-wCRjvC_BeC88KNdqcnKhM",
                 "description": "Draftdescription."
             },
             {
-                "name": "Das Internet",
-                "type": "interactive",
+                "name": "Open Source",
+                "type": "video",
                 "link": "todo",
                 "description": "todo"
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=opensource",
+                "description": ""
+            }
+        ]
+    },    
+    "sexting": {
+        "name": "Sexting",
+        "description": "In diesem Kaptiel erfährst du was Sexting ist und wobei du aufpassen solltest",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Sexting",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1ZaZnZHIVT6B7OnJI5AuZNEWuZOUJxLcemBJJYla-zIw",
+                "description": ""
+            },
+            {
+                "name": "Saferinternet - Sexting Flyer",
+                "type": "link",
+                "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Sexting.pdf",
+                "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
             },
             {
                 "name": "Quiz",
@@ -1275,27 +1294,21 @@
             }
         ]
     },
-    "linux": {
-        "name": "todo",
-        "description": "todo.",
+    "sextortion": {
+        "name": "Sextortion und Rachepornos",
+        "description": "In diesem Kapitel erfährst du mehr über Sextortion und Rachepornos",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
+                "name": "Sextortion und Rachepornos",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1hmzzF7mJIZ0udYk-YP19wYmmcIm7LMiaRnMiyZds-Wg",
                 "description": "Draftdescription."
-            },
-            {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "todo",
-                "description": "todo"
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "link": "../quiz/quiz.html?id=sextortion",
                 "description": ""
             }
         ]
@@ -1325,7 +1338,6 @@
             }
         ]
     },
-
     "recap5": {
         "name": "todo",
         "description": "todo.",
@@ -1351,59 +1363,66 @@
             }
         ]
     },
-    "ml": {
-        "name": "todo",
-        "description": "todo.",
+    "ki": {
+        "name": "Künstliche Intelligenz",
+        "description": "In diesem Kapitel erfährst du was Künstliche Intelligenz ist und wie sie funktioniert.",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "todo",
-                "description": "todo"
+                "name": "Künstliche Intelligenz",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/139P3KE5SieYbIMAYueeKKsHyebdb-P8SulfsnsOEA_Q",
+                "description": ""
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "link": "../quiz/quiz.html?id=ki",
+                "description": ""
+            }
+        ]
+    },
+    "genki": {
+        "name": "Generative KI",
+        "description": "In diesem Kapitel lernst du wie ChatGPT und Co funktionieren und über Chancen und Risiken der KI",
+        "image": "../src/placeholder.jpg",
+        "links": [
+            {
+                "name": "Generative KI",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1Zv66LdqGy_iBR2nQ2juGmw_938KTUf6OeISGHRrYUkg",
+                "description": ""
+            },
+            {
+                "name": "Quiz",
+                "type": "quiz",
+                "link": "../quiz/quiz.html?id=genki",
                 "description": ""
             }
         ]
     },
     "fakenews": {
-        "name": "todo",
-        "description": "todo.",
+        "name": "Fake News",
+        "description": "In diesem Kapitel lernst du was Fake News sind und warum sie gefährlich sind",
         "image": "../src/placeholder.jpg",
         "links": [
             {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
+                "name": "Fake News",
+                "type": "slide",
+                "link": "https://docs.google.com/presentation/d/1Uluh-HRXfz9Ojd7-mzRZBgK6NSkNPCjLgIWD2GO95v8",
                 "description": "Draftdescription."
-            },
-            {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "todo",
-                "description": "todo"
             },
             {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "link": "../quiz/quiz.html?id=fakenews",
                 "description": ""
             }
         ]
     },
     "deepfakes": {
-        "name": "todo",
-        "description": "todo.",
+        "name": "Deep Fakes",
+        "description": "In diesem Kapitel lernst du was Deep Fakes sind.",
         "image": "../src/placeholder.jpg",
         "links": [
             {
@@ -1413,45 +1432,14 @@
                 "description": "Draftdescription."
             },
             {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "todo",
-                "description": "todo"
-            },
-            {
                 "name": "Quiz",
                 "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
+                "link": "../quiz/quiz.html?id=deepfakes",
                 "description": ""
             }
         ]
     },
     "js": {
-        "name": "todo",
-        "description": "todo.",
-        "image": "../src/placeholder.jpg",
-        "links": [
-            {
-                "name": "Draft",
-                "type": "pdf",
-                "link": "",
-                "description": "Draftdescription."
-            },
-            {
-                "name": "Das Internet",
-                "type": "interactive",
-                "link": "todo",
-                "description": "todo"
-            },
-            {
-                "name": "Quiz",
-                "type": "quiz",
-                "link": "../quiz/quiz.html?id=todo",
-                "description": ""
-            }
-        ]
-    },
-    "sexting": {
         "name": "todo",
         "description": "todo.",
         "image": "../src/placeholder.jpg",
