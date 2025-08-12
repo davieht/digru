@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     const params = new URLSearchParams(location.href.split("?")[1]);
     const quizId = params.get("id");
     const className = params.get("className");
     const firstName = params.get("firstName");
     const lastName = params.get("lastName");
-    
+
     let questionCounter = 0;
     const totalQuizPoints = 100;
     const bonusQuizPoints = 25;
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let correctAnswerCnt = 0;
     let requiredQuestionCnt = Math.ceil(questions.length * requiredTheshold);
 
-    
+
 
     quizTitle.textContent = quizData.title;
     userName.textContent = `${firstName} ${lastName} - ${className}`;
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         buttonNext.hidden = false;
         const question = questions[questionCounter];
         // Sammle alle ausgewählten Optionen
-        const selected = Array.from(document.querySelectorAll(`input[name="answer"]:checked`))
+        const selected = Array.from(document.querySelectorAll(`button.answer-label.mdl-button--colored`))
                 .map(input => parseInt(input.value)); // Array mit gewählten Indizes
 
         // Überprüfe die Richtigkeit
@@ -92,13 +92,15 @@ document.addEventListener("DOMContentLoaded", () => {
     function answerUserFeedback(isCorrect) {
         cardIcon.style.display = 'inline-block';
         cardIcon.textContent = isCorrect ? 'check' : 'close';
-        cardIcon.style.color = isCorrect ? 'green' : 'red';
-        card.style.backgroundColor = isCorrect ? '#e0ffe0' : '#ffefef';
+        cardIcon.style.color = isCorrect ? 'darkseagreen' : 'indianred';
+        card.style.borderColor = isCorrect ? 'darkseagreen' : 'indianred';
+        document.querySelectorAll(`button.answer-label.mdl-button--colored`)
+                .forEach(item => item.style.backgroundColor = isCorrect ? 'darkseagreen' : 'indianred');
     }
 
     function resetUserFeedback() {
         cardIcon.style.display = 'none';
-        card.style.backgroundColor = 'white';
+        card.style.borderColor = 'white';
     }
 
     function showScore() {
@@ -128,14 +130,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const question = questions[questionCounter];
         shuffleArray(question.options).forEach((answer, index) => {
             const clone = answerTemplate.content.cloneNode(true);
-            const input = clone.querySelector('input');
-            const span = clone.querySelector('.mdl-checkbox__label');
-            const label = clone.querySelector('.answer-label');
-            const questionTitle = input.id = `a${index}`;
+//            const input = clone.querySelector('input');
+//            const span = clone.querySelector('.mdl-checkbox__label');
+            const button = clone.querySelector('.answer-label');
+            const questionTitle = button.id = `a${index}`;
 
-            input.value = index;
-            span.textContent = answer.text;
-            label.setAttribute('for', `a${index}`);
+            button.value = index;
+            button.textContent = answer.text;
+//            label.setAttribute('for', `a${index}`);
+            button.addEventListener('click', function () {
+                if (this.classList.contains('mdl-button--colored')) {
+                    this.classList.remove('mdl-button--colored');
+                } else {
+                    this.classList.add('mdl-button--colored');
+                }
+            });
 
             answersContainer.appendChild(clone);
         });
@@ -186,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function postResult() {        
+    function postResult() {
         _login_token = getCookie('login_token');
 
         if (!_login_token) {

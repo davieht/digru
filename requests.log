@@ -525,3 +525,11 @@
 [2025-08-12T08:59:54.899Z] POST /api/login/ from ::1
 [2025-08-12T08:59:56.436Z] POST /api/login/ from ::1
 [2025-08-12T09:06:09.407Z] POST /api/login/ from ::1
+[2025-08-12T09:08:43.296Z] POST /api/login/ from ::1
+[2025-08-12T09:08:58.463Z] POST /api/login/ from ::1
+[2025-08-12T09:09:08.447Z] GET /api/user/ from ::1
+[2025-08-12T09:09:15.981Z] GET /api/chapters/ from ::1
+[2025-08-12T11:20:18.497Z] GET /api/user/ from ::1
+[2025-08-12T11:20:27.940Z] GET /api/chapters/ from ::1
+[2025-08-12T12:41:07.378Z] GET /api/user/ from ::1
+[2025-08-12T12:43:30.803Z] GET /api/user/ from ::1
