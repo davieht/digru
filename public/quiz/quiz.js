@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalQuizPoints = 100;
     const bonusQuizPoints = 25;
 
-    const requiredTheshold = .70;
+    const requiredTheshold = .50;
     const quizData = db[quizId];
     const questionLength = 12;
     let questions = quizData.questions.slice(0, questionLength);

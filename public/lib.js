@@ -9,6 +9,7 @@ function getCookie(name) {
 
 function showSnackbar(message) {
     const snackbarContainer = document.getElementById('snackbar');
+    snackbarContainer.classList.add("mdl-snackbar--active");
     snackbarContainer.MaterialSnackbar.showSnackbar({
         message: message,
         timeout: 1000 * 60 * 60,

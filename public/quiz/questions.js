@@ -2076,7 +2076,7 @@ const db = {
             }
         ]
     },
-    "bitsnbytes": {
+    "bytes": {
         "title": "Bits & Bytes",
         "desc": "Beantworte die Fragen zu Bits und Bytes",
         "questions": [

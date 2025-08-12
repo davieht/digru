@@ -3,11 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollBox = document.getElementById("scroll-box");
 
     const _schools = {
-        "oedi": ["1A", "1B", "1E", "1F", "2B", "2D", "2G", "3F", "4E", "4H"],
+        "oedi": ["1A", "1B", "1E", "1F", "2B", "2D", "2G", "3F", "4E", "4H", "2T"],
         "21er": ["1B", "1E", "1F", "3B", "3D", "4E", "4H"]
     };
 
+    // We use this for changing data (chapters are mutable)
     let _chapters = null;
+    // We use this for drawing
+    let _chapterTree = null;
     let _user = null;
     let _login_token = null;
     let _loadingCnt = 0;
@@ -72,14 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
             showSnackbar(error.message);
         }
     }
-    
+
     async function showLoadingChapters() {
         const chapterContent = document.getElementById("chapter-content");
         const template = document.getElementById("chapter-item-template");
 
         // Clear the placeholder content
         chapterContent.innerHTML = "";
-        
+
         for (let i = 0; i < 9; i++) {
             // Clone the template content
             const clone = template.content.cloneNode(true);
@@ -90,7 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Append the populated clone to the container
             chapterContent.appendChild(clone);
-        };
+        }
+        ;
     }
 
     async function populateChapters() {
@@ -102,32 +106,40 @@ document.addEventListener("DOMContentLoaded", () => {
         chapterContent.innerHTML = "";
 
         // Populate the list dynamically
-        Object.entries(_chapters).forEach(([chapterId, chapter]) => {
-            // Clone the template content
-            const clone = template.content.cloneNode(true);
+        Object.entries(_chapterTree).forEach(([year, chapters]) => {
+            const yearTitle = document.createElement('h2');
+            yearTitle.textContent = !isNaN(Number(year)) ? `${year}. Klasse` : year;
+            yearTitle.className = "mdl-cell mdl-cell--12-col";
+            chapterContent.appendChild(yearTitle);
+            Object.entries(chapters)
+                    .filter(([_, value]) => !value.hidden)
+                    .forEach(([chapterId, chapter]) => {
+                // Clone the template content
+                const chapterNode = template.content.cloneNode(true);
 
-            // Populate the template with actual data
-            if (chapter.isActive) {
-                clone.querySelector('.card').classList.add('active');
-                clone.querySelector('.card').addEventListener("click", () => {
-                    _scrollPosition = scrollBox.scrollTop;
-                    navigate('chapter', chapterId);
-                });
-            }
-            if (_user.isTeacher) {
-                clone.querySelector('.card').style.cursor = 'pointer';
-                clone.querySelector('.card').addEventListener("click", () => {
-                    _scrollPosition = scrollBox.scrollTop;
-                    navigate('chapter', chapterId);
-                });
-            }
-            clone.querySelector('.card-image').style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('${chapter.image ? chapter.image : "../src/placeholder.jpg"}')`;
-            clone.querySelector('.card-title').textContent = `${chapter.name}`;
-            clone.querySelector('.card-description').textContent = `${chapter.description}`;
-            clone.querySelector('.card-star').textContent = starMap[chapter.star];
+                // Populate the template with actual data
+                if (chapter.isActive) {
+                    chapterNode.querySelector('.card').classList.add('active');
+                    chapterNode.querySelector('.card').addEventListener("click", () => {
+                        _scrollPosition = scrollBox.scrollTop;
+                        navigate('chapter', chapterId);
+                    });
+                }
+                if (_user.isTeacher) {
+                    chapterNode.querySelector('.card').style.cursor = 'pointer';
+                    chapterNode.querySelector('.card').addEventListener("click", () => {
+                        _scrollPosition = scrollBox.scrollTop;
+                        navigate('chapter', chapterId);
+                    });
+                }
+                chapterNode.querySelector('.card-image').style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('${chapter.image ? chapter.image : "../src/placeholder.jpg"}')`;
+                chapterNode.querySelector('.card-title').textContent = `${chapter.name}`;
+                chapterNode.querySelector('.card-description').textContent = `${chapter.description}`;
+                chapterNode.querySelector('.card-star').textContent = starMap[chapter.star];
 
-            // Append the populated clone to the container
-            chapterContent.appendChild(clone);
+                // Append the populated clone to the container
+                chapterContent.appendChild(chapterNode);
+            });
         });
 
         scrollBox.scrollTo(0, _scrollPosition);
@@ -142,14 +154,19 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!chaptersResponse.ok)
                 throw new Error("Failed to fetch data.");
 
-            let chapters = await chaptersResponse.json();
+            _chapterTree = await chaptersResponse.json();
 
+            // Merge to a 1 dimensional set of chapters and
             // Add `isVisible = false` to each chapter
-            chapters = Object.fromEntries(
-                    Object.entries(chapters).map(([key, chapter]) => [
-                    key,
-                    {...chapter, isActive: false, star: null}
-                ]));
+            const mergedChapters = Object.fromEntries(
+                    Object.entries(_chapterTree).flatMap(([classLevel, chapters]) =>
+                Object.entries(chapters).map(([chapterName, chapter]) => {
+                    chapter.isActive = +classLevel <= +_user.className[0]; // modifies original object
+                    chapter.star = null;
+                    return [chapterName, chapter]; // keeps the reference
+                })
+            )
+                    );
 
             //const activeChaptersResponse = await fetch("data/activeChapters.json");
             const activeChaptersResponse = await fetch(`${BASE_URL}/api/chapters/?schoolId=${_user.schoolId}&className=${_user.className}`);
@@ -157,33 +174,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 throw new Error("Failed to fetch data.");
             const activeChapters = await activeChaptersResponse.json();
 
-
             // Filter out chapters whose id is not in activeChapters
-            if (!_user.isTeacher) {
-                chapters = Object.fromEntries(
-                        Object.entries(chapters).filter(([key, chapter]) =>
-                    activeChapters[key] !== undefined)
-                        );
-            }
+//            if (!_user.isTeacher) {
+//                chapters = Object.fromEntries(
+//                        Object.entries(mergedChapters).filter(([key, chapter]) =>
+//                    activeChapters[key] !== undefined)
+//                        );
+//            }
 
             // Set chapters isActive and star
             Object.entries(activeChapters).forEach(([chapterName, chapter]) => {
-                if (!chapters[chapterName]) {
+                if (!mergedChapters[chapterName]) {
                     const errorMsg = `Chapter ${chapterName} not found. Please fix in sheet!`;
                     console.error("Error fetching dynamic list data:", errorMsg);
                     showSnackbar(errorMsg);
-                    return;
-                }
-                chapters[chapterName].isActive = chapter.isActive;
-
-                if (!_user.isTeacher) {
-                    if (chapter.hasQuiz === true) {
-                        chapters[chapterName].star = !_user.chapters[chapterName] ? 0 : (_user.chapters[chapterName] >= 100 ? 2 : 1);
+                } else {
+                    mergedChapters[chapterName].isActive = chapter.isActive || mergedChapters[chapterName];
+                    if (!_user.isTeacher) {
+                        if (chapter.hasQuiz === true) {
+                            mergedChapters[chapterName].star = !_user.chapters[chapterName] ? 0 : (_user.chapters[chapterName] >= 100 ? 2 : 1);
+                        }
                     }
             }
             });
 
-            _chapters = chapters;
+            _chapters = mergedChapters;
         } catch (error) {
             console.error("Error fetching dynamic list data:", error);
             showSnackbar(error.message);

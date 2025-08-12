@@ -9,7 +9,7 @@ const app = express();
 
 // Replace with your Google Apps Script Web App URL
 const GOOGLE_SCRIPT_URLs = {
-    "oedi": "https://script.google.com/macros/s/AKfycby8il1TZFhPqQPZWnEZ7w_XkgUiSppU8RM9ezsuEzHoClA6Rt1WkrVVcKqwr3Z5NcE/exec",
+    "oedi": "https://script.google.com/macros/s/AKfycbyn3P_rmtuwk7MoFhpLcyzmnK04PexVZnK6S6QzUuY_ROYyxeknw6NEdtEH-2n_mXwE/exec",
     "21er": "https://script.google.com/macros/s/AKfycbzxss103pa6KmfZjcdeClo6t3mw5kEgGEpAXKKvgdTKUdl4VP5yti5z1jgg4QA1Fb_i8Q/exec"
 };
 
