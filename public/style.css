@@ -17,6 +17,10 @@
   position: relative;
 }*/
 
+body {
+    background-color: #FAFAFA;
+}
+
 .card-icon {
   position: absolute;
   top: 8px;
