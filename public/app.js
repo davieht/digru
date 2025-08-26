@@ -63,8 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }());
 
                     break;
-                default :
-                {
+                default : {
                 }
             }
 
@@ -112,34 +111,34 @@ document.addEventListener("DOMContentLoaded", () => {
             yearTitle.className = "mdl-cell mdl-cell--12-col";
             chapterContent.appendChild(yearTitle);
             Object.entries(chapters)
-                    .filter(([_, value]) => !value.hidden)
-                    .forEach(([chapterId, chapter]) => {
-                // Clone the template content
-                const chapterNode = template.content.cloneNode(true);
+                .filter(([_, value]) => !value.hidden)
+                .forEach(([chapterId, chapter]) => {
+                    // Clone the template content
+                    const chapterNode = template.content.cloneNode(true);
 
-                // Populate the template with actual data
-                if (chapter.isActive) {
-                    chapterNode.querySelector('.card').classList.add('active');
-                    chapterNode.querySelector('.card').addEventListener("click", () => {
-                        _scrollPosition = scrollBox.scrollTop;
-                        navigate('chapter', chapterId);
-                    });
-                }
-                if (_user.isTeacher) {
-                    chapterNode.querySelector('.card').style.cursor = 'pointer';
-                    chapterNode.querySelector('.card').addEventListener("click", () => {
-                        _scrollPosition = scrollBox.scrollTop;
-                        navigate('chapter', chapterId);
-                    });
-                }
-                chapterNode.querySelector('.card-image').style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('${chapter.image ? chapter.image : "../src/placeholder.jpg"}')`;
-                chapterNode.querySelector('.card-title').textContent = `${chapter.name}`;
-                chapterNode.querySelector('.card-description').textContent = `${chapter.description}`;
-                chapterNode.querySelector('.card-star').textContent = starMap[chapter.star];
+                    // Populate the template with actual data
+                    if (chapter.isActive) {
+                        chapterNode.querySelector('.card').classList.add('active');
+                        chapterNode.querySelector('.card').addEventListener("click", () => {
+                            _scrollPosition = scrollBox.scrollTop;
+                            navigate('chapter', chapterId);
+                        });
+                    }
+                    if (_user.isTeacher) {
+                        chapterNode.querySelector('.card').style.cursor = 'pointer';
+                        chapterNode.querySelector('.card').addEventListener("click", () => {
+                            _scrollPosition = scrollBox.scrollTop;
+                            navigate('chapter', chapterId);
+                        });
+                    }
+                    chapterNode.querySelector('.card-image').style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('${chapter.image ? chapter.image : "../src/placeholder.jpg"}')`;
+                    chapterNode.querySelector('.card-title').textContent = `${chapter.name}`;
+                    chapterNode.querySelector('.card-description').textContent = `${chapter.description}`;
+                    chapterNode.querySelector('.card-star').textContent = starMap[chapter.star];
 
-                // Append the populated clone to the container
-                chapterContent.appendChild(chapterNode);
-            });
+                    // Append the populated clone to the container
+                    chapterContent.appendChild(chapterNode);
+                });
         });
 
         scrollBox.scrollTo(0, _scrollPosition);
@@ -159,14 +158,14 @@ document.addEventListener("DOMContentLoaded", () => {
             // Merge to a 1 dimensional set of chapters and
             // Add `isVisible = false` to each chapter
             const mergedChapters = Object.fromEntries(
-                    Object.entries(_chapterTree).flatMap(([classLevel, chapters]) =>
-                Object.entries(chapters).map(([chapterName, chapter]) => {
-                    chapter.isActive = +classLevel <= +_user.className[0]; // modifies original object
-                    chapter.star = null;
-                    return [chapterName, chapter]; // keeps the reference
-                })
-            )
-                    );
+                Object.entries(_chapterTree).flatMap(([classLevel, chapters]) =>
+                    Object.entries(chapters).map(([chapterName, chapter]) => {
+                        chapter.isActive = +classLevel <= +_user.className[0]; // modifies original object
+                        chapter.star = null;
+                        return [chapterName, chapter]; // keeps the reference
+                    })
+                )
+            );
 
             //const activeChaptersResponse = await fetch("data/activeChapters.json");
             const activeChaptersResponse = await fetch(`${BASE_URL}/api/chapters/?schoolId=${_user.schoolId}&className=${_user.className}`);
@@ -195,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             mergedChapters[chapterName].star = !_user.chapters[chapterName] ? 0 : (_user.chapters[chapterName] >= 100 ? 2 : 1);
                         }
                     }
-            }
+                }
             });
 
             _chapters = mergedChapters;
@@ -238,8 +237,6 @@ document.addEventListener("DOMContentLoaded", () => {
         listContainer.className = "demo-list-three mdl-list";
 
         chapter.links.forEach((entry) => {
-            if (entry.type === 'slide' && !_user.isTeacher)
-                return;
 
             // Clone the template content
             const clone = template.content.cloneNode(true);
@@ -248,8 +245,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // Populate the template with actual data
             clone.querySelector('.resource').addEventListener("click", () => {
                 const link = (entry.type === 'quiz')
-                        ? `${entry.link}&schoolId=${_user.schoolId}&className=${_user.className}&firstName=${_user.firstName}&lastName=${_user.lastName}`
-                        : entry.link;
+                    ? `${entry.link}&schoolId=${_user.schoolId}&className=${_user.className}&firstName=${_user.firstName}&lastName=${_user.lastName}`
+                    : entry.link;
                 window.open(`${link}`, '_blank');
             });
 
@@ -348,35 +345,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Fetch JSON data asynchronously
         fetch('data/classMenu.json')
-                .then(response => {
-                    return response.json();
-                })
-                .then(jsonData => {
-                    menu.innerHTML = "";
-                    Object.entries(jsonData).forEach(([schoolId, schoolObj]) => {
-                        const ul = document.createElement("ul");
-                        ul.className = "menu-class-list";
+            .then(response => {
+                return response.json();
+            })
+            .then(jsonData => {
+                menu.innerHTML = "";
+                Object.entries(jsonData).forEach(([schoolId, schoolObj]) => {
+                    const ul = document.createElement("ul");
+                    ul.className = "menu-class-list";
+                    const li = document.createElement("li");
+                    li.className = "mdl-menu__item";
+                    li.style.fontWeight = "bold";
+                    li.textContent = `${schoolId}`; // Display the value in the list
+                    ul.appendChild(li);
+                    schoolObj.forEach(className => {
                         const li = document.createElement("li");
                         li.className = "mdl-menu__item";
-                        li.style.fontWeight = "bold";
-                        li.textContent = `${schoolId}`; // Display the value in the list
-                        ul.appendChild(li);
-                        schoolObj.forEach(className => {
-                            const li = document.createElement("li");
-                            li.className = "mdl-menu__item";
-                            li.textContent = `${className}`; // Display the value in the list
+                        li.textContent = `${className}`; // Display the value in the list
 
-                            // On click, store only the key in a cookie
-                            li.addEventListener("click", () => {
-                                const cookie = `${schoolId}|${className}|${hash}`;
-                                document.cookie = `login_token=${cookie}; path=/; max-age=86400`; // 1 day
-                                location.reload();
-                            });
-
-                            ul.appendChild(li);
+                        // On click, store only the key in a cookie
+                        li.addEventListener("click", () => {
+                            const cookie = `${schoolId}|${className}|${hash}`;
+                            document.cookie = `login_token=${cookie}; path=/; max-age=86400`; // 1 day
+                            location.reload();
                         });
-                        menu.appendChild(ul);
+
+                        ul.appendChild(li);
                     });
+                    menu.appendChild(ul);
+                });
 
 //                    jsonData.forEach(item => {
 //                        const [schoolId, className] = item.split('|');
@@ -393,10 +390,10 @@ document.addEventListener("DOMContentLoaded", () => {
 //
 //                        menu.appendChild(li);
 //                    });
-                })
-                .catch(error => {
-                    console.error("Failed to load JSON data:", error);
-                });
+            })
+            .catch(error => {
+                console.error("Failed to load JSON data:", error);
+            });
     }
 
     // Event listener for hash changes
