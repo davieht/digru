@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollBox = document.getElementById("scroll-box");
 
     const _schools = {
-        "oedi": ["1A", "1B", "1E", "1F", "2B", "2D", "2G", "3F", "4E", "4H", "2T"],
+        "oedi": ["2A", "2B", "2E", "2F", "3B", "3D", "3G", "4F", "P1", "P2", "2T"],
         "21er": ["1B", "1E", "1F", "3B", "3D", "4E", "4H"]
     };
 
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
             link: "link",
             quiz: "checklist",
             exercise: "edit_square",
-            slide: "save",
+            slide: "auto_stories",
             download: "download"
         };
 
@@ -249,6 +249,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     : entry.link;
                 window.open(`${link}`, '_blank');
             });
+
+            if (entry.type === 'slide')
+                entry.description = `Die Lernunterlagen zum Kapitel "${chapter.name}"`;
+            else if (entry.type === 'quiz')
+                entry.description = `Das Quiz zum Kapitel "${chapter.name}"`;
 
             clone.querySelector('.resource-icon').textContent = `${icon}`;
             clone.querySelector('.resource-title').textContent = `${entry.name}`;
