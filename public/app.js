@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const mergedChapters = Object.fromEntries(
                 Object.entries(_chapterTree).flatMap(([classLevel, chapters]) =>
                     Object.entries(chapters).map(([chapterName, chapter]) => {
-                        chapter.isActive = +classLevel <= +_user.className[0]; // modifies original object
+                        chapter.isActive = +classLevel <= +_user.className[0] || +_user.className[0] === 5; // modifies original object
                         chapter.star = null;
                         return [chapterName, chapter]; // keeps the reference
                     })
@@ -273,7 +273,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("credits").textContent = `💎 ${_user.credits.toFixed(0)}`;
         document.getElementById("avatarImg").src = `img/avatar_${_user.avatar.g || 'f'}.png`;
         document.getElementById("stars").textContent = `★ ${Object.values(_user.chapters).filter(value => value > 100).length}`;
-        document.getElementById("extra").textContent = _user.hasExtra ? "☑✓" : "☐✘";
+        // document.getElementById("extra").textContent = _user.hasExtra ? "☑✓" : "☐✘";
+        document.getElementById("logout-btn").onclick = (e) => {
+            document.cookie = `login_token=; path=/; max-age=0`;
+            window.location.href = "routes/login.html";
+        };
     }
 
     function navigate(destination, id) {
