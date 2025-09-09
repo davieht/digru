@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const mergedChapters = Object.fromEntries(
                 Object.entries(_chapterTree).flatMap(([classLevel, chapters]) =>
                     Object.entries(chapters).map(([chapterName, chapter]) => {
-                        chapter.isActive = +classLevel <= +_user.className[0] || +_user.className[0] === 5; // modifies original object
+                        chapter.isActive = +classLevel <= +_user.className[0] || +_user.className[0] === 5 || chapterName === 'program'; // modifies original object
                         chapter.star = null;
                         return [chapterName, chapter]; // keeps the reference
                     })
