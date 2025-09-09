@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function populateProfile() {
         document.getElementById("profile-card").hidden = false;
         document.getElementById("username").textContent = `${_user.firstName} ${_user.lastName} - ${_user.className}`;
-        document.getElementById("grade").textContent = `${_user.grade}`;
+        document.getElementById("grade").textContent = `${_user.points === 0 ? "-" : _user.grade}`;
         document.getElementById("points").textContent = `${parseFloat(_user.points.toFixed(0))}`;
         document.getElementById("credits").textContent = `💎 ${_user.credits.toFixed(0)}`;
         document.getElementById("avatarImg").src = `img/avatar_${_user.avatar.g || 'f'}.png`;
@@ -312,7 +312,6 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (error) {
             console.error("Error fetching user data:", error);
             window.location.href = "routes/login.html";
-            return;
         } finally {
             showSpinner(false);
         }
