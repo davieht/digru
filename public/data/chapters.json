@@ -1703,7 +1703,19 @@
       "image": "../src/digitalwell.jpg",
       "links": [
         {
-          "name": "Lernunterlagen",
+          "name": "HTML - Hypertext Markup Language",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1WgzhHuJJ6yCCepiGjcMA7JQiEalB9h2MctTD_u7qBYk/",
+          "description": ""
+        },
+        {
+          "name": "Übungen",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/125K8gTWL_1zM0oVZR6mm1CanYNHAvBv1o_HMvOAzj4c/edit?usp=sharing",
+          "description": ""
+        },
+        {
+          "name": "Lernunterlagen zu JavaScript",
           "type": "link",
           "link": "https://docs.google.com/document/d/1xQdn984nVchMvAkJfBnR_HKUh_yIKxuf91bbCw1wtJQ",
           "description": "Mit diesen Lernunterlagen kannst du programmieren lernen"
