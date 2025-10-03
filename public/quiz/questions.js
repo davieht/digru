@@ -1278,7 +1278,7 @@ const db = {
                 ]
             },
             {
-                "text": "Warum wollen Apps und Scial Media, dass wir liken?",
+                "text": "Warum wollen Apps und Social Media, dass wir liken?",
                 "options": [
                     {"text": "Dadurch werden Daten unserer Interessen generiert", "correct": true},
                     {"text": "Weil wir dadurch Geld verdienen"},
@@ -1319,7 +1319,7 @@ const db = {
                     {"text": "Zocken oder Handy vor dem Einschlafen", "correct": true},
                     {"text": "Handy oder Zocken neben den Hausaufgaben", "correct": true},
                     {"text": "Mehr als 2,5 Stunden am Tag Bildschirmzeit", "correct": true},
-                    {"text": "Immer aufs Handy schauen"}
+                    {"text": "Immer aufs Handy schauen", "correct": true}
                 ]
             },
             {
