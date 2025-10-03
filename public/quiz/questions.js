@@ -1283,7 +1283,7 @@ const db = {
                     {"text": "Dadurch werden Daten unserer Interessen generiert", "correct": true},
                     {"text": "Weil wir dadurch Geld verdienen"},
                     {"text": "Weil das Unternehmen dadurch Geld verdient", "correct": true},
-                    {"text": "Weil wir dadurch die Wahrheit finden", "correct": true}
+                    {"text": "Weil wir dadurch die Wahrheit finden"}
                 ]
             },
             {
