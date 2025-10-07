@@ -1342,6 +1342,12 @@
           "description": ""
         },
         {
+          "name": "Bits und Bytes",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1MI1C8jXHOL5-ckUyooGl2shuL7MyDBVqP53xYsor2zA/",
+          "description": ""
+        },
+        {
           "name": "Der Prozessor (CPU)",
           "type": "video",
           "link": "https://www.youtube.com/watch?v=oG69WH5nea0",
@@ -1384,10 +1390,22 @@
           "description": "In diesem Video erfährst du mehr über die Ein- und Ausgabegeräte und wie diese mit dem Computer interagieren."
         },
         {
+          "name": "How does Computer Hardware work",
+          "type": "video",
+          "link": "https://www.youtube.com/watch?v=d86ws7mQYIg",
+          "description": "In diesem Video erfährst du wie ein Computer aufgebaut ist und funktioniert"
+        },
+        {
           "name": "Schnittstellen und Anschlüsse",
           "type": "video",
           "link": "https://www.youtube.com/watch?v=w8B6Yta-lUc",
           "description": "In diesem Video erfährst du mehr über die Anschlüsse eines Mainboards. Im Video wird erklärt welche Peripheriegeräte du an welchen Steckplatz anstecken kannst."
+        },
+        {
+          "name": "Bits und Bytes",
+          "type": "video",
+          "link": "https://www.youtube.com/watch?v=0Exik_Q3kDk",
+          "description": "In diesem Video erfährst du, was Bits und Bytes sind und wie sie in Relation stehen."
         },
         {
           "name": "Schnittstellen und Anschlüsse",
