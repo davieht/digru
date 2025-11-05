@@ -538,6 +538,12 @@
           "description": "Ein Quiz zum Lernmodul Cybermobbing."
         },
         {
+          "name": "Amanda Todd",
+          "type": "video",
+          "link": "https://www.youtube.com/watch?v=1xAmvHdyX5A",
+          "description": "Ein schockierender Betrag zu Cybermobbing."
+        },
+        {
           "name": "Quiz",
           "type": "quiz",
           "link": "../quiz/quiz.html?id=mobbing",
@@ -573,6 +579,12 @@
           "type": "video",
           "link": "https://www.youtube.com/watch?v=lT0Wao7fnyo",
           "description": "Sieh dir das Video an um zu verstehen was Cybergrooming ist"
+        },
+        {
+          "name": "Nachrichtenbeitrag",
+          "type": "link",
+          "link": "https://ooe.orf.at/stories/3328523/",
+          "description": "Ein Nachrichtenartikel zum Thema Grooming."
         },
         {
           "name": "Quiz",
