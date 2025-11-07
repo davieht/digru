@@ -602,7 +602,7 @@
       ]
     },
     "copyright": {
-      "name": "Copyright",
+      "name": "Urheberrecht",
       "description": "Digitales Eigentum und worauf du achten sollst.",
       "image": "../src/copyright.jpg",
       "links": [
@@ -613,16 +613,16 @@
           "description": ""
         },
         {
-          "name": "Saferinternet - Flyer",
-          "type": "link",
-          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Bilder_Videos.pdf",
-          "description": "Dieser Flyer erklärt kurz was digitales Eigentum ist."
-        },
-        {
           "name": "Internet ABC - Text und Bild, kopieren und weitergeben",
           "type": "interactive",
           "link": "https://www.internet-abc.de/lm/text-und-bild",
           "description": "Dieses interaktive Lernmodul erklärt dir was digitales Eigentum ist."
+        },
+        {
+          "name": "Saferinternet - Flyer",
+          "type": "link",
+          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Bilder_Videos.pdf",
+          "description": "Dieser Flyer erklärt kurz was digitales Eigentum ist."
         },
         {
           "name": "Quiz",
