@@ -967,6 +967,18 @@
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1WgzhHuJJ6yCCepiGjcMA7JQiEalB9h2MctTD_u7qBYk/",
           "description": ""
+        },
+        {
+          "name": "Programmieren einer Website mit HTML",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "description": ""
+        },
+        {
+          "name": "HTML - Hello World",
+          "type": "link",
+          "link": "https://codepen.io/David-Viehtauer/pen/MYygGOo",
+          "description": "Hello World Musterlösung"
         }
       ]
     },
@@ -1510,6 +1522,12 @@
           "type": "exercise",
           "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
           "description": ""
+        },
+        {
+          "name": "HTML - Hello World",
+          "type": "link",
+          "link": "https://codepen.io/David-Viehtauer/pen/MYygGOo",
+          "description": "Hello World Musterlösung"
         }
       ]
     },
