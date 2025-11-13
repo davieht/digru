@@ -484,12 +484,12 @@
       ]
     },
     "digitalwell": {
-      "name": "Digital Wellbeing",
+      "name": "Digitale Gesundheit",
       "description": "Bildschirmzeiten und Gesundheit mit Digitalen Medien",
       "image": "../src/digitalwell.jpg",
       "links": [
         {
-          "name": "Digital Wellbeing",
+          "name": "Digitale Gesundheit",
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1DAomlxqx2WpgqSDNgxLiUfFTvNNvhwmxAWNx_azSK-E",
           "description": ""
