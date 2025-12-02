@@ -18,6 +18,20 @@ app.use(bodyParser.json());
 
 // REST API Endpoints
 
+app.get("/api/bulletin/", async (req, res) => {
+    try {
+        log(req);
+        const {schoolId, className} = req.query;
+        const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=bulletin&className=${className}`);
+        if (!response.data.success) {
+            throw new Error (response.data.error || "Unknown error from Google Script")
+        }
+        res.json(response.data.data);
+    } catch (error) {
+        res.status(500).json({error: "Error fetching data from Google Script", details: error.message});
+    }
+});
+
 app.get("/api/class/", async (req, res) => {
    try {
         log(req);

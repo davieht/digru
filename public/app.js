@@ -32,24 +32,26 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch(routeFile);
             if (!response.ok)
                 throw new Error("Failed to load route.");
-            const html = await response.text();
-            content.innerHTML = html; // Inject the route content into the main container
+            content.innerHTML = await response.text(); // Inject the route content into the main container
 
             // Check if additional logic is needed for the route
             switch (baseRoute) {
                 case "home":
                     showLoadingChapters();
-                    (async function () {
+                    await (async function () {
                         if (!_chapters) {
                             await loadUser();
-                            await loadChapters();
+                            await Promise.allSettled([
+                                await loadChapters(),
+                                await loadBulletin()
+                            ]);
                             populateMenu();
                         }
                         populateChapters();
                     }());
                     break;
                 case "chapter":
-                    (async function () {
+                    await (async function () {
                         if (!_chapters) {
                             await loadChapters();
                         }
@@ -57,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }());
                     break;
                 case "profile":
-                    (async function () {
+                    await (async function () {
                         await loadUser();
                         populateProfile();
                     }());
@@ -75,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    async function showLoadingChapters() {
+    function showLoadingChapters() {
         const chapterContent = document.getElementById("chapter-content");
         const template = document.getElementById("chapter-item-template");
 
@@ -93,10 +95,34 @@ document.addEventListener("DOMContentLoaded", () => {
             // Append the populated clone to the container
             chapterContent.appendChild(clone);
         }
-        ;
     }
 
-    async function populateChapters() {
+    async function loadBulletin() {
+
+        function isBulletinListEmpty() {
+            return !bulletinList || bulletinList.length === 0
+        }
+
+        const bulletinResponse = await fetch(`${BASE_URL}/api/bulletin/?schoolId=${_user.schoolId}&className=${_user.className}`);
+        if (!bulletinResponse.ok)
+            throw new Error("Failed to fetch data.");
+        const bulletinList = await bulletinResponse.json();
+
+        const bulletinContainer = document.getElementById("bulletin");
+        const bulletinTitle = document.getElementById("bulletin-title");
+
+        bulletinContainer.style.display = isBulletinListEmpty() ? "none" : "block";
+        bulletinTitle.style.display = isBulletinListEmpty() ? "none" : "block";
+
+        const template = document.getElementById("bulletin-item-template");
+        bulletinList.forEach(value => {
+            const clone = template.content.cloneNode(true);
+            clone.querySelector("p").innerHTML = value;
+            bulletinContainer.appendChild(clone);
+        });
+    }
+
+    function populateChapters() {
         const chapterContent = document.getElementById("chapter-content");
         const template = document.getElementById("chapter-item-template");
         const starMap = ["star_border", "star_half", "star"];
