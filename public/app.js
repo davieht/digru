@@ -40,12 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     showLoadingChapters();
                     await (async function () {
                         if (!_chapters) {
+                            await loadChapters();
+                            populateChapters();
                             await loadUser();
+                            populateMenu();
                             await Promise.allSettled([
-                                await loadChapters(),
+                                await loadChaptersFromWeb(),
                                 await loadBulletin()
                             ]);
-                            populateMenu();
                         }
                         populateChapters();
                     }());
@@ -53,7 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "chapter":
                     await (async function () {
                         if (!_chapters) {
-                            await loadChapters();
+                            await loadChapters()
+                            await loadChaptersFromWeb()
                         }
                         populateResource();
                     }());
@@ -98,28 +101,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function loadBulletin() {
+        try {
+            showSpinner(true)
 
-        function isBulletinListEmpty() {
-            return !bulletinList || bulletinList.length === 0
+            function isBulletinListEmpty() {
+                return !bulletinList || bulletinList.length === 0
+            }
+
+            const bulletinResponse = await fetch(`${BASE_URL}/api/bulletin/?schoolId=${_user.schoolId}&className=${_user.className}`);
+            if (!bulletinResponse.ok)
+                throw new Error("Failed to fetch data.");
+            const bulletinList = await bulletinResponse.json();
+
+            const bulletinContainer = document.getElementById("bulletin");
+            const bulletinTitle = document.getElementById("bulletin-title");
+
+            bulletinContainer.style.display = isBulletinListEmpty() ? "none" : "block";
+            bulletinTitle.style.display = isBulletinListEmpty() ? "none" : "block";
+
+            const template = document.getElementById("bulletin-item-template");
+            bulletinList.forEach(value => {
+                const clone = template.content.cloneNode(true);
+                clone.querySelector("p").innerHTML = value;
+                bulletinContainer.appendChild(clone);
+            });
+        } catch (error) {
+            console.error("Error fetching dynamic list data:", error);
+            showSnackbar(error.message);
+        } finally {
+            showSpinner(false)
         }
-
-        const bulletinResponse = await fetch(`${BASE_URL}/api/bulletin/?schoolId=${_user.schoolId}&className=${_user.className}`);
-        if (!bulletinResponse.ok)
-            throw new Error("Failed to fetch data.");
-        const bulletinList = await bulletinResponse.json();
-
-        const bulletinContainer = document.getElementById("bulletin");
-        const bulletinTitle = document.getElementById("bulletin-title");
-
-        bulletinContainer.style.display = isBulletinListEmpty() ? "none" : "block";
-        bulletinTitle.style.display = isBulletinListEmpty() ? "none" : "block";
-
-        const template = document.getElementById("bulletin-item-template");
-        bulletinList.forEach(value => {
-            const clone = template.content.cloneNode(true);
-            clone.querySelector("p").innerHTML = value;
-            bulletinContainer.appendChild(clone);
-        });
     }
 
     function populateChapters() {
@@ -150,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             navigate('chapter', chapterId);
                         });
                     }
-                    if (_user.isTeacher) {
+                    if (_user && _user.isTeacher) {
                         chapterNode.querySelector('.card').style.cursor = 'pointer';
                         chapterNode.querySelector('.card').addEventListener("click", () => {
                             _scrollPosition = scrollBox.scrollTop;
@@ -170,29 +181,33 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollBox.scrollTo(0, _scrollPosition);
     }
 
-    // Function to fetch data from a REST API and populate the list
     async function loadChapters() {
+        // Fetch data from a REST API
+        const chaptersResponse = await fetch("data/chapters.json"); // Example API
+        if (!chaptersResponse.ok)
+            throw new Error("Failed to fetch data.");
+
+        _chapterTree = await chaptersResponse.json();
+
+        // Merge to a 1 dimensional set of chapters and
+        // Add `isVisible = false` to each chapter
+        _chapters = Object.fromEntries(
+            Object.entries(_chapterTree).flatMap(([classLevel, chapters]) =>
+                Object.entries(chapters).map(([chapterName, chapter]) => {
+                    chapter.classLevel = +classLevel;
+                    chapter.isActive = false;
+                    // chapter.isActive = +classLevel <= +_user.className[0] || +_user.className[0] === 5 || chapterName === 'program'; // modifies original object
+                    chapter.star = null;
+                    return [chapterName, chapter]; // keeps the reference
+                })
+            )
+        );
+    }
+
+    // Function to fetch data from a REST API and populate the list
+    async function loadChaptersFromWeb() {
         showSpinner(true);
         try {
-            // Fetch data from a REST API
-            const chaptersResponse = await fetch("data/chapters.json"); // Example API
-            if (!chaptersResponse.ok)
-                throw new Error("Failed to fetch data.");
-
-            _chapterTree = await chaptersResponse.json();
-
-            // Merge to a 1 dimensional set of chapters and
-            // Add `isVisible = false` to each chapter
-            const mergedChapters = Object.fromEntries(
-                Object.entries(_chapterTree).flatMap(([classLevel, chapters]) =>
-                    Object.entries(chapters).map(([chapterName, chapter]) => {
-                        chapter.isActive = +classLevel <= +_user.className[0] || +_user.className[0] === 5 || chapterName === 'program'; // modifies original object
-                        chapter.star = null;
-                        return [chapterName, chapter]; // keeps the reference
-                    })
-                )
-            );
-
             //const activeChaptersResponse = await fetch("data/activeChapters.json");
             const activeChaptersResponse = await fetch(`${BASE_URL}/api/chapters/?schoolId=${_user.schoolId}&className=${_user.className}`);
             if (!activeChaptersResponse.ok)
@@ -207,23 +222,25 @@ document.addEventListener("DOMContentLoaded", () => {
 //                        );
 //            }
 
-            // Set chapters isActive and star
+            // Set active chapters
+            Object.entries(_chapters).forEach(([chapterName, chapter]) => {
+                chapter.isActive = +chapter.classLevel <= +_user.className[0] || +_user.className[0] === 5 || chapterName === 'program'; // modifies original object
+            })
+
+            // Set star
             Object.entries(activeChapters).forEach(([chapterName, chapter]) => {
-                if (!mergedChapters[chapterName]) {
+                if (!_chapters[chapterName]) {
                     const errorMsg = `Chapter ${chapterName} not found. Please fix in sheet!`;
                     console.error("Error fetching dynamic list data:", errorMsg);
                     showSnackbar(errorMsg);
                 } else {
-                    mergedChapters[chapterName].isActive = chapter.isActive || mergedChapters[chapterName];
                     if (!_user.isTeacher) {
                         if (chapter.hasQuiz === true) {
-                            mergedChapters[chapterName].star = !_user.chapters[chapterName] ? 0 : (_user.chapters[chapterName] >= 100 ? 2 : 1);
+                            _chapters[chapterName].star = !_user.chapters[chapterName] ? 0 : (_user.chapters[chapterName] >= 100 ? 2 : 1);
                         }
                     }
                 }
             });
-
-            _chapters = mergedChapters;
         } catch (error) {
             console.error("Error fetching dynamic list data:", error);
             showSnackbar(error.message);
