@@ -44,9 +44,39 @@ i.material-icons.mdl-list__item-icon {
     font-size: 42px;
 }
 
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.card.loading::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            90deg,
+            #e0e0e0 25%,
+            #f5f5f5 37%,
+            #e0e0e0 63%
+    );
+    mix-blend-mode: multiply;
+    background-size: 400% 100%;
+    animation: shimmer 1.4s ease infinite;
+}
+
+.card.loading {
+    opacity: .5;
+}
+
 .card {
     filter: saturate(0);
     opacity: .3;
+    position: relative;
 }
 
 .card.active {

@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadBulletin() {
         try {
-            showSpinner(true)
+            setLoadingIndicator(true)
 
             function isBulletinListEmpty() {
                 return !bulletinList || bulletinList.length === 0
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error fetching dynamic list data:", error);
             showSnackbar(error.message);
         } finally {
-            showSpinner(false)
+            setLoadingIndicator(false)
         }
     }
 
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to fetch data from a REST API and populate the list
     async function loadChaptersFromWeb() {
-        showSpinner(true);
+        setLoadingIndicator(true);
         try {
             //const activeChaptersResponse = await fetch("data/activeChapters.json");
             const activeChaptersResponse = await fetch(`${BASE_URL}/api/chapters/?schoolId=${_user.schoolId}&className=${_user.className}`);
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error fetching dynamic list data:", error);
             showSnackbar(error.message);
         } finally {
-            showSpinner(false);
+            setLoadingIndicator(false);
         }
     }
 
@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function loadUser() {
-        showSpinner(true);
+        setLoadingIndicator(true);
         try {
             _login_token = getCookie('login_token');
 
@@ -356,21 +356,24 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error fetching user data:", error);
             window.location.href = "routes/login.html";
         } finally {
-            showSpinner(false);
+            setLoadingIndicator(false);
         }
     }
 
-    function showSpinner(show) {
+    function setLoadingIndicator(isLoading) {
         const spinner = document.getElementById("spinner");
-        if (show) {
+        const cards = document.getElementsByClassName("card");
+        if (isLoading) {
             if (_loadingCnt === 0) {
                 spinner.classList.add("is-active");
+                [...cards].forEach(el => el.classList.add("loading"));
             }
             _loadingCnt++;
         } else {
             _loadingCnt--;
             if (!_loadingCnt) {
                 spinner.classList.remove("is-active");
+                [...cards].forEach(el => el.classList.remove("loading"));
             }
         }
     }
