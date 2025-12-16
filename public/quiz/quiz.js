@@ -1,3 +1,46 @@
+
+function vigenereDecode(encoded, key) {
+    const encryptedBytes = Uint8Array.from(
+        atob(encoded),
+        c => c.charCodeAt(0)
+    );
+
+    const keyBytes = new TextEncoder().encode(key);
+    const result = new Uint8Array(encryptedBytes.length);
+
+    for (let i = 0; i < encryptedBytes.length; i++) {
+        result[i] = (encryptedBytes[i] - keyBytes[i % keyBytes.length] + 256) % 256;
+    }
+
+    return new TextDecoder().decode(result);
+}
+
+function vigenereDecrypt(text, key) {
+    key = key.toUpperCase();
+    let result = "";
+    let j = 0;
+
+    for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+
+        if (/[A-Za-z]/.test(c)) {
+            const code = c.charCodeAt(0);
+            const keyCode = key.charCodeAt(j % key.length) - 65;
+
+            if (code >= 65 && code <= 90)
+                result += String.fromCharCode(((code - 65 - keyCode + 26) % 26) + 65);
+
+            else if (code >= 97 && code <= 122)
+                result += String.fromCharCode(((code - 97 - keyCode + 26) % 26) + 97);
+
+            j++;
+        } else {
+            result += c;
+        }
+    }
+    return result;
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
 
     const params = new URLSearchParams(location.href.split("?")[1]);
@@ -34,18 +77,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     const scoreScreenTxt = document.getElementById('score-screen-txt');
     const questionImg = document.getElementById('question-img');
 
-    const questionsResponse = await fetch("questions.json");
-    if (!questionsResponse.ok)
+    const qRes = await fetch(`${BASE_URL}/api/quiz/xvcjovo`);
+    if (!qRes.ok)
         throw new Error("Failed to fetch data.");
 
-    const questionsJson = await questionsResponse.json();
+    const qRaw = await qRes.text();
+    const qDecrypt = vigenereDecode(qRaw, "LEET");
+    const qJson = JSON.parse(qDecrypt);
 
-    const quizData = questionsJson[quizId];
+    const quizData = qJson[quizId];
     const questionLength = 12;
-    let questions = quizData.questions.slice(0, questionLength);
+    let qstns = quizData.questions.slice(0, questionLength);
 
     let correctAnswerCnt = 0;
-    let requiredQuestionCnt = Math.ceil(questions.length * requiredTheshold);
+    let requiredQuestionCnt = Math.ceil(qstns.length * requiredTheshold);
 
     quizTitle.textContent = quizData.title;
     userName.textContent = `${firstName} ${lastName} - ${className}`;
@@ -66,7 +111,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         postResult();
     });
 
-    totalQuestions.textContent = questions.length;
+    totalQuestions.textContent = qstns.length;
     requiredQuestionsLbl.textContent = requiredQuestionCnt;
 
     // Funktion zum Mischen eines Arrays
@@ -82,7 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function checkAnswer() {
         buttonCheck.hidden = true;
         buttonNext.hidden = false;
-        const question = questions[questionCounter];
+        const question = qstns[questionCounter];
         // Sammle alle ausgewählten Optionen
         const selected = Array.from(document.querySelectorAll(`button.answer-label.mdl-button--colored`))
                 .map(input => parseInt(input.value)); // Array mit gewählten Indizes
@@ -119,18 +164,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         scoreScreen.hidden = false;
         questionContainer.hidden = true;
 
-        if (correctAnswerCnt === questions.length) {
+        if (correctAnswerCnt === qstns.length) {
             scoreScreenTitle.textContent = 'Perfekt!!! 😃';
             scoreScreenTxt.innerHTML = `Du hast <b>alle Fragen</b> richtig beantwortet. Du hast somit <span class="points">${totalQuizPoints + bonusQuizPoints} Punkte</span> und <span class="credits">💎 ${totalQuizPoints + bonusQuizPoints} </span> verdient.`;
             buttonEnd.hidden = false;
         } else if (correctAnswerCnt >= requiredQuestionCnt) {
             scoreScreenTitle.textContent = 'Suuuper! 🙂';
-            scoreScreenTxt.innerHTML = `Du hast <b>${correctAnswerCnt}</b> von <b>${questions.length} Fragen</b> richtig beantwortet. Du hast somit <span class="points">${Math.round(totalQuizPoints * (correctAnswerCnt / questions.length))} Punkte</span> und <span class="credits">💎 ${Math.round(totalQuizPoints * (correctAnswerCnt / questions.length))} </span> verdient. Wenn du die volle Punktzahl erreichst bekommst du 25 Punkte zusaetzlich.`;
+            scoreScreenTxt.innerHTML = `Du hast <b>${correctAnswerCnt}</b> von <b>${qstns.length} Fragen</b> richtig beantwortet. Du hast somit <span class="points">${Math.round(totalQuizPoints * (correctAnswerCnt / qstns.length))} Punkte</span> und <span class="credits">💎 ${Math.round(totalQuizPoints * (correctAnswerCnt / qstns.length))} </span> verdient. Wenn du die volle Punktzahl erreichst bekommst du 25 Punkte zusaetzlich.`;
             buttonEnd.hidden = false;
             buttonReset.hidden = false;
         } else {
             scoreScreenTitle.textContent = 'Schade. 😐';
-            scoreScreenTxt.innerHTML = `Du hast nur <b>${correctAnswerCnt}</b> von <b>${questions.length} Fragen</b> richtig beantwortet. Du musst mindestens <b>${requiredQuestionCnt} Fragen </b> richtig beantworten um Punkte zu bekommen. Bitte versuche es nocheinmal.`;
+            scoreScreenTxt.innerHTML = `Du hast nur <b>${correctAnswerCnt}</b> von <b>${qstns.length} Fragen</b> richtig beantwortet. Du musst mindestens <b>${requiredQuestionCnt} Fragen </b> richtig beantworten um Punkte zu bekommen. Bitte versuche es nocheinmal.`;
             buttonReset.hidden = false;
         }
         updateProgress(100);
@@ -139,7 +184,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function showQuestion() {
         answersContainer.textContent = '';
 
-        const question = questions[questionCounter];
+        const question = qstns[questionCounter];
         shuffleArray(question.options).forEach((answer, index) => {
             const clone = answerTemplate.content.cloneNode(true);
 //            const input = clone.querySelector('input');
@@ -176,10 +221,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     function nextQuestion() {
         buttonNext.hidden = true;
         resetUserFeedback();
-        if (questionCounter < questions.length) {
+        if (questionCounter < qstns.length) {
             buttonCheck.hidden = false;
             showQuestion();
-            updateProgress((questionCounter / questions.length) * 100);
+            updateProgress((questionCounter / qstns.length) * 100);
         } else {
             showScore();
         }
@@ -194,7 +239,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         questionContainer.hidden = false;
         questionCounter = 0;
         correctAnswerCnt = 0;
-        questions = shuffleArray(questions);
+        qstns = shuffleArray(qstns);
         nextQuestion();
     }
 
@@ -234,7 +279,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 hash: hash,
                 quizId: quizId,
                 score: correctAnswerCnt,
-                total: questions.length
+                total: qstns.length
             })
         })
                 .then((response) => {

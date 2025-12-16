@@ -13,6 +13,57 @@ const GOOGLE_SCRIPT_URLs = {
     //"21er": "https://script.google.com/macros/s/AKfycbzxss103pa6KmfZjcdeClo6t3mw5kEgGEpAXKKvgdTKUdl4VP5yti5z1jgg4QA1Fb_i8Q/exec"
 };
 
+function vigenereEncode(text, key) {
+    const textBytes = new TextEncoder().encode(text);
+    const keyBytes = new TextEncoder().encode(key);
+
+    const result = new Uint8Array(textBytes.length);
+
+    for (let i = 0; i < textBytes.length; i++) {
+        result[i] = (textBytes[i] + keyBytes[i % keyBytes.length]) % 256;
+    }
+
+    // Convert bytes → base64 safely
+    let binary = "";
+    const chunkSize = 0x8000; // 32KB
+
+    for (let i = 0; i < result.length; i += chunkSize) {
+        binary += String.fromCharCode(
+            ...result.subarray(i, i + chunkSize)
+        );
+    }
+
+    return btoa(binary);
+}
+
+// Your Vigenère encryption function
+function vigenereEncrypt(text, key) {
+    key = key.toUpperCase();
+    let result = '';
+    let j = 0;
+
+    for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+
+        if (/[A-Za-z]/.test(c)) {
+            const code = text.charCodeAt(i);
+            const keyCode = key.charCodeAt(j % key.length) - 65;
+
+            if (code >= 65 && code <= 90) { // A-Z
+                result += String.fromCharCode(((code - 65 + keyCode) % 26) + 65);
+            } else if (code >= 97 && code <= 122) { // a-z
+                result += String.fromCharCode(((code - 97 + keyCode) % 26) + 97);
+            }
+
+            j++;
+        } else {
+            result += c; // non-letters unchanged
+        }
+    }
+
+    return result;
+}
+
 // Middleware
 app.use(bodyParser.json());
 
@@ -142,6 +193,16 @@ app.post("/api/quiz/", async (req, res) => {
     } catch (error) {
         res.status(500).json({error: "Error posting data to Google Script", details: error.message});
     }
+});
+
+// Serve encrypted JSON
+app.get('/api/quiz/xvcjovo/', (req, res) => {
+    //const filePath = path.join(__dirname, 'public', 'chapters.json');
+    const key = "LEET"; // <-- choose your encryption key
+
+    const json = fs.readFileSync('digiapp/public/quiz/questions.json', 'utf8');
+    const encrypted = vigenereEncode(json, key);
+    res.type("text/plain").send(encrypted);
 });
 
 function log(req) {
