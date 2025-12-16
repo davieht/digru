@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
     const params = new URLSearchParams(location.href.split("?")[1]);
     const quizId = params.get("id");
@@ -9,11 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let questionCounter = 0;
     const totalQuizPoints = 100;
     const bonusQuizPoints = 25;
-
     const requiredTheshold = .50;
-    const quizData = db[quizId];
-    const questionLength = 12;
-    let questions = quizData.questions.slice(0, questionLength);
 
     const answersContainer = document.getElementById("answers-container");
     const answerTemplate = document.getElementById("answer-template");
@@ -38,22 +34,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const scoreScreenTxt = document.getElementById('score-screen-txt');
     const questionImg = document.getElementById('question-img');
 
+    const questionsResponse = await fetch("questions.json");
+    if (!questionsResponse.ok)
+        throw new Error("Failed to fetch data.");
+
+    const questionsJson = await questionsResponse.json();
+
+    const quizData = questionsJson[quizId];
+    const questionLength = 12;
+    let questions = quizData.questions.slice(0, questionLength);
+
     let correctAnswerCnt = 0;
     let requiredQuestionCnt = Math.ceil(questions.length * requiredTheshold);
-
-
 
     quizTitle.textContent = quizData.title;
     userName.textContent = `${firstName} ${lastName} - ${className}`;
 
     buttonNext.addEventListener('click', () => {
         nextQuestion();
+        enableAnswerBtns(true)
     });
     buttonCheck.addEventListener('click', () => {
         checkAnswer();
+        enableAnswerBtns(false)
     });
     buttonReset.addEventListener('click', () => {
         reset();
+        enableAnswerBtns(true)
     });
     buttonEnd.addEventListener('click', () => {
         postResult();
@@ -65,6 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Funktion zum Mischen eines Arrays
     function shuffleArray(array) {
         return array.sort(() => Math.random() - 0.5);
+    }
+
+    function enableAnswerBtns(enable = false) {
+        document.querySelectorAll('button.answer-label')
+            .forEach(btn => btn.style.pointerEvents = enable ? "auto" : "none");
     }
 
     function checkAnswer() {

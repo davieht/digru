@@ -1,4 +1,4 @@
-const db = {
+{
     "digital": {
         "title": "Digital oder Analog",
         "desc": "Bestimme welche Geräte digital oder analog sind",
@@ -1591,7 +1591,7 @@ const db = {
                     {"text": "Der Zweite Faktor muss vor der Passworteingabe bestätigt werden"},
                     {"text": "Der Zweite Faktor muss sowohl vor als auch nach der Passworteingabe bestätigt werden"}
                 ]
-            },
+            }
         ]
     },
     "hardware": {
@@ -3120,7 +3120,7 @@ const db = {
                     {"text": "HDD"},
                     {"text": "SSD"}
                 ]
-            },
+            }
         ]
     },
     "placeholder": {
@@ -3138,4 +3138,4 @@ const db = {
             }
         ]
     }
-};
+}
