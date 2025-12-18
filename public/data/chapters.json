@@ -722,12 +722,6 @@
           "type": "video",
           "link": "https://www.youtube.com/watch?v=07zsT8lBSjQ",
           "description": "In diesem Video erfährst du mehr über die Geschichte des Computers."
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=history",
-          "description": "Das Quiz zu Computergeschichte."
         }
       ]
     },
