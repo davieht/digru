@@ -1483,7 +1483,7 @@
                 "options": [
                     {"text": "Sie verbessern die User Experience", "correct": true},
                     {"text": "Dadurch kann sich die Seite deine Einstellungen merken", "correct": true},
-                    {"text": "Cookies schießen auf deine Interessen", "correct": true},
+                    {"text": "Cookies schließen auf deine Interessen", "correct": true},
                     {"text": "Durch Cookies kann dir entsprechende Werbung gezeigt werden", "correct": true}
                 ]
             },
