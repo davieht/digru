@@ -136,7 +136,7 @@
                 ]
             },
             {
-                "text": "Was passiert, wenn Sie Ihr Passwort vergessen?",
+                "text": "Was passiert, wenn du dein Passwort vergessen hast?",
                 "options": [
                     {"text": "Man kann es zurücksetzen lassen", "correct": true},
                     {"text": "Der Account wird gesperrt"},
@@ -1447,7 +1447,7 @@
                 "options": [
                     {"text": "Datenschutz schützt dich und andere Personen vor unerlaubter Datenverarbeitung", "correct": true},
                     {"text": "Durch den Datenschutz kann eine Datei nicht kopiert werden"},
-                    {"text": "Durch den Datenschutz kann nicht von einem Datenträger gelsen werden"},
+                    {"text": "Durch den Datenschutz kann nicht von einem Datenträger gelesen werden"},
                     {"text": "Der Datenschutz verhindert das unerlaubte Herunterladen von Spielen"}
                 ]
             },
@@ -1502,7 +1502,7 @@
                     {"text": "Eltern oder einer Vertrauensperson Bescheid geben", "correct": true},
                     {"text": "Kontaktaufnahme zu der Person, die meine Daten geklaut hat und bitten diese zu löschen", "correct": true},
                     {"text": "Sich an Datenschutzbeauftragte wenden oder zur Polizei gehen", "correct": true},
-                    {"text": "Aufgeben, wird nicht so schlimm sein"}
+                    {"text": "Aufgeben. Es wird nicht so schlimm sein"}
                 ]
             }
         ]
@@ -1815,7 +1815,7 @@
                 "options": [
                     {"text": "Ein weltweites Netzwerk, das Computer verbindet.", "correct": true},
                     {"text": "Ein großes Computerprogramm"},
-                    {"text": "Ein Ort, an dem Daten gespeichert werden"},
+                    {"text": "Ein lokales Netzwerk, das Computer verbindet"},
                     {"text": "Ein Netzwerk von Netzwerken", "correct": true}
                 ]
             },
@@ -2213,7 +2213,7 @@
                 ]
             },
             {
-                "text": "Worin können Betriebssysteme vorhanden sein?",
+                "text": "Wo können Betriebssysteme vorhanden sein?",
                 "options": [
                     {"text": "Aufzüge", "correct": true},
                     {"text": "Autos", "correct": true},
@@ -2458,7 +2458,7 @@
             {
                 "text": "Woraus besteht ein Neuronales Netzwerk einer KI?",
                 "options": [
-                    {"text": "Besteht aus Knoten, Verbindungen und Gewichten", "correct": true},
+                    {"text": "Besteht aus Knoten, Verbindungen und Gewichtungen", "correct": true},
                     {"text": "Besteht aus Knochen, Haut und Muskeln"},
                     {"text": "Besteht aus Nodes, Connections und Weights", "correct": true},
                     {"text": "Besteht aus Quarks, Bosonen und Leptonen"}
@@ -2717,15 +2717,6 @@
                     {"text": "Die Erde ist Flach", "correct": true},
                     {"text": "Man hat Außerirdische entdeckt", "correct": true},
                     {"text": "Die Erde ist kein Kreis, sondern ein Ellipsoid"}
-                ]
-            },
-            {
-                "text": "Beispiele von Fake News?",
-                "options": [
-                    {"text": "Verschwörungstheorien", "correct": true},
-                    {"text": "Astrologie", "correct": true},
-                    {"text": "Astronomie"},
-                    {"text": "Mathematik"}
                 ]
             }
         ]

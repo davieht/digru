@@ -1222,13 +1222,19 @@
     },
     "js": {
       "name": "JavaScript",
-      "description": "Grundzügde des Programmierens mit JavaScript",
+      "description": "Grundzüge des Programmierens mit JavaScript.",
       "image": "../src/js.jpg",
       "links": [
         {
-          "name": "JavaScript",
+          "name": "Programmieren",
           "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1G0cSn_6OGUVnYkMynLbHb5teNMO_cBPtdKMUynQx0FU/",
+          "link": "https://docs.google.com/presentation/d/1wwgFe6xEsh2n8Q8e9aAWOxS6faTBFZCHSnOy-BGsCHc",
+          "description": ""
+        },
+        {
+          "name": "Lernunterlagen",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/1xQdn984nVchMvAkJfBnR_HKUh_yIKxuf91bbCw1wtJQ",
           "description": ""
         }
       ]
