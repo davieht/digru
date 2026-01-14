@@ -551,56 +551,6 @@
         }
       ]
     },
-    "grooming": {
-      "name": "Cybergrooming",
-      "description": "Cybergrooming erkennen und verhindern.",
-      "image": "../src/grooming.jpg",
-      "links": [
-        {
-          "name": "Cybergrooming",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1IMZA-GCx4E7UmiBk0y6DZivS9A7L5kPvfQozJ5BQQuE",
-          "description": ""
-        },
-        {
-          "name": "Saferinternet - Flyer",
-          "type": "link",
-          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Online-Grooming.pdf",
-          "description": "Dieser Flyer erklärt dir was Cybergrooming ist."
-        },
-        {
-          "name": "Saferinternet - Schnitzeljagt Cybergrooming",
-          "type": "link",
-          "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=7",
-          "description": "Ein Quiz zu Cybergrooming."
-        },
-        {
-          "name": "Video - Love Story",
-          "type": "video",
-          "link": "https://www.youtube.com/watch?v=lT0Wao7fnyo",
-          "description": "Sieh dir das Video an um zu verstehen was Cybergrooming ist"
-        },
-        {
-          "name": "Nachrichtenbeitrag",
-          "type": "link",
-          "link": "https://ooe.orf.at/stories/3328523/",
-          "description": "Ein Nachrichtenartikel zum Thema Grooming."
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=grooming",
-          "description": "Das Quiz zu Urheberrecht."
-        }
-      ]
-    },
-    "recap22": {
-      "name": "Wiederholung",
-      "description": "Wiederholung des ersten Semester.",
-      "image": "../src/recap.jpg",
-      "links": [
-      ]
-    },
     "copyright": {
       "name": "Urheberrecht",
       "description": "Digitales Eigentum und worauf du achten sollst.",
@@ -673,6 +623,13 @@
           "link": "../quiz/quiz.html?id=gdpr",
           "description": "Das Quiz zu Datenschutz."
         }
+      ]
+    },
+    "recap22": {
+      "name": "Wiederholung",
+      "description": "Wiederholung des ersten Semester.",
+      "image": "../src/recap.jpg",
+      "links": [
       ]
     },
     "password": {
@@ -808,6 +765,49 @@
           "type": "quiz",
           "link": "../quiz/quiz.html?id=periphery",
           "description": "Das Quiz zu Peripheriegeräte."
+        }
+      ]
+    },
+    "grooming": {
+      "name": "Cybergrooming",
+      "description": "Cybergrooming erkennen und verhindern.",
+      "image": "../src/grooming.jpg",
+      "links": [
+        {
+          "name": "Cybergrooming",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1IMZA-GCx4E7UmiBk0y6DZivS9A7L5kPvfQozJ5BQQuE",
+          "description": ""
+        },
+        {
+          "name": "Saferinternet - Flyer",
+          "type": "link",
+          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Online-Grooming.pdf",
+          "description": "Dieser Flyer erklärt dir was Cybergrooming ist."
+        },
+        {
+          "name": "Saferinternet - Schnitzeljagt Cybergrooming",
+          "type": "link",
+          "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=7",
+          "description": "Ein Quiz zu Cybergrooming."
+        },
+        {
+          "name": "Video - Love Story",
+          "type": "video",
+          "link": "https://www.youtube.com/watch?v=lT0Wao7fnyo",
+          "description": "Sieh dir das Video an um zu verstehen was Cybergrooming ist"
+        },
+        {
+          "name": "Nachrichtenbeitrag",
+          "type": "link",
+          "link": "https://ooe.orf.at/stories/3328523/",
+          "description": "Ein Nachrichtenartikel zum Thema Grooming."
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=grooming",
+          "description": "Das Quiz zu Urheberrecht."
         }
       ]
     },
