@@ -621,15 +621,15 @@
                     {"text": "Durch Drag and Drop", "correct": true},
                     {"text": "Durch drücken von Strg und Klicken"},
                     {"text": "Durch einen Doppelklick"},
-                    {"text": "Durch markieren und Enter"}
+                    {"text": "Durch Strg + C und Strg + V", "correct": true}
                 ]
             },
             {
                 "text": "Was passiert beim verschieben eines Ordners?",
                 "options": [
-                    {"text": "Der Ordner und alle Dateien und Unterordner werden mit verschoben", "correct": true},
-                    {"text": "Der Ordner und seine Unterordner werden verschoben"},
-                    {"text": "Der ausgewählte Ordner und nur die beinhaltenden Dateien werden verschoben"},                    
+                    {"text": "Der Ordner selbst, alle Unterordner und alle Dateien im Ordner werden mit verschoben", "correct": true},
+                    {"text": "Der Ordner und seine Unterordner werden verschoben", "correct": true},
+                    {"text": "Der Ordner und die beinhaltenden Dateien werden verschoben", "correct": true},
                     {"text": "Der Ordner wird verschoben und alle Dateien und Unterordner werden kopiert"}
                 ]
             },
@@ -654,7 +654,7 @@
             {
                 "text": "Wie können mehrere Dateien ausgewählt werden?",
                 "options": [
-                    {"text": "Durch das Klicken und Ziehen der Maus", "correct": true},
+                    {"text": "Durch das Klicken und Ziehen der Maus über die Dateien", "correct": true},
                     {"text": "Durch halten von Shift und den Pfeiltasten", "correct": true},
                     {"text": "Durch Strg + C und Strg + V"},
                     {"text": "Durch das Windows Startmenü"}
@@ -736,21 +736,30 @@
         "desc": "Beantworte die Fragen zu Suchmaschinen",
         "questions": [
             {
+                "text": "Was ist eine Suchmaschine?",
+                "options": [
+                    {"text": "Ein Online-Dienst im Internet", "correct": true},
+                    {"text": "Ein Browser", "correct": true},
+                    {"text": "Ein Betriebssystem"},
+                    {"text": "Ein Videospiel"}
+                ]
+            },
+            {
                 "text": "Wozu dient eine Suchmaschine?",
                 "options": [
                     {"text": "Um Informationen im Internet zu finden.", "correct": true},
-                    {"text": "Um Webseiten zu durchsuchen.", "correct": true},
+                    {"text": "Es liefert passende Ergebnisse zu einem Suchbegriff.", "correct": true},
                     {"text": "Um Spiele zu spielen"},
                     {"text": "Um das WLAN einzuschalten"}
                 ]
             },
             {
-                "text": "Welche dieser Optionen ist eine Suchmaschine?",
+                "text": "Wie funktioniert eine Suchmaschine?",
                 "options": [
-                    {"text": "Google", "correct": true},
-                    {"text": "Bing", "correct": true},
-                    {"text": "YouTube"},
-                    {"text": "DuckDuckGo", "correct": true}
+                    {"text": "Sie nutzt sogenannte Crawler, die Websiten durchsuchen", "correct": true},
+                    {"text": "Wie ein Betriebssystem"},
+                    {"text": "Sie durchsuchen das Internet und speichern die Inhalte in einer Datenbank", "correct": true},
+                    {"text": "Sie nutzt sogenannte Browser, die Betriebssysteme durchsuchen"}
                 ]
             },
             {
@@ -762,7 +771,6 @@
                     {"text": "Das Internet wird beendet"}
                 ]
             },
-            
             {
                 "text": "Welche dieser Suchmaschinen gibt es?",
                 "options": [
@@ -782,12 +790,39 @@
                 ]
             },
             {
-                "text": "Wie kannst du schneller eine Webseite finden?",
+                "text": "Was sind Lesezeichen?",
                 "options": [
                     {"text": "Indem du eine Suchmaschine benutzt.", "correct": true},
                     {"text": "Indem du ein Lesezeichen verwendest.", "correct": true},
                     {"text": "Indem du den Computer neu startest"},
                     {"text": "Indem du den Bildschirm heller machst"}
+                ]
+            },
+            {
+                "text": "Warum zeigen Suchmaschinen unterschiedliche Ergebnisse an?",
+                "options": [
+                    {"text": "Weil die Suchergebnisse nach Standort, Sprache und Aktualität der Webseiten sortieren.", "correct": true},
+                    {"text": "Weil sie das zufällig machen."},
+                    {"text": "Weil unterschiedliche Suchmaschinen keinen Zugriff auf die jeweilig anderen Daten haben", "correct": true},
+                    {"text": "Weil sich der Index, also die Sortierung der Daten ändern kann", "correct": true}
+                ]
+            },
+            {
+                "text": "Warum sind Suchmaschinen wichtig?",
+                "options": [
+                    {"text": "Weil sie es ermöglichen Informationen zu finden.", "correct": true},
+                    {"text": "Weil sie es ermöglichen Bilder und Videos zu finden."},
+                    {"text": "Weil sie es ermöglichen Websiten zu finden", "correct": true},
+                    {"text": "Weil sie es ermöglichen Fastfood zu bestellen"}
+                ]
+            },
+            {
+                "text": "Warum sollte man nicht jeder Information aus dem Internet sofort glauben?",
+                "options": [
+                    {"text": "Weil nicht alles im internet wahr ist.", "correct": true},
+                    {"text": "Weil jeder im Internet seine Meinung äußern kann.", "correct": true},
+                    {"text": "Weil die Informationen immer überprüft werden"},
+                    {"text": "Weil im Internet alles wahr ist"}
                 ]
             }
         ]
