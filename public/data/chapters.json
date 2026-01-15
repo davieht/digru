@@ -817,9 +817,9 @@
       "image": "../src/word.jpg",
       "links": [
         {
-          "name": "Draft",
-          "type": "pdf",
-          "link": "",
+          "name": "Word - Formatieren",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/18vz7L5z-lbE3__YYB19vZsCTQAdIHLurSl7mayga0EU/",
           "description": ""
         }
       ]
@@ -1122,9 +1122,15 @@
       "image": "../src/excel.jpg",
       "links": [
         {
-          "name": "Draft",
-          "type": "slide",
-          "link": "",
+          "name": "Excel - Party Aufgabe",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/1razN9HpewFskE3xjYMMtu16MlO_Wp-pS-bdRuapCTDY/",
+          "description": ""
+        },
+        {
+          "name": "Excel - Noten Aufgabe",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/1rTkCVHH_t2SUoKlQj59IeMNhVRHCga-tRie81D8wopw/",
           "description": ""
         }
       ]
@@ -1616,12 +1622,6 @@
       "description": "Texte verfassen mit Microsoft Word.",
       "image": "../src/word.jpg",
       "links": [
-        {
-          "name": "Draft",
-          "type": "slide",
-          "link": "",
-          "description": ""
-        },
         {
           "name": "Textformatierung",
           "type": "exercise",

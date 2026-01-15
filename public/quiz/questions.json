@@ -390,10 +390,10 @@
             {
                 "text": "Was ist ein Betriebssystem?",
                 "options": [
-                    {"text": "Eine Software, welche die Kommunikation von Hardware ermöglicht", "correct": true},
+                    {"text": "Eine Schnittstelle zwischen Hardwarekomponenten", "correct": true},
                     {"text": "Eine Schnittstelle zwischen Mensch und Computer", "correct": true},
-                    {"text": "Ist eine Hardware"},
-                    {"text": "Ist eine Computerkomponente"}
+                    {"text": "Ein Videospiel"},
+                    {"text": "Eine Computerkomponente"}
                 ]
             },
             {
@@ -420,7 +420,7 @@
                     {"text": "Der Hauptbildschirm, auf dem Symbole abgelegt werden können", "correct": true},
                     {"text": "Ein Bereich in den Windows-Einstellungen"},
                     {"text": "Ein Ordner für Systemdateien"},
-                    {"text": "Dein virtueller Schreibtisch", "correct": true}
+                    {"text": "Der virtuelle Schreibtisch", "correct": true}
                 ]
             },
             {
@@ -495,7 +495,7 @@
             {
                 "text": "Was ist eine Datei?",
                 "options": [
-                    {"text": "Ein Konstrukt, das Daten Speichert", "correct": true},
+                    {"text": "Ein Konstrukt, das Daten speichert", "correct": true},
                     {"text": "Ein anderes Wort für Ordner"},
                     {"text": "Eine Festplatte"},
                     {"text": "Ein Konstrukt, das digitale Information speichert", "correct": true}
