@@ -1162,22 +1162,15 @@
           "description": ""
         },
         {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=ki",
-          "description": ""
-        }
-      ]
-    },
-    "genki": {
-      "name": "Generative KI",
-      "description": "ChatGPT & Co - Chancen und Risiken der KI",
-      "image": "../src/genki.jpg",
-      "links": [
-        {
           "name": "Generative KI",
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1Zv66LdqGy_iBR2nQ2juGmw_938KTUf6OeISGHRrYUkg",
+          "description": ""
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=ki",
           "description": ""
         },
         {
