@@ -1210,12 +1210,6 @@
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1cI6rtPpX73XotZBPfMpQluLNOGl4ivNMVc5tCn3apKU/",
           "description": ""
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=deepfakes",
-          "description": ""
         }
       ]
     },
