@@ -21,11 +21,15 @@ body {
     background-color: #FAFAFA;
 }
 
-.card-icon {
+.card-star {
     position: absolute;
     top: 8px;
     right: 8px;
     color: #ffc107; /* Gold color for the star */
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    font-size: 32px;
+    padding: 8px;
     z-index: 10;
 }
 

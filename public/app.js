@@ -172,6 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     chapterNode.querySelector('.card-title').textContent = `${chapter.name}`;
                     chapterNode.querySelector('.card-description').textContent = `${chapter.description}`;
                     chapterNode.querySelector('.card-star').textContent = starMap[chapter.star];
+                    chapterNode.querySelector('.card-star').hidden = chapter.star === null;
 
                     // Append the populated clone to the container
                     chapterContent.appendChild(chapterNode);
