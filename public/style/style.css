@@ -64,9 +64,9 @@ i.material-icons.mdl-list__item-icon {
     inset: 0;
     background: linear-gradient(
             45deg,
-            #dddddd 25%,
-            #f5f5f5 37%,
-            #dddddd 63%
+            #f5f5f5 25%,
+            #dddddd 37%,
+            #f5f5f5 63%
     );
     mix-blend-mode: multiply;
     background-size: 400% 100%;
