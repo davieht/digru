@@ -391,7 +391,7 @@
       "links": [
       ]
     },
-    "socialmedia": {
+    "social": {
       "name": "Soziale Netzwerke",
       "description": "In diesem Kapitel lernst du über Soziale Netzwerke.",
       "image": "../src/socialmedia.jpg",
@@ -417,7 +417,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=socialmedia",
+          "link": "../quiz/quiz.html?id=social",
           "description": "Das Quiz zu Soziale Medien."
         },
         {
@@ -452,7 +452,7 @@
         }
       ]
     },
-    "influmercial": {
+    "influ": {
       "name": "Werbung und Influencer",
       "description": "In diesem Kapitel erfährst du was Influencer sind und wie Werbung funktioniert.",
       "image": "../src/influmercial.jpg",
@@ -478,12 +478,12 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=influmercial",
+          "link": "../quiz/quiz.html?id=influ",
           "description": "Das Quiz zu Influencer und Werbung."
         }
       ]
     },
-    "digitalwell": {
+    "digiwell": {
       "name": "Digitale Gesundheit",
       "description": "Bildschirmzeiten und Gesundheit mit Digitalen Medien",
       "image": "../src/digitalwell.jpg",
@@ -509,7 +509,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=digitalwell",
+          "link": "../quiz/quiz.html?id=digiwell",
           "description": "Das Quiz zu Digital Wellbeing."
         }
       ]
@@ -551,7 +551,7 @@
         }
       ]
     },
-    "copyright": {
+    "cpright": {
       "name": "Urheberrecht",
       "description": "Digitales Eigentum und worauf du achten sollst.",
       "image": "../src/copyright.jpg",
@@ -577,7 +577,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=copyright",
+          "link": "../quiz/quiz.html?id=cpright",
           "description": "Das Quiz zu Urheberrecht."
         }
       ]
@@ -632,7 +632,7 @@
       "links": [
       ]
     },
-    "password": {
+    "pwd": {
       "name": "Sicheres Passwort",
       "description": "Sichere Passwörter erstellen.",
       "image": "../src/password.jpg",
@@ -658,7 +658,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=password",
+          "link": "../quiz/quiz.html?id=pwd",
           "description": "Das Quiz zu Siches Passwort."
         }
       ]
@@ -682,7 +682,7 @@
         }
       ]
     },
-    "hardware": {
+    "hw": {
       "name": "Hardware",
       "description": "Computerhardware und ihre Funktionen",
       "image": "../src/hardware.jpg",
@@ -732,7 +732,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=hardware",
+          "link": "../quiz/quiz.html?id=hw",
           "description": "Das Quiz zu Computerhardware, Prozessor und Arbeitsspeicher."
         }
       ]
@@ -768,7 +768,7 @@
         }
       ]
     },
-    "grooming": {
+    "groom": {
       "name": "Cybergrooming",
       "description": "Cybergrooming erkennen und verhindern.",
       "image": "../src/grooming.jpg",
@@ -806,7 +806,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=grooming",
+          "link": "../quiz/quiz.html?id=groom",
           "description": "Das Quiz zu Urheberrecht."
         }
       ]
@@ -1028,7 +1028,7 @@
         }
       ]
     },
-    "opensource": {
+    "opensrc": {
       "name": "Open Source",
       "description": "Frei verfügbare Software nutzen.",
       "image": "../src/opensource.jpg",
@@ -1048,7 +1048,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=opensource",
+          "link": "../quiz/quiz.html?id=opensrc",
           "description": ""
         }
       ]
@@ -1097,7 +1097,7 @@
         }
       ]
     },
-    "sextortion": {
+    "sextort": {
       "name": "Sextortion und Rachepornos",
       "description": "Gefahren von Sexting.",
       "image": "../src/sextortion.jpg",
@@ -1111,7 +1111,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=sextortion",
+          "link": "../quiz/quiz.html?id=sextort",
           "description": ""
         }
       ]
@@ -1176,7 +1176,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=genki",
+          "link": "../quiz/quiz.html?id=llm",
           "description": ""
         }
       ]
@@ -1200,7 +1200,7 @@
         }
       ]
     },
-    "deepfakes": {
+    "fakes": {
       "name": "Deep Fakes",
       "description": "In diesem Kapitel lernst du was Deep Fakes sind.",
       "image": "../src/deepfakes.jpg",
@@ -1232,7 +1232,7 @@
         }
       ]
     },
-    "digiimpact": {
+    "impact": {
       "name": "Auswirkungen der Digitalisierung",
       "description": "Chancen und Auswirkungen der Digitalisierung.",
       "image": "../src/digiimpact.jpg",
@@ -1246,7 +1246,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=digiimpact",
+          "link": "../quiz/quiz.html?id=impact",
           "description": ""
         }
       ]
@@ -1799,7 +1799,7 @@
         }
       ]
     },
-    "windowsmisc": {
+    "winmisc": {
       "name": "Windows - Ergänzendes und Taskmanager",
       "description": "Weiterführende Funktionen in Windows.",
       "image": "../src/windows.png",

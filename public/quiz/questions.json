@@ -924,7 +924,7 @@
         ]
     },
     
-    "socialmedia": {
+    "social": {
         "title": "Soziale Netzwerke",
         "desc": "",
         "questions": [
@@ -1020,7 +1020,7 @@
             }
         ]
     },
-    "influmercial": {
+    "influ": {
         "title": "Werbung und Influencer",
         "desc": "",
         "questions": [
@@ -1194,7 +1194,7 @@
             }
         ]
     },
-    "grooming": {
+    "groom": {
         "title": "Cybergrooming",
         "desc": "Beantworte die Fragen zu Cybergrooming",
         "questions": [
@@ -1281,7 +1281,7 @@
             }
         ]
     },
-    "digitalwell": {
+    "digiwell": {
         "title": "Digitale Gesundheit",
         "desc": "Beantworte die Fragen zu Digitaler Gesundheit",
         "questions": [
@@ -1368,7 +1368,7 @@
             }
         ]
     },
-    "copyright": {
+    "cpright": {
         "title": "Das Urheberrecht",
         "desc": "Beantworte die Fragen zu Urheberrecht",
         "questions": [
@@ -1542,7 +1542,7 @@
             }
         ]
     },
-    "password": {
+    "pwd": {
         "title": "Sicheres Passwort",
         "desc": "Beantworte die Fragen zu Sicheres Passwort",
         "questions": [
@@ -1629,7 +1629,7 @@
             }
         ]
     },
-    "hardware": {
+    "hw": {
         "title": "Hardware",
         "desc": "Beantworte die Fragen zu Hardware.",
         "questions": [
@@ -2312,7 +2312,7 @@
             }
         ]
     },
-    "opensource": {
+    "opensrc": {
         "title": "Open Source",
         "desc": "Beantworte die Fragen zu Open Source",
         "questions": [
@@ -2390,7 +2390,7 @@
             }
         ]
     },
-    "sextortion": {
+    "sextort": {
         "title": "Sextortion und Rachepornos",
         "desc": "Beantworte die Fragen zu Sextortion und Rachepornos",
         "questions": [
@@ -2573,7 +2573,7 @@
             }
         ]
     },
-    "genki": {
+    "llm": {
         "title": "Generative KI",
         "desc": "Beantworte die Fragen zu Generativer KI",
         "questions": [
@@ -2756,7 +2756,7 @@
             }
         ]
     },
-    "digiimpact": {
+    "impact": {
         "title": "Auswirkungen der Digitalisierung",
         "desc": "Beantworte die Fragen zu den Auswirkungen der Digitalisierung",
         "questions": [
