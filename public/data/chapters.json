@@ -1274,6 +1274,12 @@
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1oGdXZtG-V-YjpkmcefNNG008HwhO7vghTtdxhBWsudU",
           "description": ""
+        },
+        {
+          "name": "Lastenheft",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/1xR5KiSqI7BsK28_rXtctT4o_8agQkagUEGvqDCOmXgU/",
+          "description": ""
         }
       ]
     }
@@ -1284,12 +1290,6 @@
       "description": "Präsentieren mit Microsoft Powerpoint.",
       "image": "../src/ppt.jpg",
       "links": [
-        {
-          "name": "Windows",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1MRhRvBMpR2O1aimib31fQlsb19SdttPxbOBQ6Japw9w",
-          "description": ""
-        },
         {
           "name": "Steckbrief",
           "type": "exercise",
