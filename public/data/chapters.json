@@ -1838,6 +1838,12 @@
           "description": ""
         }
       ]
+    },
+    "misc": {
+      "name": "",
+      "description": "",
+      "image": "../src/misc.jpg",
+      "links": []
     }
   }
 }
