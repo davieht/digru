@@ -1549,9 +1549,9 @@
         }
       ]
     },
-    "danger_i": {
-      "name": "Gefahren des Internets",
-      "description": "Malware, Scam und social engineering.",
+    "malware_i": {
+      "name": "Schadhafte Software",
+      "description": "Über Viren, Trojaner, Ransomware und Hoax",
       "image": "../src/malware.jpg",
       "links": [
         {
@@ -1560,6 +1560,19 @@
           "link": "https://docs.google.com/presentation/d/1l8egLafkbsXhZb2ICyQ7KyKMkYZYKPYYgySPYMS_P0M",
           "description": ""
         },
+        {
+          "name": "Präsentation - Gefahren des Internets",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "description": ""
+        }
+      ]
+    },
+    "danger_i": {
+      "name": "Gefahren des Internets",
+      "description": "Hier lernst du über die Gefahren des Internets",
+      "image": "../src/mobbing.jpg",
+      "links": [
         {
           "name": "Scam und Phishing",
           "type": "slide",
@@ -1595,6 +1608,24 @@
           "type": "video",
           "link": "https://www.youtube.com/watch?v=lT0Wao7fnyo",
           "description": "Sieh dir das Video an um zu verstehen was Cybergrooming ist"
+        },
+        {
+          "name": "Sexting",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1ZaZnZHIVT6B7OnJI5AuZNEWuZOUJxLcemBJJYla-zIw",
+          "description": ""
+        },
+        {
+          "name": "Saferinternet - Sexting Flyer",
+          "type": "link",
+          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Sexting.pdf",
+          "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
+        },
+        {
+          "name": "Sextortion und Rachepornos",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1hmzzF7mJIZ0udYk-YP19wYmmcIm7LMiaRnMiyZds-Wg",
+          "description": ""
         },
         {
           "name": "Präsentation - Gefahren des Internets",
@@ -1843,6 +1874,14 @@
       "name": "",
       "description": "",
       "image": "../src/misc.jpg",
+      "hidden": true,
+      "links": []
+    },
+    "clean": {
+      "name": "",
+      "description": "",
+      "image": "../src/misc.jpg",
+      "hidden": true,
       "links": []
     }
   }
