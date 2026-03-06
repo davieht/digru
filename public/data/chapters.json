@@ -890,7 +890,7 @@
         {
           "name": "Malware",
           "type": "video",
-          "link": "todo",
+          "link": "https://www.youtube.com/watch?v=uak-Q9Z2EYo",
           "description": "Dieses Video erklärt, was Malware ist."
         },
         {
@@ -1279,6 +1279,12 @@
           "name": "Lastenheft",
           "type": "link",
           "link": "https://docs.google.com/document/d/1xR5KiSqI7BsK28_rXtctT4o_8agQkagUEGvqDCOmXgU/",
+          "description": ""
+        },
+        {
+          "name": "Lastenheft - Musterlösung",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/1kxL6cczc1M-q6xTPSS62JCqkENfcvFRYSTgEexPGsk8/",
           "description": ""
         }
       ]
