@@ -363,21 +363,21 @@
       "image": "../src/ppt.jpg",
       "links": [
         {
-          "name": "Einleitung und Begrüßung",
-          "type": "slide",
-          "link": "",
-          "description": ""
-        },
-        {
           "name": "Erste Schritte mit Powerpoint",
           "type": "video",
           "link": "https://www.youtube.com/watch?v=kbpkdxL-Ubg",
           "description": "Dieses Video erklärt, wie du mit Powerpoint Präsentationsfolien erstellen kannst."
         },
         {
-          "name": "Geburtstagseinladung",
+          "name": "Aufgabe - Geburtstagseinladung",
           "type": "exercise",
-          "link": "",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/edit?slide=id.g396fa0b7a15_0_5#slide=id.g396fa0b7a15_0_5",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - Steckbrief",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/edit?slide=id.g396fa0b7a15_0_5#slide=id.g396fa0b7a15_0_5",
           "description": ""
         }
       ]
@@ -1122,13 +1122,13 @@
       "image": "../src/excel.jpg",
       "links": [
         {
-          "name": "Excel - Party Aufgabe",
+          "name": "Aufgabe - Excel Klimawerte (Charts)",
           "type": "link",
-          "link": "https://docs.google.com/document/d/1razN9HpewFskE3xjYMMtu16MlO_Wp-pS-bdRuapCTDY/",
+          "link": "https://docs.google.com/document/d/1bSX_N7_y9uu-LKH7v0qMIwlojPdNSmSO7B_5hu-FcvY/",
           "description": ""
         },
         {
-          "name": "Excel - Noten Aufgabe",
+          "name": "Aufgabe - Excel Noten",
           "type": "link",
           "link": "https://docs.google.com/document/d/1rTkCVHH_t2SUoKlQj59IeMNhVRHCga-tRie81D8wopw/",
           "description": ""
@@ -1297,9 +1297,9 @@
       "image": "../src/ppt.jpg",
       "links": [
         {
-          "name": "Steckbrief",
+          "name": "Aufgabe - Steckbrief",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g36409753cec_0_17#slide=id.g36409753cec_0_17",
           "description": ""
         }
       ]
@@ -1340,9 +1340,9 @@
           "description": "."
         },
         {
-          "name": "Backup Dateien einspielen auf Windows",
+          "name": "Aufgabe - Backup Dateien einspielen auf Windows",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_0#slide=id.g373709f0f30_0_0",
           "description": ""
         }
       ]
@@ -1437,15 +1437,27 @@
           "description": "In diesem Video erfährst du mehr über die Anschlüsse eines Mainboards. Im Video wird erklärt welche Peripheriegeräte du an welchen Steckplatz anstecken kannst."
         },
         {
-          "name": "PC zusammenbauen",
+          "name": "Aufgabe - Handy Spezifikationen",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g385c8d292b7_0_0#slide=id.g385c8d292b7_0_0",
           "description": ""
         },
         {
-          "name": "Computerkauf",
+          "name": "Aufgabe - PC zusammenbauen",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_63#slide=id.g373709f0f30_0_63",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - Computerdaten",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g385c8d292b7_0_5#slide=id.g385c8d292b7_0_5",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - Computerkauf",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g36409753cec_0_0#slide=id.g36409753cec_0_0",
           "description": ""
         }
       ]
@@ -1498,9 +1510,9 @@
           "description": "Dieses Video erklärt, wie der Datentransfer über das Internet funktioniert."
         },
         {
-          "name": "Präsentation eines Begriffs aus dem Internet",
+          "name": "Aufgabe - Präsentation eines Begriffs aus dem Internet",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_68#slide=id.g373709f0f30_0_68",
           "description": ""
         }
       ]
@@ -1517,16 +1529,22 @@
           "description": ""
         },
         {
-          "name": "Programmieren einer Website mit HTML",
-          "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
-          "description": ""
-        },
-        {
           "name": "HTML - Hello World",
           "type": "link",
           "link": "https://codepen.io/David-Viehtauer/pen/MYygGOo",
           "description": "Hello World Musterlösung"
+        },
+        {
+          "name": "Aufgabe - HTML Website mti Codepen",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_73#slide=id.g373709f0f30_0_73",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - HTML Detailseite",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g3a253fbbc4b_3_0#slide=id.g3a253fbbc4b_3_0",
+          "description": ""
         }
       ]
     },
@@ -1542,15 +1560,33 @@
           "description": ""
         },
         {
-          "name": "Füge Styles deiner Website hinzu",
+          "name": "Aufgabe - CSS Website Design",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g3a26f917616_0_0#slide=id.g3a26f917616_0_0",
           "description": ""
         },
         {
-          "name": "Bildgallerie",
+          "name": "Aufgabe - CSS Selektoren",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_78#slide=id.g373709f0f30_0_78",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - Das Boxmodel",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g3a26f917616_0_5#slide=id.g3a26f917616_0_5",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - CSS Klassen",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g3a26f917616_0_10#slide=id.g3a26f917616_0_10",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - Flexbox",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g378f598d199_0_3#slide=id.g378f598d199_0_3",
           "description": ""
         }
       ]
@@ -1569,7 +1605,7 @@
         {
           "name": "Präsentation - Gefahren des Internets",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g3cb93754fed_0_0#slide=id.g3cb93754fed_0_0",
           "description": ""
         }
       ]
@@ -1634,9 +1670,9 @@
           "description": ""
         },
         {
-          "name": "Präsentation - Gefahren des Internets",
+          "name": "Aufgabe - Expertenteams - Gefahren des Internets",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g378f598d199_0_10#slide=id.g378f598d199_0_10",
           "description": ""
         }
       ]
@@ -1647,15 +1683,21 @@
       "image": "../src/word.jpg",
       "links": [
         {
-          "name": "Textformatierung",
+          "name": "Aufgabe - Textformatierung",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g36409753cec_0_28#slide=id.g36409753cec_0_28",
           "description": ""
         },
         {
-          "name": "Lebenslauf",
+          "name": "Aufgabe - Lebenslauf",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_83#slide=id.g373709f0f30_0_83",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - Steckbrief",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g3b80d8bc7ad_0_0#slide=id.g3b80d8bc7ad_0_0",
           "description": ""
         }
       ]
@@ -1666,27 +1708,27 @@
       "image": "../src/excel.jpg",
       "links": [
         {
-          "name": "Draft",
-          "type": "slide",
-          "link": "",
+          "name": "Aufgabe - Excel Party",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_88#slide=id.g373709f0f30_0_88",
           "description": ""
         },
         {
-          "name": "Party",
+          "name": "Aufgabe - Excel Pizza",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g36409753cec_0_7#slide=id.g36409753cec_0_7",
           "description": ""
         },
         {
-          "name": "Pizza",
+          "name": "Aufgabe - Excel Noten",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g36409753cec_0_43#slide=id.g36409753cec_0_43",
           "description": ""
         },
         {
-          "name": "Noten",
+          "name": "Aufgabe - Excel Charts Klimawerte",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g3d21086752b_1_0#slide=id.g3d21086752b_1_0",
           "description": ""
         }
       ]
@@ -1700,6 +1742,12 @@
           "name": "Draft",
           "type": "slide",
           "link": "",
+          "description": ""
+        },
+        {
+          "name": "Aufgabe - Erfinde eine Codierung",
+          "type": "exercise",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_93#slide=id.g373709f0f30_0_93",
           "description": ""
         }
       ]
@@ -1716,9 +1764,9 @@
           "description": ""
         },
         {
-          "name": "Installieren von Linux",
+          "name": "Aufgabe - Installieren von Linux",
           "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_98#slide=id.g373709f0f30_0_98",
           "description": ""
         }
       ]
