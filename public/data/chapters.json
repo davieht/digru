@@ -1122,6 +1122,12 @@
       "image": "../src/excel.jpg",
       "links": [
         {
+          "name": "Excel",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1cx9VJTQOO5SrJTCeamYYtbBCbcwifDjstD-NPjeTsZY/",
+          "description": ""
+        },
+        {
           "name": "Aufgabe - Excel Klimawerte (Charts)",
           "type": "link",
           "link": "https://docs.google.com/document/d/1bSX_N7_y9uu-LKH7v0qMIwlojPdNSmSO7B_5hu-FcvY/",
@@ -1707,6 +1713,12 @@
       "description": "Datenanalyse mit Microsoft Excel.",
       "image": "../src/excel.jpg",
       "links": [
+        {
+          "name": "Excel",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1cx9VJTQOO5SrJTCeamYYtbBCbcwifDjstD-NPjeTsZY/",
+          "description": ""
+        },
         {
           "name": "Aufgabe - Excel Party",
           "type": "exercise",
