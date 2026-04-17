@@ -1067,7 +1067,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=linux",
+          "link": "../quiz/quiz.html?id=os",
           "description": ""
         }
       ]
