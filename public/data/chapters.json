@@ -1088,12 +1088,6 @@
           "type": "link",
           "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Sexting.pdf",
           "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=todo",
-          "description": ""
         }
       ]
     },

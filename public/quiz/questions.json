@@ -1549,7 +1549,7 @@
             {
                 "text": "Wozu werden Passwörter gebraucht?",
                 "options": [
-                    {"text": "Um seine Daten zu schützen", "correct": true},
+                    {"text": "Um deine Daten zu schützen", "correct": true},
                     {"text": "Um sich auf einer Website einloggen zu können", "correct": true},
                     {"text": "Damit andere keinen Zugriff auf dein Profil haben", "correct": true},
                     {"text": "Um Werbung auszuschalten"}

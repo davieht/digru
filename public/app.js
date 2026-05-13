@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             ]);
                         }
                         populateChapters();
+                        restoreScrollPosition()
                     }());
                     break;
                 case "chapter":
@@ -152,22 +153,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 .forEach(([chapterId, chapter]) => {
                     // Clone the template content
                     const chapterNode = template.content.cloneNode(true);
+                    chapterNode.querySelector('.card').addEventListener("click", () => {
+                        // _scrollPosition = scrollBox.scrollTop;
+                        saveScrollPosition()
+                        navigate('chapter', chapterId);
+                    });
 
                     // Populate the template with actual data
                     if (chapter.isActive) {
                         chapterNode.querySelector('.card').classList.add('active');
-                        chapterNode.querySelector('.card').addEventListener("click", () => {
-                            _scrollPosition = scrollBox.scrollTop;
-                            navigate('chapter', chapterId);
-                        });
                     }
-                    if (_user && _user.isTeacher) {
-                        chapterNode.querySelector('.card').style.cursor = 'pointer';
-                        chapterNode.querySelector('.card').addEventListener("click", () => {
-                            _scrollPosition = scrollBox.scrollTop;
-                            navigate('chapter', chapterId);
-                        });
-                    }
+
+                    // if (_user && _user.isTeacher) {
+                    //     chapterNode.querySelector('.card').style.cursor = 'pointer';
+                    //     chapterNode.querySelector('.card').addEventListener("click", () => {
+                    //         _scrollPosition = scrollBox.scrollTop;
+                    //         navigate('chapter', chapterId);
+                    //     });
+                    // }
                     chapterNode.querySelector('.card-image').style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url('${chapter.image ? chapter.image : "../src/placeholder.jpg"}')`;
                     chapterNode.querySelector('.card-title').textContent = `${chapter.name}`;
                     chapterNode.querySelector('.card-description').textContent = `${chapter.description}`;
@@ -462,15 +465,20 @@ document.addEventListener("DOMContentLoaded", () => {
     loadRoute(initialRoute);
 });
 
-// Save scroll position before navigating away
-window.addEventListener('beforeunload', () => {
-    sessionStorage.setItem('scrollPosition', window.scrollY);
-});
 
-// Restore scroll position when the page loads
-window.addEventListener('load', () => {
+function saveScrollPosition() {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+}
+
+function restoreScrollPosition() {
     const scrollPosition = sessionStorage.getItem('scrollPosition');
     if (scrollPosition) {
-        window.scrollTo(0, parseInt(scrollPosition, 10));
+        console.log("bla")
+        //window.scrollTo(0, parseInt(scrollPosition, 10));
+        window.scrollTo({
+            top: parseInt(scrollPosition, 10),
+            behavior: "instant" // or omit
+        });
     }
-});
+}
+
