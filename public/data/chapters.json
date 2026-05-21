@@ -363,6 +363,12 @@
       "image": "../src/ppt.jpg",
       "links": [
         {
+          "name": "Präsentationssoftware",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1aEE9KlNQfTbGSXNUT_jb0YpbPWXK3TErBQUAXf0HhCU/",
+          "description": ""
+        },
+        {
           "name": "Erste Schritte mit Powerpoint",
           "type": "video",
           "link": "https://www.youtube.com/watch?v=kbpkdxL-Ubg",
@@ -1084,6 +1090,24 @@
           "description": ""
         },
         {
+          "name": "S-Talks - Nacktfotos verschicken",
+          "type": "link",
+          "link": "https://s-talks.at/tipps-facts/sexting/eigene-nacktfotos-verschicken/",
+          "description": ""
+        },
+        {
+          "name": "S-Talks - Nacktfotos am Handy speichern",
+          "type": "link",
+          "link": "https://s-talks.at/tipps-facts/sexting/nacktfotos-am-handy-speichern/",
+          "description": ""
+        },
+        {
+          "name": "S-Talks - Nacktfotos von anderen verschicken",
+          "type": "link",
+          "link": "https://s-talks.at/tipps-facts/sexting/nacktfotos-von-anderen-verschicken/",
+          "description": ""
+        },
+        {
           "name": "Saferinternet - Sexting Flyer",
           "type": "link",
           "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Sexting.pdf",
@@ -1296,6 +1320,12 @@
       "description": "Präsentieren mit Microsoft Powerpoint.",
       "image": "../src/ppt.jpg",
       "links": [
+        {
+          "name": "Präsentationssoftware",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1aEE9KlNQfTbGSXNUT_jb0YpbPWXK3TErBQUAXf0HhCU/",
+          "description": ""
+        },
         {
           "name": "Aufgabe - Steckbrief",
           "type": "exercise",
