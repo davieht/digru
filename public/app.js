@@ -465,15 +465,20 @@ document.addEventListener("DOMContentLoaded", () => {
     loadRoute(initialRoute);
 });
 
-// Save scroll position before navigating away
-window.addEventListener('beforeunload', () => {
-    sessionStorage.setItem('scrollPosition', window.scrollY);
-});
 
-// Restore scroll position when the page loads
-window.addEventListener('load', () => {
+function saveScrollPosition() {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+}
+
+function restoreScrollPosition() {
     const scrollPosition = sessionStorage.getItem('scrollPosition');
     if (scrollPosition) {
-        window.scrollTo(0, parseInt(scrollPosition, 10));
+        console.log("bla")
+        //window.scrollTo(0, parseInt(scrollPosition, 10));
+        window.scrollTo({
+            top: parseInt(scrollPosition, 10),
+            behavior: "instant" // or omit
+        });
     }
-});
+}
+
