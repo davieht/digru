@@ -1046,12 +1046,6 @@
           "description": ""
         },
         {
-          "name": "Open Source",
-          "type": "video",
-          "link": "todo",
-          "description": "todo"
-        },
-        {
           "name": "Quiz",
           "type": "quiz",
           "link": "../quiz/quiz.html?id=opensrc",
@@ -1847,10 +1841,116 @@
     }
   },
   "Programmieren": {
-    "program": {
-      "name": "Programmieren",
-      "description": "Hier findest du die Lernunterlagen.",
-      "image": "../src/digitalwell.jpg",
+    "blockly": {
+      "name": "Programmieren mit Blockly",
+      "description": "Eine spielerische Einführung in das Programmieren mit Blockly",
+      "image": "../src/blockly.jpg",
+      "links": [
+        {
+          "name": "Blockly",
+          "type": "exercise",
+          "link": "https://blockly.games/",
+          "description": "Löse die Aufgaben mit Blockly."
+        }
+      ]
+    },
+    "code.org": {
+      "name": "Programmieren mit code.org",
+      "description": "Eine spielerische Einführung in das Programmieren mit code.org",
+      "image": "../src/code_org.png",
+      "links": [
+        {
+          "name": "Kurs A",
+          "type": "exercise",
+          "link": "https://studio.code.org/courses/coursea-2025/units/1",
+          "description": "Löse die Aufgaben mit code.org."
+        },
+        {
+          "name": "Kurs B",
+          "type": "exercise",
+          "link": "https://studio.code.org/courses/courseb-2025/units/1",
+          "description": "Löse die Aufgaben mit code.org."
+        },
+        {
+          "name": "Kurs C",
+          "type": "exercise",
+          "link": "https://studio.code.org/courses/coursec-2025/units/1",
+          "description": "Löse die Aufgaben mit code.org."
+        },
+        {
+          "name": "Kurs D",
+          "type": "exercise",
+          "link": "https://studio.code.org/courses/coursed-2025/units/1",
+          "description": "Löse die Aufgaben mit code.org."
+        }
+      ]
+    },
+    "scratch": {
+      "name": "Programmieren mit Scratch",
+      "description": "Die Grundlagen des Programmierens mit Scratch",
+      "image": "../src/scratch.webp",
+      "links": [
+        {
+          "name": "Scratch - Website",
+          "type": "link",
+          "link": "https://scratch.mit.edu/projects/editor/",
+          "description": "Hier kommst du zu Scratch"
+        },
+        {
+          "name": "Aufgabe 1 - Eine Kurzgeschichte",
+          "type": "exercise",
+          "link": "https://sway.cloud.microsoft/DLfZuMGcD6aqCLrY",
+          "description": "Programmiere die Kurzgeschichte aus dem Lernpfad exakt nach."
+        },
+        {
+          "name": "Aufgabe 2 - Geschichten erzählen",
+          "type": "exercise",
+          "link": "https://sway.cloud.microsoft/fcX8ePuKyzqIqcE9",
+          "description": "Programmiere die Geschichte 3 Wünsche aus dem Lernpfad exakt nach."
+        },
+        {
+          "name": "Aufgabe 3 - Eigene Geschichte erzählen",
+          "type": "exercise",
+          "link": "",
+          "description": "Überlege dir eine eigene kurze Geschichte oder einen Witz und programmiere sie/ihn nach."
+        },
+        {
+          "name": "Aufgabe 4 - Buchstabenanimation",
+          "type": "exercise",
+          "link": "https://sway.cloud.microsoft/UfRfALW4b04wTS5e",
+          "description": "Programmiere die Buchstabenanimation für die Buchstaben D,I,G,I aus dem Lernpfad exakt nach. Deinen eigenen Namen schreibst du dann mit eigenen Effekten."
+        },
+        {
+          "name": "Aufgabe 5 - Fliegendes Hippo",
+          "type": "exercise",
+          "link": "https://sway.cloud.microsoft/bNRDgdCIfEkjlzyD",
+          "description": "Programmiere das fliegende Hippo aus dem Lernpfad zunächst exakt nach."
+        }
+      ]
+    },
+    "Turtlestitch": {
+      "name": "Programmieren mit Turtlestitch",
+      "description": "Zeichne Muster mit Tutlestitch.",
+      "image": "../src/turtlestitch.png",
+      "links": [
+        {
+          "name": "Turtlestitch - Hauptseite",
+          "type": "link",
+          "link": "https://www.turtlestitch.org/",
+          "description": ""
+        },
+        {
+          "name": "Turtlestitch - Editor",
+          "type": "link",
+          "link": "https://www.turtlestitch.org/run",
+          "description": ""
+        }
+      ]
+    },
+    "HTML/CSS": {
+      "name": "Webprogrammierung mit HTML und CSS",
+      "description": "Baue Webseiten und Apps mit HTML und CSS.",
+      "image": "../src/html5.png",
       "links": [
         {
           "name": "HTML - Hypertext Markup Language",
@@ -1863,7 +1963,14 @@
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/125K8gTWL_1zM0oVZR6mm1CanYNHAvBv1o_HMvOAzj4c/edit?usp=sharing",
           "description": ""
-        },
+        }
+      ]
+    },
+    "JavaScript": {
+      "name": "Programmieren mit JavaScript",
+      "description": "Lerne Programmieren mit JavaScript.",
+      "image": "../src/javascript.webp",
+      "links": [
         {
           "name": "Lernunterlagen zu JavaScript",
           "type": "link",
@@ -1885,25 +1992,6 @@
           "type": "slide",
           "link": "",
           "description": ""
-        }
-      ]
-    },
-    "blockly": {
-      "name": "Programmieren mit Blockly",
-      "description": "Eine Einführung in das Programmieren. Mit Blockly",
-      "image": "../src/blockly.jpg",
-      "links": [
-        {
-          "name": "Programmieren",
-          "type": "slide",
-          "link": "",
-          "description": ""
-        },
-        {
-          "name": "Blockly",
-          "type": "exercise",
-          "link": "https://blockly.games/",
-          "description": "Löse die Aufgaben mit Blockly."
         }
       ]
     },

@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
 
                     // Populate the template with actual data
-                    if (chapter.isActive) {
+                    if (chapter.isActive || (_user && _user.isTeacher)) {
                         chapterNode.querySelector('.card').classList.add('active');
                     }
 
