@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Set active chapters
             Object.entries(_chapters).forEach(([chapterName, chapter]) => {
-                chapter.isActive = +chapter.classLevel <= +_user.className[0] || +_user.className[0] === 5 || chapterName === 'program'; // modifies original object
+                chapter.isActive = +chapter.classLevel <= +_user.className[0] || +_user.className[0] === 5 || ["blockly", "code_org", "scratch", "turtle", "html_css", "js"].includes(chapterName); // modifies original object
             })
 
             // Set star
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!_chapters[chapterName]) {
                     const errorMsg = `Chapter ${chapterName} not found. Please fix in sheet!`;
                     console.error("Error fetching dynamic list data:", errorMsg);
-                    showSnackbar(errorMsg);
+                    //showSnackbar(errorMsg);
                 } else {
                     if (!_user.isTeacher) {
                         if (chapter.hasQuiz === true) {

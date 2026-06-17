@@ -1854,7 +1854,7 @@
         }
       ]
     },
-    "code.org": {
+    "code_org": {
       "name": "Programmieren mit code.org",
       "description": "Eine spielerische Einführung in das Programmieren mit code.org",
       "image": "../src/code_org.png",
@@ -1928,7 +1928,7 @@
         }
       ]
     },
-    "Turtlestitch": {
+    "turtle": {
       "name": "Programmieren mit Turtlestitch",
       "description": "Zeichne Muster mit Tutlestitch.",
       "image": "../src/turtlestitch.png",
@@ -1947,7 +1947,7 @@
         }
       ]
     },
-    "HTML/CSS": {
+    "html_css": {
       "name": "Webprogrammierung mit HTML und CSS",
       "description": "Baue Webseiten und Apps mit HTML und CSS.",
       "image": "../src/html5.png",
@@ -1966,7 +1966,7 @@
         }
       ]
     },
-    "JavaScript": {
+    "js": {
       "name": "Programmieren mit JavaScript",
       "description": "Lerne Programmieren mit JavaScript.",
       "image": "../src/javascript.webp",
