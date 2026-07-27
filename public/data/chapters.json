@@ -115,7 +115,7 @@
       ]
     },
     "typewrite": {
-      "name": "Die Tastatur - Das Zehnfingersystem",
+      "name": "Das Zehnfingersystem",
       "description": "Effizient schreiben mit dem Zehnfingersystem.",
       "image": "../src/keyboard.jpg",
       "links": [
@@ -357,6 +357,25 @@
         }
       ]
     },
+    "history": {
+      "name": "Computergeschichte",
+      "description": "Eine kurze Geschichte über die Computergeschichte",
+      "image": "../src/history.jpg",
+      "links": [
+        {
+          "name": "Computergeschichte",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1mbrzW0Bwwey2RGYsP8nGi19dTN1DkYf20PJRtIaNfJ4",
+          "description": ""
+        },
+        {
+          "name": "Computergeschichte",
+          "type": "video",
+          "link": "https://www.youtube.com/watch?v=07zsT8lBSjQ",
+          "description": "In diesem Video erfährst du mehr über die Geschichte des Computers."
+        }
+      ]
+    },
     "ppt": {
       "name": "Powerpoint",
       "description": "Präsentieren mit Powerpoint.",
@@ -392,9 +411,34 @@
   "2": {
     "recap21": {
       "name": "Wiederholung",
-      "description": "Wiederholung des ersten Schuljahr.",
+      "description": "Wiederholung des ersten Schuljahres.",
       "image": "../src/recap.jpg",
       "links": [
+        {
+          "name": "Einleitung und Begrüßung",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/17ruy3nx3YOfPht4sRnKKi_6_rdnTsep4hs8qg7kXTZA/",
+          "description": "Willkommen zu Digitale Grundbildung"
+        },
+        {
+          "name": "Wiederholung",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/edit?slide=id.g3f58dd02b5c_0_5#slide=id.g3f58dd02b5c_0_5",
+          "description": ""
+        }
+      ]
+    },
+    "word": {
+      "name": "Word",
+      "description": "Arbeiten mit Microsoft Word.",
+      "image": "../src/word.jpg",
+      "links": [
+        {
+          "name": "Word - Formatieren",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/18vz7L5z-lbE3__YYB19vZsCTQAdIHLurSl7mayga0EU/",
+          "description": ""
+        }
       ]
     },
     "social": {
@@ -489,6 +533,52 @@
         }
       ]
     },
+    "winmisc": {
+      "name": "Windows - Ergänzendes und Taskmanager",
+      "description": "Weiterführende Funktionen in Windows.",
+      "image": "../src/windows.png",
+      "links": [
+        {
+          "name": "Windows Ergänzendes",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1quE744r-lBdG7ZOhG6QXSIehzGp_W_fF0WB5MK1YghU/",
+          "description": ""
+        }
+      ]
+    },
+    "install": {
+      "name": "Installieren von Software",
+      "description": "Software installieren und entfernen",
+      "image": "../src/install.jpg",
+      "links": [
+        {
+          "name": "Installieren von Software",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1-Mv3bpjQ3TCfvZX4qVoM7nLW2lYBX6XIJAoj1xexwQY",
+          "description": ""
+        }
+      ]
+    },
+    "taskmngr": {
+      "name": "Taskmanager und Computereigenschaften",
+      "description": "Hardwareauslastung anzeigen mit dem Taskmanager",
+      "image": "../src/taskmngr.jpg",
+      "links": [
+        {
+          "name": "Taskmanager und Computereigenschaften",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1gPSk_7SPWQXaQxwrTnUNxqMxE8Ubfj9pJSjSPDJvkkg",
+          "description": ""
+        }
+      ]
+    },
+    "recap22": {
+      "name": "Wiederholung",
+      "description": "Wiederholung des ersten Semester.",
+      "image": "../src/recap.jpg",
+      "links": [
+      ]
+    },
     "digiwell": {
       "name": "Digitale Gesundheit",
       "description": "Bildschirmzeiten und Gesundheit mit Digitalen Medien",
@@ -557,87 +647,6 @@
         }
       ]
     },
-    "cpright": {
-      "name": "Urheberrecht",
-      "description": "Digitales Eigentum und worauf du achten sollst.",
-      "image": "../src/copyright.jpg",
-      "links": [
-        {
-          "name": "Urheberrecht",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1XzsjT93zGcRvKXtR3-XOSkhYDS43yJjI-YZv1iAVuqo",
-          "description": ""
-        },
-        {
-          "name": "Internet ABC - Text und Bild, kopieren und weitergeben",
-          "type": "interactive",
-          "link": "https://www.internet-abc.de/lm/text-und-bild",
-          "description": "Dieses interaktive Lernmodul erklärt dir was digitales Eigentum ist."
-        },
-        {
-          "name": "Saferinternet - Flyer",
-          "type": "link",
-          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Bilder_Videos.pdf",
-          "description": "Dieser Flyer erklärt kurz was digitales Eigentum ist."
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=cpright",
-          "description": "Das Quiz zu Urheberrecht."
-        }
-      ]
-    },
-    "gdpr": {
-      "name": "Datenschutz",
-      "description": "Deine Rechte über deine Daten",
-      "image": "../src/gdpr.jpg",
-      "links": [
-        {
-          "name": "Datenschutz",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1CUFkVBcrNYTrWon7KbDUqXlyM-Ws8-eUajWRnoJ_wwI",
-          "description": ""
-        },
-        {
-          "name": "Internet ABC - Datenschutz, das bleibt privat",
-          "type": "interactive",
-          "link": "https://www.internet-abc.de/lm/datenschutz-das-bleibt-privat",
-          "description": "In diesem interaktiven Lernmodul erfährst du mehr über Datenschutz."
-        },
-        {
-          "name": "Was tun bei Datenmissbrauch - Flyer",
-          "type": "link",
-          "link": "https://www.internet-abc.de/lm/module-assets/data-protection/download/erste-hilfe-bei-datenmissbrauch.pdf",
-          "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
-        },
-        {
-          "name": "Cookies",
-          "type": "video",
-          "link": "https://www.youtube.com/watch?v=4y5pKc66CAk",
-          "description": "Dieses Video erklärt dir, was Cookies sind."
-        },
-        {
-          "name": "Clickclickclickclick",
-          "type": "interactive",
-          "link": "https://clickclickclick.click/",
-          "description": "Diese Website veranschaulicht dir, was in Cookies gespeichert werden kann."
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=gdpr",
-          "description": "Das Quiz zu Datenschutz."
-        }
-      ]
-    },
-    "recap22": {
-      "name": "Wiederholung",
-      "description": "Wiederholung des ersten Semester.",
-      "image": "../src/recap.jpg",
-      "links": [
-      ]
-    },
     "pwd": {
       "name": "Sicheres Passwort",
       "description": "Sichere Passwörter erstellen.",
@@ -666,25 +675,6 @@
           "type": "quiz",
           "link": "../quiz/quiz.html?id=pwd",
           "description": "Das Quiz zu Siches Passwort."
-        }
-      ]
-    },
-    "history": {
-      "name": "Computergeschichte",
-      "description": "Eine kurze Geschichte über die Computergeschichte",
-      "image": "../src/history.jpg",
-      "links": [
-        {
-          "name": "Computergeschichte",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1mbrzW0Bwwey2RGYsP8nGi19dTN1DkYf20PJRtIaNfJ4",
-          "description": ""
-        },
-        {
-          "name": "Computergeschichte",
-          "type": "video",
-          "link": "https://www.youtube.com/watch?v=07zsT8lBSjQ",
-          "description": "In diesem Video erfährst du mehr über die Geschichte des Computers."
         }
       ]
     },
@@ -817,16 +807,54 @@
         }
       ]
     },
-    "word": {
-      "name": "Word",
-      "description": "Arbeiten mit Microsoft Word.",
-      "image": "../src/word.jpg",
+    "usb": {
+      "name": "USB",
+      "description": "Dateien mit einem USB-Stick austauschen",
+      "image": "../src/todo.jpg",
       "links": [
         {
-          "name": "Word - Formatieren",
-          "type": "link",
-          "link": "https://docs.google.com/document/d/18vz7L5z-lbE3__YYB19vZsCTQAdIHLurSl7mayga0EU/",
+          "name": "Dateien mit einem USB-Stick austauschen",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1l_3NSQdc5_LnUH5DFsHnSVk9qTXsj4nLHNfyPp1mqvA",
           "description": ""
+        }
+      ]
+    },
+    "qrcode": {
+      "name": "QR-Codes",
+      "description": "QR-Codes erstellen und teilen",
+      "image": "../src/todo.jpg",
+      "links": [
+        {
+          "name": "QR-Codes",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1LrfLYkUlE8YXmGzsMXl275j6o_HBtg4esOySPOJjWGI",
+          "description": ""
+        }
+      ]
+    },
+    "cookies": {
+      "name": "Cookies",
+      "description": "Cookies",
+      "image": "../src/todo.jpg",
+      "links": [
+        {
+          "name": "Cookies",
+          "type": "slide",
+          "link": "TODO",
+          "description": ""
+        },
+        {
+          "name": "Cookies",
+          "type": "video",
+          "link": "https://www.youtube.com/watch?v=4y5pKc66CAk",
+          "description": "Dieses Video erklärt dir, was Cookies sind."
+        },
+        {
+          "name": "Clickclickclickclick",
+          "type": "interactive",
+          "link": "https://clickclickclick.click/",
+          "description": "Diese Website veranschaulicht dir, was in Cookies gespeichert werden kann."
         }
       ]
     }
@@ -838,9 +866,15 @@
       "image": "../src/recap.jpg",
       "links": [
         {
-          "name": "Draft",
-          "type": "pdf",
-          "link": "",
+          "name": "Einleitung und Begrüßung",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/17ruy3nx3YOfPht4sRnKKi_6_rdnTsep4hs8qg7kXTZA/",
+          "description": "Willkommen zu Digitale Grundbildung"
+        },
+        {
+          "name": "Wiederholung",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/edit?slide=id.g3f58dd02b5c_0_5#slide=id.g3f58dd02b5c_0_5",
           "description": ""
         }
       ]
@@ -932,6 +966,51 @@
         }
       ]
     },
+    "fakes": {
+      "name": "Deep Fakes",
+      "description": "In diesem Kapitel lernst du was Deep Fakes sind.",
+      "image": "../src/deepfakes.jpg",
+      "links": [
+        {
+          "name": "Deep Fakes",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1cI6rtPpX73XotZBPfMpQluLNOGl4ivNMVc5tCn3apKU/",
+          "description": ""
+        }
+      ]
+    },
+    "fakenews": {
+      "name": "Fake News",
+      "description": "In diesem Kapitel lernst du was Fake News sind und warum sie gefährlich sind",
+      "image": "../src/fakenews.jpg",
+      "links": [
+        {
+          "name": "Fake News",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1Uluh-HRXfz9Ojd7-mzRZBgK6NSkNPCjLgIWD2GO95v8",
+          "description": ""
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=fakenews",
+          "description": ""
+        }
+      ]
+    },
+    "recap32": {
+      "name": "Wiederholung",
+      "description": "Wiederholung des ersten Semesters.",
+      "image": "../src/recap.jpg",
+      "links": [
+        {
+          "name": "Draft",
+          "type": "pdf",
+          "link": "",
+          "description": ""
+        }
+      ]
+    },
     "bytes": {
       "name": "Bits und Bytes",
       "description": "In diesem Kapitel lernst du wie der Computer arbeitet.",
@@ -957,79 +1036,41 @@
         }
       ]
     },
-    "html": {
-      "name": "HTML - Hypertext Markup Language",
-      "description": "Websiten erstellen mit HTML.",
-      "image": "../src/html.jpg",
+    "zip": {
+      "name": "ZIP-Archive",
+      "description": "Dateien zusammenfassen und komprimieren",
+      "image": "../src/todo.jpg",
       "links": [
         {
-          "name": "HTML - Hypertext Markup Language",
+          "name": "Dateien zusammenfassen und komprimieren",
           "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1WgzhHuJJ6yCCepiGjcMA7JQiEalB9h2MctTD_u7qBYk/",
-          "description": ""
-        },
-        {
-          "name": "Programmieren einer Website mit HTML",
-          "type": "exercise",
-          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0",
-          "description": ""
-        },
-        {
-          "name": "HTML - Hello World",
-          "type": "link",
-          "link": "https://codepen.io/David-Viehtauer/pen/MYygGOo",
-          "description": "Hello World Musterlösung"
-        }
-      ]
-    },
-    "css": {
-      "name": "CSS - Cascading Style Sheets",
-      "description": "Websiten erstellen mit CSS.",
-      "image": "../src/css.jpg",
-      "links": [
-        {
-          "name": "CSS - Cascading Style Sheets",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1hhoz2eqG61or7E-mMp8hmKBeDB7FNBtVi90b10xNpgQ/",
+          "link": "https://docs.google.com/presentation/d/1yult1bJNzmB16j4wTv5T4q_arNhRbXUS2YKgAD1-IMY",
           "description": ""
         }
       ]
     },
-    "recap32": {
-      "name": "Wiederholung",
-      "description": "Wiederholung des ersten Semesters.",
-      "image": "../src/recap.jpg",
+    "sort": {
+      "name": "Dateien finden",
+      "description": "Wie man in Windows Dateien findet",
+      "image": "../src/todo.jpg",
       "links": [
         {
-          "name": "Draft",
-          "type": "pdf",
-          "link": "",
+          "name": "Wie man in Windows Dateien findet",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1ZhA522L6p4tijGJMPfHvnw54NFiFVI2hV5GHWhO21NE",
           "description": ""
         }
       ]
     },
-    "install": {
-      "name": "Installieren von Software",
-      "description": "Software installieren und entfernen",
-      "image": "../src/install.jpg",
+    "handy": {
+      "name": "Smartphone & Laptop",
+      "description": "Das Smartphone mit dem Computer verbinden und Daten austauschen",
+      "image": "../src/tod.jpg",
       "links": [
         {
-          "name": "Installieren von Software",
+          "name": "Smartphone & Laptop",
           "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1-Mv3bpjQ3TCfvZX4qVoM7nLW2lYBX6XIJAoj1xexwQY",
-          "description": ""
-        }
-      ]
-    },
-    "taskmngr": {
-      "name": "Taskmanager und Computereigenschaften",
-      "description": "Hardwareauslastung anzeigen mit dem Taskmanager",
-      "image": "../src/taskmngr.jpg",
-      "links": [
-        {
-          "name": "Taskmanager und Computereigenschaften",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1gPSk_7SPWQXaQxwrTnUNxqMxE8Ubfj9pJSjSPDJvkkg",
+          "link": "https://docs.google.com/presentation/d/1l_3NSQdc5_LnUH5DFsHnSVk9qTXsj4nLHNfyPp1mqvA",
           "description": ""
         }
       ]
@@ -1072,7 +1113,7 @@
         }
       ]
     },
-    "sexting": {
+    "sext": {
       "name": "Sexting",
       "description": "Worauf du beim Sexting achten solltest.",
       "image": "../src/sexting.jpg",
@@ -1106,14 +1147,7 @@
           "type": "link",
           "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Sexting.pdf",
           "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
-        }
-      ]
-    },
-    "sextort": {
-      "name": "Sextortion und Rachepornos",
-      "description": "Gefahren von Sexting.",
-      "image": "../src/sextortion.jpg",
-      "links": [
+        },
         {
           "name": "Sextortion und Rachepornos",
           "type": "slide",
@@ -1161,9 +1195,90 @@
       "image": "../src/recap.jpg",
       "links": [
         {
-          "name": "Draft",
+          "name": "Einleitung und Begrüßung",
           "type": "slide",
-          "link": "",
+          "link": "https://docs.google.com/presentation/d/17ruy3nx3YOfPht4sRnKKi_6_rdnTsep4hs8qg7kXTZA/",
+          "description": "Willkommen zu Digitale Grundbildung"
+        },
+        {
+          "name": "Wiederholung",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/edit?slide=id.g3f58dd02b5c_0_5#slide=id.g3f58dd02b5c_0_5",
+          "description": ""
+        }
+      ]
+    },
+    "cpright": {
+      "name": "Urheberrecht",
+      "description": "Digitales Eigentum und worauf du achten sollst.",
+      "image": "../src/copyright.jpg",
+      "links": [
+        {
+          "name": "Urheberrecht",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1XzsjT93zGcRvKXtR3-XOSkhYDS43yJjI-YZv1iAVuqo",
+          "description": ""
+        },
+        {
+          "name": "Internet ABC - Text und Bild, kopieren und weitergeben",
+          "type": "interactive",
+          "link": "https://www.internet-abc.de/lm/text-und-bild",
+          "description": "Dieses interaktive Lernmodul erklärt dir was digitales Eigentum ist."
+        },
+        {
+          "name": "Saferinternet - Flyer",
+          "type": "link",
+          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Bilder_Videos.pdf",
+          "description": "Dieser Flyer erklärt kurz was digitales Eigentum ist."
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=cpright",
+          "description": "Das Quiz zu Urheberrecht."
+        }
+      ]
+    },
+    "gdpr": {
+      "name": "Datenschutz",
+      "description": "Deine Rechte über deine Daten",
+      "image": "../src/gdpr.jpg",
+      "links": [
+        {
+          "name": "Datenschutz",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1CUFkVBcrNYTrWon7KbDUqXlyM-Ws8-eUajWRnoJ_wwI",
+          "description": ""
+        },
+        {
+          "name": "Internet ABC - Datenschutz, das bleibt privat",
+          "type": "interactive",
+          "link": "https://www.internet-abc.de/lm/datenschutz-das-bleibt-privat",
+          "description": "In diesem interaktiven Lernmodul erfährst du mehr über Datenschutz."
+        },
+        {
+          "name": "Was tun bei Datenmissbrauch - Flyer",
+          "type": "link",
+          "link": "https://www.internet-abc.de/lm/module-assets/data-protection/download/erste-hilfe-bei-datenmissbrauch.pdf",
+          "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=gdpr",
+          "description": "Das Quiz zu Datenschutz."
+        }
+      ]
+    },
+    "usb": {
+      "name": "USB",
+      "description": "In diesem Kapitel lernst du wie du mein einem USB Stick Dateien austauschen kannst",
+      "image": "../src/todo.jpg",
+      "links": [
+        {
+          "name": "USB",
+          "type": "slide",
+          "link": "TOD",
           "description": ""
         }
       ]
@@ -1195,76 +1310,6 @@
           "name": "Quiz",
           "type": "quiz",
           "link": "../quiz/quiz.html?id=llm",
-          "description": ""
-        }
-      ]
-    },
-    "fakenews": {
-      "name": "Fake News",
-      "description": "In diesem Kapitel lernst du was Fake News sind und warum sie gefährlich sind",
-      "image": "../src/fakenews.jpg",
-      "links": [
-        {
-          "name": "Fake News",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1Uluh-HRXfz9Ojd7-mzRZBgK6NSkNPCjLgIWD2GO95v8",
-          "description": ""
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=fakenews",
-          "description": ""
-        }
-      ]
-    },
-    "fakes": {
-      "name": "Deep Fakes",
-      "description": "In diesem Kapitel lernst du was Deep Fakes sind.",
-      "image": "../src/deepfakes.jpg",
-      "links": [
-        {
-          "name": "Deep Fakes",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1cI6rtPpX73XotZBPfMpQluLNOGl4ivNMVc5tCn3apKU/",
-          "description": ""
-        }
-      ]
-    },
-    "js": {
-      "name": "JavaScript",
-      "description": "Grundzüge des Programmierens mit JavaScript.",
-      "image": "../src/js.jpg",
-      "links": [
-        {
-          "name": "Programmieren",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1wwgFe6xEsh2n8Q8e9aAWOxS6faTBFZCHSnOy-BGsCHc",
-          "description": ""
-        },
-        {
-          "name": "Lernunterlagen",
-          "type": "link",
-          "link": "https://docs.google.com/document/d/1xQdn984nVchMvAkJfBnR_HKUh_yIKxuf91bbCw1wtJQ",
-          "description": ""
-        }
-      ]
-    },
-    "impact": {
-      "name": "Auswirkungen der Digitalisierung",
-      "description": "Chancen und Auswirkungen der Digitalisierung.",
-      "image": "../src/digiimpact.jpg",
-      "links": [
-        {
-          "name": "Auswirkungen der Digitalisierung",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1axqdVvm5pyppqsORJfN5nhZT09TNQBGNzIScMFcdn88",
-          "description": ""
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=impact",
           "description": ""
         }
       ]
@@ -1303,6 +1348,25 @@
           "name": "Lastenheft - Musterlösung",
           "type": "link",
           "link": "https://docs.google.com/document/d/1kxL6cczc1M-q6xTPSS62JCqkENfcvFRYSTgEexPGsk8/",
+          "description": ""
+        }
+      ]
+    },
+    "impact": {
+      "name": "Auswirkungen der Digitalisierung",
+      "description": "Chancen und Auswirkungen der Digitalisierung.",
+      "image": "../src/digiimpact.jpg",
+      "links": [
+        {
+          "name": "Auswirkungen der Digitalisierung",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1axqdVvm5pyppqsORJfN5nhZT09TNQBGNzIScMFcdn88",
+          "description": ""
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=impact",
           "description": ""
         }
       ]
@@ -2008,22 +2072,9 @@
         }
       ]
     },
-    "winmisc": {
-      "name": "Windows - Ergänzendes und Taskmanager",
-      "description": "Weiterführende Funktionen in Windows.",
-      "image": "../src/windows.png",
-      "links": [
-        {
-          "name": "Windows Ergänzendes",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1quE744r-lBdG7ZOhG6QXSIehzGp_W_fF0WB5MK1YghU/",
-          "description": ""
-        }
-      ]
-    },
     "digiworld": {
       "name": "Die digitale Welt",
-      "description": "TODO",
+      "description": "",
       "image": "../src/digiworld.png",
       "links": [
         {

@@ -93,8 +93,8 @@
                         body: JSON.stringify({
                             route: "login",
                             schoolId: password.substring(0, 4),
-                            className: password.substring(4, 6),
-                            token: password.substring(6, 12)
+                            className: password.substring(4, password.length - 6),
+                            token: password.substring(password.length - 6, password.length)
                         })
                     });
 
