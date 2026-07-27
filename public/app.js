@@ -473,7 +473,6 @@ function saveScrollPosition() {
 function restoreScrollPosition() {
     const scrollPosition = sessionStorage.getItem('scrollPosition');
     if (scrollPosition) {
-        console.log("bla")
         //window.scrollTo(0, parseInt(scrollPosition, 10));
         window.scrollTo({
             top: parseInt(scrollPosition, 10),

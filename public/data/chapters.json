@@ -810,7 +810,7 @@
     "usb": {
       "name": "USB",
       "description": "Dateien mit einem USB-Stick austauschen",
-      "image": "../src/todo.jpg",
+      "image": "../src/usb.jpg",
       "links": [
         {
           "name": "Dateien mit einem USB-Stick austauschen",
@@ -823,7 +823,7 @@
     "qrcode": {
       "name": "QR-Codes",
       "description": "QR-Codes erstellen und teilen",
-      "image": "../src/todo.jpg",
+      "image": "../src/qrcode.jpg",
       "links": [
         {
           "name": "QR-Codes",
@@ -836,7 +836,7 @@
     "cookies": {
       "name": "Cookies",
       "description": "Cookies",
-      "image": "../src/todo.jpg",
+      "image": "../src/cookies.jpg",
       "links": [
         {
           "name": "Cookies",
@@ -1039,7 +1039,7 @@
     "zip": {
       "name": "ZIP-Archive",
       "description": "Dateien zusammenfassen und komprimieren",
-      "image": "../src/todo.jpg",
+      "image": "../src/zip.jpg",
       "links": [
         {
           "name": "Dateien zusammenfassen und komprimieren",
@@ -1052,7 +1052,7 @@
     "sort": {
       "name": "Dateien finden",
       "description": "Wie man in Windows Dateien findet",
-      "image": "../src/todo.jpg",
+      "image": "../src/sort.jpg",
       "links": [
         {
           "name": "Wie man in Windows Dateien findet",
@@ -1065,7 +1065,7 @@
     "handy": {
       "name": "Smartphone & Laptop",
       "description": "Das Smartphone mit dem Computer verbinden und Daten austauschen",
-      "image": "../src/tod.jpg",
+      "image": "../src/handy.jpg",
       "links": [
         {
           "name": "Smartphone & Laptop",
@@ -1267,19 +1267,6 @@
           "type": "quiz",
           "link": "../quiz/quiz.html?id=gdpr",
           "description": "Das Quiz zu Datenschutz."
-        }
-      ]
-    },
-    "usb": {
-      "name": "USB",
-      "description": "In diesem Kapitel lernst du wie du mein einem USB Stick Dateien austauschen kannst",
-      "image": "../src/todo.jpg",
-      "links": [
-        {
-          "name": "USB",
-          "type": "slide",
-          "link": "TOD",
-          "description": ""
         }
       ]
     },
@@ -1949,8 +1936,27 @@
         }
       ]
     },
-    "scratch": {
-      "name": "Programmieren mit Scratch",
+    "turtle": {
+      "name": "Programmieren mit Turtlestitch",
+      "description": "Zeichne Muster mit Tutlestitch.",
+      "image": "../src/turtlestitch.png",
+      "links": [
+        {
+          "name": "Turtlestitch - Hauptseite",
+          "type": "link",
+          "link": "https://www.turtlestitch.org/",
+          "description": ""
+        },
+        {
+          "name": "Turtlestitch - Editor",
+          "type": "link",
+          "link": "https://www.turtlestitch.org/run",
+          "description": ""
+        }
+      ]
+    },
+    "scratch1": {
+      "name": "Programmieren mit Scratch - Grundlagen",
       "description": "Die Grundlagen des Programmierens mit Scratch",
       "image": "../src/scratch.webp",
       "links": [
@@ -1992,21 +1998,59 @@
         }
       ]
     },
-    "turtle": {
-      "name": "Programmieren mit Turtlestitch",
-      "description": "Zeichne Muster mit Tutlestitch.",
-      "image": "../src/turtlestitch.png",
+    "scratch2": {
+      "name": "Programmieren mit Scratch - Fortgeschritten",
+      "description": "Programmieren mit Scratch für Fortgeschrittene",
+      "image": "../src/scratch2.webp",
       "links": [
         {
-          "name": "Turtlestitch - Hauptseite",
+          "name": "Scratch - Website",
           "type": "link",
-          "link": "https://www.turtlestitch.org/",
-          "description": ""
+          "link": "https://scratch.mit.edu/projects/editor/",
+          "description": "Hier kommst du zu Scratch"
         },
         {
-          "name": "Turtlestitch - Editor",
+          "name": "Scratch",
           "type": "link",
-          "link": "https://www.turtlestitch.org/run",
+          "link": "https://docs.google.com/document/d/1xgvo15FfwXGFnAsVpzK8wbCe64l8Jzf1JPFkHpW79vc",
+          "description": ""
+        }
+      ]
+    },
+    "scratch3": {
+      "name": "Programmieren mit Scratch - Spieleprogrammierung (Profi)",
+      "description": "Spieleprogrammierung mit Scratch für Profis",
+      "image": "../src/scratch3.webp",
+      "links": [
+        {
+          "name": "Scratch - Website",
+          "type": "link",
+          "link": "https://scratch.mit.edu/projects/editor/",
+          "description": "Hier kommst du zu Scratch"
+        },
+        {
+          "name": "Scratch",
+          "type": "link",
+          "link": "https://docs.google.com/document/d/1xgvo15FfwXGFnAsVpzK8wbCe64l8Jzf1JPFkHpW79vc",
+          "description": ""
+        }
+      ]
+    },
+    "microbit": {
+      "name": "Programmieren mit micro:bit",
+      "description": "Programmieren mit einem Microcontroller",
+      "image": "../src/microbit.jpg",
+      "links": [
+        {
+          "name": "Microbit - Website",
+          "type": "link",
+          "link": "https://makecode.microbit.org/",
+          "description": "Hier kommst du zu micro:bit"
+        },
+        {
+          "name": "Microbit",
+          "type": "link",
+          "link": "TODO",
           "description": ""
         }
       ]
