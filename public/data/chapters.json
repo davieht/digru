@@ -764,49 +764,6 @@
         }
       ]
     },
-    "groom": {
-      "name": "Cybergrooming",
-      "description": "Cybergrooming erkennen und verhindern.",
-      "image": "../src/grooming.jpg",
-      "links": [
-        {
-          "name": "Cybergrooming",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1IMZA-GCx4E7UmiBk0y6DZivS9A7L5kPvfQozJ5BQQuE",
-          "description": ""
-        },
-        {
-          "name": "Saferinternet - Flyer",
-          "type": "link",
-          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Online-Grooming.pdf",
-          "description": "Dieser Flyer erklärt dir was Cybergrooming ist."
-        },
-        {
-          "name": "Saferinternet - Schnitzeljagt Cybergrooming",
-          "type": "link",
-          "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=7",
-          "description": "Ein Quiz zu Cybergrooming."
-        },
-        {
-          "name": "Video - Love Story",
-          "type": "video",
-          "link": "https://www.youtube.com/watch?v=lT0Wao7fnyo",
-          "description": "Sieh dir das Video an um zu verstehen was Cybergrooming ist"
-        },
-        {
-          "name": "Nachrichtenbeitrag",
-          "type": "link",
-          "link": "https://ooe.orf.at/stories/3328523/",
-          "description": "Ein Nachrichtenartikel zum Thema Grooming."
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=groom",
-          "description": "Das Quiz zu Urheberrecht."
-        }
-      ]
-    },
     "usb": {
       "name": "USB",
       "description": "Dateien mit einem USB-Stick austauschen",
@@ -815,7 +772,7 @@
         {
           "name": "Dateien mit einem USB-Stick austauschen",
           "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1l_3NSQdc5_LnUH5DFsHnSVk9qTXsj4nLHNfyPp1mqvA",
+          "link": "https://docs.google.com/presentation/d/1LDrUHjICj4hsilTyIyvrq-dPJPd9OmjLY8Y21hlLq4Y",
           "description": ""
         }
       ]
@@ -979,7 +936,7 @@
         }
       ]
     },
-    "fakenews": {
+    "fnews": {
       "name": "Fake News",
       "description": "In diesem Kapitel lernst du was Fake News sind und warum sie gefährlich sind",
       "image": "../src/fakenews.jpg",
@@ -1008,6 +965,49 @@
           "type": "pdf",
           "link": "",
           "description": ""
+        }
+      ]
+    },
+    "groom": {
+      "name": "Cybergrooming",
+      "description": "Cybergrooming erkennen und verhindern.",
+      "image": "../src/grooming.jpg",
+      "links": [
+        {
+          "name": "Cybergrooming",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1IMZA-GCx4E7UmiBk0y6DZivS9A7L5kPvfQozJ5BQQuE",
+          "description": ""
+        },
+        {
+          "name": "Saferinternet - Flyer",
+          "type": "link",
+          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Online-Grooming.pdf",
+          "description": "Dieser Flyer erklärt dir was Cybergrooming ist."
+        },
+        {
+          "name": "Saferinternet - Schnitzeljagt Cybergrooming",
+          "type": "link",
+          "link": "https://schnitzeljagd.saferinternet.at/quiz.php?quizid=7",
+          "description": "Ein Quiz zu Cybergrooming."
+        },
+        {
+          "name": "Video - Love Story",
+          "type": "video",
+          "link": "https://www.youtube.com/watch?v=lT0Wao7fnyo",
+          "description": "Sieh dir das Video an um zu verstehen was Cybergrooming ist"
+        },
+        {
+          "name": "Nachrichtenbeitrag",
+          "type": "link",
+          "link": "https://ooe.orf.at/stories/3328523/",
+          "description": "Ein Nachrichtenartikel zum Thema Grooming."
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=groom",
+          "description": "Das Quiz zu Urheberrecht."
         }
       ]
     },
@@ -1109,55 +1109,6 @@
           "name": "Quiz",
           "type": "quiz",
           "link": "../quiz/quiz.html?id=os",
-          "description": ""
-        }
-      ]
-    },
-    "sext": {
-      "name": "Sexting",
-      "description": "Worauf du beim Sexting achten solltest.",
-      "image": "../src/sexting.jpg",
-      "links": [
-        {
-          "name": "Sexting",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1ZaZnZHIVT6B7OnJI5AuZNEWuZOUJxLcemBJJYla-zIw",
-          "description": ""
-        },
-        {
-          "name": "S-Talks - Nacktfotos verschicken",
-          "type": "link",
-          "link": "https://s-talks.at/tipps-facts/sexting/eigene-nacktfotos-verschicken/",
-          "description": ""
-        },
-        {
-          "name": "S-Talks - Nacktfotos am Handy speichern",
-          "type": "link",
-          "link": "https://s-talks.at/tipps-facts/sexting/nacktfotos-am-handy-speichern/",
-          "description": ""
-        },
-        {
-          "name": "S-Talks - Nacktfotos von anderen verschicken",
-          "type": "link",
-          "link": "https://s-talks.at/tipps-facts/sexting/nacktfotos-von-anderen-verschicken/",
-          "description": ""
-        },
-        {
-          "name": "Saferinternet - Sexting Flyer",
-          "type": "link",
-          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Sexting.pdf",
-          "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
-        },
-        {
-          "name": "Sextortion und Rachepornos",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1hmzzF7mJIZ0udYk-YP19wYmmcIm7LMiaRnMiyZds-Wg",
-          "description": ""
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=sextort",
           "description": ""
         }
       ]
@@ -1301,6 +1252,55 @@
         }
       ]
     },
+    "sext": {
+      "name": "Sexting",
+      "description": "Worauf du beim Sexting achten solltest.",
+      "image": "../src/sexting.jpg",
+      "links": [
+        {
+          "name": "Sexting",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1ZaZnZHIVT6B7OnJI5AuZNEWuZOUJxLcemBJJYla-zIw",
+          "description": ""
+        },
+        {
+          "name": "S-Talks - Nacktfotos verschicken",
+          "type": "link",
+          "link": "https://s-talks.at/tipps-facts/sexting/eigene-nacktfotos-verschicken/",
+          "description": ""
+        },
+        {
+          "name": "S-Talks - Nacktfotos am Handy speichern",
+          "type": "link",
+          "link": "https://s-talks.at/tipps-facts/sexting/nacktfotos-am-handy-speichern/",
+          "description": ""
+        },
+        {
+          "name": "S-Talks - Nacktfotos von anderen verschicken",
+          "type": "link",
+          "link": "https://s-talks.at/tipps-facts/sexting/nacktfotos-von-anderen-verschicken/",
+          "description": ""
+        },
+        {
+          "name": "Saferinternet - Sexting Flyer",
+          "type": "link",
+          "link": "https://www.saferinternet.at/fileadmin/categorized/Materialien/Flyer_Sexting.pdf",
+          "description": "Sollte es doch einmal passiert sein, dann hast du hier eine Checkliste."
+        },
+        {
+          "name": "Sextortion und Rachepornos",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1hmzzF7mJIZ0udYk-YP19wYmmcIm7LMiaRnMiyZds-Wg",
+          "description": ""
+        },
+        {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=sextort",
+          "description": ""
+        }
+      ]
+    },
     "recap42": {
       "name": "Wiederholung",
       "description": "Wiederholung des ersten Semesters.",
@@ -1418,6 +1418,19 @@
           "name": "Aufgabe - Backup Dateien einspielen auf Windows",
           "type": "exercise",
           "link": "https://docs.google.com/presentation/d/15aQVJOHLr3RA-j4lxDhj8lL-6zafcg25Fw6AZ9jGUc0/?slide=id.g373709f0f30_0_0#slide=id.g373709f0f30_0_0",
+          "description": ""
+        }
+      ]
+    },
+    "usb_i": {
+      "name": "USB",
+      "description": "Dateien mit einem USB-Stick austauschen",
+      "image": "../src/usb.jpg",
+      "links": [
+        {
+          "name": "Dateien mit einem USB-Stick austauschen",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1LDrUHjICj4hsilTyIyvrq-dPJPd9OmjLY8Y21hlLq4Y",
           "description": ""
         }
       ]
