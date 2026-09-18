@@ -3,6 +3,7 @@ const fs = require('fs');
 const axios = require("axios");
 const bodyParser = require("body-parser");
 const path = require('path');
+const { LRUCache } = require('lru-cache');
 const serverOptions = require('./serveroptions');
 
 const app = express();
@@ -12,6 +13,19 @@ const GOOGLE_SCRIPT_URLs = {
     "oedi":"https://script.google.com/macros/s/AKfycbyEe2OcKcpb3jmkZvdQcPq9pWg-wZUTBJ30AnkqElLcF-r5VLGoQQ4iZQhw0XCkzSidNg/exec",
 //    "oediold": "https://script.google.com/macros/s/AKfycbyn3P_rmtuwk7MoFhpLcyzmnK04PexVZnK6S6QzUuY_ROYyxeknw6NEdtEH-2n_mXwE/exec",
 };
+
+const cache = new LRUCache({
+    max: 1000,          // max entries
+    ttl: 60 * 1000,     // 60s default TTL (per-entry override possible)
+});
+
+function getCache(key, fn, ttl) {
+    if (cache.has(key)) return cache.get(key);
+
+    const result = fn
+    cache.set(key, result, {ttl: 300000})
+    return result
+}
 
 function vigenereEncode(text, key) {
     const textBytes = new TextEncoder().encode(text);
@@ -73,11 +87,16 @@ app.get("/api/bulletin/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query;
-        const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=bulletin&className=${className}`);
-        if (!response.data.success) {
-            throw new Error (response.data.error || "Unknown error from Google Script")
+        if (cache.has('bulletin')) {
+            res.json(cache.get('bulletin'));
+        } else {
+            const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=bulletin&className=${className}`);
+            if (!response.data.success) {
+                throw new Error(response.data.error || "Unknown error from Google Script")
+            }
+            cache.set('bulletin', response.data.data, { ttl: 300 * 1000 })
+            res.json(response.data.data);
         }
-        res.json(response.data.data);
     } catch (error) {
         res.status(500).json({error: "Error fetching data from Google Script", details: error.message});
     }
@@ -87,11 +106,16 @@ app.get("/api/class/", async (req, res) => {
    try {
         log(req);
         const {schoolId, className} = req.query; // Access the route parameter
-        const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=class&className=${className}`);
-        if (!response.data.success) {
-            throw new Error(response.data.error || "Unknown error from Google Script");
-        }
-        res.json(response.data.data);
+       if (cache.has(className)) {
+           res.json(cache.get(className));
+       } else {
+           const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=class&className=${className}`);
+           if (!response.data.success) {
+               throw new Error(response.data.error || "Unknown error from Google Script");
+           }
+           cache.set(className, response.data.data, { ttl: 300 * 1000 })
+           res.json(response.data.data);
+       }
     } catch (error) {
         res.status(500).json({error: "Error fetching data from Google Script", details: error.message});
     }
@@ -102,11 +126,16 @@ app.get("/api/chapters/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query; // Access the route parameter
-        const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=chapters&className=${className}`);
-        if (!response.data.success) {
-            throw new Error(response.data.error || "Unknown error from Google Script");
+        if (cache.has(className)) {
+            res.json(cache.get(className));
+        } else {
+            const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=chapters&className=${className}`);
+            if (!response.data.success) {
+                throw new Error(response.data.error || "Unknown error from Google Script");
+            }
+            cache.set(className, response.data.data, { ttl: 300 * 1000 })
+            res.json(response.data.data);
         }
-        res.json(response.data.data);
     } catch (error) {
         res.status(500).json({error: "Error fetching data from Google Script", details: error.message});
     }
@@ -120,11 +149,16 @@ app.get("/api/user/", async (req, res) => {
             res.json({schoolId: schoolId, className: className, hash: hash, isTeacher: true});
             return;
         }
-        const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=user&className=${className}&hash=${hash}`);
-        if (!response.data.success) {
-            throw new Error(response.data.error || "Unknown error from Google Script");
+        if (cache.has(hash)) {
+            res.json(cache.get(hash));
+        } else {
+            const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=user&className=${className}&hash=${hash}`);
+            if (!response.data.success) {
+                throw new Error(response.data.error || "Unknown error from Google Script");
+            }
+            cache.set(hash, response.data.data, { ttl: 300 * 1000 })
+            res.json(response.data.data);
         }
-        res.json(response.data.data);
     } catch (error) {
         res.status(500).json({error: "Error fetching data from Google Script", details: error.message});
         console.error(error);
