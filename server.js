@@ -19,7 +19,7 @@ const cache = new LRUCache({
     ttl: 60 * 1000,     // 60s default TTL (per-entry override possible)
 });
 
-const CACHE_DAY = 24 * 60 * 60 * 1000
+const CACHE_HALF_DAY = 12* 60 * 60 * 1000
 const CACHE_5_MIN = 5 * 60 * 1000
 
 function getCache(key, fn, ttl) {
@@ -97,7 +97,7 @@ app.get("/api/bulletin/", async (req, res) => {
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script")
             }
-            cache.set('bulletin', response.data.data, {ttl: CACHE_DAY})
+            cache.set('bulletin', response.data.data, {ttl: CACHE_HALF_DAY})
             res.json(response.data.data);
         }
     } catch (error) {
@@ -116,7 +116,7 @@ app.get("/api/class/", async (req, res) => {
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script");
             }
-            cache.set(className, response.data.data, {ttl: CACHE_DAY})
+            cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
             res.json(response.data.data);
         }
     } catch (error) {
@@ -136,7 +136,7 @@ app.get("/api/chapters/", async (req, res) => {
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script");
             }
-            cache.set(className, response.data.data, {ttl: CACHE_DAY})
+            cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
             res.json(response.data.data);
         }
     } catch (error) {
