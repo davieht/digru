@@ -2164,11 +2164,18 @@
       "links": []
     },
     "clean": {
-      "name": "",
-      "description": "",
+      "name": "Laptop Wartung",
+      "description": "Mach deinen PC schneller",
       "image": "../src/misc.jpg",
-      "hidden": true,
-      "links": []
+      "hidden": false,
+      "links": [
+        {
+          "name": "Windows Ergänzendes",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1BHRaO75rOvOtwUI4LHO6tMXKRu2jko0OZI-Ip0Qxj2I/",
+          "description": ""
+        }
+      ]
     }
   }
 }
