@@ -273,6 +273,23 @@ function log(req) {
 //    next();
 //});
 
+app.get('/assets/usbtask/:filename', (req, res) => {
+    const { filename } = req.params;
+
+    // Only allow herbst_<something>.jpg
+    if (!/^herbst_\w+\.jpg$/.test(filename)) {
+        return res.status(404).send('Not found');
+    }
+
+    const filePath = path.join(__dirname, 'public', 'assets', 'usbtask', filename);
+
+    res.download(filePath, filename, (err) => {
+        if (err) {
+            res.status(500).send('Error downloading file');
+        }
+    });
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('*', (req, res) => {
