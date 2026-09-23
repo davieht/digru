@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let questionCounter = 0;
     const totalQuizPoints = 100;
-    const bonusQuizPoints = 25;
+    const bonusQuizPoints = 10;
     const requiredTheshold = .50;
 
     const answersContainer = document.getElementById("answers-container");
