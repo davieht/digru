@@ -115,9 +115,10 @@ app.get("/api/class/", async (req, res) => {
             const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=class&className=${className}`);
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script");
+            } else {
+                cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
+                res.json(response.data.data);
             }
-            cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
-            res.json(response.data.data);
         }
     } catch (error) {
         res.status(500).json({error: "Error fetching data from Google Script", details: error.message});

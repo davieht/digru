@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const qJson = JSON.parse(qDecrypt);
 
     const quizData = qJson[quizId];
-    const questionLength = 12;
+    const questionLength = 12
     let qstns = quizData.questions.slice(0, questionLength);
 
     let correctAnswerCnt = 0;
