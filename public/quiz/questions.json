@@ -388,30 +388,12 @@
         "desc": "Beantworte die Fragen zu Windows",
         "questions": [
             {
-                "text": "Was ist ein Betriebssystem?",
+                "text": "Was ist ein Windows?",
                 "options": [
-                    {"text": "Eine Schnittstelle zwischen Hardwarekomponenten", "correct": true},
-                    {"text": "Eine Schnittstelle zwischen Mensch und Computer", "correct": true},
+                    {"text": "Ein Betriebssystem", "correct": true},
+                    {"text": "Eine Hardwarekomponente"},
                     {"text": "Ein Videospiel"},
                     {"text": "Eine Computerkomponente"}
-                ]
-            },
-            {
-                "text": "Aufgaben eines Betriebssystems?",
-                "options": [
-                    {"text": "Speicherverwaltung", "correct": true},
-                    {"text": "Programmverwaltung", "correct": true},
-                    {"text": "Dateiverwaltung", "correct": true},
-                    {"text": "Geräteverwaltung", "correct": true}
-                ]
-            },
-            {
-                "text": "Welche Betriebssysteme gibt es?",
-                "options": [
-                    {"text": "Windows", "correct": true},
-                    {"text": "Linux", "correct": true},
-                    {"text": "MacOS", "correct": true},
-                    {"text": "Excel"}
                 ]
             },
             {
