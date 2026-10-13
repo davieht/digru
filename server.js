@@ -90,14 +90,14 @@ app.get("/api/bulletin/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query;
-        if (cache.has('bulletin')) {
-            res.json(cache.get('bulletin'));
+        if (cache.has(className + 'bulletin')) {
+            res.json(cache.get(className + 'bulletin'));
         } else {
             const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=bulletin&className=${className}`);
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script")
             }
-            cache.set('bulletin', response.data.data, {ttl: CACHE_HALF_DAY})
+            cache.set(className + 'bulletin', response.data.data, {ttl: CACHE_HALF_DAY})
             res.json(response.data.data);
         }
     } catch (error) {
@@ -109,14 +109,14 @@ app.get("/api/class/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query; // Access the route parameter
-        if (cache.has(className)) {
-            res.json(cache.get(className));
+        if (cache.has(className + 'className')) {
+            res.json(cache.get(className + 'className'));
         } else {
             const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=class&className=${className}`);
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script");
             } else {
-                cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
+                cache.set(className + 'className', response.data.data, {ttl: CACHE_HALF_DAY})
                 res.json(response.data.data);
             }
         }
@@ -130,14 +130,14 @@ app.get("/api/chapters/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query; // Access the route parameter
-        if (cache.has(className)) {
-            res.json(cache.get(className));
+        if (cache.has(className + 'chapters')) {
+            res.json(cache.get(className + 'chapters'));
         } else {
             const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=chapters&className=${className}`);
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script");
             }
-            cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
+            cache.set(className + 'chapters', response.data.data, {ttl: CACHE_HALF_DAY})
             res.json(response.data.data);
         }
     } catch (error) {
