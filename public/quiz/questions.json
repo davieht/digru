@@ -1944,7 +1944,7 @@
             {
                 "text": "Was ist Adware?",
                 "options": [
-                    {"text": "Nevige Software, die unbemerkt Werbung installiert", "correct": true},
+                    {"text": "Nevrige Software, die unbemerkt Werbung installiert", "correct": true},
                     {"text": "Ein Virus"},
                     {"text": "Ein Trojaner"},
                     {"text": "Ein Sicherheitsupdate"}
