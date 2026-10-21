@@ -22,7 +22,7 @@ const cache = new LRUCache({
 const CACHE_HALF_DAY = 12 * 60 * 60 * 1000
 const CACHE_5_MIN = 5 * 60 * 1000
 const CACHE_10_MIN = 10 * 60 * 1000
-const CACHE_TTL = CACHE_5_MIN
+const CACHE_TTL = CACHE_HALF_DAY
 
 function getCache(key, fn, ttl) {
     if (cache.has(key)) return cache.get(key);
