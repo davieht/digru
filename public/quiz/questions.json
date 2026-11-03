@@ -2564,7 +2564,7 @@
                 "options": [
                     {"text": "Eine Künstliche Intelligenz, die Text, Bild oder Videos ausgibt", "correct": true},
                     {"text": "Ein Programm", "correct": true},
-                    {"text": "Ein Skipt"},
+                    {"text": "Ein Skript"},
                     {"text": "Ein Betriebssystem"}
                 ]
             },
