@@ -1,0 +1,37 @@
+(function test() {
+  const cards = [...document.querySelectorAll('.studentCard__container')];
+  let i = 0;
+
+  function next() {
+    if (i >= cards.length) return;
+    const card = cards[i++];
+    const firstNameEl = card.querySelector('.studentCard__firstName');
+    const lastNameEl = card.querySelector('.studentCard__lastName');
+    const imgEl = card.querySelector('img.imageInner');
+
+    if (!firstNameEl || !lastNameEl || !imgEl?.src) {
+      next();
+      return;
+    }
+
+    const filename = `${firstNameEl.innerText.trim()}_${lastNameEl.innerText.trim()}.jpg`;
+
+    fetch(imgEl.src)
+      .then(r => r.blob())
+      .then(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
+        setTimeout(next, 500);
+      })
+      .catch(err => {
+        console.error(`Failed ${filename}:`, err);
+        setTimeout(next, 500);
+      });
+  }
+
+  next();
+})();
