@@ -153,7 +153,7 @@
         {
           "name": "Tastenkombinationen",
           "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1NT1sarzBk_949MUzJYQJ8693l3auoL_EGg3GCH5mN_I/",
+          "link": "https://docs.google.com/presentation/d/10k7misOyb3VmwFb8uZBAqioS50WpK9_2526Jce0bKQA/",
           "description": "In diesem Kapitel lernst du was Tastenkürzel sind"
         },
         {
@@ -225,12 +225,6 @@
           "link": "../quiz/quiz.html?id=files",
           "description": ""
         },
-        {
-          "name": "Der Windowsexplorer",
-          "type": "slide",
-          "link": "https://docs.google.com/presentation/d/1p7zsd512s0VBsn17vpbd9skMHf4aM2fGnDsYfAtJgwg",
-          "description": ""
-        }
       ]
     },
     "wincopy": {
@@ -2164,11 +2158,18 @@
       "links": []
     },
     "clean": {
-      "name": "",
-      "description": "",
+      "name": "Laptop Wartung",
+      "description": "Mach deinen PC schneller",
       "image": "../src/misc.jpg",
-      "hidden": true,
-      "links": []
+      "hidden": false,
+      "links": [
+        {
+          "name": "Windows Ergänzendes",
+          "type": "slide",
+          "link": "https://docs.google.com/presentation/d/1BHRaO75rOvOtwUI4LHO6tMXKRu2jko0OZI-Ip0Qxj2I/",
+          "description": ""
+        }
+      ]
     }
   }
 }

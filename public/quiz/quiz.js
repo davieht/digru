@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let questionCounter = 0;
     const totalQuizPoints = 100;
-    const bonusQuizPoints = 25;
+    const bonusQuizPoints = 10;
     const requiredTheshold = .50;
 
     const answersContainer = document.getElementById("answers-container");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const qJson = JSON.parse(qDecrypt);
 
     const quizData = qJson[quizId];
-    const questionLength = 12;
+    const questionLength = 12
     let qstns = quizData.questions.slice(0, questionLength);
 
     let correctAnswerCnt = 0;
