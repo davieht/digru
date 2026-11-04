@@ -944,7 +944,7 @@
         {
           "name": "Quiz",
           "type": "quiz",
-          "link": "../quiz/quiz.html?id=fakenews",
+          "link": "../quiz/quiz.html?id=fnews",
           "description": ""
         }
       ]
