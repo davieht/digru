@@ -933,6 +933,12 @@
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1cI6rtPpX73XotZBPfMpQluLNOGl4ivNMVc5tCn3apKU/",
           "description": ""
+        },
+        {
+          "name": "Detect Deep Fakes",
+          "type": "interactive",
+          "link": "https://detectfakes.kellogg.northwestern.edu/",
+          "description": "Wie gut bist du darin Fake News zu erkennen?"
         }
       ]
     },
@@ -946,6 +952,18 @@
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1Uluh-HRXfz9Ojd7-mzRZBgK6NSkNPCjLgIWD2GO95v8",
           "description": ""
+        },
+        {
+          "name": "Fake Finder",
+          "type": "interactive",
+          "link": "https://swrfakefinder.de/",
+          "description": "Errate Fake News"
+        },
+        {
+          "name": "Zeoob",
+          "type": "interactive",
+          "link": "https://zeoob.com/de/",
+          "description": "Erstelle deine eigenen Fake News"
         },
         {
           "name": "Quiz",
