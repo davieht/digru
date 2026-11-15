@@ -19,8 +19,10 @@ const cache = new LRUCache({
     ttl: 60 * 1000,     // 60s default TTL (per-entry override possible)
 });
 
-const CACHE_HALF_DAY = 12* 60 * 60 * 1000
+const CACHE_HALF_DAY = 12 * 60 * 60 * 1000
 const CACHE_5_MIN = 5 * 60 * 1000
+const CACHE_10_MIN = 10 * 60 * 1000
+const CACHE_TTL = CACHE_HALF_DAY
 
 function getCache(key, fn, ttl) {
     if (cache.has(key)) return cache.get(key);
@@ -90,15 +92,42 @@ app.get("/api/bulletin/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query;
-        if (cache.has('bulletin')) {
-            res.json(cache.get('bulletin'));
+        if (cache.has(className + 'bulletin')) {
+            res.json(cache.get(className + 'bulletin'));
         } else {
             const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=bulletin&className=${className}`);
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script")
             }
-            cache.set('bulletin', response.data.data, {ttl: CACHE_HALF_DAY})
+            cache.set(className + 'bulletin', response.data.data, {ttl: CACHE_TTL})
             res.json(response.data.data);
+        }
+    } catch (error) {
+        res.status(500).json({error: "Error fetching data from Google Script", details: error.message});
+    }
+});
+
+// does not check cache!
+// Checks if "all" is key in cache,
+// if so get klasse, if not fetch all
+// returns only requested class
+app.get("/api/classcache/", async (req, res) => {
+    try {
+        log(req);
+        const {schoolId, className} = req.query; // Access the route parameter
+        if (cache.has('all')) {
+            res.json(cache.get(className + 'className'));
+        } else {
+            const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=classes&className=${className}`);
+            if (!response.data.success) {
+                throw new Error(response.data.error || "Unknown error from Google Script");
+            } else {
+                for (let klass of response.data.data) {
+                    cache.set(klass.className + 'className', klass, {ttl: CACHE_TTL})
+                }
+                cache.set("all", true, {ttl: CACHE_TTL})
+                res.json(response.data.data.find(klass => klass.className === className));
+            }
         }
     } catch (error) {
         res.status(500).json({error: "Error fetching data from Google Script", details: error.message});
@@ -109,14 +138,14 @@ app.get("/api/class/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query; // Access the route parameter
-        if (cache.has(className)) {
-            res.json(cache.get(className));
+        if (cache.has(className + 'className')) {
+            res.json(cache.get(className + 'className'));
         } else {
             const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=class&className=${className}`);
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script");
             } else {
-                cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
+                cache.set(className + 'className', response.data.data, {ttl: CACHE_TTL})
                 res.json(response.data.data);
             }
         }
@@ -130,14 +159,14 @@ app.get("/api/chapters/", async (req, res) => {
     try {
         log(req);
         const {schoolId, className} = req.query; // Access the route parameter
-        if (cache.has(className)) {
-            res.json(cache.get(className));
+        if (cache.has(className + 'chapters')) {
+            res.json(cache.get(className + 'chapters'));
         } else {
             const response = await axios.get(`${GOOGLE_SCRIPT_URLs[schoolId]}?route=chapters&className=${className}`);
             if (!response.data.success) {
                 throw new Error(response.data.error || "Unknown error from Google Script");
             }
-            cache.set(className, response.data.data, {ttl: CACHE_HALF_DAY})
+            cache.set(className + 'chapters', response.data.data, {ttl: CACHE_TTL})
             res.json(response.data.data);
         }
     } catch (error) {
@@ -275,7 +304,7 @@ function log(req) {
 //});
 
 app.get('/assets/usbtask/:filename', (req, res) => {
-    const { filename } = req.params;
+    const {filename} = req.params;
 
     // Only allow herbst_<something>.jpg
     if (!/^herbst_\w+\.jpg$/.test(filename)) {
