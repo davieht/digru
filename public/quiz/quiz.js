@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             buttonEnd.hidden = false;
         } else if (correctAnswerCnt >= requiredQuestionCnt) {
             scoreScreenTitle.textContent = 'Suuuper! 🙂';
-            scoreScreenTxt.innerHTML = `Du hast <b>${correctAnswerCnt}</b> von <b>${qstns.length} Fragen</b> richtig beantwortet. Du hast somit <span class="points">${Math.round(totalQuizPoints * (correctAnswerCnt / qstns.length))} Punkte</span> und <span class="credits">💎 ${Math.round(totalQuizPoints * (correctAnswerCnt / qstns.length))} </span> verdient. Wenn du die volle Punktzahl erreichst bekommst du 25 Punkte zusaetzlich.`;
+            scoreScreenTxt.innerHTML = `Du hast <b>${correctAnswerCnt}</b> von <b>${qstns.length} Fragen</b> richtig beantwortet. Du hast somit <span class="points">${Math.round(totalQuizPoints * (correctAnswerCnt / qstns.length))} Punkte</span> und <span class="credits">💎 ${Math.round(totalQuizPoints * (correctAnswerCnt / qstns.length))} </span> verdient. Wenn du die volle Punktzahl erreichst bekommst du 10 Punkte zusaetzlich.`;
             buttonEnd.hidden = false;
             buttonReset.hidden = false;
         } else {
