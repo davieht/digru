@@ -2677,7 +2677,7 @@
                 "text": "Was ist Subjektivität?",
                 "options": [
                     {"text": "Eine voreingenommene Betrachtung eines Sachverthalt", "correct": true},
-                    {"text": "Eine eigene Meineung", "correct": true},
+                    {"text": "Eine eigene Meinung", "correct": true},
                     {"text": "Eine auf Fakten basierender Sachverhalt"},
                     {"text": "Ein Fakt"}
                 ]

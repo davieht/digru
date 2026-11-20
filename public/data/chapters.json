@@ -927,12 +927,6 @@
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1cI6rtPpX73XotZBPfMpQluLNOGl4ivNMVc5tCn3apKU/",
           "description": ""
-        },
-        {
-          "name": "Detect Deep Fakes",
-          "type": "interactive",
-          "link": "https://detectfakes.kellogg.northwestern.edu/",
-          "description": "Wie gut bist du darin Fake News zu erkennen?"
         }
       ]
     },
