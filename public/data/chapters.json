@@ -1239,15 +1239,22 @@
           "description": ""
         },
         {
+          "name": "Quiz",
+          "type": "quiz",
+          "link": "../quiz/quiz.html?id=llm",
+          "description": ""
+        }
+      ]
+    },
+    "llm": {
+      "name": "ChatGPT & Co",
+      "description": "Generative KI und Large Language Models (LLMs).",
+      "image": "../src/ki.jpg",
+      "links": [
+        {
           "name": "Generative KI",
           "type": "slide",
           "link": "https://docs.google.com/presentation/d/1Zv66LdqGy_iBR2nQ2juGmw_938KTUf6OeISGHRrYUkg",
-          "description": ""
-        },
-        {
-          "name": "Quiz",
-          "type": "quiz",
-          "link": "../quiz/quiz.html?id=ki",
           "description": ""
         },
         {
